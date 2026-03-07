@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agents version="0.1">
+  <site name="Codex Documentation" url="https://developers.openai.com" total-pages="69" last-updated="2026-03-07" />
+
+  <sections>
+    <!-- 1. Getting Started -->
+    <section name="Getting Started" path-prefix="/codex" page-count="4">
+      <page path="/codex" title="Codex" type="overview" />
+      <page path="/codex/quickstart" title="Quickstart" type="tutorial" />
+      <page path="/codex/explore" title="Explore" type="use-case" />
+      <page path="/codex/pricing" title="Codex Pricing" type="reference" />
+    </section>
+
+    <!-- 2. Concepts -->
+    <section name="Concepts" path-prefix="/codex" page-count="7">
+      <page path="/codex/prompting" title="Prompting" type="guide" />
+      <page path="/codex/concepts/customization" title="Customization" type="guide" />
+      <page path="/codex/concepts/sandboxing" title="Sandboxing" type="guide" />
+      <page path="/codex/concepts/multi-agents" title="Multi-agents" type="guide" />
+      <page path="/codex/workflows" title="Workflows" type="guide" />
+      <page path="/codex/models" title="Codex Models" type="reference" />
+      <page path="/codex/concepts/cyber-safety" title="Cyber Safety" type="guide" />
+    </section>
+
+    <!-- 3. Using Codex — App -->
+    <section name="Using Codex — App" path-prefix="/codex/app" page-count="10">
+      <page path="/codex/app" title="Codex app" type="overview" />
+      <page path="/codex/app/features" title="Codex app features" type="tool-reference" />
+      <page path="/codex/app/settings" title="Codex app settings" type="reference" />
+      <page path="/codex/app/review" title="Review" type="guide" />
+      <page path="/codex/app/automations" title="Automations" type="guide" />
+      <page path="/codex/app/worktrees" title="Worktrees" type="guide" />
+      <page path="/codex/app/local-environments" title="Local environments" type="guide" />
+      <page path="/codex/app/commands" title="Codex app commands" type="reference" />
+      <page path="/codex/app/windows" title="Windows" type="guide" />
+      <page path="/codex/app/troubleshooting" title="Troubleshooting" type="guide" />
+    </section>
+
+    <!-- 4. Using Codex — IDE Extension -->
+    <section name="Using Codex — IDE Extension" path-prefix="/codex/ide" page-count="5">
+      <page path="/codex/ide" title="Codex IDE extension" type="overview" />
+      <page path="/codex/ide/features" title="Codex IDE extension features" type="tool-reference" />
+      <page path="/codex/ide/settings" title="Codex IDE extension settings" type="reference" />
+      <page path="/codex/ide/commands" title="Codex IDE extension commands" type="reference" />
+      <page path="/codex/ide/slash-commands" title="Codex IDE extension slash commands" type="reference" />
+    </section>
+
+    <!-- 5. Using Codex — CLI -->
+    <section name="Using Codex — CLI" path-prefix="/codex/cli" page-count="4">
+      <page path="/codex/cli" title="Codex CLI" type="overview" />
+      <page path="/codex/cli/features" title="Codex CLI features" type="tool-reference" />
+      <page path="/codex/cli/reference" title="Command line options" type="reference" />
+      <page path="/codex/cli/slash-commands" title="Slash commands in Codex CLI" type="reference" />
+    </section>
+
+    <!-- 6. Using Codex — Web -->
+    <section name="Using Codex — Web" path-prefix="/codex/cloud" page-count="3">
+      <page path="/codex/cloud" title="Codex web" type="overview" />
+      <page path="/codex/cloud/environments" title="Cloud environments" type="guide" />
+      <page path="/codex/cloud/internet-access" title="Agent internet access" type="guide" />
+    </section>
+
+    <!-- 7. Integrations -->
+    <section name="Integrations" path-prefix="/codex/integrations" page-count="3">
+      <page path="/codex/integrations/github" title="Use Codex in GitHub" type="guide" />
+      <page path="/codex/integrations/slack" title="Use Codex in Slack" type="guide" />
+      <page path="/codex/integrations/linear" title="Use Codex in Linear" type="guide" />
+    </section>
+
+    <!-- 8. Codex Security -->
+    <section name="Codex Security" path-prefix="/codex/security" page-count="4">
+      <page path="/codex/security" title="Codex Security" type="overview" />
+      <page path="/codex/security/setup" title="Codex Security setup" type="tutorial" />
+      <page path="/codex/security/threat-model" title="Improving the threat model" type="guide" />
+      <page path="/codex/security/faq" title="FAQ" type="reference" />
+    </section>
+
+    <!-- 9. Configuration -->
+    <section name="Configuration" path-prefix="/codex" page-count="10">
+      <page path="/codex/config-basic" title="Config basics" type="guide" />
+      <page path="/codex/config-advanced" title="Advanced Configuration" type="guide" />
+      <page path="/codex/config-reference" title="Configuration Reference" type="reference" />
+      <page path="/codex/config-sample" title="Sample Configuration" type="reference" />
+      <page path="/codex/speed" title="Speed" type="guide" />
+      <page path="/codex/rules" title="Rules" type="guide" />
+      <page path="/codex/guides/agents-md" title="Custom instructions with AGENTS.md" type="guide" />
+      <page path="/codex/mcp" title="Model Context Protocol" type="guide" />
+      <page path="/codex/skills" title="Agent Skills" type="guide" />
+      <page path="/codex/multi-agent" title="Multi-agents" type="guide" />
+    </section>
+
+    <!-- 10. Administration -->
+    <section name="Administration" path-prefix="/codex" page-count="6">
+      <page path="/codex/auth" title="Authentication" type="guide" />
+      <page path="/codex/agent-approvals-security" title="Agent approvals &amp; security" type="guide" />
+      <page path="/codex/enterprise/admin-setup" title="Admin Setup" type="tutorial" />
+      <page path="/codex/enterprise/governance" title="Governance" type="guide" />
+      <page path="/codex/enterprise/managed-configuration" title="Managed configuration" type="guide" />
+      <page path="/codex/windows" title="Windows" type="guide" />
+    </section>
+
+    <!-- 11. Automation -->
+    <section name="Automation" path-prefix="/codex" page-count="5">
+      <page path="/codex/noninteractive" title="Non-interactive mode" type="guide" />
+      <page path="/codex/sdk" title="Codex SDK" type="sdk-guide" />
+      <page path="/codex/app-server" title="Codex App Server" type="guide" />
+      <page path="/codex/guides/agents-sdk" title="Use Codex with the Agents SDK" type="sdk-guide" />
+      <page path="/codex/github-action" title="Codex GitHub Action" type="guide" />
+    </section>
+
+    <!-- 12. Learn -->
+    <section name="Learn" path-prefix="/codex" page-count="2">
+      <page path="/codex/videos" title="Videos" type="reference" />
+      <page path="/codex/guides/build-ai-native-engineering-team" title="Building an AI-Native Engineering Team" type="guide" />
+    </section>
+
+    <!-- 13. Community -->
+    <section name="Community" path-prefix="/codex" page-count="3">
+      <page path="/codex/ambassadors" title="Codex Ambassadors" type="overview" />
+      <page path="/codex/community/codex-for-oss" title="Codex for Open Source" type="overview" />
+      <page path="/codex/community/meetups" title="Codex Meetups" type="overview" />
+    </section>
+
+    <!-- 14. Releases -->
+    <section name="Releases" path-prefix="/codex" page-count="3">
+      <page path="/codex/changelog" title="Codex changelog" type="changelog" />
+      <page path="/codex/feature-maturity" title="Feature Maturity" type="reference" />
+      <page path="/codex/open-source" title="Open Source" type="reference" />
+    </section>
+  </sections>
+
+  <external-references>
+    <group name="Blog Posts">
+      <link path="/blog/building-frontend-uis-with-codex-and-figma" title="Building Frontend UIs with Codex and Figma" />
+      <link path="/blog/run-long-horizon-tasks-with-codex" title="Run Long Horizon Tasks with Codex" />
+      <link path="/blog/topic/codex" title="All Codex Blog Posts" />
+    </group>
+    <group name="Cookbooks">
+      <link path="/cookbook/examples/gpt-5/codex_prompting_guide" title="Codex Prompting Guide" />
+      <link path="/cookbook/examples/codex/code_modernization" title="Modernizing Your Codebase with Codex" />
+      <link path="/cookbook/topic/codex" title="All Codex Cookbooks" />
+    </group>
+  </external-references>
+
+  <navigation>
+    <default-section>Getting Started</default-section>
+    <search-priority>
+      <section>Getting Started</section>
+      <section>Concepts</section>
+      <section>Configuration</section>
+      <section>Using Codex — App</section>
+      <section>Using Codex — CLI</section>
+      <section>Automation</section>
+    </search-priority>
+    <tips>
+      <tip>Start with /codex/quickstart for initial setup</tip>
+      <tip>Use /codex/prompting to learn how to interact with Codex effectively</tip>
+      <tip>Configuration guides cover AGENTS.md, MCP, Skills, and Rules</tip>
+      <tip>Platform-specific: App for desktop, IDE for VS Code, CLI for terminal, Web for cloud</tip>
+      <tip>For CI/CD automation, see Non-interactive Mode and GitHub Action</tip>
+    </tips>
+  </navigation>
+</agents>

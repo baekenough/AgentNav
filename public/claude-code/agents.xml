@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agents version="0.1">
+  <site name="Claude Documentation" url="https://platform.claude.com/docs" total-pages="651" last-updated="2026-03-07" />
+
+  <sections>
+    <!-- 1. Introduction -->
+    <section name="Introduction" path-prefix="/docs/en" page-count="2">
+      <page path="/docs/en/intro" title="Intro to Claude" type="tutorial" />
+      <page path="/docs/en/get-started" title="Get started with Claude" type="tutorial" />
+    </section>
+
+    <!-- 2. About Claude -->
+    <section name="About Claude" path-prefix="/docs/en/about-claude" page-count="12">
+      <page path="/docs/en/about-claude/glossary" title="Glossary" type="reference" />
+      <page path="/docs/en/about-claude/model-deprecations" title="Model deprecations" type="reference" />
+      <page path="/docs/en/about-claude/models/choosing-a-model" title="Choosing the right model" type="guide" />
+      <page path="/docs/en/about-claude/models/migration-guide" title="Migration guide" type="guide" />
+      <page path="/docs/en/about-claude/models/overview" title="Models overview" type="overview" />
+      <page path="/docs/en/about-claude/models/whats-new-claude-4-6" title="What's new in Claude 4.6" type="reference" />
+      <page path="/docs/en/about-claude/pricing" title="Pricing" type="reference" />
+      <page path="/docs/en/about-claude/use-case-guides/content-moderation" title="Content moderation" type="use-case" />
+      <page path="/docs/en/about-claude/use-case-guides/customer-support-chat" title="Customer support agent" type="use-case" />
+      <page path="/docs/en/about-claude/use-case-guides/legal-summarization" title="Legal summarization" type="use-case" />
+      <page path="/docs/en/about-claude/use-case-guides/overview" title="Guides to common use cases" type="overview" />
+      <page path="/docs/en/about-claude/use-case-guides/ticket-routing" title="Ticket routing" type="use-case" />
+    </section>
+
+    <!-- 3. Build with Claude -->
+    <section name="Build with Claude" path-prefix="/docs/en/build-with-claude" page-count="35">
+      <page path="/docs/en/build-with-claude/adaptive-thinking" title="Adaptive thinking" type="guide" />
+      <page path="/docs/en/build-with-claude/administration-api" title="Admin API overview" type="guide" />
+      <page path="/docs/en/build-with-claude/batch-processing" title="Batch processing" type="guide" />
+      <page path="/docs/en/build-with-claude/citations" title="Citations" type="guide" />
+      <page path="/docs/en/build-with-claude/claude-code-analytics-api" title="Claude Code Analytics API" type="guide" />
+      <page path="/docs/en/build-with-claude/claude-in-microsoft-foundry" title="Claude in Microsoft Foundry" type="guide" />
+      <page path="/docs/en/build-with-claude/claude-on-amazon-bedrock" title="Claude on Amazon Bedrock" type="guide" />
+      <page path="/docs/en/build-with-claude/claude-on-vertex-ai" title="Claude on Vertex AI" type="guide" />
+      <page path="/docs/en/build-with-claude/compaction" title="Compaction" type="guide" />
+      <page path="/docs/en/build-with-claude/context-editing" title="Context editing" type="guide" />
+      <page path="/docs/en/build-with-claude/context-windows" title="Context windows" type="guide" />
+      <page path="/docs/en/build-with-claude/data-residency" title="Data residency" type="guide" />
+      <page path="/docs/en/build-with-claude/effort" title="Effort" type="guide" />
+      <page path="/docs/en/build-with-claude/embeddings" title="Embeddings" type="guide" />
+      <page path="/docs/en/build-with-claude/extended-thinking" title="Building with extended thinking" type="guide" />
+      <page path="/docs/en/build-with-claude/fast-mode" title="Fast mode (research preview)" type="guide" />
+      <page path="/docs/en/build-with-claude/files" title="Files API" type="guide" />
+      <page path="/docs/en/build-with-claude/handling-stop-reasons" title="Handling stop reasons" type="guide" />
+      <page path="/docs/en/build-with-claude/multilingual-support" title="Multilingual support" type="guide" />
+      <page path="/docs/en/build-with-claude/overview" title="Features overview" type="overview" />
+      <page path="/docs/en/build-with-claude/pdf-support" title="PDF support" type="guide" />
+      <page path="/docs/en/build-with-claude/prompt-caching" title="Prompt caching" type="guide" />
+      <page path="/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" title="Prompting best practices" type="guide" />
+      <page path="/docs/en/build-with-claude/prompt-engineering/overview" title="Prompt engineering overview" type="overview" />
+      <page path="/docs/en/build-with-claude/prompt-engineering/prompting-tools" title="Console prompting tools" type="guide" />
+      <page path="/docs/en/build-with-claude/search-results" title="Search results" type="guide" />
+      <page path="/docs/en/build-with-claude/skills-guide" title="Using Agent Skills with the API" type="guide" />
+      <page path="/docs/en/build-with-claude/streaming" title="Streaming Messages" type="guide" />
+      <page path="/docs/en/build-with-claude/structured-outputs" title="Structured outputs" type="guide" />
+      <page path="/docs/en/build-with-claude/token-counting" title="Token counting" type="guide" />
+      <page path="/docs/en/build-with-claude/usage-cost-api" title="Usage and Cost API" type="guide" />
+      <page path="/docs/en/build-with-claude/vision" title="Vision" type="guide" />
+      <page path="/docs/en/build-with-claude/working-with-messages" title="Using the Messages API" type="guide" />
+      <page path="/docs/en/build-with-claude/workspaces" title="Workspaces" type="guide" />
+      <page path="/docs/en/build-with-claude/zero-data-retention" title="Zero Data Retention (ZDR)" type="guide" />
+    </section>
+
+    <!-- 4. Agents & Tools -->
+    <section name="Agents and Tools" path-prefix="/docs/en/agents-and-tools" page-count="18">
+      <page path="/docs/en/agents-and-tools/agent-skills/best-practices" title="Skill authoring best practices" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/agent-skills/enterprise" title="Skills for enterprise" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/agent-skills/overview" title="Agent Skills" type="overview" />
+      <page path="/docs/en/agents-and-tools/agent-skills/quickstart" title="Get started with Agent Skills in the API" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/mcp-connector" title="MCP connector" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/remote-mcp-servers" title="Remote MCP servers" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/bash-tool" title="Bash tool" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/code-execution-tool" title="Code execution tool" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/computer-use-tool" title="Computer use tool" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/fine-grained-tool-streaming" title="Fine-grained tool streaming" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/implement-tool-use" title="How to implement tool use" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/memory-tool" title="Memory tool" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/overview" title="Tool use with Claude" type="overview" />
+      <page path="/docs/en/agents-and-tools/tool-use/programmatic-tool-calling" title="Programmatic tool calling" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/text-editor-tool" title="Text editor tool" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/tool-search-tool" title="Tool search tool" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/web-fetch-tool" title="Web fetch tool" type="tool-reference" />
+      <page path="/docs/en/agents-and-tools/tool-use/web-search-tool" title="Web search tool" type="tool-reference" />
+    </section>
+
+    <!-- 5. Agent SDK -->
+    <section name="Agent SDK" path-prefix="/docs/en/agent-sdk" page-count="27">
+      <page path="/docs/en/agent-sdk/agent-loop" title="Agent Loop" type="guide" />
+      <page path="/docs/en/agent-sdk/claude-code-features" title="Claude Code Features" type="guide" />
+      <page path="/docs/en/agent-sdk/cost-tracking" title="Cost Tracking" type="guide" />
+      <page path="/docs/en/agent-sdk/custom-tools" title="Custom Tools" type="guide" />
+      <page path="/docs/en/agent-sdk/file-checkpointing" title="File Checkpointing" type="guide" />
+      <page path="/docs/en/agent-sdk/hooks" title="Hooks" type="guide" />
+      <page path="/docs/en/agent-sdk/hosting" title="Hosting" type="guide" />
+      <page path="/docs/en/agent-sdk/mcp" title="MCP" type="guide" />
+      <page path="/docs/en/agent-sdk/migration-guide" title="Migration Guide" type="guide" />
+      <page path="/docs/en/agent-sdk/modifying-system-prompts" title="Modifying System Prompts" type="guide" />
+      <page path="/docs/en/agent-sdk/overview" title="Agent SDK Overview" type="overview" />
+      <page path="/docs/en/agent-sdk/permissions" title="Permissions" type="guide" />
+      <page path="/docs/en/agent-sdk/plugins" title="Plugins" type="guide" />
+      <page path="/docs/en/agent-sdk/python" title="Python SDK" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/quickstart" title="Quickstart" type="tutorial" />
+      <page path="/docs/en/agent-sdk/secure-deployment" title="Secure Deployment" type="guide" />
+      <page path="/docs/en/agent-sdk/sessions" title="Sessions" type="guide" />
+      <page path="/docs/en/agent-sdk/skills" title="Skills" type="guide" />
+      <page path="/docs/en/agent-sdk/slash-commands" title="Slash Commands" type="guide" />
+      <page path="/docs/en/agent-sdk/streaming-output" title="Streaming Output" type="guide" />
+      <page path="/docs/en/agent-sdk/streaming-vs-single-mode" title="Streaming vs Single Mode" type="guide" />
+      <page path="/docs/en/agent-sdk/structured-outputs" title="Structured Outputs" type="guide" />
+      <page path="/docs/en/agent-sdk/subagents" title="Subagents" type="guide" />
+      <page path="/docs/en/agent-sdk/todo-tracking" title="TODO Tracking" type="guide" />
+      <page path="/docs/en/agent-sdk/typescript" title="TypeScript SDK" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/typescript-v2-preview" title="TypeScript V2 Preview" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/user-input" title="User Input" type="guide" />
+    </section>
+
+    <!-- 6. API Reference -->
+    <section name="API Reference" path-prefix="/docs/en/api" page-count="546">
+      <!-- Infrastructure -->
+      <page path="/docs/en/api/overview" title="API Overview" type="overview" />
+      <page path="/docs/en/api/versioning" title="Versions" type="api-reference" />
+      <page path="/docs/en/api/errors" title="Errors" type="api-reference" />
+      <page path="/docs/en/api/rate-limits" title="Rate limits" type="api-reference" />
+      <page path="/docs/en/api/ip-addresses" title="IP addresses" type="api-reference" />
+      <page path="/docs/en/api/supported-regions" title="Supported regions" type="api-reference" />
+      <page path="/docs/en/api/service-tiers" title="Service tiers" type="api-reference" />
+      <page path="/docs/en/api/client-sdks" title="Client SDKs" type="api-reference" />
+      <page path="/docs/en/api/openai-sdk" title="OpenAI SDK compatibility" type="api-reference" />
+      <page path="/docs/en/api/beta-headers" title="Beta headers" type="api-reference" />
+
+      <!-- SDK Overviews -->
+      <page path="/docs/en/api/sdks/python" title="Python SDK" type="sdk-overview" />
+      <page path="/docs/en/api/sdks/typescript" title="TypeScript SDK" type="sdk-overview" />
+      <page path="/docs/en/api/sdks/java" title="Java SDK" type="sdk-overview" />
+      <page path="/docs/en/api/sdks/go" title="Go SDK" type="sdk-overview" />
+      <page path="/docs/en/api/sdks/csharp" title="C# SDK" type="sdk-overview" />
+      <page path="/docs/en/api/sdks/ruby" title="Ruby SDK" type="sdk-overview" />
+      <page path="/docs/en/api/sdks/php" title="PHP SDK" type="sdk-overview" />
+
+      <!-- Messages -->
+      <page path="/docs/en/api/messages" title="Messages" type="api-hub" />
+      <page path="/docs/en/api/messages/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/messages/count_tokens" title="Count Tokens" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/messages/batches" title="Batches" type="api-hub" />
+      <page path="/docs/en/api/messages/batches/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/messages/batches/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/messages/batches/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/messages/batches/cancel" title="Cancel" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/messages/batches/results" title="Results" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/messages/batches/delete" title="Delete" method="DELETE" type="api-endpoint" />
+
+      <!-- Models -->
+      <page path="/docs/en/api/models" title="Models" type="api-hub" />
+      <page path="/docs/en/api/models/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/models/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+
+      <!-- Completions -->
+      <page path="/docs/en/api/completions" title="Completions" type="api-hub" />
+      <page path="/docs/en/api/completions/create" title="Create" method="POST" type="api-endpoint" />
+
+      <!-- Admin -->
+      <page path="/docs/en/api/admin" title="Admin" type="api-hub" />
+      <page path="/docs/en/api/admin/organizations" title="Organizations" type="api-hub" />
+      <page path="/docs/en/api/admin/organizations/me" title="Me" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/users" title="Users" type="api-hub" />
+      <page path="/docs/en/api/admin/users/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/users/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/users/update" title="Update" method="PATCH" type="api-endpoint" />
+      <page path="/docs/en/api/admin/users/delete" title="Delete" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/admin/invites" title="Invites" type="api-hub" />
+      <page path="/docs/en/api/admin/invites/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/admin/invites/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/invites/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/invites/delete" title="Delete" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/admin/api_keys" title="API Keys" type="api-hub" />
+      <page path="/docs/en/api/admin/api_keys/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/api_keys/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/api_keys/update" title="Update" method="PATCH" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces" title="Workspaces" type="api-hub" />
+      <page path="/docs/en/api/admin/workspaces/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/update" title="Update" method="PATCH" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/archive" title="Archive" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/members" title="Members" type="api-hub" />
+      <page path="/docs/en/api/admin/workspaces/members/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/members/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/members/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/members/update" title="Update" method="PATCH" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/members/delete" title="Delete" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/admin/cost_report" title="Cost Report" type="api-hub" />
+      <page path="/docs/en/api/admin/cost_report/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/usage_report" title="Usage Report" type="api-hub" />
+      <page path="/docs/en/api/admin/usage_report/retrieve_messages" title="Retrieve Messages" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/admin/usage_report/retrieve_claude_code" title="Retrieve Claude Code" method="GET" type="api-endpoint" />
+
+      <!-- Beta -->
+      <page path="/docs/en/api/beta" title="Beta" type="api-hub" />
+      <page path="/docs/en/api/beta/files" title="Files" type="api-hub" />
+      <page path="/docs/en/api/beta/files/upload" title="Upload" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/beta/files/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/files/retrieve_metadata" title="Retrieve Metadata" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/files/download" title="Download" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/files/delete" title="Delete" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages" title="Messages" type="api-hub" />
+      <page path="/docs/en/api/beta/messages/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages/count_tokens" title="Count Tokens" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages/batches" title="Batches" type="api-hub" />
+      <page path="/docs/en/api/beta/messages/batches/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages/batches/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages/batches/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages/batches/cancel" title="Cancel" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages/batches/results" title="Results" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages/batches/delete" title="Delete" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/beta/models" title="Models" type="api-hub" />
+      <page path="/docs/en/api/beta/models/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/models/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/skills" title="Beta Skills" type="api-hub" />
+      <page path="/docs/en/api/beta/skills/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/beta/skills/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/skills/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/skills/delete" title="Delete" method="DELETE" type="api-endpoint" />
+      <page path="/docs/en/api/beta/skills/versions" title="Versions" type="api-hub" />
+      <page path="/docs/en/api/beta/skills/versions/create" title="Create" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/beta/skills/versions/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/skills/versions/list" title="List" method="GET" type="api-endpoint" />
+      <page path="/docs/en/api/beta/skills/versions/delete" title="Delete" method="DELETE" type="api-endpoint" />
+
+      <!-- SDK References: covered by sdk-pattern below (10 SDKs x 45 endpoints = 450 pages) -->
+    </section>
+
+    <!-- 7. Test & Evaluate -->
+    <section name="Test and Evaluate" path-prefix="/docs/en/test-and-evaluate" page-count="8">
+      <page path="/docs/en/test-and-evaluate/develop-tests" title="Define success criteria and build evaluations" type="best-practices" />
+      <page path="/docs/en/test-and-evaluate/eval-tool" title="Using the Evaluation Tool" type="best-practices" />
+      <page path="/docs/en/test-and-evaluate/strengthen-guardrails/handle-streaming-refusals" title="Streaming refusals" type="best-practices" />
+      <page path="/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency" title="Increase output consistency" type="best-practices" />
+      <page path="/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks" title="Mitigate jailbreaks and prompt injections" type="best-practices" />
+      <page path="/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations" title="Reduce hallucinations" type="best-practices" />
+      <page path="/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency" title="Reducing latency" type="best-practices" />
+      <page path="/docs/en/test-and-evaluate/strengthen-guardrails/reduce-prompt-leak" title="Reduce prompt leak" type="best-practices" />
+    </section>
+
+    <!-- 8. Release Notes -->
+    <section name="Release Notes" path-prefix="/docs/en/release-notes" page-count="2">
+      <page path="/docs/en/release-notes/overview" title="Claude Developer Platform" type="overview" />
+      <page path="/docs/en/release-notes/system-prompts" title="System Prompts" type="changelog" />
+    </section>
+
+    <!-- 9. Resources -->
+    <section name="Resources" path-prefix="/docs/en/resources" page-count="1">
+      <page path="/docs/en/resources/overview" title="Resources" type="overview" />
+    </section>
+  </sections>
+
+  <!-- SDK Reference Pattern: 10 SDKs x 45 endpoints = 450 pages -->
+  <sdk-pattern total-pages="450" pages-per-sdk="45" url-template="/docs/en/api/{sdk}/{endpoint}">
+    <sdks>
+      <sdk name="typescript" />
+      <sdk name="python" />
+      <sdk name="java" />
+      <sdk name="go" />
+      <sdk name="kotlin" />
+      <sdk name="ruby" />
+      <sdk name="php" />
+      <sdk name="csharp" />
+      <sdk name="terraform" />
+      <sdk name="cli" />
+    </sdks>
+    <endpoints>
+      <endpoint path="messages" type="api-hub" />
+      <endpoint path="messages/create" method="POST" type="api-endpoint" />
+      <endpoint path="messages/count_tokens" method="POST" type="api-endpoint" />
+      <endpoint path="messages/batches" type="api-hub" />
+      <endpoint path="messages/batches/create" method="POST" type="api-endpoint" />
+      <endpoint path="messages/batches/retrieve" method="GET" type="api-endpoint" />
+      <endpoint path="messages/batches/list" method="GET" type="api-endpoint" />
+      <endpoint path="messages/batches/cancel" method="DELETE" type="api-endpoint" />
+      <endpoint path="messages/batches/results" method="GET" type="api-endpoint" />
+      <endpoint path="messages/batches/delete" method="DELETE" type="api-endpoint" />
+      <endpoint path="models" type="api-hub" />
+      <endpoint path="models/list" method="GET" type="api-endpoint" />
+      <endpoint path="models/retrieve" method="GET" type="api-endpoint" />
+      <endpoint path="completions" type="api-hub" />
+      <endpoint path="completions/create" method="POST" type="api-endpoint" />
+      <endpoint path="beta" type="api-hub" />
+      <endpoint path="beta/files" type="api-hub" />
+      <endpoint path="beta/files/upload" method="POST" type="api-endpoint" />
+      <endpoint path="beta/files/list" method="GET" type="api-endpoint" />
+      <endpoint path="beta/files/retrieve_metadata" method="GET" type="api-endpoint" />
+      <endpoint path="beta/files/download" method="GET" type="api-endpoint" />
+      <endpoint path="beta/files/delete" method="DELETE" type="api-endpoint" />
+      <endpoint path="beta/messages" type="api-hub" />
+      <endpoint path="beta/messages/create" method="POST" type="api-endpoint" />
+      <endpoint path="beta/messages/count_tokens" method="POST" type="api-endpoint" />
+      <endpoint path="beta/messages/batches" type="api-hub" />
+      <endpoint path="beta/messages/batches/create" method="POST" type="api-endpoint" />
+      <endpoint path="beta/messages/batches/retrieve" method="GET" type="api-endpoint" />
+      <endpoint path="beta/messages/batches/list" method="GET" type="api-endpoint" />
+      <endpoint path="beta/messages/batches/cancel" method="DELETE" type="api-endpoint" />
+      <endpoint path="beta/messages/batches/results" method="GET" type="api-endpoint" />
+      <endpoint path="beta/messages/batches/delete" method="DELETE" type="api-endpoint" />
+      <endpoint path="beta/models" type="api-hub" />
+      <endpoint path="beta/models/list" method="GET" type="api-endpoint" />
+      <endpoint path="beta/models/retrieve" method="GET" type="api-endpoint" />
+      <endpoint path="beta/skills" type="api-hub" />
+      <endpoint path="beta/skills/create" method="POST" type="api-endpoint" />
+      <endpoint path="beta/skills/retrieve" method="GET" type="api-endpoint" />
+      <endpoint path="beta/skills/list" method="GET" type="api-endpoint" />
+      <endpoint path="beta/skills/delete" method="DELETE" type="api-endpoint" />
+      <endpoint path="beta/skills/versions" type="api-hub" />
+      <endpoint path="beta/skills/versions/create" method="POST" type="api-endpoint" />
+      <endpoint path="beta/skills/versions/retrieve" method="GET" type="api-endpoint" />
+      <endpoint path="beta/skills/versions/list" method="GET" type="api-endpoint" />
+      <endpoint path="beta/skills/versions/delete" method="DELETE" type="api-endpoint" />
+    </endpoints>
+  </sdk-pattern>
+
+  <!-- Navigation: Section selection rules for AI agents -->
+  <navigation>
+    <rule context="getting-started" sections="Introduction" description="New users, setup, first steps" />
+    <rule context="model-selection" sections="About Claude" description="Choosing models, pricing, deprecations, use cases" />
+    <rule context="feature-implementation" sections="Build with Claude" description="Implementing specific API features: streaming, caching, vision, PDFs, structured output, extended thinking" />
+    <rule context="agent-development" sections="Agents and Tools, Agent SDK" description="Building agents, tool use, MCP, computer use, agent SDK integration" />
+    <rule context="api-integration" sections="API Reference" description="Endpoint details, request/response schemas, SDK-specific code examples" />
+    <rule context="sdk-specific" sections="API Reference" description="Use sdk-pattern URL template: /docs/en/api/{sdk}/{endpoint} for language-specific references" />
+    <rule context="testing" sections="Test and Evaluate" description="Evals, guardrails, hallucination reduction, latency optimization" />
+    <rule context="changelog" sections="Release Notes" description="API changes, model updates, system prompt history" />
+    <rule context="general-reference" sections="Resources" description="Additional resources, community links" />
+    <rule context="admin-management" sections="API Reference" description="Organization, workspace, user, and API key management via admin endpoints" />
+    <rule context="prompt-optimization" sections="Build with Claude" description="Prompt engineering best practices, caching strategies, token counting" />
+  </navigation>
+</agents>

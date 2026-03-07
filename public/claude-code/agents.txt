@@ -1,0 +1,328 @@
+# agents.txt v0.1
+# Claude Documentation — https://platform.claude.com/docs
+# Total: 651 pages | Last updated: 2026-03-07
+
+SITE: Claude Documentation
+URL: https://platform.claude.com/docs
+PAGES: 651
+SECTIONS: 9
+
+== SCHEMA ==
+# Formal grammar for parsing this file
+# HEADER: key-value pairs (KEY: value)
+# SECTION: [Name] N pages | prefix=/path/
+# PAGE: relative-path | type=TYPE — description (optional)
+# PAGE (absolute): /full/path | type=TYPE — description (optional)
+# TEMPLATE: TEMPLATE sdk={list} then indented {sdk}/endpoint lines
+# NAVIGATION: RULES (numbered), INTENT MAP (intent → section)
+# TYPES: overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, api-reference, api-endpoint, api-hub, sdk-overview, best-practices, changelog
+# DELIMITER: | separates path from type; — separates type from description
+# PREFIX RULE: full_url = prefix + "/" + relative_path
+
+== SECTIONS ==
+
+[Introduction] 2 pages
+  /docs/en/intro | type=tutorial — Platform introduction
+  /docs/en/get-started | type=tutorial — Quick start tutorial
+
+[About Claude] 12 pages | prefix=/docs/en/about-claude/
+  glossary | type=reference
+  model-deprecations | type=reference
+  models/choosing-a-model | type=guide
+  models/migration-guide | type=guide
+  models/overview | type=overview
+  models/whats-new-claude-4-6 | type=reference
+  pricing | type=reference
+  use-case-guides/content-moderation | type=use-case
+  use-case-guides/customer-support-chat | type=use-case
+  use-case-guides/legal-summarization | type=use-case
+  use-case-guides/overview | type=overview
+  use-case-guides/ticket-routing | type=use-case
+
+[Build with Claude] 35 pages | prefix=/docs/en/build-with-claude/
+  adaptive-thinking | type=guide
+  administration-api | type=guide
+  batch-processing | type=guide
+  citations | type=guide
+  claude-code-analytics-api | type=guide
+  claude-in-microsoft-foundry | type=guide
+  claude-on-amazon-bedrock | type=guide
+  claude-on-vertex-ai | type=guide
+  compaction | type=guide
+  context-editing | type=guide
+  context-windows | type=guide
+  data-residency | type=guide
+  effort | type=guide
+  embeddings | type=guide
+  extended-thinking | type=guide
+  fast-mode | type=guide
+  files | type=guide
+  handling-stop-reasons | type=guide
+  multilingual-support | type=guide
+  overview | type=overview
+  pdf-support | type=guide
+  prompt-caching | type=guide
+  prompt-engineering/claude-prompting-best-practices | type=guide
+  prompt-engineering/overview | type=overview
+  prompt-engineering/prompting-tools | type=guide
+  search-results | type=guide
+  skills-guide | type=guide
+  streaming | type=guide
+  structured-outputs | type=guide
+  token-counting | type=guide
+  usage-cost-api | type=guide
+  vision | type=guide
+  working-with-messages | type=guide
+  workspaces | type=guide
+  zero-data-retention | type=guide
+
+[Agents & Tools] 18 pages | prefix=/docs/en/agents-and-tools/
+  agent-skills/best-practices | type=tool-reference
+  agent-skills/enterprise | type=tool-reference
+  agent-skills/overview | type=overview
+  agent-skills/quickstart | type=tool-reference
+  mcp-connector | type=tool-reference
+  remote-mcp-servers | type=tool-reference
+  tool-use/bash-tool | type=tool-reference
+  tool-use/code-execution-tool | type=tool-reference
+  tool-use/computer-use-tool | type=tool-reference
+  tool-use/fine-grained-tool-streaming | type=tool-reference
+  tool-use/implement-tool-use | type=tool-reference
+  tool-use/memory-tool | type=tool-reference
+  tool-use/overview | type=overview
+  tool-use/programmatic-tool-calling | type=tool-reference
+  tool-use/text-editor-tool | type=tool-reference
+  tool-use/tool-search-tool | type=tool-reference
+  tool-use/web-fetch-tool | type=tool-reference
+  tool-use/web-search-tool | type=tool-reference
+
+[Agent SDK] 27 pages | prefix=/docs/en/agent-sdk/
+  agent-loop | type=guide
+  claude-code-features | type=guide
+  cost-tracking | type=guide
+  custom-tools | type=guide
+  file-checkpointing | type=guide
+  hooks | type=guide
+  hosting | type=guide
+  mcp | type=guide
+  migration-guide | type=guide
+  modifying-system-prompts | type=guide
+  overview | type=overview
+  permissions | type=guide
+  plugins | type=guide
+  python | type=sdk-guide
+  quickstart | type=tutorial
+  secure-deployment | type=guide
+  sessions | type=guide
+  skills | type=guide
+  slash-commands | type=guide
+  streaming-output | type=guide
+  streaming-vs-single-mode | type=guide
+  structured-outputs | type=guide
+  subagents | type=guide
+  todo-tracking | type=guide
+  typescript | type=sdk-guide
+  typescript-v2-preview | type=sdk-guide
+  user-input | type=guide
+
+[API Reference] 546 pages | prefix=/docs/en/api/
+
+  # Infrastructure (10)
+  overview | type=overview
+  versioning | type=api-reference
+  errors | type=api-reference
+  rate-limits | type=api-reference
+  ip-addresses | type=api-reference
+  supported-regions | type=api-reference
+  service-tiers | type=api-reference
+  client-sdks | type=api-reference
+  openai-sdk | type=api-reference
+  beta-headers | type=api-reference
+
+  # SDK Overviews (7)
+  sdks/python | type=sdk-overview
+  sdks/typescript | type=sdk-overview
+  sdks/java | type=sdk-overview
+  sdks/go | type=sdk-overview
+  sdks/csharp | type=sdk-overview
+  sdks/ruby | type=sdk-overview
+  sdks/php | type=sdk-overview
+
+  # Messages (10)
+  messages | type=api-hub
+  messages/create | type=api-endpoint
+  messages/count_tokens | type=api-endpoint
+  messages/batches | type=api-hub
+  messages/batches/create | type=api-endpoint
+  messages/batches/retrieve | type=api-endpoint
+  messages/batches/list | type=api-endpoint
+  messages/batches/cancel | type=api-endpoint
+  messages/batches/results | type=api-endpoint
+  messages/batches/delete | type=api-endpoint
+
+  # Models (3)
+  models | type=api-hub
+  models/list | type=api-endpoint
+  models/retrieve | type=api-endpoint
+
+  # Completions (2)
+  completions | type=api-hub
+  completions/create | type=api-endpoint
+
+  # Admin (34)
+  admin | type=api-hub
+  admin/organizations | type=api-endpoint
+  admin/organizations/me | type=api-endpoint
+  admin/users | type=api-endpoint
+  admin/users/list | type=api-endpoint
+  admin/users/retrieve | type=api-endpoint
+  admin/users/update | type=api-endpoint
+  admin/users/delete | type=api-endpoint
+  admin/invites | type=api-endpoint
+  admin/invites/create | type=api-endpoint
+  admin/invites/retrieve | type=api-endpoint
+  admin/invites/list | type=api-endpoint
+  admin/invites/delete | type=api-endpoint
+  admin/api_keys | type=api-endpoint
+  admin/api_keys/list | type=api-endpoint
+  admin/api_keys/retrieve | type=api-endpoint
+  admin/api_keys/update | type=api-endpoint
+  admin/workspaces | type=api-endpoint
+  admin/workspaces/create | type=api-endpoint
+  admin/workspaces/retrieve | type=api-endpoint
+  admin/workspaces/list | type=api-endpoint
+  admin/workspaces/update | type=api-endpoint
+  admin/workspaces/archive | type=api-endpoint
+  admin/workspaces/members | type=api-endpoint
+  admin/workspaces/members/create | type=api-endpoint
+  admin/workspaces/members/retrieve | type=api-endpoint
+  admin/workspaces/members/list | type=api-endpoint
+  admin/workspaces/members/update | type=api-endpoint
+  admin/workspaces/members/delete | type=api-endpoint
+  admin/cost_report | type=api-endpoint
+  admin/cost_report/retrieve | type=api-endpoint
+  admin/usage_report | type=api-endpoint
+  admin/usage_report/retrieve_messages | type=api-endpoint
+  admin/usage_report/retrieve_claude_code | type=api-endpoint
+
+  # Beta (30)
+  beta | type=api-hub
+  beta/files | type=api-hub
+  beta/files/upload | type=api-endpoint
+  beta/files/list | type=api-endpoint
+  beta/files/retrieve_metadata | type=api-endpoint
+  beta/files/download | type=api-endpoint
+  beta/files/delete | type=api-endpoint
+  beta/messages | type=api-hub
+  beta/messages/create | type=api-endpoint
+  beta/messages/count_tokens | type=api-endpoint
+  beta/messages/batches | type=api-hub
+  beta/messages/batches/create | type=api-endpoint
+  beta/messages/batches/retrieve | type=api-endpoint
+  beta/messages/batches/list | type=api-endpoint
+  beta/messages/batches/cancel | type=api-endpoint
+  beta/messages/batches/results | type=api-endpoint
+  beta/messages/batches/delete | type=api-endpoint
+  beta/models | type=api-hub
+  beta/models/list | type=api-endpoint
+  beta/models/retrieve | type=api-endpoint
+  beta/skills | type=api-hub
+  beta/skills/create | type=api-endpoint
+  beta/skills/retrieve | type=api-endpoint
+  beta/skills/list | type=api-endpoint
+  beta/skills/delete | type=api-endpoint
+  beta/skills/versions | type=api-hub
+  beta/skills/versions/create | type=api-endpoint
+  beta/skills/versions/retrieve | type=api-endpoint
+  beta/skills/versions/list | type=api-endpoint
+  beta/skills/versions/delete | type=api-endpoint
+
+  # SDK Endpoints (450 = 10 SDKs x 45 endpoints)
+  # SDKs: typescript, python, java, go, kotlin, ruby, php, csharp, terraform, cli
+  # Pattern: /docs/en/api/{sdk}/{endpoint}
+  # 45 endpoints per SDK:
+  # Hub endpoints (type=api-hub): messages, messages/batches, models, completions, beta, beta/files, beta/messages, beta/messages/batches, beta/models, beta/skills, beta/skills/versions
+  # Action endpoints (type=api-endpoint): all others with create/list/retrieve/delete/upload/download/cancel/results/count_tokens/update
+  TEMPLATE sdk={typescript,python,java,go,kotlin,ruby,php,csharp,terraform,cli}
+    {sdk}/messages | type=api-hub
+    {sdk}/messages/create | type=api-endpoint
+    {sdk}/messages/count_tokens | type=api-endpoint
+    {sdk}/messages/batches | type=api-hub
+    {sdk}/messages/batches/create | type=api-endpoint
+    {sdk}/messages/batches/retrieve | type=api-endpoint
+    {sdk}/messages/batches/list | type=api-endpoint
+    {sdk}/messages/batches/cancel | type=api-endpoint
+    {sdk}/messages/batches/results | type=api-endpoint
+    {sdk}/messages/batches/delete | type=api-endpoint
+    {sdk}/models | type=api-hub
+    {sdk}/models/list | type=api-endpoint
+    {sdk}/models/retrieve | type=api-endpoint
+    {sdk}/completions | type=api-hub
+    {sdk}/completions/create | type=api-endpoint
+    {sdk}/beta | type=api-hub
+    {sdk}/beta/files | type=api-hub
+    {sdk}/beta/files/upload | type=api-endpoint
+    {sdk}/beta/files/list | type=api-endpoint
+    {sdk}/beta/files/retrieve_metadata | type=api-endpoint
+    {sdk}/beta/files/download | type=api-endpoint
+    {sdk}/beta/files/delete | type=api-endpoint
+    {sdk}/beta/messages | type=api-hub
+    {sdk}/beta/messages/create | type=api-endpoint
+    {sdk}/beta/messages/count_tokens | type=api-endpoint
+    {sdk}/beta/messages/batches | type=api-hub
+    {sdk}/beta/messages/batches/create | type=api-endpoint
+    {sdk}/beta/messages/batches/retrieve | type=api-endpoint
+    {sdk}/beta/messages/batches/list | type=api-endpoint
+    {sdk}/beta/messages/batches/cancel | type=api-endpoint
+    {sdk}/beta/messages/batches/results | type=api-endpoint
+    {sdk}/beta/messages/batches/delete | type=api-endpoint
+    {sdk}/beta/models | type=api-hub
+    {sdk}/beta/models/list | type=api-endpoint
+    {sdk}/beta/models/retrieve | type=api-endpoint
+    {sdk}/beta/skills | type=api-hub
+    {sdk}/beta/skills/create | type=api-endpoint
+    {sdk}/beta/skills/retrieve | type=api-endpoint
+    {sdk}/beta/skills/list | type=api-endpoint
+    {sdk}/beta/skills/delete | type=api-endpoint
+    {sdk}/beta/skills/versions | type=api-hub
+    {sdk}/beta/skills/versions/create | type=api-endpoint
+    {sdk}/beta/skills/versions/retrieve | type=api-endpoint
+    {sdk}/beta/skills/versions/list | type=api-endpoint
+    {sdk}/beta/skills/versions/delete | type=api-endpoint
+
+[Test & Evaluate] 8 pages | prefix=/docs/en/test-and-evaluate/
+  develop-tests | type=best-practices
+  eval-tool | type=best-practices
+  strengthen-guardrails/handle-streaming-refusals | type=best-practices
+  strengthen-guardrails/increase-consistency | type=best-practices
+  strengthen-guardrails/mitigate-jailbreaks | type=best-practices
+  strengthen-guardrails/reduce-hallucinations | type=best-practices
+  strengthen-guardrails/reduce-latency | type=best-practices
+  strengthen-guardrails/reduce-prompt-leak | type=best-practices
+
+[Release Notes] 2 pages | prefix=/docs/en/release-notes/
+  overview | type=overview
+  system-prompts | type=changelog
+
+[Resources] 1 page
+  /docs/en/resources/overview | type=overview
+
+== NAVIGATION ==
+
+RULES:
+  1. Start with section matching user intent
+  2. Use prefix + relative path to construct full URL
+  3. For API SDK endpoints, expand TEMPLATE: replace {sdk} with target SDK name
+  4. Prefer overview pages when intent is broad
+  5. Prefer specific pages when intent is narrow
+
+INTENT MAP:
+  getting-started    → Introduction
+  models, pricing    → About Claude
+  prompts, features  → Build with Claude
+  tools, mcp, agents → Agents & Tools
+  claude-code, sdk   → Agent SDK
+  api, endpoints     → API Reference
+  testing, evals     → Test & Evaluate
+  changelog          → Release Notes
+  resources          → Resources

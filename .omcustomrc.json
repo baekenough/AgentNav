@@ -1,0 +1,33 @@
+{
+  "configVersion": 1,
+  "version": "0.0.0",
+  "language": "ko",
+  "installedAt": "2026-03-07T08:43:14.855Z",
+  "lastUpdated": "2026-03-07T08:43:14.856Z",
+  "installedComponents": [
+    "rules",
+    "agents",
+    "skills",
+    "guides",
+    "hooks",
+    "contexts",
+    "ontology",
+    "entry-md"
+  ],
+  "componentVersions": {},
+  "preferences": {
+    "logLevel": "info",
+    "colors": true,
+    "showProgress": true,
+    "confirmPrompts": true,
+    "autoBackup": true
+  },
+  "sourceRepo": "https://github.com/baekenough/oh-my-customcode",
+  "autoUpdate": {
+    "enabled": false,
+    "checkIntervalHours": 24,
+    "autoApplyMinor": false
+  },
+  "preserveFiles": [],
+  "customComponents": []
+}

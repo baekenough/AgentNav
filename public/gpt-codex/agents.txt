@@ -1,0 +1,143 @@
+# agents.txt v0.1
+# Codex Documentation — https://developers.openai.com
+# Total: 69 pages | Last updated: 2026-03-07
+
+SITE: Codex Documentation
+URL: https://developers.openai.com
+PAGES: 69
+SECTIONS: 14
+
+== SCHEMA ==
+# Formal grammar for parsing this file
+# HEADER: key-value pairs (KEY: value)
+# SECTION: [Name] N pages | prefix=/path/
+# PAGE: relative-path | type=TYPE
+# PAGE (absolute): /full/path | type=TYPE
+# NAVIGATION: RULES (numbered), INTENT MAP (intent → section)
+# TYPES: overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, changelog
+# DELIMITER: | separates path from type
+# PREFIX RULE: full_url = URL + path
+
+== SECTIONS ==
+
+[Getting Started] 4 pages
+  /codex | type=overview
+  /codex/quickstart | type=tutorial
+  /codex/explore | type=use-case
+  /codex/pricing | type=reference
+
+[Concepts] 7 pages
+  /codex/prompting | type=guide
+  /codex/concepts/customization | type=guide
+  /codex/concepts/sandboxing | type=guide
+  /codex/concepts/multi-agents | type=guide
+  /codex/workflows | type=guide
+  /codex/models | type=reference
+  /codex/concepts/cyber-safety | type=guide
+
+[Using Codex — App] 10 pages | prefix=/codex/app/
+  /codex/app | type=overview
+  features | type=tool-reference
+  settings | type=reference
+  review | type=guide
+  automations | type=guide
+  worktrees | type=guide
+  local-environments | type=guide
+  commands | type=reference
+  windows | type=guide
+  troubleshooting | type=guide
+
+[Using Codex — IDE Extension] 5 pages | prefix=/codex/ide/
+  /codex/ide | type=overview
+  features | type=tool-reference
+  settings | type=reference
+  commands | type=reference
+  slash-commands | type=reference
+
+[Using Codex — CLI] 4 pages | prefix=/codex/cli/
+  /codex/cli | type=overview
+  features | type=tool-reference
+  reference | type=reference
+  slash-commands | type=reference
+
+[Using Codex — Web] 3 pages | prefix=/codex/cloud/
+  /codex/cloud | type=overview
+  environments | type=guide
+  internet-access | type=guide
+
+[Integrations] 3 pages | prefix=/codex/integrations/
+  github | type=guide
+  slack | type=guide
+  linear | type=guide
+
+[Codex Security] 4 pages | prefix=/codex/security/
+  /codex/security | type=overview
+  setup | type=tutorial
+  threat-model | type=guide
+  faq | type=reference
+
+[Configuration] 10 pages
+  /codex/config-basic | type=guide
+  /codex/config-advanced | type=guide
+  /codex/config-reference | type=reference
+  /codex/config-sample | type=reference
+  /codex/speed | type=guide
+  /codex/rules | type=guide
+  /codex/guides/agents-md | type=guide
+  /codex/mcp | type=guide
+  /codex/skills | type=guide
+  /codex/multi-agent | type=guide
+
+[Administration] 6 pages
+  /codex/auth | type=guide
+  /codex/agent-approvals-security | type=guide
+  /codex/enterprise/admin-setup | type=tutorial
+  /codex/enterprise/governance | type=guide
+  /codex/enterprise/managed-configuration | type=guide
+  /codex/windows | type=guide
+
+[Automation] 5 pages
+  /codex/noninteractive | type=guide
+  /codex/sdk | type=sdk-guide
+  /codex/app-server | type=guide
+  /codex/guides/agents-sdk | type=sdk-guide
+  /codex/github-action | type=guide
+
+[Learn] 2 pages
+  /codex/videos | type=reference
+  /codex/guides/build-ai-native-engineering-team | type=guide
+
+[Community] 3 pages
+  /codex/ambassadors | type=overview
+  /codex/community/codex-for-oss | type=overview
+  /codex/community/meetups | type=overview
+
+[Releases] 3 pages
+  /codex/changelog | type=changelog
+  /codex/feature-maturity | type=reference
+  /codex/open-source | type=reference
+
+== NAVIGATION ==
+
+RULES:
+  1. Start with "Getting Started" for initial setup
+  2. Use "Concepts" section for understanding prompting, workflows, and models
+  3. Platform-specific guides: App (desktop), IDE (VS Code), CLI (terminal), Web (cloud)
+  4. Configuration covers AGENTS.md, MCP, Skills, Rules, and speed optimization
+  5. Enterprise setup in Administration section
+  6. CI/CD automation via Non-interactive Mode and GitHub Action
+
+INTENT MAP:
+  getting started     → Getting Started
+  how to prompt       → Concepts
+  desktop app         → Using Codex — App
+  vs code / ide       → Using Codex — IDE Extension
+  terminal / cli      → Using Codex — CLI
+  cloud / web         → Using Codex — Web
+  github / slack      → Integrations
+  security            → Codex Security
+  config / setup      → Configuration
+  enterprise / admin  → Administration
+  automation / ci     → Automation
+  sdk                 → Automation
+  changelog           → Releases

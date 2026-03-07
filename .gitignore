@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# oh-my-customcode framework (should not be in this repo)
+.claude/
