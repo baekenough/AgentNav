@@ -53,6 +53,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Restore hash cache
+        uses: actions/cache/restore@v4
+        with:
+          path: scripts/.cache
+          key: doc-hashes-${{ github.sha }}
+          restore-keys: doc-hashes-
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -67,7 +74,7 @@ jobs:
         id: detect
         run: |
           mkdir -p scripts/.cache
-          python scripts/detect_changes.py --verbose 2>&1 | tee /tmp/detect-output.txt
+          python scripts/detect_changes.py --verbose 2>&1 | tee /tmp/detect-output.txt || true
           echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
 
           # Parse detection result
@@ -139,20 +146,12 @@ jobs:
           fi
         timeout-minutes: 2
 
-      - name: Commit hash cache
-        if: steps.detect.outputs.changes_detected == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          if git diff --quiet scripts/.cache/; then
-            echo "No hash cache changes to commit"
-          else
-            git add scripts/.cache/hashes.json
-            git commit -m "chore: update documentation hash cache"
-            git push
-          fi
-        timeout-minutes: 2
+      - name: Save hash cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: scripts/.cache
+          key: doc-hashes-${{ github.sha }}
 
   # ===========================================================================
   # Job 2: Regenerate all agents.* formats from agents.json
@@ -179,11 +178,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-          cache: "pip"
-
-      - name: Install dependencies
-        run: pip install -r scripts/requirements.txt
-        timeout-minutes: 2
 
       - name: Generate all formats from JSON
         run: python scripts/generate_formats.py --all
@@ -225,27 +219,6 @@ jobs:
     environment: production
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Pull latest changes
-        run: git pull origin "$GITHUB_REF_NAME"
-        timeout-minutes: 1
-
-      - name: Build Docker image
-        env:
-          IMAGE_NAME: ${{ env.DOCKER_IMAGE }}
-        run: docker build -t "${IMAGE_NAME}:latest" .
-        timeout-minutes: 5
-
-      - name: Save Docker image
-        env:
-          IMAGE_NAME: ${{ env.DOCKER_IMAGE }}
-        run: docker save "${IMAGE_NAME}:latest" | gzip > "/tmp/${IMAGE_NAME}.tar.gz"
-        timeout-minutes: 3
-
       - name: Setup SSH key
         env:
           SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
@@ -258,19 +231,6 @@ jobs:
           ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
         timeout-minutes: 1
 
-      - name: Transfer image to server
-        env:
-          SSH_HOST: ${{ secrets.DEPLOY_HOST }}
-          SSH_PORT: ${{ secrets.DEPLOY_PORT }}
-          SSH_USER: ${{ secrets.DEPLOY_USER }}
-          IMAGE_NAME: ${{ env.DOCKER_IMAGE }}
-        run: |
-          scp -i ~/.ssh/deploy_key \
-            -P "$SSH_PORT" \
-            "/tmp/${IMAGE_NAME}.tar.gz" \
-            "${SSH_USER}@${SSH_HOST}:~/agentnav/"
-        timeout-minutes: 5
-
       - name: Deploy on remote server
         env:
           SSH_HOST: ${{ secrets.DEPLOY_HOST }}
@@ -281,8 +241,9 @@ jobs:
           ssh -i ~/.ssh/deploy_key \
             -p "$SSH_PORT" \
             "${SSH_USER}@${SSH_HOST}" \
-            "cd ~/agentnav/ && \
-             docker load < ${IMAGE_NAME}.tar.gz && \
+            "cd ~/agentnav && \
+             git pull && \
+             docker build -t ${IMAGE_NAME}:latest . && \
              docker stop agentnav 2>/dev/null || true && \
              docker rm agentnav 2>/dev/null || true && \
              docker run -d \
@@ -290,9 +251,8 @@ jobs:
                --restart unless-stopped \
                -p 8080:80 \
                ${IMAGE_NAME}:latest && \
-             rm -f ${IMAGE_NAME}.tar.gz && \
              echo 'Deployed successfully at $(date -u)'"
-        timeout-minutes: 3
+        timeout-minutes: 10
 
       - name: Cleanup SSH key
         if: always()

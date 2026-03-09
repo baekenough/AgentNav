@@ -275,8 +275,23 @@ def run(
     source_filter: str | None,
     verbose: bool,
     init_mode: bool,
-) -> int:
-    """Execute the change detection and return the process exit code."""
+) -> dict[str, Any]:
+    """Execute change detection and return the report dict.
+
+    The returned dict has the shape::
+
+        {
+            "changes_detected": bool,
+            "checked_at": str,          # ISO-8601 UTC
+            "sources": {
+                "<source-name>": {
+                    "<entry-key>": {"changed": bool, ...},
+                    ...
+                },
+                ...
+            },
+        }
+    """
     logging.basicConfig(
         level=logging.DEBUG if verbose else logging.WARNING,
         format="%(levelname)s %(message)s",
@@ -308,14 +323,69 @@ def run(
 
     _save_cache(cache)
 
-    report = {
+    return {
         "changes_detected": any_changed,
         "checked_at": checked_at,
         "sources": all_results,
     }
-    print(json.dumps(report, indent=2))
 
-    return 0 if any_changed else 1
+
+def _build_gha_markers(report: dict[str, Any]) -> str:
+    """Return GitHub Actions-compatible marker lines for the given report.
+
+    Format::
+
+        CHANGES_DETECTED=true
+        SOURCE_NAME=claude-code,gpt-codex
+        REPORT_START
+        ## Changes detected at <timestamp>
+        ...
+        REPORT_END
+
+    Only sources with at least one changed entry appear in SOURCE_NAME and
+    the REPORT block.  When no changes are detected, the REPORT block is
+    omitted entirely.
+    """
+    any_changed: bool = report["changes_detected"]
+    checked_at: str = report["checked_at"]
+    sources: dict[str, Any] = report["sources"]
+
+    changed_sources = [
+        name
+        for name, entries in sources.items()
+        if any(v.get("changed") for v in entries.values())
+    ]
+
+    lines: list[str] = [
+        f"CHANGES_DETECTED={'true' if any_changed else 'false'}",
+        f"SOURCE_NAME={','.join(changed_sources)}",
+    ]
+
+    if not any_changed:
+        return "\n".join(lines)
+
+    report_lines: list[str] = [
+        "REPORT_START",
+        f"## Changes detected at {checked_at}",
+    ]
+
+    for source_name in changed_sources:
+        entries = sources[source_name]
+        report_lines.append(f"\n### {source_name}")
+        for entry_key, entry_data in entries.items():
+            if not entry_data.get("changed"):
+                continue
+            detail_parts: list[str] = ["changed"]
+            if "latest_tag" in entry_data:
+                detail_parts.append(f"latest: {entry_data['latest_tag']}")
+            if "url" in entry_data:
+                detail_parts.append(entry_data["url"])
+            detail = " (" + ", ".join(detail_parts[1:]) + ")" if len(detail_parts) > 1 else ""
+            report_lines.append(f"- **{entry_key}**: changed{detail}")
+
+    report_lines.append("REPORT_END")
+    lines.extend(report_lines)
+    return "\n".join(lines)
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -344,4 +414,8 @@ def _build_parser() -> argparse.ArgumentParser:
 if __name__ == "__main__":
     parser = _build_parser()
     args = parser.parse_args()
-    sys.exit(run(args.source, args.verbose, args.init))
+    report = run(args.source, args.verbose, args.init)
+    print(json.dumps(report, indent=2))
+    print()
+    print(_build_gha_markers(report))
+    sys.exit(0 if report["changes_detected"] else 1)
