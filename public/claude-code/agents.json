@@ -1,5 +1,5 @@
 {
-  "agents_txt_version": "0.1",
+  "agents_txt_version": "0.2",
   "site": {
     "name": "Claude Documentation",
     "url": "https://platform.claude.com/docs",
@@ -581,37 +581,37 @@
             {
               "path": "/docs/en/api/sdks/python",
               "title": "Python SDK",
-              "type": "sdk-overview"
+              "type": "sdk-guide"
             },
             {
               "path": "/docs/en/api/sdks/typescript",
               "title": "TypeScript SDK",
-              "type": "sdk-overview"
+              "type": "sdk-guide"
             },
             {
               "path": "/docs/en/api/sdks/java",
               "title": "Java SDK",
-              "type": "sdk-overview"
+              "type": "sdk-guide"
             },
             {
               "path": "/docs/en/api/sdks/go",
               "title": "Go SDK",
-              "type": "sdk-overview"
+              "type": "sdk-guide"
             },
             {
               "path": "/docs/en/api/sdks/csharp",
               "title": "C# SDK",
-              "type": "sdk-overview"
+              "type": "sdk-guide"
             },
             {
               "path": "/docs/en/api/sdks/ruby",
               "title": "Ruby SDK",
-              "type": "sdk-overview"
+              "type": "sdk-guide"
             },
             {
               "path": "/docs/en/api/sdks/php",
               "title": "PHP SDK",
-              "type": "sdk-overview"
+              "type": "sdk-guide"
             }
           ]
         },

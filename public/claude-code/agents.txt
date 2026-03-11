@@ -1,4 +1,4 @@
-# agents.txt v0.1
+# agents.txt v0.2
 # Claude Documentation — https://platform.claude.com/docs
 # Total: 651 pages | Last updated: 2026-03-07
 
@@ -140,13 +140,13 @@ SECTIONS: 9
   beta-headers | type=api-reference
 
   # SDK Overviews (7)
-  sdks/python | type=sdk-overview
-  sdks/typescript | type=sdk-overview
-  sdks/java | type=sdk-overview
-  sdks/go | type=sdk-overview
-  sdks/csharp | type=sdk-overview
-  sdks/ruby | type=sdk-overview
-  sdks/php | type=sdk-overview
+  sdks/python | type=sdk-guide
+  sdks/typescript | type=sdk-guide
+  sdks/java | type=sdk-guide
+  sdks/go | type=sdk-guide
+  sdks/csharp | type=sdk-guide
+  sdks/ruby | type=sdk-guide
+  sdks/php | type=sdk-guide
 
   # Messages (10)
   messages | type=api-hub

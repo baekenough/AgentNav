@@ -325,6 +325,7 @@ def run(
 
     return {
         "changes_detected": any_changed,
+        "severity": "metadata",
         "checked_at": checked_at,
         "sources": all_results,
     }
@@ -358,6 +359,7 @@ def _build_gha_markers(report: dict[str, Any]) -> str:
 
     lines: list[str] = [
         f"CHANGES_DETECTED={'true' if any_changed else 'false'}",
+        f"CHANGE_SEVERITY={report.get('severity', 'metadata')}",
         f"SOURCE_NAME={','.join(changed_sources)}",
     ]
 
