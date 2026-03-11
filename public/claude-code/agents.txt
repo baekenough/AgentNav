@@ -171,37 +171,37 @@ SECTIONS: 9
 
   # Admin (34)
   admin | type=api-hub
-  admin/organizations | type=api-endpoint
+  admin/organizations | type=api-hub
   admin/organizations/me | type=api-endpoint
-  admin/users | type=api-endpoint
+  admin/users | type=api-hub
   admin/users/list | type=api-endpoint
   admin/users/retrieve | type=api-endpoint
   admin/users/update | type=api-endpoint
   admin/users/delete | type=api-endpoint
-  admin/invites | type=api-endpoint
+  admin/invites | type=api-hub
   admin/invites/create | type=api-endpoint
   admin/invites/retrieve | type=api-endpoint
   admin/invites/list | type=api-endpoint
   admin/invites/delete | type=api-endpoint
-  admin/api_keys | type=api-endpoint
+  admin/api_keys | type=api-hub
   admin/api_keys/list | type=api-endpoint
   admin/api_keys/retrieve | type=api-endpoint
   admin/api_keys/update | type=api-endpoint
-  admin/workspaces | type=api-endpoint
+  admin/workspaces | type=api-hub
   admin/workspaces/create | type=api-endpoint
   admin/workspaces/retrieve | type=api-endpoint
   admin/workspaces/list | type=api-endpoint
   admin/workspaces/update | type=api-endpoint
   admin/workspaces/archive | type=api-endpoint
-  admin/workspaces/members | type=api-endpoint
+  admin/workspaces/members | type=api-hub
   admin/workspaces/members/create | type=api-endpoint
   admin/workspaces/members/retrieve | type=api-endpoint
   admin/workspaces/members/list | type=api-endpoint
   admin/workspaces/members/update | type=api-endpoint
   admin/workspaces/members/delete | type=api-endpoint
-  admin/cost_report | type=api-endpoint
+  admin/cost_report | type=api-hub
   admin/cost_report/retrieve | type=api-endpoint
-  admin/usage_report | type=api-endpoint
+  admin/usage_report | type=api-hub
   admin/usage_report/retrieve_messages | type=api-endpoint
   admin/usage_report/retrieve_claude_code | type=api-endpoint
 
