@@ -134,6 +134,13 @@ Every page in an agents.txt response must be annotated with a `type` field drawn
           "type": "string — one of the 12 content types",
           "method": "string — HTTP method, required for api-endpoint type (GET|POST|PATCH|DELETE)"
         }
+      ],
+      "subsections": [
+        {
+          "name": "string — subsection display name",
+          "page_count": "integer — number of pages in this subsection",
+          "pages": ["(same structure as sections[].pages)"]
+        }
       ]
     }
   ],
@@ -169,6 +176,10 @@ Every page in an agents.txt response must be annotated with a `type` field drawn
 | `pages[].title` | Yes | |
 | `pages[].type` | Yes | Must be one of the 12 types |
 | `pages[].method` | Conditional | Required when `type` is `api-endpoint` |
+| `sections[].subsections` | No | Use for sections with internal grouping (e.g., API Reference with Infrastructure, Messages, Admin sub-groups) |
+| `subsections[].name` | Yes* | Required when subsections is present |
+| `subsections[].page_count` | Yes* | Required when subsections is present |
+| `subsections[].pages` | Yes* | Required when subsections is present |
 | `sdk_pattern` | No | Use when 2+ SDKs share the same endpoint structure |
 | `navigation` | No | Use to provide intent-to-section shortcuts |
 
@@ -227,7 +238,11 @@ When a documentation site has multiple SDKs (e.g., Python, TypeScript, Java) eac
     "messages/create",
     "models",
     "models/list"
-  ]
+  ],
+  "endpoint_types": {
+    "hub_pages": ["messages", "messages/batches", "models"],
+    "endpoint_pages_type": "api-endpoint"
+  }
 }
 ```
 
@@ -237,6 +252,7 @@ When a documentation site has multiple SDKs (e.g., Python, TypeScript, Java) eac
 - `pages_per_sdk`: the number of pages each SDK exposes (must be consistent across all SDKs listed).
 - `url_template`: a URL template using `{sdk}` as a placeholder. Must match the actual URL structure.
 - `endpoint_paths`: the list of path suffixes that, combined with `url_template`, produce the full set of SDK pages. The length of this list must equal `pages_per_sdk`.
+- `endpoint_types` (optional): classifies which endpoint paths are hub/index pages (`hub_pages`, type `api-hub`) vs individual endpoints (type specified by `endpoint_pages_type`, default `api-endpoint`).
 
 ### When to Use
 
@@ -266,6 +282,21 @@ The optional `navigation` field provides intent-to-section shortcuts. It is a fl
 ```
 
 Navigation hints are advisory. Agents should use them to reduce search scope when the user's intent is clear, but must not treat them as authoritative routing rules.
+
+### Implementation Variations
+
+The `navigation` field supports flexible structures beyond flat key-value maps. Implementations may use nested objects for grouping:
+
+```json
+"navigation": {
+  "section_selection": {
+    "concept_or_feature": "/docs/en/build-with-claude/{feature}",
+    "api_endpoint": "/docs/en/api/{resource}/{action}"
+  }
+}
+```
+
+Parsers should handle both flat and nested navigation structures gracefully.
 
 ---
 

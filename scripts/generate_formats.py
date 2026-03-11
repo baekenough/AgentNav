@@ -1105,19 +1105,6 @@ _CC_INTRO_DESCRIPTIONS: dict[str, str] = {
     "/docs/en/get-started": "Quick start tutorial",
 }
 
-# TXT admin section: sub-resource hub pages become api-endpoint
-# (only the root 'admin' page keeps api-hub)
-_TXT_ADMIN_FORCE_ENDPOINT_PATHS = {
-    "/docs/en/api/admin/organizations",
-    "/docs/en/api/admin/users",
-    "/docs/en/api/admin/invites",
-    "/docs/en/api/admin/api_keys",
-    "/docs/en/api/admin/workspaces",
-    "/docs/en/api/admin/workspaces/members",
-    "/docs/en/api/admin/cost_report",
-    "/docs/en/api/admin/usage_report",
-}
-
 
 def _txt_build_claude_intro() -> list[str]:
     """Render Introduction section for claude-code TXT."""
@@ -1159,10 +1146,7 @@ def _txt_build_api_ref(section: dict, sdk_pattern: dict | None) -> list[str]:
             else:
                 rel = path
 
-            # Determine type, applying admin override
             page_type = page.get("type", "")
-            if path in _TXT_ADMIN_FORCE_ENDPOINT_PATHS:
-                page_type = "api-endpoint"
 
             lines.append(f"  {rel} | type={page_type}")
 
