@@ -15,7 +15,7 @@ SECTIONS: 9
 # PAGE (absolute): /full/path | type=TYPE — description (optional)
 # TEMPLATE: TEMPLATE sdk={list} then indented {sdk}/endpoint lines
 # NAVIGATION: RULES (numbered), INTENT MAP (intent → section)
-# TYPES: overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, api-reference, api-endpoint, api-hub, sdk-overview, best-practices, changelog
+# TYPES: overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, api-reference, api-endpoint, api-hub, best-practices, changelog
 # DELIMITER: | separates path from type; — separates type from description
 # PREFIX RULE: full_url = prefix + "/" + relative_path
 

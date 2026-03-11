@@ -34,7 +34,6 @@ PAGE_TYPES_ORDER = [
     "api-reference",
     "api-endpoint",
     "api-hub",
-    "sdk-overview",
     "best-practices",
     "changelog",
 ]
@@ -1078,7 +1077,7 @@ _TXT_SCHEMA_CLAUDE = (
     "# TEMPLATE: TEMPLATE sdk={list} then indented {sdk}/endpoint lines\n"
     "# NAVIGATION: RULES (numbered), INTENT MAP (intent → section)\n"
     "# TYPES: overview, tutorial, guide, reference, use-case, tool-reference, "
-    "sdk-guide, api-reference, api-endpoint, api-hub, sdk-overview, best-practices, changelog\n"
+    "sdk-guide, api-reference, api-endpoint, api-hub, best-practices, changelog\n"
     "# DELIMITER: | separates path from type; — separates type from description\n"
     "# PREFIX RULE: full_url = prefix + \"/\" + relative_path"
 )
