@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<agents version="0.1">
+<agents version="0.2">
   <site name="Codex Documentation" url="https://developers.openai.com" total-pages="69" last-updated="2026-03-07" />
 
   <sections>

@@ -86,42 +86,30 @@ jobs:
           else
             echo "changes_detected=false" >> "$GITHUB_OUTPUT"
           fi
+          SEVERITY=$(grep "^CHANGE_SEVERITY=" /tmp/detect-output.txt | cut -d= -f2 || echo "metadata")
+          echo "severity=$SEVERITY" >> "$GITHUB_OUTPUT"
+
         timeout-minutes: 5
 
-      - name: Create GitHub Issue on changes
+      - name: Create or update GitHub Issue
         if: steps.detect.outputs.changes_detected == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WORKFLOW_EVENT: ${{ github.event_name }}
         run: |
-          # Read source name from detection output, fallback to generic
           SOURCE_NAME=$(grep "^SOURCE_NAME=" /tmp/detect-output.txt | cut -d= -f2 || echo "upstream")
-          REPORT_BODY=$(cat /tmp/report-body.txt 2>/dev/null || echo "Documentation changes detected. Run regenerate to update formats.")
+          SEVERITY="${{ steps.detect.outputs.severity }}"
+          REPORT_BODY=$(cat /tmp/report-body.txt 2>/dev/null || echo "Documentation changes detected.")
           TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
 
-          # Check for existing open issue to avoid duplicates
-          EXISTING=$(gh issue list \
-            --label "doc-update,automated" \
-            --state open \
-            --limit 1 \
-            --json number \
-            --jq '.[0].number // empty')
-
-          if [ -n "$EXISTING" ]; then
-            echo "Appending to existing issue #${EXISTING}"
-            COMMENT_BODY=$(cat <<EOF
-          ## Update detected — ${TIMESTAMP}
-
-          ${REPORT_BODY}
-          EOF
-          )
-            gh issue comment "$EXISTING" --body "$COMMENT_BODY"
-          else
+          if [ "$SEVERITY" = "structural" ]; then
+            # Structural change: always create new issue
             ISSUE_BODY=$(cat <<EOF
-          ## Documentation Change Report
+          ## Documentation Structure Change Report
 
           **Detected at**: ${TIMESTAMP}
           **Source**: ${SOURCE_NAME}
+          **Severity**: structural (agents.json affected)
           **Triggered by**: ${WORKFLOW_EVENT}
 
           ---
@@ -143,6 +131,47 @@ jobs:
               --title "Documentation update detected — ${SOURCE_NAME}" \
               --body "$ISSUE_BODY" \
               --label "doc-update,automated"
+          else
+            # Metadata change: append to existing or create meta-only issue
+            EXISTING=$(gh issue list \
+              --label "meta-only,automated" \
+              --state open \
+              --limit 1 \
+              --json number \
+              --jq '.[0].number // empty')
+
+            if [ -n "$EXISTING" ]; then
+              COMMENT_BODY=$(cat <<EOF
+          ## Update detected — ${TIMESTAMP}
+
+          ${REPORT_BODY}
+          EOF
+          )
+              gh issue comment "$EXISTING" --body "$COMMENT_BODY"
+            else
+              ISSUE_BODY=$(cat <<EOF
+          ## Upstream Metadata Change Report
+
+          **Detected at**: ${TIMESTAMP}
+          **Source**: ${SOURCE_NAME}
+          **Severity**: metadata (no agents.json impact)
+          **Triggered by**: ${WORKFLOW_EVENT}
+
+          ---
+
+          ${REPORT_BODY}
+
+          ---
+
+          _Metadata-only changes are tracked here. Close this issue when reviewed._
+          _This issue was created automatically by the sync-docs workflow._
+          EOF
+          )
+              gh issue create \
+                --title "Upstream metadata changes detected — ${SOURCE_NAME}" \
+                --body "$ISSUE_BODY" \
+                --label "meta-only,automated"
+            fi
           fi
         timeout-minutes: 2
 

@@ -1,7 +1,7 @@
 # agents.txt Specification v0.2
 
-**Status**: Draft
-**Date**: 2026-03-07
+**Status**: Published
+**Date**: 2026-03-11
 **Reference implementation**: [agentnav.baekenough.com](https://agentnav.baekenough.com)
 
 ---
@@ -102,6 +102,8 @@ Every page in an agents.txt response must be annotated with a `type` field drawn
 | `api-hub` | API section hub or landing page aggregating multiple endpoints | `messages`, `admin`, `beta` |
 | `best-practices` | Best practice, evaluation, and guardrail guidance | `reduce-hallucinations`, `reduce-latency`, `strengthen-guardrails` |
 | `changelog` | Change log or release note entries | `release-notes/overview`, `release-notes/system-prompts` |
+
+> **Note (v0.1 migration):** The `sdk-overview` type used in v0.1 has been replaced by `sdk-guide` in v0.2. Implementations upgrading from v0.1 should reclassify `sdk-overview` pages as `sdk-guide`.
 
 **Classification rule**: choose the most specific type that applies. `api-endpoint` takes precedence over `api-reference`; `tool-reference` takes precedence over `guide`.
 
@@ -328,7 +330,7 @@ SDKs: python, typescript, java, go, csharp, ruby, php, kotlin, terraform, cli
 
 ## 9. Verification Methodology
 
-The effectiveness of an agents.txt response is measured using the NAV-AGENT verification framework (see `/Users/sangyi/workspace/projects/AgentNav/NAV-AGENT.md`).
+The effectiveness of an agents.txt response is measured using the NAV-AGENT verification framework (see `../../NAV-AGENT.md`).
 
 A compliant agents.txt implementation should score at least **B (70%+)** on the NAV-AGENT verification rubric.
 
@@ -399,6 +401,6 @@ Parsers implementing v0.2 must ignore unknown fields rather than rejecting the d
 ## 12. References
 
 - [RFC 8615 — Well-Known URIs](https://www.rfc-editor.org/rfc/rfc8615)
-- [NAV-AGENT Verification Framework](/Users/sangyi/workspace/projects/AgentNav/NAV-AGENT.md)
-- [Ground Truth Navigation Map](/Users/sangyi/workspace/projects/AgentNav/docs/plan/ground-truth.md)
+- [NAV-AGENT Verification Framework](../../NAV-AGENT.md)
+- [Ground Truth Navigation Map](../plan/ground-truth.md)
 - [AgentNav Reference Implementation](https://agentnav.baekenough.com)

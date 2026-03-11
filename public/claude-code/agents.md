@@ -1,11 +1,11 @@
 ---
-agents_txt_version: "0.1"
+agents_txt_version: "0.2"
 format: markdown
 schema:
   sections: "## heading = section name"
   subsections: "### heading = subsection grouping"
   pages: "- [title](path) — description {type}"
-  page_types: [overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, api-reference, api-endpoint, api-hub, sdk-overview, best-practices, changelog]
+  page_types: [overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, api-reference, api-endpoint, api-hub, best-practices, changelog]
   sdk_pattern: "/docs/en/api/{sdk}/{endpoint-path}"
   navigation: "See ## Navigation Guide section"
 ---
@@ -13,7 +13,7 @@ schema:
 # Claude Documentation
 
 - **URL**: https://platform.claude.com/docs
-- **Standard**: agents.txt v0.1 (AgentNav PoC)
+- **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 651
 - **Last Updated**: 2026-03-07
 
@@ -215,13 +215,13 @@ schema:
 
 ### SDK Overviews (7 pages)
 
-- [Python SDK](/docs/en/api/sdks/python) {sdk-overview}
-- [TypeScript SDK](/docs/en/api/sdks/typescript) {sdk-overview}
-- [Java SDK](/docs/en/api/sdks/java) {sdk-overview}
-- [Go SDK](/docs/en/api/sdks/go) {sdk-overview}
-- [C# SDK](/docs/en/api/sdks/csharp) {sdk-overview}
-- [Ruby SDK](/docs/en/api/sdks/ruby) {sdk-overview}
-- [PHP SDK](/docs/en/api/sdks/php) {sdk-overview}
+- [Python SDK](/docs/en/api/sdks/python) {sdk-guide}
+- [TypeScript SDK](/docs/en/api/sdks/typescript) {sdk-guide}
+- [Java SDK](/docs/en/api/sdks/java) {sdk-guide}
+- [Go SDK](/docs/en/api/sdks/go) {sdk-guide}
+- [C# SDK](/docs/en/api/sdks/csharp) {sdk-guide}
+- [Ruby SDK](/docs/en/api/sdks/ruby) {sdk-guide}
+- [PHP SDK](/docs/en/api/sdks/php) {sdk-guide}
 
 ### Messages API (10 pages)
 

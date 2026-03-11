@@ -1,5 +1,5 @@
 ---
-agents_txt_version: "0.1"
+agents_txt_version: "0.2"
 format: markdown
 schema:
   sections: "## heading = section name"
@@ -12,7 +12,7 @@ schema:
 # Codex Documentation
 
 - **URL**: https://developers.openai.com
-- **Standard**: agents.txt v0.1 (AgentNav PoC)
+- **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 69
 - **Last Updated**: 2026-03-07
 

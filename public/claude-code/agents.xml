@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<agents version="0.1">
+<agents version="0.2">
   <site name="Claude Documentation" url="https://platform.claude.com/docs" total-pages="651" last-updated="2026-03-07" />
 
   <sections>
@@ -132,13 +132,13 @@
       <page path="/docs/en/api/beta-headers" title="Beta headers" type="api-reference" />
 
       <!-- SDK Overviews -->
-      <page path="/docs/en/api/sdks/python" title="Python SDK" type="sdk-overview" />
-      <page path="/docs/en/api/sdks/typescript" title="TypeScript SDK" type="sdk-overview" />
-      <page path="/docs/en/api/sdks/java" title="Java SDK" type="sdk-overview" />
-      <page path="/docs/en/api/sdks/go" title="Go SDK" type="sdk-overview" />
-      <page path="/docs/en/api/sdks/csharp" title="C# SDK" type="sdk-overview" />
-      <page path="/docs/en/api/sdks/ruby" title="Ruby SDK" type="sdk-overview" />
-      <page path="/docs/en/api/sdks/php" title="PHP SDK" type="sdk-overview" />
+      <page path="/docs/en/api/sdks/python" title="Python SDK" type="sdk-guide" />
+      <page path="/docs/en/api/sdks/typescript" title="TypeScript SDK" type="sdk-guide" />
+      <page path="/docs/en/api/sdks/java" title="Java SDK" type="sdk-guide" />
+      <page path="/docs/en/api/sdks/go" title="Go SDK" type="sdk-guide" />
+      <page path="/docs/en/api/sdks/csharp" title="C# SDK" type="sdk-guide" />
+      <page path="/docs/en/api/sdks/ruby" title="Ruby SDK" type="sdk-guide" />
+      <page path="/docs/en/api/sdks/php" title="PHP SDK" type="sdk-guide" />
 
       <!-- Messages -->
       <page path="/docs/en/api/messages" title="Messages" type="api-hub" />
