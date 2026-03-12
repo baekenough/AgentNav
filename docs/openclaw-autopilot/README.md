@@ -25,8 +25,11 @@ OpenClaw를 control plane으로 두고 AgentNav를 운영 자동화하기 위한
 
 ## 참고
 
-- `v3/workflows/*.example.yml` 는 **예시 템플릿**입니다.
-- 실제 운영 repo에 적용할 때는 해당 repo의 스크립트/의존성 구조에 맞게 조정 후 `.github/workflows/`로 옮겨 사용하세요.
+- 활성 workflow(표준 위치):
+  - `.github/workflows/agentnav-ci.yml`
+  - `.github/workflows/agentnav-deploy-staging.yml`
+  - `.github/workflows/agentnav-deploy-prod.yml`
+- `v3/workflows/*.example.yml` 는 설계 문서에 포함된 **원본 예시 템플릿**입니다.
 
 ## main 브랜치 보호
 

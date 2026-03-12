@@ -1,0 +1,34 @@
+name: agentnav-deploy-prod
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.sha }}
+
+      - name: Deploy to production
+        run: |
+          if [ -x scripts/deploy_prod.sh ]; then
+            ./scripts/deploy_prod.sh ${{ github.event.inputs.sha }}
+          else
+            echo "scripts/deploy_prod.sh not found/executable, skip"
+          fi
+
+      - name: Health check
+        run: |
+          if [ -x scripts/healthcheck_prod.sh ]; then
+            ./scripts/healthcheck_prod.sh
+          else
+            echo "scripts/healthcheck_prod.sh not found/executable, skip"
+          fi
