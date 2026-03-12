@@ -1,34 +1,34 @@
-# AgentNav Auto-Pilot MVP Pack
+# AgentNav OpenClaw Auto-Pilot Docs Pack
 
-OpenClaw를 control plane으로 두고 AgentNav 저장소를 자동 운영하기 위한 **즉시 적용 가능한 초안 묶음**입니다.
+OpenClaw를 control plane으로 두고 AgentNav를 운영 자동화하기 위한 설계/구현 문서 모음입니다.
 
-## 포함 파일
+## 디렉터리 구성
 
-- `db/001_init_schema.sql`  
-  OpenClaw 이슈/실행/PR/배포/벤치마크 기본 스키마
-- `db/002_state_machine.sql`  
-  상태 전이 테이블 + 가드 코드 + 전이 로그
-- `.github/workflows/ci.yml`  
-  lint/typecheck/unit/smoke/nav benchmark 게이트
-- `.github/workflows/pr-summary.yml`  
-  CI 완료 시 PR에 결과 요약 코멘트
-- `.github/workflows/deploy-staging.yml`  
-  main 머지 후 staging 자동 배포
-- `.github/workflows/deploy-prod.yml`  
-  수동 트리거 + GitHub Environment 승인 기반 prod 배포
-- `docs/backlog-2weeks.md`  
-  2주 실행용 GitHub 이슈 백로그
+- `db/`
+  - `001_init_schema.sql` (MVP 스키마)
+  - `002_state_machine.sql` (상태 전이/가드)
+- `state-machine.md`
+- `backlog-2weeks.md`
 
-## 빠른 적용 순서
+- `v2/agent-nav_auto-pilot_v2.ko.md`
+  - 확장 설계안 (ADR, 정책 엔진, 계약, 큐, 비용/보안/운영 상세 포함)
 
-1. DB에 `001_init_schema.sql` 실행
-2. DB에 `002_state_machine.sql` 실행
-3. AgentNav repo에 `.github/workflows/*.yml` 복사
-4. `scripts/` 배포/헬스체크 스크립트 구현
-5. GitHub Environments(`staging`, `production`) 및 보호 브랜치 설정
+- `v3/`
+  - `agent-nav_auto-pilot_v3.md`
+  - `agent-nav_openclaw-openapi.yaml`
+  - `agent-nav_schema.sql`
+  - `agent-nav_policy.example.yaml`
+  - `agent-nav_benchmark-report.schema.json`
+  - `agent-nav_runbook.md`
+  - `agent-nav_mvp-backlog.md`
+  - `workflows/*.example.yml` (CI/배포 예시)
 
-## 전제
+## 참고
 
-- PostgreSQL 14+ (권장)
-- `gen_random_uuid()` 사용을 위해 `pgcrypto` 확장 사용
-- GitHub App 또는 동급 machine identity 구성
+- `v3/workflows/*.example.yml` 는 **예시 템플릿**입니다.
+- 실제 운영 repo에 적용할 때는 해당 repo의 스크립트/의존성 구조에 맞게 조정 후 `.github/workflows/`로 옮겨 사용하세요.
+
+## main 브랜치 보호
+
+- 가이드: `docs/openclaw-autopilot/main-branch-protection.md`
+- 적용 스크립트: `scripts/setup_main_branch_protection.sh`

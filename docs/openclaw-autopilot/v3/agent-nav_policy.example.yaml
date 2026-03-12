@@ -1,0 +1,92 @@
+version: 1
+defaults:
+  auto_fix: false
+  auto_merge: false
+  staging_deploy: false
+  prod_deploy: false
+  require_human: true
+  rollback_on_failure: true
+thresholds:
+  benchmark:
+    max_success_rate_drop_pp: 5
+    max_avg_cost_increase_pct: 20
+    max_avg_latency_increase_pct: 30
+    max_crash_count: 0
+  retry:
+    coding_attempts: 2
+    verification_attempts: 3
+    release_attempts: 1
+rules:
+  - name: docs-safe
+    when:
+      issue_type: docs
+    allow:
+      auto_fix: true
+      auto_merge: true
+      staging_deploy: true
+      prod_deploy: false
+      require_human: false
+
+  - name: low-risk-bug
+    when:
+      issue_type: bug
+      risk: low
+      benchmark:
+        success_rate_drop_pp_lte: 0
+        avg_cost_increase_pct_lte: 20
+        avg_latency_increase_pct_lte: 30
+        crash_count_eq: 0
+    allow:
+      auto_fix: true
+      auto_merge: true
+      staging_deploy: true
+      prod_deploy: false
+      require_human: false
+
+  - name: medium-feature-review
+    when:
+      issue_type: feature
+      risk: medium
+    allow:
+      auto_fix: true
+      auto_merge: false
+      staging_deploy: false
+      prod_deploy: false
+      require_human: true
+
+  - name: touched-deploy-files
+    when:
+      changed_files_any_match:
+        - '.github/workflows/**'
+        - 'scripts/deploy_*'
+        - 'infra/**'
+    allow:
+      auto_fix: true
+      auto_merge: false
+      staging_deploy: false
+      prod_deploy: false
+      require_human: true
+
+  - name: touched-model-core
+    when:
+      changed_files_any_match:
+        - 'src/**/model*.py'
+        - 'src/**/policy*.py'
+        - 'src/**/planner*.py'
+    allow:
+      auto_fix: true
+      auto_merge: false
+      staging_deploy: false
+      prod_deploy: false
+      require_human: true
+
+  - name: security-block
+    when:
+      issue_type: infra
+      labels_any: ['security', 'auth', 'secrets']
+    allow:
+      auto_fix: false
+      auto_merge: false
+      staging_deploy: false
+      prod_deploy: false
+      require_human: true

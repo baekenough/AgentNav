@@ -1,0 +1,36 @@
+name: agentnav-ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          test -f requirements-dev.txt && pip install -r requirements-dev.txt || true
+      - name: Lint
+        run: make lint
+      - name: Typecheck
+        run: make typecheck
+      - name: Unit tests
+        run: make test
+      - name: Quick smoke
+        run: python scripts/run_smoke.py --suite quick-smoke
+      - name: Benchmark gate
+        run: python scripts/run_nav_benchmark.py --suite pr-gate --output benchmark-report.json
+      - name: Upload benchmark artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-report
+          path: benchmark-report.json
