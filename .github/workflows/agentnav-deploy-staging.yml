@@ -1,0 +1,36 @@
+name: agentnav-deploy-staging
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        required: true
+        type: string
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.sha || github.sha }}
+
+      - name: Deploy to staging
+        run: |
+          if [ -x scripts/deploy_staging.sh ]; then
+            ./scripts/deploy_staging.sh ${{ github.event.inputs.sha || github.sha }}
+          else
+            echo "scripts/deploy_staging.sh not found/executable, skip"
+          fi
+
+      - name: Health check
+        run: |
+          if [ -x scripts/healthcheck_staging.sh ]; then
+            ./scripts/healthcheck_staging.sh
+          else
+            echo "scripts/healthcheck_staging.sh not found/executable, skip"
+          fi

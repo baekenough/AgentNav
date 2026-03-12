@@ -1,0 +1,22 @@
+name: agentnav-deploy-prod
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.sha }}
+      - name: Deploy to production
+        run: ./scripts/deploy_prod.sh ${{ github.event.inputs.sha }}
+      - name: Health check
+        run: ./scripts/healthcheck_prod.sh

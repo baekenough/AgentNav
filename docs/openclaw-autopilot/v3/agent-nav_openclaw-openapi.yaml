@@ -1,0 +1,321 @@
+openapi: 3.1.0
+info:
+  title: OpenClaw AgentNav Automation API
+  version: 0.1.0
+  summary: Control-plane API for AgentNav autonomous issue-to-deploy automation.
+servers:
+  - url: https://openclaw.example.com
+paths:
+  /api/issues:
+    post:
+      summary: Create a new OpenClaw issue and sync to GitHub
+      operationId: createIssue
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateIssueRequest'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Issue'
+  /api/issues/{issueId}:
+    get:
+      summary: Get issue status and timeline
+      operationId: getIssue
+      parameters:
+        - $ref: '#/components/parameters/IssueId'
+      responses:
+        '200':
+          description: Issue details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IssueDetails'
+  /api/issues/{issueId}/approve:
+    post:
+      summary: Approve merge or production deployment
+      operationId: approveIssueAction
+      parameters:
+        - $ref: '#/components/parameters/IssueId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApprovalRequest'
+      responses:
+        '200':
+          description: Approval accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApprovalResponse'
+  /api/issues/{issueId}/retry:
+    post:
+      summary: Retry the current failed step
+      operationId: retryIssue
+      parameters:
+        - $ref: '#/components/parameters/IssueId'
+      responses:
+        '202':
+          description: Retry queued
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QueuedJobResponse'
+  /api/issues/{issueId}/pause:
+    post:
+      summary: Pause further automation
+      operationId: pauseIssue
+      parameters:
+        - $ref: '#/components/parameters/IssueId'
+      responses:
+        '200':
+          description: Paused
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Issue'
+  /api/issues/{issueId}/resume:
+    post:
+      summary: Resume a paused issue
+      operationId: resumeIssue
+      parameters:
+        - $ref: '#/components/parameters/IssueId'
+      responses:
+        '202':
+          description: Resumed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QueuedJobResponse'
+  /api/deployments/{deploymentId}/rollback:
+    post:
+      summary: Roll back a deployment
+      operationId: rollbackDeployment
+      parameters:
+        - $ref: '#/components/parameters/DeploymentId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RollbackRequest'
+      responses:
+        '200':
+          description: Rollback accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Deployment'
+  /api/jobs/{jobId}:
+    get:
+      summary: Get queued/running job status
+      operationId: getJob
+      parameters:
+        - $ref: '#/components/parameters/JobId'
+      responses:
+        '200':
+          description: Job status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Job'
+  /api/webhooks/github:
+    post:
+      summary: GitHub webhook receiver
+      operationId: githubWebhook
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '202':
+          description: Accepted
+components:
+  parameters:
+    IssueId:
+      name: issueId
+      in: path
+      required: true
+      schema:
+        type: string
+    DeploymentId:
+      name: deploymentId
+      in: path
+      required: true
+      schema:
+        type: string
+    JobId:
+      name: jobId
+      in: path
+      required: true
+      schema:
+        type: string
+  schemas:
+    CreateIssueRequest:
+      type: object
+      required:
+        - title
+        - type
+        - summary
+        - priority
+        - targetEnv
+      properties:
+        title:
+          type: string
+        type:
+          type: string
+          enum: [bug, feature, chore, docs, infra]
+        summary:
+          type: string
+        expectedBehavior:
+          type: string
+        reproSteps:
+          type: array
+          items:
+            type: string
+        logs:
+          type: array
+          items:
+            type: string
+        attachments:
+          type: array
+          items:
+            type: string
+            format: uri
+        priority:
+          type: string
+          enum: [low, medium, high]
+        targetEnv:
+          type: string
+          enum: [dev, staging, prod]
+        autoFixOptIn:
+          type: boolean
+          default: true
+    Issue:
+      type: object
+      required: [issueId, status, githubIssueNumber]
+      properties:
+        issueId:
+          type: string
+        status:
+          type: string
+        githubIssueNumber:
+          type: integer
+        risk:
+          type: string
+          enum: [low, medium, high]
+        autoFixable:
+          type: boolean
+    IssueDetails:
+      allOf:
+        - $ref: '#/components/schemas/Issue'
+        - type: object
+          properties:
+            branch:
+              type: string
+            prNumber:
+              type: integer
+            timeline:
+              type: array
+              items:
+                $ref: '#/components/schemas/TimelineEvent'
+            latestPlanVersion:
+              type: integer
+            latestDeploymentId:
+              type: string
+    TimelineEvent:
+      type: object
+      required: [at, event]
+      properties:
+        at:
+          type: string
+          format: date-time
+        event:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
+    ApprovalRequest:
+      type: object
+      required: [scope, approvedBy]
+      properties:
+        scope:
+          type: string
+          enum: [merge, production-deploy, rollback]
+        approvedBy:
+          type: string
+        comment:
+          type: string
+    ApprovalResponse:
+      type: object
+      required: [approved, scope]
+      properties:
+        approved:
+          type: boolean
+        scope:
+          type: string
+        recordedAt:
+          type: string
+          format: date-time
+    QueuedJobResponse:
+      type: object
+      required: [queued, jobId]
+      properties:
+        queued:
+          type: boolean
+        jobId:
+          type: string
+    RollbackRequest:
+      type: object
+      required: [reason]
+      properties:
+        reason:
+          type: string
+    Deployment:
+      type: object
+      required: [deploymentId, environment, status]
+      properties:
+        deploymentId:
+          type: string
+        environment:
+          type: string
+          enum: [staging, prod]
+        artifactVersion:
+          type: string
+        status:
+          type: string
+          enum: [pending, running, succeeded, failed, rolled_back]
+        healthSummary:
+          type: object
+          additionalProperties: true
+    Job:
+      type: object
+      required: [jobId, type, status]
+      properties:
+        jobId:
+          type: string
+        type:
+          type: string
+          enum: [triage, planning, coding, verification, release, rollback]
+        status:
+          type: string
+          enum: [queued, running, succeeded, failed, cancelled]
+        attempt:
+          type: integer
+        issueId:
+          type: string
+        startedAt:
+          type: string
+          format: date-time
+        endedAt:
+          type: string
+          format: date-time

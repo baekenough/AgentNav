@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openclaw.example.com/schemas/agent-nav_benchmark-report.schema.json",
+  "title": "AgentNav Benchmark Report",
+  "type": "object",
+  "required": ["suite", "commit", "results", "summary"],
+  "properties": {
+    "suite": {"type": "string"},
+    "commit": {"type": "string"},
+    "model": {"type": "string"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["route_id", "success", "steps", "cost_usd", "latency_ms"],
+        "properties": {
+          "route_id": {"type": "string"},
+          "success": {"type": "boolean"},
+          "steps": {"type": "number"},
+          "cost_usd": {"type": "number", "minimum": 0},
+          "latency_ms": {"type": "number", "minimum": 0},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["success_rate", "avg_steps", "avg_cost_usd", "avg_latency_ms", "crash_count"],
+      "properties": {
+        "success_rate": {"type": "number", "minimum": 0, "maximum": 1},
+        "avg_steps": {"type": "number", "minimum": 0},
+        "avg_cost_usd": {"type": "number", "minimum": 0},
+        "avg_latency_ms": {"type": "number", "minimum": 0},
+        "crash_count": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

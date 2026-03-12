@@ -1,0 +1,24 @@
+name: agentnav-deploy-staging
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        required: true
+        type: string
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.sha || github.sha }}
+      - name: Deploy to staging
+        run: ./scripts/deploy_staging.sh ${{ github.event.inputs.sha || github.sha }}
+      - name: Health check
+        run: ./scripts/healthcheck_staging.sh
