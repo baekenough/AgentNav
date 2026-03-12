@@ -29,7 +29,8 @@ OpenClaw를 control plane으로 두고 AgentNav를 운영 자동화하기 위한
   - `.github/workflows/agentnav-ci.yml`
   - `.github/workflows/agentnav-deploy-staging.yml`
   - `.github/workflows/agentnav-deploy-prod.yml`
-- `agentnav-deploy-staging.yml` 는 staging 성공 시 커밋 메시지의 closing keyword(`Fixes #123` 등)를 읽어 이슈를 자동 close합니다.
+- `agentnav-deploy-staging.yml` 는 main push 시 staging 배포를 수행하고, 성공 시 커밋 메시지의 closing keyword(`Fixes #123` 등)를 읽어 이슈를 자동 close합니다.
+- `agentnav-deploy-prod.yml` 는 staging 배포 성공 후 자동 실행되어 prod 배포를 진행합니다. (수동 dispatch도 가능)
 - 배포 스크립트:
   - `scripts/deploy_staging.sh`, `scripts/healthcheck_staging.sh`
   - `scripts/deploy_prod.sh`, `scripts/healthcheck_prod.sh`

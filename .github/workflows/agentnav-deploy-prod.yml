@@ -6,29 +6,45 @@ on:
       sha:
         required: true
         type: string
+  workflow_run:
+    workflows: [agentnav-deploy-staging]
+    types: [completed]
 
 jobs:
   deploy:
+    if: >-
+      ${{
+        github.event_name == 'workflow_dispatch' ||
+        (
+          github.event_name == 'workflow_run' &&
+          github.event.workflow_run.conclusion == 'success' &&
+          github.event.workflow_run.head_branch == 'main'
+        )
+      }}
     runs-on: ubuntu-latest
     environment: production
     timeout-minutes: 30
     steps:
+      - name: Resolve deploy SHA
+        id: vars
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "sha=${{ github.event.inputs.sha }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "sha=${{ github.event.workflow_run.head_sha }}" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.inputs.sha }}
+          ref: ${{ steps.vars.outputs.sha }}
+
+      - name: Validate required production scripts
+        run: |
+          test -x scripts/deploy_prod.sh || { echo "scripts/deploy_prod.sh missing or not executable"; exit 1; }
+          test -x scripts/healthcheck_prod.sh || { echo "scripts/healthcheck_prod.sh missing or not executable"; exit 1; }
 
       - name: Deploy to production
-        run: |
-          if [ -x scripts/deploy_prod.sh ]; then
-            ./scripts/deploy_prod.sh ${{ github.event.inputs.sha }}
-          else
-            echo "scripts/deploy_prod.sh not found/executable, skip"
-          fi
+        run: ./scripts/deploy_prod.sh ${{ steps.vars.outputs.sha }}
 
       - name: Health check
-        run: |
-          if [ -x scripts/healthcheck_prod.sh ]; then
-            ./scripts/healthcheck_prod.sh
-          else
-            echo "scripts/healthcheck_prod.sh not found/executable, skip"
-          fi
+        run: ./scripts/healthcheck_prod.sh
