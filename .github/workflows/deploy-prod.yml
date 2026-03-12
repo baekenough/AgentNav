@@ -1,0 +1,66 @@
+name: deploy-prod
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: "배포할 커밋 SHA"
+        required: true
+        type: string
+      issue_id:
+        description: "OpenClaw issue id"
+        required: false
+        type: string
+      approval_note:
+        description: "승인 코멘트/근거"
+        required: false
+        type: string
+
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    name: Deploy to production
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: production
+      # GitHub Environments에서 required reviewers를 설정해 승인 게이트를 강제하세요.
+
+    steps:
+      - name: Checkout target SHA
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.sha }}
+
+      - name: Ensure deploy scripts executable
+        run: |
+          chmod +x scripts/deploy_prod.sh scripts/healthcheck_prod.sh
+
+      - name: Deploy production
+        env:
+          DEPLOY_SHA: ${{ inputs.sha }}
+          OPENCLOW_ISSUE_ID: ${{ inputs.issue_id }}
+          APPROVAL_NOTE: ${{ inputs.approval_note }}
+        run: |
+          ./scripts/deploy_prod.sh "$DEPLOY_SHA"
+
+      - name: Health check production
+        run: |
+          ./scripts/healthcheck_prod.sh
+
+      - name: Publish summary
+        run: |
+          {
+            echo "## Production Deployment Result";
+            echo "- SHA: \`${{ inputs.sha }}\`";
+            echo "- Issue: \`${{ inputs.issue_id || 'N/A' }}\`";
+            echo "- Approval note: ${{ inputs.approval_note || 'N/A' }}";
+            echo "- Status: ✅ succeeded";
+          } >> "$GITHUB_STEP_SUMMARY"

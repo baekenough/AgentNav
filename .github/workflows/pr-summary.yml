@@ -1,0 +1,79 @@
+name: pr-summary
+
+on:
+  workflow_run:
+    workflows: [ci]
+    types: [completed]
+
+permissions:
+  contents: read
+  pull-requests: write
+  actions: read
+
+jobs:
+  comment-summary:
+    if: ${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.pull_requests[0].number }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Upsert PR summary comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            const pr = run.pull_requests[0];
+            const marker = '<!-- openclaw-ci-summary -->';
+
+            const conclusionMap = {
+              success: '✅ SUCCESS',
+              failure: '❌ FAILURE',
+              cancelled: '⏹️ CANCELLED',
+              timed_out: '⏱️ TIMED OUT',
+              neutral: '➖ NEUTRAL',
+              action_required: '⚠️ ACTION REQUIRED',
+              skipped: '⏭️ SKIPPED'
+            };
+
+            const statusText = conclusionMap[run.conclusion] || `ℹ️ ${run.conclusion}`;
+            const body = [
+              marker,
+              `## OpenClaw CI 요약: ${statusText}`,
+              '',
+              `- Workflow: **${run.name}**`,
+              `- Run ID: \\`${run.id}\\``,
+              `- Head SHA: \\`${run.head_sha}\\``,
+              `- Branch: \\`${run.head_branch}\\``,
+              `- Started: ${run.run_started_at}`,
+              `- Updated: ${run.updated_at}`,
+              '',
+              `[CI 실행 로그 보기](${run.html_url})`,
+              '',
+              '_자동 생성: OpenClaw PR Summary Bot_'
+            ].join('\n');
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              per_page: 100,
+            });
+
+            const prev = comments.find(c => c.user?.type === 'Bot' && c.body?.includes(marker));
+
+            if (prev) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: prev.id,
+                body,
+              });
+              core.info(`Updated summary comment on PR #${pr.number}`);
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                body,
+              });
+              core.info(`Created summary comment on PR #${pr.number}`);
+            }
