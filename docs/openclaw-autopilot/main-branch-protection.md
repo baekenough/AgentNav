@@ -14,7 +14,8 @@
 
 ## 적용 방법 (GitHub CLI)
 
-아래 스크립트 사용:
+- 예시 payload: `docs/openclaw-autopilot/main-branch-protection.example.json`
+- 자동 적용 스크립트:
 
 ```bash
 ./scripts/setup_main_branch_protection.sh

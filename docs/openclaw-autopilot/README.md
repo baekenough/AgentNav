@@ -31,4 +31,5 @@ OpenClaw를 control plane으로 두고 AgentNav를 운영 자동화하기 위한
 ## main 브랜치 보호
 
 - 가이드: `docs/openclaw-autopilot/main-branch-protection.md`
+- 예시 payload: `docs/openclaw-autopilot/main-branch-protection.example.json`
 - 적용 스크립트: `scripts/setup_main_branch_protection.sh`
