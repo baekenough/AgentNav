@@ -163,7 +163,7 @@ schema:
 
 - [Python SDK](/docs/en/agent-sdk/python) {sdk-guide}
 - [TypeScript SDK](/docs/en/agent-sdk/typescript) {sdk-guide}
-- [TypeScript v2 Preview](/docs/en/agent-sdk/typescript-v2-preview) {sdk-guide}
+- [TypeScript V2 Preview](/docs/en/agent-sdk/typescript-v2-preview) {sdk-guide}
 
 ### Core Concepts
 
@@ -171,7 +171,7 @@ schema:
 - [Sessions](/docs/en/agent-sdk/sessions) {guide}
 - [Subagents](/docs/en/agent-sdk/subagents) {guide}
 - [Custom Tools](/docs/en/agent-sdk/custom-tools) {guide}
-- [MCP Integration](/docs/en/agent-sdk/mcp) {guide}
+- [MCP](/docs/en/agent-sdk/mcp) {guide}
 - [Permissions](/docs/en/agent-sdk/permissions) {guide}
 - [Structured Outputs](/docs/en/agent-sdk/structured-outputs) {guide}
 - [User Input](/docs/en/agent-sdk/user-input) {guide}

@@ -4,7 +4,7 @@
 
 [![Spec](https://img.shields.io/badge/Spec-v0.2-blue)](docs/spec/agents-txt-v0.2.md)
 [![Formats](https://img.shields.io/badge/Formats-TXT%20%7C%20MD%20%7C%20JSON%20%7C%20XML-green)](https://agentnav.baekenough.com)
-[![NAV--AGENT Grade](https://img.shields.io/badge/NAV--AGENT-Grade%20A%20(95%25%2B)-brightgreen)](NAV-AGENT.md)
+[![NAV--AGENT Grade](https://img.shields.io/badge/NAV--AGENT-Grade%20A%20(100%25)-brightgreen)](NAV-AGENT.md)
 [![Cross-LLM](https://img.shields.io/badge/Cross--LLM%20Test-97.7%2F100-brightgreen)](tests/navigator-codex-report.md)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
@@ -245,7 +245,7 @@ AgentNav는 agents.txt 스펙의 레퍼런스 구현입니다. 실제 문서 사
 | 사이트 | 페이지 | 섹션 | 경로 |
 |--------|-------|------|------|
 | Claude Code (Anthropic) | 651 | 9 | `/claude-code/` |
-| GPT Codex (OpenAI) | 69 | 14 | `/gpt-codex/` |
+| GPT Codex (OpenAI) | 68 | 14 | `/gpt-codex/` |
 
 ### 엔드포인트
 
@@ -347,7 +347,7 @@ Step 4: Answer      사용자 쿼리 → 올바른 페이지 경로 반환
 
 ### NAV-AGENT 검증 결과 (Claude)
 
-4개 포맷 모두 **Grade A (95%+)** 달성. v0.2 taxonomy 정규화 후 Content Classification 100%.
+4개 포맷 모두 **Grade A (100%)** 달성. v0.2 taxonomy 정규화 후 Content Classification 100%.
 
 | 등급 | 점수 | 의미 |
 |------|------|------|
@@ -391,6 +391,10 @@ AgentNav/
 ├── nginx.conf                      # .well-known URL 라우팅 설정
 ├── NAVIGATOR.md                    # 소비자 에이전트 스펙 (파싱 & 네비게이션)
 ├── NAV-AGENT.md                    # 검증 에이전트 스펙 (테스트 & 등급)
+├── .github/
+│   └── workflows/                  # CI/CD 파이프라인
+├── dags/
+│   └── agentnav_docs_drift.py      # 문서 drift 감지 Airflow DAG
 ├── public/
 │   ├── index.html                  # 랜딩 페이지 (프로바이더 목록)
 │   ├── claude-code/
@@ -408,6 +412,8 @@ AgentNav/
 ├── docs/
 │   └── spec/
 │       └── agents-txt-v0.2.md      # 공식 스펙 문서
+├── scripts/
+│   └── generate_formats.py         # JSON에서 MD/XML/TXT 생성
 └── tests/
     ├── navigator-codex-test.py     # 크로스-LLM 검증 스크립트 (100개 쿼리)
     └── navigator-codex-report.md   # Codex CLI 테스트 결과 (97.7/100)

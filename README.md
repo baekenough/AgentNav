@@ -2,7 +2,7 @@
 
 ![Specification](https://img.shields.io/badge/spec-v0.2-blue)
 ![Formats](https://img.shields.io/badge/formats-TXT_%7C_MD_%7C_JSON_%7C_XML-green)
-![NAV-AGENT Grade](https://img.shields.io/badge/NAV--AGENT-Grade_A_(95%25%2B)-brightgreen)
+![NAV-AGENT Grade](https://img.shields.io/badge/NAV--AGENT-Grade_A_(100%25)-brightgreen)
 ![Cross-LLM](https://img.shields.io/badge/cross--LLM-97.7%2F100-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
@@ -221,7 +221,7 @@ AgentNav at [agentnav.baekenough.com](https://agentnav.baekenough.com) demonstra
 | Documentation Site | Pages | Sections | Prefix |
 |-------------------|-------|----------|--------|
 | Claude Code (Anthropic) | 651 | 9 | `/claude-code/` |
-| GPT Codex (OpenAI) | 69 | 14 | `/gpt-codex/` |
+| GPT Codex (OpenAI) | 68 | 14 | `/gpt-codex/` |
 
 Each site's agents.txt is available in all four formats at the well-known paths:
 
@@ -288,7 +288,7 @@ Grading: A (90%+), B (70-89%), C (50-69%), F (<50%). A compliant implementation 
 
 All four format variants of the Claude Code documentation index were tested:
 
-- All formats: **Grade A (95%+)**
+- All formats: **Grade A (100%)**
 - Content Classification: **100%** after v0.2 taxonomy normalization
 
 ### Cross-LLM Validation (GPT via Codex CLI)
@@ -326,6 +326,10 @@ AgentNav/
 ├── nginx.conf                   # URL rewrite rules for .well-known
 ├── NAVIGATOR.md                 # Consumer agent spec (parse & navigate)
 ├── NAV-AGENT.md                 # Verification agent spec (test & grade)
+├── .github/
+│   └── workflows/               # CI/CD pipelines
+├── dags/
+│   └── agentnav_docs_drift.py   # Airflow DAG for drift detection
 ├── docs/
 │   ├── spec/
 │   │   └── agents-txt-v0.2.md  # Formal specification
@@ -342,6 +346,8 @@ AgentNav/
 │       ├── agents.md
 │       ├── agents.xml
 │       └── agents.txt
+├── scripts/
+│   └── generate_formats.py      # Generate MD/XML/TXT from JSON
 └── tests/
     ├── navigator-codex-test.py  # Cross-LLM verification (100 queries)
     └── navigator-codex-report.md

@@ -3,7 +3,7 @@
   "site": {
     "name": "Codex Documentation",
     "url": "https://developers.openai.com",
-    "total_pages": 69,
+    "total_pages": 68,
     "last_updated": "2026-03-07"
   },
   "sections": [
@@ -12,7 +12,7 @@
       "path_prefix": "/codex",
       "page_count": 4,
       "pages": [
-        { "path": "/codex", "title": "Codex", "type": "overview" },
+        { "path": "/codex/overview", "title": "Codex", "type": "overview" },
         { "path": "/codex/quickstart", "title": "Quickstart", "type": "tutorial" },
         { "path": "/codex/explore", "title": "Explore", "type": "use-case" },
         { "path": "/codex/pricing", "title": "Codex Pricing", "type": "reference" }
@@ -106,7 +106,7 @@
     {
       "name": "Configuration",
       "path_prefix": "/codex",
-      "page_count": 10,
+      "page_count": 11,
       "pages": [
         { "path": "/codex/config-basic", "title": "Config basics", "type": "guide" },
         { "path": "/codex/config-advanced", "title": "Advanced Configuration", "type": "guide" },
@@ -117,7 +117,8 @@
         { "path": "/codex/guides/agents-md", "title": "Custom instructions with AGENTS.md", "type": "guide" },
         { "path": "/codex/mcp", "title": "Model Context Protocol", "type": "guide" },
         { "path": "/codex/skills", "title": "Agent Skills", "type": "guide" },
-        { "path": "/codex/multi-agent", "title": "Multi-agents", "type": "guide" }
+        { "path": "/codex/multi-agent", "title": "Multi-agents", "type": "guide" },
+        { "path": "/codex/custom-prompts", "title": "Custom Prompts", "type": "best-practices" }
       ]
     },
     {
@@ -148,28 +149,26 @@
     {
       "name": "Learn",
       "path_prefix": "/codex",
-      "page_count": 2,
+      "page_count": 3,
       "pages": [
         { "path": "/codex/videos", "title": "Videos", "type": "reference" },
-        { "path": "/codex/guides/build-ai-native-engineering-team", "title": "Building an AI-Native Engineering Team", "type": "guide" }
+        { "path": "/codex/guides/build-ai-native-engineering-team", "title": "Building an AI-Native Engineering Team", "type": "guide" },
+        { "path": "/codex/learn/best-practices", "title": "Best Practices", "type": "reference" }
       ]
     },
     {
       "name": "Community",
       "path_prefix": "/codex",
-      "page_count": 3,
+      "page_count": 1,
       "pages": [
-        { "path": "/codex/ambassadors", "title": "Codex Ambassadors", "type": "overview" },
-        { "path": "/codex/community/codex-for-oss", "title": "Codex for Open Source", "type": "overview" },
-        { "path": "/codex/community/meetups", "title": "Codex Meetups", "type": "overview" }
+        { "path": "/codex/community/codex-for-oss", "title": "Codex for Open Source", "type": "overview" }
       ]
     },
     {
       "name": "Releases",
       "path_prefix": "/codex",
-      "page_count": 3,
+      "page_count": 2,
       "pages": [
-        { "path": "/codex/changelog", "title": "Codex changelog", "type": "changelog" },
         { "path": "/codex/feature-maturity", "title": "Feature Maturity", "type": "reference" },
         { "path": "/codex/open-source", "title": "Open Source", "type": "reference" }
       ]

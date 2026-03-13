@@ -5,7 +5,7 @@ schema:
   sections: "## heading = section name"
   subsections: "### heading = subsection grouping"
   pages: "- [title](path) {type}"
-  page_types: [overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, changelog]
+  page_types: [overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, best-practices]
   navigation: "See ## Navigation Guide section"
 ---
 
@@ -13,7 +13,7 @@ schema:
 
 - **URL**: https://developers.openai.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 69
+- **Total Pages**: 68
 - **Last Updated**: 2026-03-07
 
 ## Site Overview
@@ -28,21 +28,22 @@ schema:
 | 6 | Using Codex — Web | 3 | /codex/cloud/ |
 | 7 | Integrations | 3 | /codex/integrations/ |
 | 8 | Codex Security | 4 | /codex/security/ |
-| 9 | Configuration | 10 | /codex/ |
+| 9 | Configuration | 11 | /codex/ |
 | 10 | Administration | 6 | /codex/ |
 | 11 | Automation | 5 | /codex/ |
-| 12 | Learn | 2 | /codex/ |
-| 13 | Community | 3 | /codex/ |
-| 14 | Releases | 3 | /codex/ |
+| 12 | Learn | 3 | /codex/ |
+| 13 | Community | 1 | /codex/ |
+| 14 | Releases | 2 | /codex/ |
 
 ---
 
 ## Getting Started (4 pages)
 
-- [Codex](/codex) {overview}
 - [Quickstart](/codex/quickstart) {tutorial}
 - [Explore](/codex/explore) {use-case}
 - [Codex Pricing](/codex/pricing) {reference}
+
+- [Codex](/codex/overview) {overview}
 
 ## Concepts (7 pages)
 
@@ -101,7 +102,7 @@ schema:
 - [Improving the threat model](/codex/security/threat-model) {guide}
 - [FAQ](/codex/security/faq) {reference}
 
-## Configuration (10 pages)
+## Configuration (11 pages)
 
 ### Config File
 
@@ -118,6 +119,8 @@ schema:
 - [Model Context Protocol](/codex/mcp) {guide}
 - [Agent Skills](/codex/skills) {guide}
 - [Multi-agents](/codex/multi-agent) {guide}
+
+- [Custom Prompts](/codex/custom-prompts) {best-practices}
 
 ## Administration (6 pages)
 
@@ -142,10 +145,11 @@ schema:
 - [Use Codex with the Agents SDK](/codex/guides/agents-sdk) {sdk-guide}
 - [Codex GitHub Action](/codex/github-action) {guide}
 
-## Learn (2 pages)
+## Learn (3 pages)
 
 - [Videos](/codex/videos) {reference}
 - [Building an AI-Native Engineering Team](/codex/guides/build-ai-native-engineering-team) {guide}
+- [Best Practices](/codex/learn/best-practices) {reference}
 
 ### External Resources
 
@@ -154,15 +158,12 @@ schema:
 - [Codex Prompting Guide](/cookbook/examples/gpt-5/codex_prompting_guide) — Cookbook
 - [Modernizing Your Codebase with Codex](/cookbook/examples/codex/code_modernization) — Cookbook
 
-## Community (3 pages)
+## Community (1 page)
 
-- [Codex Ambassadors](/codex/ambassadors) {overview}
 - [Codex for Open Source](/codex/community/codex-for-oss) {overview}
-- [Codex Meetups](/codex/community/meetups) {overview}
 
-## Releases (3 pages)
+## Releases (2 pages)
 
-- [Codex changelog](/codex/changelog) {changelog}
 - [Feature Maturity](/codex/feature-maturity) {reference}
 - [Open Source](/codex/open-source) {reference}
 

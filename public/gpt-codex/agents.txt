@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Codex Documentation — https://developers.openai.com
-# Total: 69 pages | Last updated: 2026-03-07
+# Total: 68 pages | Last updated: 2026-03-07
 
 SITE: Codex Documentation
 URL: https://developers.openai.com
-PAGES: 69
+PAGES: 68
 SECTIONS: 14
 
 == SCHEMA ==
@@ -21,7 +21,7 @@ SECTIONS: 14
 == SECTIONS ==
 
 [Getting Started] 4 pages
-  /codex | type=overview
+  /codex/overview | type=overview
   /codex/quickstart | type=tutorial
   /codex/explore | type=use-case
   /codex/pricing | type=reference
@@ -76,7 +76,7 @@ SECTIONS: 14
   threat-model | type=guide
   faq | type=reference
 
-[Configuration] 10 pages
+[Configuration] 11 pages
   /codex/config-basic | type=guide
   /codex/config-advanced | type=guide
   /codex/config-reference | type=reference
@@ -87,6 +87,7 @@ SECTIONS: 14
   /codex/mcp | type=guide
   /codex/skills | type=guide
   /codex/multi-agent | type=guide
+  /codex/custom-prompts | type=best-practices
 
 [Administration] 6 pages
   /codex/auth | type=guide
@@ -103,17 +104,15 @@ SECTIONS: 14
   /codex/guides/agents-sdk | type=sdk-guide
   /codex/github-action | type=guide
 
-[Learn] 2 pages
+[Learn] 3 pages
   /codex/videos | type=reference
   /codex/guides/build-ai-native-engineering-team | type=guide
+  /codex/learn/best-practices | type=reference
 
-[Community] 3 pages
-  /codex/ambassadors | type=overview
+[Community] 1 page
   /codex/community/codex-for-oss | type=overview
-  /codex/community/meetups | type=overview
 
-[Releases] 3 pages
-  /codex/changelog | type=changelog
+[Releases] 2 pages
   /codex/feature-maturity | type=reference
   /codex/open-source | type=reference
 

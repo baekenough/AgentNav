@@ -156,7 +156,11 @@ def agentnav_docs_drift_detector() -> None:
                 url = url.strip()
                 parsed = urlparse(url)
                 if "developers.openai.com" in parsed.netloc:
-                    paths.append((parsed.path or "/").rstrip("/") or "/")
+                    path = (parsed.path or "/").rstrip("/") or "/"
+                    # Strip .md suffix for consistent comparison with baseline
+                    if path.endswith(".md"):
+                        path = path[:-3]
+                    paths.append(path)
                 continue
 
             # Try bare URL if no markdown match on this line
@@ -166,7 +170,11 @@ def agentnav_docs_drift_detector() -> None:
                     url = url.strip()
                     parsed = urlparse(url)
                     if "developers.openai.com" in parsed.netloc:
-                        paths.append((parsed.path or "/").rstrip("/") or "/")
+                        path = (parsed.path or "/").rstrip("/") or "/"
+                        # Strip .md suffix for consistent comparison with baseline
+                        if path.endswith(".md"):
+                            path = path[:-3]
+                        paths.append(path)
 
         # Deduplicate while preserving uniqueness
         unique_paths = sorted(set(paths))
@@ -391,22 +399,24 @@ def agentnav_docs_drift_detector() -> None:
         }
 
         # --- Deduplication: check for existing open drift issues ---
-        search_url = "https://api.github.com/search/issues"
-        search_query = (
-            f"repo:{github_repo} is:issue is:open label:drift-detection "
-            f"\"[Drift Detected]\" in:title"
-        )
+        list_url = GITHUB_API_ISSUES_URL.format(repo=github_repo)
         try:
-            search_resp = requests.get(
-                search_url,
-                params={"q": search_query, "per_page": 1},
+            list_resp = requests.get(
+                list_url,
+                params={
+                    "state": "open",
+                    "labels": "drift-detection",
+                    "per_page": 5,
+                    "sort": "created",
+                    "direction": "desc",
+                },
                 headers=headers,
                 timeout=DEFAULT_REQUEST_TIMEOUT,
             )
-            search_resp.raise_for_status()
-            search_data = search_resp.json()
-            if search_data.get("total_count", 0) > 0:
-                existing = search_data["items"][0]
+            list_resp.raise_for_status()
+            existing_issues = list_resp.json()
+            if existing_issues:
+                existing = existing_issues[0]
                 log.info(
                     "Open drift issue already exists: #%s %s — skipping creation.",
                     existing["number"],
@@ -571,6 +581,20 @@ def _extract_paths_from_agents_json(data: dict, source_url: str) -> list[str]:
     paths: list[str] = []
     for section in sections:
         paths.extend(_collect_pages(section))
+
+    # sdk_pattern expansion: Claude agents.json defines 450 SDK endpoint pages
+    # via a template structure rather than enumerating each page individually.
+    sdk_pattern = data.get("sdk_pattern")
+    if sdk_pattern:
+        base_path = sdk_pattern.get("base_path", "")
+        sdks = sdk_pattern.get("sdks", [])
+        endpoints = sdk_pattern.get("endpoints", [])
+        for sdk in sdks:
+            sdk_base = base_path.replace("{sdk}", sdk)
+            for endpoint in endpoints:
+                ep_path = endpoint.get("path", "")
+                full_path = (sdk_base + ep_path).rstrip("/") or "/"
+                paths.append(full_path)
 
     if not paths:
         raise AirflowFailException(
