@@ -52,6 +52,7 @@ AGENTNAV_CODEX_JSON_URL = f"{AGENTNAV_RAW_BASE}/gpt-codex/agents.json"
 GITHUB_API_ISSUES_URL = "https://api.github.com/repos/{repo}/issues"
 
 DEFAULT_REQUEST_TIMEOUT = 30  # seconds
+MAX_RESPONSE_BYTES = 50 * 1024 * 1024  # 50 MB
 
 # ---------------------------------------------------------------------------
 # DAG definition
@@ -111,6 +112,7 @@ def agentnav_docs_drift_detector() -> None:
                 url = element.text.strip()
                 parsed = urlparse(url)
                 path = parsed.path
+                path = path.rstrip("/") or "/"
                 if path.startswith(CLAUDE_SITEMAP_FILTER_PREFIX):
                     paths.append(path)
 
@@ -154,7 +156,7 @@ def agentnav_docs_drift_detector() -> None:
                 url = url.strip()
                 parsed = urlparse(url)
                 if "developers.openai.com" in parsed.netloc:
-                    paths.append(parsed.path or "/")
+                    paths.append((parsed.path or "/").rstrip("/") or "/")
                 continue
 
             # Try bare URL if no markdown match on this line
@@ -164,7 +166,7 @@ def agentnav_docs_drift_detector() -> None:
                     url = url.strip()
                     parsed = urlparse(url)
                     if "developers.openai.com" in parsed.netloc:
-                        paths.append(parsed.path or "/")
+                        paths.append((parsed.path or "/").rstrip("/") or "/")
 
         # Deduplicate while preserving uniqueness
         unique_paths = sorted(set(paths))
@@ -468,6 +470,11 @@ def agentnav_docs_drift_detector() -> None:
 # ---------------------------------------------------------------------------
 
 
+def _escape_markdown_code(text: str) -> str:
+    """Escape characters that break Markdown inline code spans."""
+    return text.replace("`", "'")
+
+
 def _get(url: str) -> requests.Response:
     """Perform an HTTP GET with transient/permanent error distinction.
 
@@ -489,6 +496,12 @@ def _get(url: str) -> requests.Response:
     try:
         response = requests.get(url, timeout=DEFAULT_REQUEST_TIMEOUT)
         response.raise_for_status()
+        content_length = len(response.content)
+        if content_length > MAX_RESPONSE_BYTES:
+            raise AirflowFailException(
+                f"Response from {url} exceeds size limit: "
+                f"{content_length / 1024 / 1024:.1f} MB > {MAX_RESPONSE_BYTES / 1024 / 1024:.0f} MB"
+            )
         return response
     except requests.exceptions.Timeout as exc:
         raise RuntimeError(
@@ -550,7 +563,7 @@ def _extract_paths_from_agents_json(data: dict, source_url: str) -> list[str]:
         for page in node.get("pages", []):
             path = page.get("path")
             if path:
-                collected.append(path)
+                collected.append(path.rstrip("/") or "/")
         for subsection in node.get("subsections", []):
             collected.extend(_collect_pages(subsection))
         return collected
@@ -646,13 +659,13 @@ def _format_site_section(
     if diff["added"]:
         lines += ["### Added pages", ""]
         for path in diff["added"]:
-            lines.append(f"- `{path}`")
+            lines.append(f"- `{_escape_markdown_code(path)}`")
         lines.append("")
 
     if diff["removed"]:
         lines += ["### Removed pages", ""]
         for path in diff["removed"]:
-            lines.append(f"- `{path}`")
+            lines.append(f"- `{_escape_markdown_code(path)}`")
         lines.append("")
 
     if not diff["drift_detected"]:
