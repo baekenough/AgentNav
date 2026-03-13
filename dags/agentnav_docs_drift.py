@@ -22,7 +22,7 @@ import json
 import logging
 import os
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 from xml.etree import ElementTree as ET
 
@@ -30,6 +30,7 @@ import requests
 from airflow.sdk import dag, task
 from airflow.sdk.exceptions import AirflowFailException
 from airflow.sdk import Variable
+from airflow.utils.trigger_rule import TriggerRule
 
 log = logging.getLogger(__name__)
 
@@ -77,28 +78,6 @@ default_args = {
 )
 def agentnav_docs_drift_detector() -> None:
     """Orchestrate drift detection for Claude and Codex documentation."""
-
-    # ------------------------------------------------------------------
-    # Helper – shared HTTP fetch with consistent error handling
-    # ------------------------------------------------------------------
-    def _get(url: str) -> requests.Response:
-        """Perform an HTTP GET and raise AirflowFailException on errors."""
-        try:
-            response = requests.get(url, timeout=DEFAULT_REQUEST_TIMEOUT)
-            response.raise_for_status()
-            return response
-        except requests.exceptions.Timeout as exc:
-            raise AirflowFailException(
-                f"Request timed out after {DEFAULT_REQUEST_TIMEOUT}s: {url}"
-            ) from exc
-        except requests.exceptions.ConnectionError as exc:
-            raise AirflowFailException(
-                f"Connection error while fetching: {url}"
-            ) from exc
-        except requests.exceptions.HTTPError as exc:
-            raise AirflowFailException(
-                f"HTTP {exc.response.status_code} from {url}: {exc}"
-            ) from exc
 
     # ------------------------------------------------------------------
     # Fetch tasks
@@ -247,9 +226,9 @@ def agentnav_docs_drift_detector() -> None:
 
     @task()
     def compare_claude(
-        live_pages: list[str],
-        baseline_pages: list[str],
-    ) -> dict:
+        live_pages: list[str] | None,
+        baseline_pages: list[str] | None,
+    ) -> dict | None:
         """Compute the diff between live Claude sitemap and AgentNav baseline.
 
         Args:
@@ -258,15 +237,19 @@ def agentnav_docs_drift_detector() -> None:
 
         Returns:
             A dict with keys: ``added``, ``removed``, ``added_count``,
-            ``removed_count``, ``drift_detected``.
+            ``removed_count``, ``drift_detected``, or None if upstream data
+            is unavailable.
         """
+        if live_pages is None or baseline_pages is None:
+            log.warning("compare_claude: upstream data unavailable, skipping.")
+            return None
         return _compute_diff(live_pages, baseline_pages, site_label="Claude")
 
     @task()
     def compare_codex(
-        live_pages: list[str],
-        baseline_pages: list[str],
-    ) -> dict:
+        live_pages: list[str] | None,
+        baseline_pages: list[str] | None,
+    ) -> dict | None:
         """Compute the diff between live Codex llms.txt and AgentNav baseline.
 
         Args:
@@ -275,29 +258,42 @@ def agentnav_docs_drift_detector() -> None:
 
         Returns:
             A dict with keys: ``added``, ``removed``, ``added_count``,
-            ``removed_count``, ``drift_detected``.
+            ``removed_count``, ``drift_detected``, or None if upstream data
+            is unavailable.
         """
+        if live_pages is None or baseline_pages is None:
+            log.warning("compare_codex: upstream data unavailable, skipping.")
+            return None
         return _compute_diff(live_pages, baseline_pages, site_label="Codex")
 
     # ------------------------------------------------------------------
     # Report and notify tasks
     # ------------------------------------------------------------------
 
-    @task()
-    def generate_report(claude_diff: dict, codex_diff: dict) -> dict:
+    @task(trigger_rule=TriggerRule.ALL_DONE)
+    def generate_report(claude_diff: dict | None, codex_diff: dict | None) -> dict:
         """Aggregate Claude and Codex diffs into a human-readable Markdown report.
 
         Args:
-            claude_diff: Output from compare_claude.
-            codex_diff: Output from compare_codex.
+            claude_diff: Output from compare_claude, or None if unavailable.
+            codex_diff: Output from compare_codex, or None if unavailable.
 
         Returns:
             A dict with keys: ``report`` (Markdown string) and
             ``drift_detected`` (bool, True if either site has drift).
         """
-        now = datetime.utcnow()
+        claude_available = claude_diff is not None
+        codex_available = codex_diff is not None
+
+        if not claude_available and not codex_available:
+            raise AirflowFailException("Both comparisons failed — no data to report.")
+
+        now = datetime.now(timezone.utc)
         timestamp_str = now.strftime("%Y-%m-%d %H:%M UTC")
-        overall_drift = claude_diff["drift_detected"] or codex_diff["drift_detected"]
+        overall_drift = (
+            (claude_available and claude_diff["drift_detected"])
+            or (codex_available and codex_diff["drift_detected"])
+        )
 
         lines: list[str] = [
             "# AgentNav Documentation Drift Report",
@@ -307,19 +303,35 @@ def agentnav_docs_drift_detector() -> None:
             "",
         ]
 
-        lines += _format_site_section(
-            site_name="Claude Platform Docs",
-            source_url=CLAUDE_SITEMAP_URL,
-            baseline_url=AGENTNAV_CLAUDE_JSON_URL,
-            diff=claude_diff,
-        )
+        if claude_available:
+            lines += _format_site_section(
+                site_name="Claude Platform Docs",
+                source_url=CLAUDE_SITEMAP_URL,
+                baseline_url=AGENTNAV_CLAUDE_JSON_URL,
+                diff=claude_diff,
+            )
+        else:
+            lines += [
+                "## Claude Platform Docs",
+                "",
+                "_Data unavailable — upstream task failed._",
+                "",
+            ]
 
-        lines += _format_site_section(
-            site_name="Codex Docs",
-            source_url=CODEX_LLMS_TXT_URL,
-            baseline_url=AGENTNAV_CODEX_JSON_URL,
-            diff=codex_diff,
-        )
+        if codex_available:
+            lines += _format_site_section(
+                site_name="Codex Docs",
+                source_url=CODEX_LLMS_TXT_URL,
+                baseline_url=AGENTNAV_CODEX_JSON_URL,
+                diff=codex_diff,
+            )
+        else:
+            lines += [
+                "## Codex Docs",
+                "",
+                "_Data unavailable — upstream task failed._",
+                "",
+            ]
 
         lines += [
             "---",
@@ -332,7 +344,7 @@ def agentnav_docs_drift_detector() -> None:
         log.info("Report generated. Drift detected: %s", overall_drift)
         return {"report": report, "drift_detected": overall_drift}
 
-    @task()
+    @task(trigger_rule=TriggerRule.ALL_DONE)
     def notify_if_drift(report_payload: dict) -> None:
         """Open a GitHub issue if documentation drift was detected.
 
@@ -366,20 +378,47 @@ def agentnav_docs_drift_detector() -> None:
             "agentnav_github_repo", default_var="baekenough/AgentNav"
         )
 
-        today = datetime.utcnow().strftime("%Y-%m-%d")
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         issue_title = f"[Drift Detected] Documentation structure changed - {today}"
-
-        payload = {
-            "title": issue_title,
-            "body": report,
-            "labels": ["automated", "drift-detection"],
-        }
 
         api_url = GITHUB_API_ISSUES_URL.format(repo=github_repo)
         headers = {
             "Authorization": f"Bearer {github_token}",
             "Accept": "application/vnd.github+json",
             "X-GitHub-Api-Version": "2022-11-28",
+        }
+
+        # --- Deduplication: check for existing open drift issues ---
+        search_url = "https://api.github.com/search/issues"
+        search_query = (
+            f"repo:{github_repo} is:issue is:open label:drift-detection "
+            f"\"[Drift Detected]\" in:title"
+        )
+        try:
+            search_resp = requests.get(
+                search_url,
+                params={"q": search_query, "per_page": 1},
+                headers=headers,
+                timeout=DEFAULT_REQUEST_TIMEOUT,
+            )
+            search_resp.raise_for_status()
+            search_data = search_resp.json()
+            if search_data.get("total_count", 0) > 0:
+                existing = search_data["items"][0]
+                log.info(
+                    "Open drift issue already exists: #%s %s — skipping creation.",
+                    existing["number"],
+                    existing["html_url"],
+                )
+                return
+        except requests.exceptions.RequestException as exc:
+            log.warning("Issue deduplication check failed: %s. Proceeding to create.", exc)
+
+        # Create new issue
+        payload = {
+            "title": issue_title,
+            "body": report,
+            "labels": ["automated", "drift-detection"],
         }
 
         try:
@@ -429,20 +468,62 @@ def agentnav_docs_drift_detector() -> None:
 # ---------------------------------------------------------------------------
 
 
+def _get(url: str) -> requests.Response:
+    """Perform an HTTP GET with transient/permanent error distinction.
+
+    Transient errors (timeout, connection error, 5xx, 429) raise a regular
+    ``RuntimeError`` so that Airflow's built-in retry mechanism can retry the
+    task.  Permanent client errors (4xx except 429) raise
+    ``AirflowFailException`` to skip retries immediately.
+
+    Args:
+        url: The URL to fetch.
+
+    Returns:
+        The :class:`requests.Response` object on success.
+
+    Raises:
+        RuntimeError: For transient errors (timeout, connection, 5xx, 429).
+        AirflowFailException: For permanent client errors (4xx except 429).
+    """
+    try:
+        response = requests.get(url, timeout=DEFAULT_REQUEST_TIMEOUT)
+        response.raise_for_status()
+        return response
+    except requests.exceptions.Timeout as exc:
+        raise RuntimeError(
+            f"Request timed out after {DEFAULT_REQUEST_TIMEOUT}s: {url}"
+        ) from exc
+    except requests.exceptions.ConnectionError as exc:
+        raise RuntimeError(
+            f"Connection error while fetching: {url}"
+        ) from exc
+    except requests.exceptions.HTTPError as exc:
+        status = exc.response.status_code
+        if 400 <= status < 500 and status != 429:
+            raise AirflowFailException(
+                f"HTTP {status} from {url}: {exc}"
+            ) from exc
+        raise RuntimeError(
+            f"HTTP {status} from {url}: {exc}"
+        ) from exc
+
+
 def _extract_paths_from_agents_json(data: dict, source_url: str) -> list[str]:
     """Extract sorted page paths from an AgentNav agents.json structure.
 
-    The agents.json format nests pages under sections::
+    Supports both flat and nested structures::
 
         {
           "sections": [
             {
-              "pages": [
-                {"path": "/docs/en/intro", ...},
-                ...
+              "pages": [{"path": "/docs/en/intro", ...}],
+              "subsections": [
+                {
+                  "pages": [{"path": "/docs/en/api/ref", ...}]
+                }
               ]
-            },
-            ...
+            }
           ]
         }
 
@@ -463,12 +544,20 @@ def _extract_paths_from_agents_json(data: dict, source_url: str) -> list[str]:
             f"Keys found: {list(data.keys())}"
         )
 
-    paths: list[str] = []
-    for section in sections:
-        for page in section.get("pages", []):
+    def _collect_pages(node: dict) -> list[str]:
+        """Recursively collect page paths from sections and subsections."""
+        collected: list[str] = []
+        for page in node.get("pages", []):
             path = page.get("path")
             if path:
-                paths.append(path)
+                collected.append(path)
+        for subsection in node.get("subsections", []):
+            collected.extend(_collect_pages(subsection))
+        return collected
+
+    paths: list[str] = []
+    for section in sections:
+        paths.extend(_collect_pages(section))
 
     if not paths:
         raise AirflowFailException(

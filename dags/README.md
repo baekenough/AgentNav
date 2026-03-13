@@ -152,10 +152,25 @@ site since the last AgentNav baseline snapshot:
    - **Title:** `[Drift Detected] Documentation structure changed - YYYY-MM-DD`
    - **Body:** The full Markdown drift report
    - **Labels:** `automated`, `drift-detection`
-4. Airflow logs the full report at `INFO` level regardless of drift status.
+4. Before creating a new issue, the DAG checks for existing open issues with the `drift-detection` label. If one already exists, creation is skipped to prevent duplicate alerts.
+5. Airflow logs the full report at `INFO` level regardless of drift status.
 
 When no drift is detected, `notify_if_drift` logs "No documentation drift
 detected" and exits without creating an issue.
+
+---
+
+## Error handling
+
+The DAG distinguishes between transient and permanent errors:
+
+- **Transient** (timeouts, connection errors, HTTP 5xx/429): allows Airflow to retry
+  per `default_args` (`retries=1`, `retry_delay=5m`)
+- **Permanent** (HTTP 4xx, malformed data, missing config): fails immediately via
+  `AirflowFailException` without retry
+
+If one documentation source fails (e.g., Codex endpoint is down), the other source's
+drift results are still reported. The report will note which source was unavailable.
 
 ---
 
@@ -169,6 +184,7 @@ detected" and exits without creating an issue.
 | HTTP 422 from GitHub API | Label `drift-detection` or `automated` does not exist on the repo | Create both labels in the GitHub repo settings |
 | `No /docs/en/ paths found in sitemap` | Sitemap structure changed | Check `https://platform.claude.com/sitemap.xml` manually |
 | `No URLs extracted from llms.txt` | llms.txt format changed | Check `https://developers.openai.com/codex/llms.txt` manually and update the parsing logic in `fetch_codex_llms_txt` |
+| Duplicate drift issues created daily | Issue deduplication search failing silently | Check GitHub API token permissions; ensure `drift-detection` label exists on the repo |
 
 ---
 
