@@ -51,7 +51,7 @@ pip install requests
 
 ### Airflow version
 
-Airflow 2.x with TaskFlow API support (Airflow 2.0+).
+Airflow 3.x (tested on 3.1.8) with TaskFlow API support.
 
 ---
 

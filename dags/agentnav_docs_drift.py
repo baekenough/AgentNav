@@ -27,9 +27,9 @@ from urllib.parse import urlparse
 from xml.etree import ElementTree as ET
 
 import requests
-from airflow.decorators import dag, task
-from airflow.exceptions import AirflowFailException
-from airflow.models import Variable
+from airflow.sdk import dag, task
+from airflow.sdk.exceptions import AirflowFailException
+from airflow.sdk import Variable
 
 log = logging.getLogger(__name__)
 
