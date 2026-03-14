@@ -197,6 +197,161 @@ drift results are still reported. The report will note which source was unavaila
 
 ```
 dags/
-  agentnav_docs_drift.py   # DAG implementation (single file)
-  README.md                # This file
+  agentnav_docs_drift.py        # Docs drift detection DAG
+  claude_code_release_monitor.py # Claude Code release monitoring DAG
+  README.md                      # This file
 ```
+
+---
+
+# Claude Code Release Monitor DAG
+
+## What it does
+
+The `claude_code_release_monitor` DAG runs daily and checks for new releases
+of [anthropics/claude-code](https://github.com/anthropics/claude-code) on GitHub.
+When a new release is detected that does not yet have a corresponding tracking
+issue, the DAG creates one on the
+[baekenough/oh-my-customcode](https://github.com/baekenough/oh-my-customcode)
+repository.
+
+Each issue includes:
+- A 500-character summary of the release notes
+- Breaking change detection and highlighted warnings
+- A link to the original GitHub release page
+- Action item checklist for review
+
+### Task graph
+
+```
+fetch_releases ─► filter_new_releases ─► create_issues
+```
+
+---
+
+## Requirements
+
+### Python packages
+
+`requests` is the only non-standard dependency (same as the drift detection DAG).
+
+### Airflow version
+
+Airflow 3.x (tested on 3.1.8) with TaskFlow API support.
+
+---
+
+## Configuration
+
+### Required: GitHub Token
+
+The same GitHub token used by the drift detection DAG. Requires `repo` scope
+(specifically `issues: write`) on the **target** repository
+(`baekenough/oh-my-customcode`).
+
+Set it in **one** of two ways (Airflow Variable takes precedence):
+
+**Option A -- Airflow Variable (recommended)**
+
+```bash
+airflow variables set agentnav_github_token ghp_your_token_here
+```
+
+**Option B -- Environment variable**
+
+```bash
+export GITHUB_TOKEN=ghp_your_token_here
+```
+
+### Optional: Target repository
+
+By default issues are opened on `baekenough/oh-my-customcode`. To override:
+
+```bash
+airflow variables set omc_github_repo your-org/your-repo
+```
+
+### Required labels on target repo
+
+The following labels must exist on the target repository:
+
+| Label | Purpose |
+|---|---|
+| `automated` | Marks auto-generated issues |
+| `claude-code-release` | Identifies release tracking issues; used for deduplication |
+| `breaking-change` | (Optional) Auto-applied when breaking changes are detected |
+
+---
+
+## How to test locally
+
+### 1. Parse check (no Airflow needed)
+
+```bash
+python dags/claude_code_release_monitor.py
+```
+
+### 2. Airflow DAG import check
+
+```bash
+airflow dags list | grep claude_code_release
+```
+
+### 3. Full DAG test
+
+```bash
+airflow dags test claude_code_release_monitor 2026-03-14
+```
+
+### 4. Test individual tasks
+
+```bash
+# Fetch releases only
+airflow tasks test claude_code_release_monitor fetch_releases 2026-03-14
+
+# Filter step (requires fetch_releases output)
+airflow tasks test claude_code_release_monitor filter_new_releases 2026-03-14
+```
+
+---
+
+## Expected behavior
+
+When new releases are detected:
+
+1. `fetch_releases` retrieves the 5 most recent releases from `anthropics/claude-code`.
+2. `filter_new_releases` checks open issues on `baekenough/oh-my-customcode` with the
+   `claude-code-release` label. Releases whose `tag_name` appears in an existing issue
+   title are filtered out.
+3. `create_issues` creates one issue per new release with:
+   - **Title:** `[Claude Code {tag_name}] New release detected`
+   - **Body:** Summary (max 500 chars) + breaking change section + action items + release link
+   - **Labels:** `automated`, `claude-code-release` (plus `breaking-change` if applicable)
+
+When no new releases are found, all tasks log informational messages and exit
+without creating issues.
+
+---
+
+## Error handling
+
+Same transient/permanent error distinction as the drift detection DAG:
+
+- **Transient** (timeouts, connection errors, HTTP 5xx/429): allows Airflow to retry
+- **Permanent** (HTTP 4xx, malformed data, missing config): fails immediately
+
+If the deduplication check fails (e.g., network error), the DAG proceeds without
+dedup and logs a warning. This may result in duplicate issues in rare cases.
+
+---
+
+## Troubleshooting
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| `AirflowFailException: GitHub token not found` | Neither Variable nor env var set | Set `agentnav_github_token` Variable |
+| HTTP 401 from GitHub API | Invalid or expired token | Rotate the PAT and update the Variable |
+| HTTP 403 rate limit | Unauthenticated or token exhausted | Ensure token is set; check rate limit headers |
+| HTTP 422 creating issue | Labels do not exist on target repo | Create `automated` and `claude-code-release` labels |
+| Duplicate issues created | Dedup check failed silently | Check logs for dedup warnings; verify label exists |
+| `Unexpected response from GitHub Releases API` | API response format changed or repo not found | Verify `anthropics/claude-code` is accessible |
