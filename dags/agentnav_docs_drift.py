@@ -28,7 +28,7 @@ from xml.etree import ElementTree as ET
 
 import requests
 from airflow.sdk import dag, task
-from airflow.sdk.exceptions import AirflowFailException
+from airflow.exceptions import AirflowFailException
 from airflow.sdk import Variable
 from airflow.utils.trigger_rule import TriggerRule
 

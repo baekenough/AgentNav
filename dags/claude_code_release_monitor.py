@@ -20,7 +20,7 @@ from datetime import datetime, timedelta, timezone
 
 import requests
 from airflow.sdk import dag, task
-from airflow.sdk.exceptions import AirflowFailException
+from airflow.exceptions import AirflowFailException
 from airflow.sdk import Variable
 
 log = logging.getLogger(__name__)
