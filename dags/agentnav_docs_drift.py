@@ -586,14 +586,12 @@ def _extract_paths_from_agents_json(data: dict, source_url: str) -> list[str]:
     # via a template structure rather than enumerating each page individually.
     sdk_pattern = data.get("sdk_pattern")
     if sdk_pattern:
-        base_path = sdk_pattern.get("base_path", "")
+        url_template = sdk_pattern.get("url_template", "")
         sdks = sdk_pattern.get("sdks", [])
-        endpoints = sdk_pattern.get("endpoints", [])
+        endpoint_paths = sdk_pattern.get("endpoint_paths", [])
         for sdk in sdks:
-            sdk_base = base_path.replace("{sdk}", sdk)
-            for endpoint in endpoints:
-                ep_path = endpoint.get("path", "")
-                full_path = (sdk_base + ep_path).rstrip("/") or "/"
+            for ep in endpoint_paths:
+                full_path = url_template.replace("{sdk}", sdk).replace("{endpoint_path}", ep)
                 paths.append(full_path)
 
     if not paths:

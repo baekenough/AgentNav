@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Codex Documentation" url="https://developers.openai.com" total-pages="68" last-updated="2026-03-07" />
+  <site name="Codex Documentation" url="https://developers.openai.com" total-pages="69" last-updated="2026-03-15" />
 
   <sections>
     <!-- 1. Getting Started -->
@@ -122,9 +122,10 @@
     </section>
 
     <!-- 14. Releases -->
-    <section name="Releases" path-prefix="/codex" page-count="2">
+    <section name="Releases" path-prefix="/codex" page-count="3">
       <page path="/codex/feature-maturity" title="Feature Maturity" type="reference" />
       <page path="/codex/open-source" title="Open Source" type="reference" />
+      <page path="/codex/llms-full.txt" title="Codex LLMs Full Text" type="reference" />
     </section>
   </sections>
 

@@ -13,8 +13,8 @@ schema:
 
 - **URL**: https://developers.openai.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 68
-- **Last Updated**: 2026-03-07
+- **Total Pages**: 69
+- **Last Updated**: 2026-03-15
 
 ## Site Overview
 
@@ -33,7 +33,7 @@ schema:
 | 11 | Automation | 5 | /codex/ |
 | 12 | Learn | 3 | /codex/ |
 | 13 | Community | 1 | /codex/ |
-| 14 | Releases | 2 | /codex/ |
+| 14 | Releases | 3 | /codex/ |
 
 ---
 
@@ -42,7 +42,6 @@ schema:
 - [Quickstart](/codex/quickstart) {tutorial}
 - [Explore](/codex/explore) {use-case}
 - [Codex Pricing](/codex/pricing) {reference}
-
 - [Codex](/codex/overview) {overview}
 
 ## Concepts (7 pages)
@@ -119,7 +118,6 @@ schema:
 - [Model Context Protocol](/codex/mcp) {guide}
 - [Agent Skills](/codex/skills) {guide}
 - [Multi-agents](/codex/multi-agent) {guide}
-
 - [Custom Prompts](/codex/custom-prompts) {best-practices}
 
 ## Administration (6 pages)
@@ -162,10 +160,12 @@ schema:
 
 - [Codex for Open Source](/codex/community/codex-for-oss) {overview}
 
-## Releases (2 pages)
+## Releases (3 pages)
 
 - [Feature Maturity](/codex/feature-maturity) {reference}
 - [Open Source](/codex/open-source) {reference}
+
+- [Codex LLMs Full Text](/codex/llms-full.txt) {reference}
 
 ---
 
