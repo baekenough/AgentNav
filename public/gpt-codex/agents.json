@@ -26,7 +26,7 @@
         { "path": "/codex/prompting", "title": "Prompting", "type": "guide" },
         { "path": "/codex/concepts/customization", "title": "Customization", "type": "guide" },
         { "path": "/codex/concepts/sandboxing", "title": "Sandboxing", "type": "guide" },
-        { "path": "/codex/concepts/multi-agents", "title": "Multi-agents", "type": "guide" },
+        { "path": "/codex/concepts/subagents", "title": "Subagents", "type": "guide" },
         { "path": "/codex/workflows", "title": "Workflows", "type": "guide" },
         { "path": "/codex/models", "title": "Codex Models", "type": "reference" },
         { "path": "/codex/concepts/cyber-safety", "title": "Cyber Safety", "type": "guide" }
@@ -117,7 +117,7 @@
         { "path": "/codex/guides/agents-md", "title": "Custom instructions with AGENTS.md", "type": "guide" },
         { "path": "/codex/mcp", "title": "Model Context Protocol", "type": "guide" },
         { "path": "/codex/skills", "title": "Agent Skills", "type": "guide" },
-        { "path": "/codex/multi-agent", "title": "Multi-agents", "type": "guide" },
+        { "path": "/codex/subagents", "title": "Subagents", "type": "guide" },
         { "path": "/codex/custom-prompts", "title": "Custom Prompts", "type": "best-practices" }
       ]
     },

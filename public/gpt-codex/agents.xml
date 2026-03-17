@@ -16,7 +16,7 @@
       <page path="/codex/prompting" title="Prompting" type="guide" />
       <page path="/codex/concepts/customization" title="Customization" type="guide" />
       <page path="/codex/concepts/sandboxing" title="Sandboxing" type="guide" />
-      <page path="/codex/concepts/multi-agents" title="Multi-agents" type="guide" />
+      <page path="/codex/concepts/subagents" title="Subagents" type="guide" />
       <page path="/codex/workflows" title="Workflows" type="guide" />
       <page path="/codex/models" title="Codex Models" type="reference" />
       <page path="/codex/concepts/cyber-safety" title="Cyber Safety" type="guide" />
@@ -86,7 +86,7 @@
       <page path="/codex/guides/agents-md" title="Custom instructions with AGENTS.md" type="guide" />
       <page path="/codex/mcp" title="Model Context Protocol" type="guide" />
       <page path="/codex/skills" title="Agent Skills" type="guide" />
-      <page path="/codex/multi-agent" title="Multi-agents" type="guide" />
+      <page path="/codex/subagents" title="Subagents" type="guide" />
       <page path="/codex/custom-prompts" title="Custom Prompts" type="best-practices" />
     </section>
 

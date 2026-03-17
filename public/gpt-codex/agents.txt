@@ -30,7 +30,7 @@ SECTIONS: 14
   /codex/prompting | type=guide
   /codex/concepts/customization | type=guide
   /codex/concepts/sandboxing | type=guide
-  /codex/concepts/multi-agents | type=guide
+  /codex/concepts/subagents | type=guide
   /codex/workflows | type=guide
   /codex/models | type=reference
   /codex/concepts/cyber-safety | type=guide
@@ -86,7 +86,7 @@ SECTIONS: 14
   /codex/guides/agents-md | type=guide
   /codex/mcp | type=guide
   /codex/skills | type=guide
-  /codex/multi-agent | type=guide
+  /codex/subagents | type=guide
   /codex/custom-prompts | type=best-practices
 
 [Administration] 6 pages

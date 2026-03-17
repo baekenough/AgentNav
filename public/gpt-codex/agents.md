@@ -49,7 +49,7 @@ schema:
 - [Prompting](/codex/prompting) {guide}
 - [Customization](/codex/concepts/customization) {guide}
 - [Sandboxing](/codex/concepts/sandboxing) {guide}
-- [Multi-agents](/codex/concepts/multi-agents) {guide}
+- [Subagents](/codex/concepts/subagents) {guide}
 - [Workflows](/codex/workflows) {guide}
 - [Codex Models](/codex/models) {reference}
 - [Cyber Safety](/codex/concepts/cyber-safety) {guide}
@@ -117,7 +117,7 @@ schema:
 - [Custom instructions with AGENTS.md](/codex/guides/agents-md) {guide}
 - [Model Context Protocol](/codex/mcp) {guide}
 - [Agent Skills](/codex/skills) {guide}
-- [Multi-agents](/codex/multi-agent) {guide}
+- [Subagents](/codex/subagents) {guide}
 - [Custom Prompts](/codex/custom-prompts) {best-practices}
 
 ## Administration (6 pages)
