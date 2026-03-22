@@ -1,8 +1,8 @@
 # agents.txt v0.2
-# Claude Documentation — https://platform.claude.com/docs
-# Total: 651 pages | Last updated: 2026-03-07
+# Anthropic Claude API Documentation — https://platform.claude.com/docs
+# Total: 651 pages | Last updated: 2026-03-22
 
-SITE: Claude Documentation
+SITE: Anthropic Claude API Documentation
 URL: https://platform.claude.com/docs
 PAGES: 651
 SECTIONS: 9

@@ -10,12 +10,12 @@ schema:
   navigation: "See ## Navigation Guide section"
 ---
 
-# Claude Documentation
+# Anthropic Claude API Documentation
 
 - **URL**: https://platform.claude.com/docs
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 651
-- **Last Updated**: 2026-03-07
+- **Last Updated**: 2026-03-22
 
 ## Site Overview
 
