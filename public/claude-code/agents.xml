@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Claude Documentation" url="https://platform.claude.com/docs" total-pages="651" last-updated="2026-03-07" />
+  <site name="Anthropic Claude API Documentation" url="https://platform.claude.com/docs" total-pages="651" last-updated="2026-03-22" />
 
   <sections>
     <!-- 1. Introduction -->

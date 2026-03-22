@@ -1,0 +1,155 @@
+{
+  "agents_txt_version": "0.2",
+  "site": {
+    "name": "Gemini CLI Documentation",
+    "url": "https://geminicli.com",
+    "total_pages": 69,
+    "last_updated": "2026-03-22"
+  },
+  "sections": [
+    {
+      "name": "Get Started",
+      "path_prefix": "/docs",
+      "page_count": 7,
+      "pages": [
+        { "path": "/docs/", "title": "Overview", "type": "overview" },
+        { "path": "/docs/get-started/", "title": "Quickstart", "type": "tutorial" },
+        { "path": "/docs/get-started/installation/", "title": "Installation", "type": "tutorial" },
+        { "path": "/docs/get-started/authentication/", "title": "Authentication", "type": "tutorial" },
+        { "path": "/docs/get-started/examples/", "title": "Examples", "type": "tutorial" },
+        { "path": "/docs/cli/cli-reference/", "title": "CLI Cheatsheet", "type": "reference" },
+        { "path": "/docs/get-started/gemini-3/", "title": "Gemini 3 on Gemini CLI", "type": "overview" }
+      ]
+    },
+    {
+      "name": "Tutorials",
+      "path_prefix": "/docs/cli/tutorials",
+      "page_count": 10,
+      "pages": [
+        { "path": "/docs/cli/tutorials/file-management/", "title": "File Management", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/skills-getting-started/", "title": "Get Started with Agent Skills", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/memory-management/", "title": "Manage Context and Memory", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/shell-commands/", "title": "Execute Shell Commands", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/session-management/", "title": "Manage Sessions and History", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/task-planning/", "title": "Plan Tasks with Todos", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/plan-mode-steering/", "title": "Use Plan Mode with Model Steering", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/web-tools/", "title": "Web Search and Fetch", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/mcp-setup/", "title": "Set Up an MCP Server", "type": "tutorial" },
+        { "path": "/docs/cli/tutorials/automation/", "title": "Automate Tasks", "type": "tutorial" }
+      ]
+    },
+    {
+      "name": "Extensions",
+      "path_prefix": "/docs/extensions",
+      "page_count": 5,
+      "pages": [
+        { "path": "/docs/extensions/", "title": "Extensions Overview", "type": "overview" },
+        { "path": "/docs/extensions/writing-extensions/", "title": "Developer Guide: Build Extensions", "type": "guide" },
+        { "path": "/docs/extensions/best-practices/", "title": "Developer Guide: Best Practices", "type": "best-practices" },
+        { "path": "/docs/extensions/releasing/", "title": "Developer Guide: Releasing", "type": "guide" },
+        { "path": "/docs/extensions/reference/", "title": "Developer Guide: Reference", "type": "reference" }
+      ]
+    },
+    {
+      "name": "Features",
+      "path_prefix": "/docs",
+      "page_count": 20,
+      "pages": [
+        { "path": "/docs/cli/skills/", "title": "Agent Skills", "type": "guide" },
+        { "path": "/docs/cli/checkpointing/", "title": "Checkpointing", "type": "guide" },
+        { "path": "/docs/cli/headless/", "title": "Headless Mode", "type": "guide" },
+        { "path": "/docs/cli/git-worktrees/", "title": "Git Worktrees", "type": "guide" },
+        { "path": "/docs/hooks/", "title": "Hooks Overview", "type": "guide" },
+        { "path": "/docs/hooks/reference/", "title": "Hooks Reference", "type": "reference" },
+        { "path": "/docs/ide-integration/", "title": "IDE Integration", "type": "guide" },
+        { "path": "/docs/tools/mcp-server/", "title": "MCP Servers", "type": "guide" },
+        { "path": "/docs/cli/model-routing/", "title": "Model Routing", "type": "guide" },
+        { "path": "/docs/cli/model/", "title": "Model Selection", "type": "guide" },
+        { "path": "/docs/cli/model-steering/", "title": "Model Steering", "type": "guide" },
+        { "path": "/docs/cli/notifications/", "title": "Notifications", "type": "guide" },
+        { "path": "/docs/cli/plan-mode/", "title": "Plan Mode", "type": "guide" },
+        { "path": "/docs/core/subagents/", "title": "Subagents", "type": "guide" },
+        { "path": "/docs/core/remote-agents/", "title": "Remote Subagents", "type": "guide" },
+        { "path": "/docs/cli/rewind/", "title": "Rewind", "type": "guide" },
+        { "path": "/docs/cli/sandbox/", "title": "Sandboxing", "type": "guide" },
+        { "path": "/docs/cli/settings/", "title": "Settings", "type": "reference" },
+        { "path": "/docs/cli/telemetry/", "title": "Telemetry", "type": "reference" },
+        { "path": "/docs/cli/token-caching/", "title": "Token Caching", "type": "guide" }
+      ]
+    },
+    {
+      "name": "Configuration",
+      "path_prefix": "/docs/cli",
+      "page_count": 8,
+      "pages": [
+        { "path": "/docs/cli/custom-commands/", "title": "Custom Commands", "type": "guide" },
+        { "path": "/docs/cli/enterprise/", "title": "Enterprise Configuration", "type": "guide" },
+        { "path": "/docs/cli/gemini-ignore/", "title": "Ignore Files (.geminiignore)", "type": "reference" },
+        { "path": "/docs/cli/generation-settings/", "title": "Model Configuration", "type": "reference" },
+        { "path": "/docs/cli/gemini-md/", "title": "Project Context (GEMINI.md)", "type": "guide" },
+        { "path": "/docs/cli/system-prompt/", "title": "System Prompt Override", "type": "guide" },
+        { "path": "/docs/cli/themes/", "title": "Themes", "type": "guide" },
+        { "path": "/docs/cli/trusted-folders/", "title": "Trusted Folders", "type": "guide" }
+      ]
+    },
+    {
+      "name": "Reference",
+      "path_prefix": "/docs/reference",
+      "page_count": 6,
+      "pages": [
+        { "path": "/docs/reference/commands/", "title": "Command Reference", "type": "reference" },
+        { "path": "/docs/reference/configuration/", "title": "Configuration Reference", "type": "reference" },
+        { "path": "/docs/reference/keyboard-shortcuts/", "title": "Keyboard Shortcuts", "type": "reference" },
+        { "path": "/docs/reference/memport/", "title": "Memory Import Processor", "type": "tool-reference" },
+        { "path": "/docs/reference/policy-engine/", "title": "Policy Engine", "type": "reference" },
+        { "path": "/docs/reference/tools/", "title": "Tools Reference", "type": "tool-reference" }
+      ]
+    },
+    {
+      "name": "Resources",
+      "path_prefix": "/docs/resources",
+      "page_count": 5,
+      "pages": [
+        { "path": "/docs/resources/faq/", "title": "FAQ", "type": "reference" },
+        { "path": "/docs/resources/quota-and-pricing/", "title": "Quota and Pricing", "type": "reference" },
+        { "path": "/docs/resources/tos-privacy/", "title": "Terms and Privacy", "type": "reference" },
+        { "path": "/docs/resources/troubleshooting/", "title": "Troubleshooting", "type": "guide" },
+        { "path": "/docs/resources/uninstall/", "title": "Uninstall", "type": "guide" }
+      ]
+    },
+    {
+      "name": "Development",
+      "path_prefix": "/docs",
+      "page_count": 5,
+      "pages": [
+        { "path": "/docs/contributing/", "title": "Contribution Guide", "type": "guide" },
+        { "path": "/docs/integration-tests/", "title": "Integration Testing", "type": "guide" },
+        { "path": "/docs/issue-and-pr-automation/", "title": "Issue and PR Automation", "type": "guide" },
+        { "path": "/docs/local-development/", "title": "Local Development", "type": "guide" },
+        { "path": "/docs/npm/", "title": "NPM Package Structure", "type": "reference" }
+      ]
+    },
+    {
+      "name": "Releases",
+      "path_prefix": "/docs/changelogs",
+      "page_count": 3,
+      "pages": [
+        { "path": "/docs/changelogs/", "title": "Release Notes", "type": "changelog" },
+        { "path": "/docs/changelogs/latest/", "title": "Stable Release", "type": "changelog" },
+        { "path": "/docs/changelogs/preview/", "title": "Preview Release", "type": "changelog" }
+      ]
+    }
+  ],
+  "navigation": {
+    "default_section": "Get Started",
+    "search_priority": ["Get Started", "Tutorials", "Features", "Configuration", "Reference", "Extensions"],
+    "tips": [
+      "Start with /docs/get-started/ for initial setup",
+      "Use /docs/cli/tutorials/ for step-by-step guides on common tasks",
+      "Extensions at /docs/extensions/ for building plugins",
+      "Configuration covers GEMINI.md, model settings, themes, and enterprise setup",
+      "For complete tool and command reference, see the Reference section",
+      "Subagents and model routing are key features for advanced workflows"
+    ]
+  }
+}

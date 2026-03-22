@@ -1,0 +1,59 @@
+{
+  "agents_txt_version": "0.2",
+  "site": {
+    "name": "AgentNav",
+    "url": "https://agentnav.baekenough.com",
+    "description": "AI Agent Documentation Navigator — agents.txt standard implementation providing structured documentation for AI coding assistants",
+    "total_documentation_sets": 3,
+    "last_updated": "2026-03-22"
+  },
+  "documentation_sets": [
+    {
+      "name": "Anthropic Claude API",
+      "path": "/claude-code/",
+      "source_url": "https://platform.claude.com/docs",
+      "total_pages": 651,
+      "sections": 9,
+      "formats": {
+        "json": "/claude-code/agents.json",
+        "markdown": "/claude-code/agents.md",
+        "xml": "/claude-code/agents.xml",
+        "text": "/claude-code/agents.txt"
+      }
+    },
+    {
+      "name": "GPT Codex",
+      "path": "/gpt-codex/",
+      "source_url": "https://developers.openai.com",
+      "total_pages": 69,
+      "sections": 14,
+      "formats": {
+        "json": "/gpt-codex/agents.json",
+        "markdown": "/gpt-codex/agents.md",
+        "xml": "/gpt-codex/agents.xml",
+        "text": "/gpt-codex/agents.txt"
+      }
+    },
+    {
+      "name": "Gemini CLI",
+      "path": "/gemini-cli/",
+      "source_url": "https://geminicli.com",
+      "total_pages": 69,
+      "sections": 9,
+      "formats": {
+        "json": "/gemini-cli/agents.json",
+        "markdown": "/gemini-cli/agents.md",
+        "xml": "/gemini-cli/agents.xml",
+        "text": "/gemini-cli/agents.txt"
+      }
+    }
+  ],
+  "navigation": {
+    "tips": [
+      "Each documentation set has 4 formats: JSON, Markdown, XML, and Plain Text",
+      "Use JSON for structured parsing, Markdown for LLM consumption, TXT for minimal tokens",
+      "Access individual sets via /{set-name}/agents.{format}",
+      "Query parameter shortcut: /?docs={set-name} redirects to the set's index page"
+    ]
+  }
+}
