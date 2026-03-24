@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Anthropic Claude API Documentation" url="https://platform.claude.com/docs" total-pages="651" last-updated="2026-03-22" />
+  <site name="Anthropic Claude API Documentation" url="https://platform.claude.com/docs" total-pages="652" last-updated="2026-03-24" />
 
   <sections>
     <!-- 1. Introduction -->
@@ -87,7 +87,7 @@
     </section>
 
     <!-- 5. Agent SDK -->
-    <section name="Agent SDK" path-prefix="/docs/en/agent-sdk" page-count="27">
+    <section name="Agent SDK" path-prefix="/docs/en/agent-sdk" page-count="28">
       <page path="/docs/en/agent-sdk/agent-loop" title="Agent Loop" type="guide" />
       <page path="/docs/en/agent-sdk/claude-code-features" title="Claude Code Features" type="guide" />
       <page path="/docs/en/agent-sdk/cost-tracking" title="Cost Tracking" type="guide" />
@@ -111,7 +111,8 @@
       <page path="/docs/en/agent-sdk/streaming-vs-single-mode" title="Streaming vs Single Mode" type="guide" />
       <page path="/docs/en/agent-sdk/structured-outputs" title="Structured Outputs" type="guide" />
       <page path="/docs/en/agent-sdk/subagents" title="Subagents" type="guide" />
-      <page path="/docs/en/agent-sdk/todo-tracking" title="Todo Tracking" type="guide" />
+      <page path="/docs/en/agent-sdk/todo-tracking" title="TODO Tracking" type="guide" />
+      <page path="/docs/en/agent-sdk/tool-search" title="Tool Search" type="tool-reference" />
       <page path="/docs/en/agent-sdk/typescript" title="TypeScript SDK" type="sdk-guide" />
       <page path="/docs/en/agent-sdk/typescript-v2-preview" title="TypeScript V2 Preview" type="sdk-guide" />
       <page path="/docs/en/agent-sdk/user-input" title="User Input" type="guide" />
@@ -148,7 +149,7 @@
       <page path="/docs/en/api/messages/batches/create" title="Create" method="POST" type="api-endpoint" />
       <page path="/docs/en/api/messages/batches/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
       <page path="/docs/en/api/messages/batches/list" title="List" method="GET" type="api-endpoint" />
-      <page path="/docs/en/api/messages/batches/cancel" title="Cancel" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/messages/batches/cancel" title="Cancel" method="DELETE" type="api-endpoint" />
       <page path="/docs/en/api/messages/batches/results" title="Results" method="GET" type="api-endpoint" />
       <page path="/docs/en/api/messages/batches/delete" title="Delete" method="DELETE" type="api-endpoint" />
 
@@ -184,7 +185,7 @@
       <page path="/docs/en/api/admin/workspaces/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
       <page path="/docs/en/api/admin/workspaces/list" title="List" method="GET" type="api-endpoint" />
       <page path="/docs/en/api/admin/workspaces/update" title="Update" method="PATCH" type="api-endpoint" />
-      <page path="/docs/en/api/admin/workspaces/archive" title="Archive" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/admin/workspaces/archive" title="Archive" method="DELETE" type="api-endpoint" />
       <page path="/docs/en/api/admin/workspaces/members" title="Members" type="api-hub" />
       <page path="/docs/en/api/admin/workspaces/members/create" title="Create" method="POST" type="api-endpoint" />
       <page path="/docs/en/api/admin/workspaces/members/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
@@ -212,13 +213,13 @@
       <page path="/docs/en/api/beta/messages/batches/create" title="Create" method="POST" type="api-endpoint" />
       <page path="/docs/en/api/beta/messages/batches/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
       <page path="/docs/en/api/beta/messages/batches/list" title="List" method="GET" type="api-endpoint" />
-      <page path="/docs/en/api/beta/messages/batches/cancel" title="Cancel" method="POST" type="api-endpoint" />
+      <page path="/docs/en/api/beta/messages/batches/cancel" title="Cancel" method="DELETE" type="api-endpoint" />
       <page path="/docs/en/api/beta/messages/batches/results" title="Results" method="GET" type="api-endpoint" />
       <page path="/docs/en/api/beta/messages/batches/delete" title="Delete" method="DELETE" type="api-endpoint" />
       <page path="/docs/en/api/beta/models" title="Models" type="api-hub" />
       <page path="/docs/en/api/beta/models/list" title="List" method="GET" type="api-endpoint" />
       <page path="/docs/en/api/beta/models/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
-      <page path="/docs/en/api/beta/skills" title="Skills" type="api-hub" />
+      <page path="/docs/en/api/beta/skills" title="Beta Skills" type="api-hub" />
       <page path="/docs/en/api/beta/skills/create" title="Create" method="POST" type="api-endpoint" />
       <page path="/docs/en/api/beta/skills/retrieve" title="Retrieve" method="GET" type="api-endpoint" />
       <page path="/docs/en/api/beta/skills/list" title="List" method="GET" type="api-endpoint" />
@@ -278,7 +279,7 @@
       <endpoint path="messages/batches/create" method="POST" type="api-endpoint" />
       <endpoint path="messages/batches/retrieve" method="GET" type="api-endpoint" />
       <endpoint path="messages/batches/list" method="GET" type="api-endpoint" />
-      <endpoint path="messages/batches/cancel" method="POST" type="api-endpoint" />
+      <endpoint path="messages/batches/cancel" method="DELETE" type="api-endpoint" />
       <endpoint path="messages/batches/results" method="GET" type="api-endpoint" />
       <endpoint path="messages/batches/delete" method="DELETE" type="api-endpoint" />
       <endpoint path="models" type="api-hub" />
@@ -300,7 +301,7 @@
       <endpoint path="beta/messages/batches/create" method="POST" type="api-endpoint" />
       <endpoint path="beta/messages/batches/retrieve" method="GET" type="api-endpoint" />
       <endpoint path="beta/messages/batches/list" method="GET" type="api-endpoint" />
-      <endpoint path="beta/messages/batches/cancel" method="POST" type="api-endpoint" />
+      <endpoint path="beta/messages/batches/cancel" method="DELETE" type="api-endpoint" />
       <endpoint path="beta/messages/batches/results" method="GET" type="api-endpoint" />
       <endpoint path="beta/messages/batches/delete" method="DELETE" type="api-endpoint" />
       <endpoint path="beta/models" type="api-hub" />

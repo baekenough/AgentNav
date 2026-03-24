@@ -10,13 +10,13 @@ type: site-index
 - **Standard**: agents.txt v0.2
 - **Documentation Sets**: 3
 - **Total Pages**: 789
-- **Last Updated**: 2026-03-22
+- **Last Updated**: 2026-03-24
 
 ## Available Documentation Sets
 
 ### Anthropic Claude API
 - **Source**: [platform.claude.com/docs](https://platform.claude.com/docs)
-- **Pages**: 651 | **Sections**: 9
+- **Pages**: 652 | **Sections**: 9
 - **Formats**:
   - [agents.json](/claude-code/agents.json)
   - [agents.md](/claude-code/agents.md)
@@ -25,7 +25,7 @@ type: site-index
 
 ### GPT Codex
 - **Source**: [developers.openai.com](https://developers.openai.com)
-- **Pages**: 69 | **Sections**: 14
+- **Pages**: 68 | **Sections**: 14
 - **Formats**:
   - [agents.json](/gpt-codex/agents.json)
   - [agents.md](/gpt-codex/agents.md)

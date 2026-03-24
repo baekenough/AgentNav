@@ -1,6 +1,6 @@
 # agents.txt v0.2
 # Gemini CLI Documentation — https://geminicli.com
-# Total: 69 pages | Last updated: 2026-03-22
+# Total: 69 pages | Last updated: 2026-03-24
 
 SITE: Gemini CLI Documentation
 URL: https://geminicli.com
@@ -110,22 +110,24 @@ SECTIONS: 9
 == NAVIGATION ==
 
 RULES:
-  1. Start with "Get Started" for installation and quickstart
-  2. Use "Tutorials" for step-by-step guides on common tasks
-  3. "Features" covers agent skills, hooks, model routing, and subagents
-  4. Configuration covers GEMINI.md, enterprise setup, themes, and ignore files
-  5. "Reference" has complete command, tool, and keyboard shortcut docs
-  6. "Extensions" for building and publishing plugins
+  1. Start with "Getting Started" for initial setup
+  2. Use "Concepts" section for understanding prompting, workflows, and models
+  3. Platform-specific guides: App (desktop), IDE (VS Code), CLI (terminal), Web (cloud)
+  4. Configuration covers AGENTS.md, MCP, Skills, Rules, and speed optimization
+  5. Enterprise setup in Administration section
+  6. CI/CD automation via Non-interactive Mode and GitHub Action
 
 INTENT MAP:
-  getting started     → Get Started
-  step-by-step guide  → Tutorials
-  build plugins       → Extensions
-  core features       → Features
-  ide integration     → Features
-  model options       → Features
-  project setup       → Configuration
-  commands / tools    → Reference
-  troubleshooting     → Resources
-  contributing        → Development
-  release history     → Releases
+  getting started     → Getting Started
+  how to prompt       → Concepts
+  desktop app         → Using Codex — App
+  vs code / ide       → Using Codex — IDE Extension
+  terminal / cli      → Using Codex — CLI
+  cloud / web         → Using Codex — Web
+  github / slack      → Integrations
+  security            → Codex Security
+  config / setup      → Configuration
+  enterprise / admin  → Administration
+  automation / ci     → Automation
+  sdk                 → Automation
+  changelog           → Releases

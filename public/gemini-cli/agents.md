@@ -14,7 +14,7 @@ schema:
 - **URL**: https://geminicli.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 69
-- **Last Updated**: 2026-03-22
+- **Last Updated**: 2026-03-24
 
 ## Site Overview
 
@@ -136,23 +136,24 @@ schema:
 
 | Intent | Best Section | Key Pages |
 |--------|-------------|-----------|
-| Getting started | Get Started | Overview, Quickstart, Installation |
-| Step-by-step guides | Tutorials | File Management, Shell Commands, MCP Setup |
-| Build plugins | Extensions | Extensions Overview, Build Extensions, Best Practices |
-| Core features | Features | Agent Skills, Hooks, Subagents, MCP Servers |
-| IDE integration | Features | IDE Integration |
-| Model options | Features | Model Selection, Model Routing, Model Steering |
-| Project setup | Configuration | Project Context (GEMINI.md), Enterprise Configuration |
-| Commands and tools | Reference | Command Reference, Tools Reference |
-| Troubleshooting | Resources | Troubleshooting, FAQ |
-| Contributing | Development | Contribution Guide, Local Development |
-| Release history | Releases | Release Notes, Stable Release |
+| Getting started | Getting Started | Quickstart, Explore |
+| How to prompt | Concepts | Prompting |
+| Desktop app usage | App | Codex app, Codex app features, Codex app commands |
+| VS Code integration | IDE Extension | Codex IDE extension, Codex IDE extension features |
+| Terminal usage | CLI | Codex CLI, Codex CLI features, Command line options |
+| Cloud/web usage | Web | Codex web, Cloud environments |
+| Connect to GitHub/Slack | Integrations | Use Codex in GitHub, Use Codex in Slack, Use Codex in Linear |
+| Security setup | Codex Security | Codex Security, Codex Security setup |
+| Configure Codex | Configuration | Config basics, Configuration Reference |
+| Enterprise setup | Administration | Admin Setup, Governance |
+| CI/CD automation | Automation | Non-interactive mode, Codex GitHub Action |
+| SDK integration | Automation | Codex SDK, Use Codex with the Agents SDK |
+| Release notes | Releases | Codex changelog |
 
 ### Search Priority
 
-1. Get Started — overview, quickstart, installation
-2. Tutorials — step-by-step guides for common tasks
-3. Features — agent skills, hooks, model routing, subagents
-4. Configuration — GEMINI.md, enterprise, themes, ignore files
-5. Reference — commands, tools, keyboard shortcuts
-6. Extensions — build and publish plugins
+1. Getting Started — overview, quickstart
+2. Concepts — prompting, workflows, models
+3. Configuration — config, rules, agents-md, mcp, skills
+4. App / CLI — platform-specific features
+5. Automation — SDK, non-interactive, github-action

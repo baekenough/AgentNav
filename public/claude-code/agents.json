@@ -3,8 +3,8 @@
   "site": {
     "name": "Anthropic Claude API Documentation",
     "url": "https://platform.claude.com/docs",
-    "total_pages": 651,
-    "last_updated": "2026-03-22"
+    "total_pages": 652,
+    "last_updated": "2026-03-24"
   },
   "sections": [
     {
@@ -373,7 +373,7 @@
     {
       "name": "Agent SDK",
       "path_prefix": "/docs/en/agent-sdk",
-      "page_count": 27,
+      "page_count": 28,
       "pages": [
         {
           "path": "/docs/en/agent-sdk/agent-loop",
@@ -494,6 +494,11 @@
           "path": "/docs/en/agent-sdk/todo-tracking",
           "title": "Todo Tracking",
           "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/tool-search",
+          "title": "Tool Search",
+          "type": "tool-reference"
         },
         {
           "path": "/docs/en/agent-sdk/typescript",

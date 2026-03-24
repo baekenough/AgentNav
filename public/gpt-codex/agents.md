@@ -13,8 +13,8 @@ schema:
 
 - **URL**: https://developers.openai.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 69
-- **Last Updated**: 2026-03-15
+- **Total Pages**: 68
+- **Last Updated**: 2026-03-24
 
 ## Site Overview
 
@@ -33,7 +33,7 @@ schema:
 | 11 | Automation | 5 | /codex/ |
 | 12 | Learn | 3 | /codex/ |
 | 13 | Community | 1 | /codex/ |
-| 14 | Releases | 3 | /codex/ |
+| 14 | Releases | 2 | /codex/ |
 
 ---
 
@@ -160,12 +160,10 @@ schema:
 
 - [Codex for Open Source](/codex/community/codex-for-oss) {overview}
 
-## Releases (3 pages)
+## Releases (2 pages)
 
 - [Feature Maturity](/codex/feature-maturity) {reference}
 - [Open Source](/codex/open-source) {reference}
-
-- [Codex LLMs Full Text](/codex/llms-full.txt) {reference}
 
 ---
 

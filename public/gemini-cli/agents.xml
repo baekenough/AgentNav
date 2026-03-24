@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Gemini CLI Documentation" url="https://geminicli.com" total-pages="69" last-updated="2026-03-22" />
+  <site name="Gemini CLI Documentation" url="https://geminicli.com" total-pages="69" last-updated="2026-03-24" />
 
   <sections>
     <!-- 1. Get Started -->
@@ -120,12 +120,11 @@
       <section>Extensions</section>
     </search-priority>
     <tips>
-      <tip>Start with /docs/get-started/ for installation and quickstart</tip>
-      <tip>Use /docs/cli/tutorials/ for step-by-step guides on common tasks</tip>
-      <tip>Configuration covers GEMINI.md, model settings, themes, and enterprise setup</tip>
-      <tip>For building plugins, see /docs/extensions/</tip>
-      <tip>Complete command and tool reference at /docs/reference/</tip>
-      <tip>Subagents and model routing are key features for advanced workflows</tip>
+      <tip>Start with /codex/quickstart for initial setup</tip>
+      <tip>Use /codex/prompting to learn how to interact with Codex effectively</tip>
+      <tip>Configuration guides cover AGENTS.md, MCP, Skills, and Rules</tip>
+      <tip>Platform-specific: App for desktop, IDE for VS Code, CLI for terminal, Web for cloud</tip>
+      <tip>For CI/CD automation, see Non-interactive Mode and GitHub Action</tip>
     </tips>
   </navigation>
 </agents>

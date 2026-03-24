@@ -14,8 +14,8 @@ schema:
 
 - **URL**: https://platform.claude.com/docs
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 651
-- **Last Updated**: 2026-03-22
+- **Total Pages**: 652
+- **Last Updated**: 2026-03-24
 
 ## Site Overview
 
@@ -25,7 +25,7 @@ schema:
 | 2 | About Claude | 12 | /docs/en/about-claude/ |
 | 3 | Build with Claude | 35 | /docs/en/build-with-claude/ |
 | 4 | Agents & Tools | 18 | /docs/en/agents-and-tools/ |
-| 5 | Agent SDK | 27 | /docs/en/agent-sdk/ |
+| 5 | Agent SDK | 28 | /docs/en/agent-sdk/ |
 | 6 | API Reference | 546 | /docs/en/api/ |
 | 7 | Test & Evaluate | 8 | /docs/en/test-and-evaluate/ |
 | 8 | Release Notes | 2 | /docs/en/release-notes/ |
@@ -151,7 +151,7 @@ schema:
 - [Web fetch tool](/docs/en/agents-and-tools/tool-use/web-fetch-tool) {tool-reference}
 - [Web search tool](/docs/en/agents-and-tools/tool-use/web-search-tool) {tool-reference}
 
-## Agent SDK (27 pages)
+## Agent SDK (28 pages)
 
 ### Getting Started
 
@@ -163,7 +163,7 @@ schema:
 
 - [Python SDK](/docs/en/agent-sdk/python) {sdk-guide}
 - [TypeScript SDK](/docs/en/agent-sdk/typescript) {sdk-guide}
-- [TypeScript V2 Preview](/docs/en/agent-sdk/typescript-v2-preview) {sdk-guide}
+- [TypeScript v2 Preview](/docs/en/agent-sdk/typescript-v2-preview) {sdk-guide}
 
 ### Core Concepts
 
@@ -171,7 +171,7 @@ schema:
 - [Sessions](/docs/en/agent-sdk/sessions) {guide}
 - [Subagents](/docs/en/agent-sdk/subagents) {guide}
 - [Custom Tools](/docs/en/agent-sdk/custom-tools) {guide}
-- [MCP](/docs/en/agent-sdk/mcp) {guide}
+- [MCP Integration](/docs/en/agent-sdk/mcp) {guide}
 - [Permissions](/docs/en/agent-sdk/permissions) {guide}
 - [Structured Outputs](/docs/en/agent-sdk/structured-outputs) {guide}
 - [User Input](/docs/en/agent-sdk/user-input) {guide}
@@ -197,6 +197,8 @@ schema:
 - [Cost Tracking](/docs/en/agent-sdk/cost-tracking) {guide}
 - [Hosting](/docs/en/agent-sdk/hosting) {guide}
 - [Secure Deployment](/docs/en/agent-sdk/secure-deployment) {guide}
+
+- [Tool Search](/docs/en/agent-sdk/tool-search) {tool-reference}
 
 ## API Reference (546 pages)
 

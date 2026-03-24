@@ -3,8 +3,8 @@
   "site": {
     "name": "Codex Documentation",
     "url": "https://developers.openai.com",
-    "total_pages": 69,
-    "last_updated": "2026-03-15"
+    "total_pages": 68,
+    "last_updated": "2026-03-24"
   },
   "sections": [
     {
@@ -167,11 +167,10 @@
     {
       "name": "Releases",
       "path_prefix": "/codex",
-      "page_count": 3,
+      "page_count": 2,
       "pages": [
         { "path": "/codex/feature-maturity", "title": "Feature Maturity", "type": "reference" },
-        { "path": "/codex/open-source", "title": "Open Source", "type": "reference" },
-        { "path": "/codex/llms-full.txt", "title": "Codex LLMs Full Text", "type": "reference" }
+        { "path": "/codex/open-source", "title": "Open Source", "type": "reference" }
       ]
     }
   ],

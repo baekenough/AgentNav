@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Codex Documentation — https://developers.openai.com
-# Total: 69 pages | Last updated: 2026-03-15
+# Total: 68 pages | Last updated: 2026-03-24
 
 SITE: Codex Documentation
 URL: https://developers.openai.com
-PAGES: 69
+PAGES: 68
 SECTIONS: 14
 
 == SCHEMA ==
@@ -112,10 +112,9 @@ SECTIONS: 14
 [Community] 1 page
   /codex/community/codex-for-oss | type=overview
 
-[Releases] 3 pages
+[Releases] 2 pages
   /codex/feature-maturity | type=reference
   /codex/open-source | type=reference
-  /codex/llms-full.txt | type=reference
 
 == NAVIGATION ==
 

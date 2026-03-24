@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Anthropic Claude API Documentation — https://platform.claude.com/docs
-# Total: 651 pages | Last updated: 2026-03-22
+# Total: 652 pages | Last updated: 2026-03-24
 
 SITE: Anthropic Claude API Documentation
 URL: https://platform.claude.com/docs
-PAGES: 651
+PAGES: 652
 SECTIONS: 9
 
 == SCHEMA ==
@@ -96,7 +96,7 @@ SECTIONS: 9
   tool-use/web-fetch-tool | type=tool-reference
   tool-use/web-search-tool | type=tool-reference
 
-[Agent SDK] 27 pages | prefix=/docs/en/agent-sdk/
+[Agent SDK] 28 pages | prefix=/docs/en/agent-sdk/
   agent-loop | type=guide
   claude-code-features | type=guide
   cost-tracking | type=guide
@@ -121,6 +121,7 @@ SECTIONS: 9
   structured-outputs | type=guide
   subagents | type=guide
   todo-tracking | type=guide
+  tool-search | type=tool-reference
   typescript | type=sdk-guide
   typescript-v2-preview | type=sdk-guide
   user-input | type=guide

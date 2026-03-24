@@ -1,6 +1,6 @@
 # agents.txt v0.2
 # AgentNav — https://agentnav.baekenough.com
-# Documentation Sets: 3 | Total Pages: 789 | Last updated: 2026-03-22
+# Documentation Sets: 3 | Total Pages: 789 | Last updated: 2026-03-24
 
 SITE: AgentNav
 URL: https://agentnav.baekenough.com
@@ -10,13 +10,13 @@ PAGES: 789
 
 == DOCUMENTATION SETS ==
 
-[Anthropic Claude API] 651 pages, 9 sections | source=https://platform.claude.com/docs
+[Anthropic Claude API] 652 pages, 9 sections | source=https://platform.claude.com/docs
   json: /claude-code/agents.json
   md: /claude-code/agents.md
   xml: /claude-code/agents.xml
   txt: /claude-code/agents.txt
 
-[GPT Codex] 69 pages, 14 sections | source=https://developers.openai.com
+[GPT Codex] 68 pages, 14 sections | source=https://developers.openai.com
   json: /gpt-codex/agents.json
   md: /gpt-codex/agents.md
   xml: /gpt-codex/agents.xml
