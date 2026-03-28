@@ -9,11 +9,11 @@
   },
   "documentation_sets": [
     {
-      "name": "Anthropic Claude API",
+      "name": "Claude Code",
       "path": "/claude-code/",
-      "source_url": "https://platform.claude.com/docs",
-      "total_pages": 652,
-      "sections": 9,
+      "source_url": "https://code.claude.com",
+      "total_pages": 72,
+      "sections": 12,
       "formats": {
         "json": "/claude-code/agents.json",
         "markdown": "/claude-code/agents.md",
