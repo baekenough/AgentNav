@@ -1,12 +1,12 @@
 # agents.txt v0.2
 # AgentNav — https://agentnav.baekenough.com
-# Documentation Sets: 3 | Total Pages: 200 | Last updated: 2026-03-28
+# Documentation Sets: 4 | Total Pages: 820 | Last updated: 2026-03-28
 
 SITE: AgentNav
 URL: https://agentnav.baekenough.com
 TYPE: site-index
-SETS: 3
-PAGES: 200
+SETS: 4
+PAGES: 820
 
 == DOCUMENTATION SETS ==
 
@@ -27,6 +27,12 @@ PAGES: 200
   md: /gemini-cli/agents.md
   xml: /gemini-cli/agents.xml
   txt: /gemini-cli/agents.txt
+
+[Claude API] 620 pages, 18 sections | source=https://platform.claude.com
+  json: /claude-api/agents.json
+  md: /claude-api/agents.md
+  xml: /claude-api/agents.xml
+  txt: /claude-api/agents.txt
 
 == NAVIGATION ==
 RULES:

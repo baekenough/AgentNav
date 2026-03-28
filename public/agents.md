@@ -8,8 +8,8 @@ type: site-index
 
 - **URL**: https://agentnav.baekenough.com
 - **Standard**: agents.txt v0.2
-- **Documentation Sets**: 3
-- **Total Pages**: 200
+- **Documentation Sets**: 4
+- **Total Pages**: 820
 - **Last Updated**: 2026-03-28
 
 ## Available Documentation Sets
@@ -40,6 +40,15 @@ type: site-index
   - [agents.md](/gemini-cli/agents.md)
   - [agents.xml](/gemini-cli/agents.xml)
   - [agents.txt](/gemini-cli/agents.txt)
+
+### Claude API
+- **Source**: [platform.claude.com](https://platform.claude.com)
+- **Pages**: 620 | **Sections**: 18
+- **Formats**:
+  - [agents.json](/claude-api/agents.json)
+  - [agents.md](/claude-api/agents.md)
+  - [agents.xml](/claude-api/agents.xml)
+  - [agents.txt](/claude-api/agents.txt)
 
 ## Navigation Guide
 

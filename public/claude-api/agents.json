@@ -1,0 +1,3270 @@
+{
+  "agents_txt_version": "0.2",
+  "site": {
+    "name": "Anthropic Claude API Documentation",
+    "url": "https://platform.claude.com",
+    "total_pages": 620,
+    "last_updated": "2026-03-28"
+  },
+  "sections": [
+    {
+      "name": "Getting Started",
+      "path_prefix": "/docs/en",
+      "page_count": 2,
+      "pages": [
+        {
+          "path": "/docs/en/get-started",
+          "title": "Quickstart",
+          "type": "tutorial",
+          "description": "Get started with Claude"
+        },
+        {
+          "path": "/docs/en/intro",
+          "title": "Intro to Claude",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "About Claude",
+      "path_prefix": "/docs/en/about-claude",
+      "page_count": 6,
+      "pages": [
+        {
+          "path": "/docs/en/about-claude/models/overview",
+          "title": "Models overview",
+          "type": "overview"
+        },
+        {
+          "path": "/docs/en/about-claude/models/choosing-a-model",
+          "title": "Choosing a model",
+          "type": "guide",
+          "description": "Choosing the right model"
+        },
+        {
+          "path": "/docs/en/about-claude/models/migration-guide",
+          "title": "Migration guide",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/about-claude/model-deprecations",
+          "title": "Model deprecations",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/about-claude/pricing",
+          "title": "Pricing",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/about-claude/models/whats-new-claude-4-6",
+          "title": "What's new in Claude 4.6",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "Build with Claude",
+      "path_prefix": "/docs/en/build-with-claude",
+      "page_count": 35,
+      "pages": [
+        {
+          "path": "/docs/en/build-with-claude/overview",
+          "title": "Features overview",
+          "type": "overview"
+        },
+        {
+          "path": "/docs/en/build-with-claude/prompt-engineering/overview",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Prompt engineering overview"
+        },
+        {
+          "path": "/docs/en/build-with-claude/adaptive-thinking",
+          "title": "Adaptive thinking",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/administration-api",
+          "title": "Admin API overview",
+          "type": "overview"
+        },
+        {
+          "path": "/docs/en/build-with-claude/api-and-data-retention",
+          "title": "API and data retention",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/batch-processing",
+          "title": "Batch processing",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/extended-thinking",
+          "title": "Extended thinking",
+          "type": "guide",
+          "description": "Building with extended thinking"
+        },
+        {
+          "path": "/docs/en/build-with-claude/citations",
+          "title": "Citations",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/claude-code-analytics-api",
+          "title": "Claude Code Analytics API",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/claude-in-microsoft-foundry",
+          "title": "Microsoft Foundry",
+          "type": "guide",
+          "description": "Claude in Microsoft Foundry"
+        },
+        {
+          "path": "/docs/en/build-with-claude/claude-on-amazon-bedrock",
+          "title": "Amazon Bedrock",
+          "type": "guide",
+          "description": "Claude on Amazon Bedrock"
+        },
+        {
+          "path": "/docs/en/build-with-claude/claude-on-vertex-ai",
+          "title": "Vertex AI",
+          "type": "guide",
+          "description": "Claude on Vertex AI"
+        },
+        {
+          "path": "/docs/en/build-with-claude/compaction",
+          "title": "Compaction",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/prompt-engineering/prompting-tools",
+          "title": "Console prompting tools",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/context-editing",
+          "title": "Context editing",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/context-windows",
+          "title": "Context windows",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/data-residency",
+          "title": "Data residency",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/effort",
+          "title": "Effort",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/embeddings",
+          "title": "Embeddings",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/fast-mode",
+          "title": "Fast mode (beta: research preview)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/files",
+          "title": "Files API",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/handling-stop-reasons",
+          "title": "Handling stop reasons",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/multilingual-support",
+          "title": "Multilingual support",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/pdf-support",
+          "title": "PDF support",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/prompt-caching",
+          "title": "Prompt caching",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+          "title": "Prompting best practices",
+          "type": "best-practices"
+        },
+        {
+          "path": "/docs/en/build-with-claude/search-results",
+          "title": "Search results",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/streaming",
+          "title": "Streaming Messages",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/structured-outputs",
+          "title": "Structured outputs",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/token-counting",
+          "title": "Token counting",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/usage-cost-api",
+          "title": "Usage and Cost API",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/skills-guide",
+          "title": "Using Skills with the API",
+          "type": "guide",
+          "description": "Using Agent Skills with the API"
+        },
+        {
+          "path": "/docs/en/build-with-claude/working-with-messages",
+          "title": "Using the Messages API",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/vision",
+          "title": "Vision",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/workspaces",
+          "title": "Workspaces",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "Agent SDK",
+      "path_prefix": "/docs/en/agent-sdk",
+      "page_count": 28,
+      "pages": [
+        {
+          "path": "/docs/en/agent-sdk/overview",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Agent SDK overview"
+        },
+        {
+          "path": "/docs/en/agent-sdk/quickstart",
+          "title": "Quickstart",
+          "type": "tutorial"
+        },
+        {
+          "path": "/docs/en/agent-sdk/python",
+          "title": "Python SDK",
+          "type": "guide",
+          "description": "Agent SDK reference - Python"
+        },
+        {
+          "path": "/docs/en/agent-sdk/typescript",
+          "title": "TypeScript SDK",
+          "type": "guide",
+          "description": "Agent SDK reference - TypeScript"
+        },
+        {
+          "path": "/docs/en/agent-sdk/skills",
+          "title": "Agent Skills in the SDK",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/permissions",
+          "title": "Handling Permissions",
+          "type": "guide",
+          "description": "Configure permissions"
+        },
+        {
+          "path": "/docs/en/agent-sdk/mcp",
+          "title": "Connect MCP servers",
+          "type": "guide",
+          "description": "Connect to external tools with MCP"
+        },
+        {
+          "path": "/docs/en/agent-sdk/structured-outputs",
+          "title": "Structured outputs in the SDK",
+          "type": "guide",
+          "description": "Get structured output from agents"
+        },
+        {
+          "path": "/docs/en/agent-sdk/custom-tools",
+          "title": "Define custom tools",
+          "type": "guide",
+          "description": "Give Claude custom tools"
+        },
+        {
+          "path": "/docs/en/agent-sdk/user-input",
+          "title": "User approvals and input",
+          "type": "guide",
+          "description": "Handle approvals and user input"
+        },
+        {
+          "path": "/docs/en/agent-sdk/hosting",
+          "title": "Hosting the Agent SDK",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/agent-loop",
+          "title": "How the agent loop works",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/hooks",
+          "title": "Control execution with hooks",
+          "type": "guide",
+          "description": "Intercept and control agent behavior with hooks"
+        },
+        {
+          "path": "/docs/en/agent-sdk/migration-guide",
+          "title": "Migration Guide",
+          "type": "guide",
+          "description": "Migrate to Claude Agent SDK"
+        },
+        {
+          "path": "/docs/en/agent-sdk/modifying-system-prompts",
+          "title": "Modifying system prompts",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/plugins",
+          "title": "Plugins in the SDK",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/file-checkpointing",
+          "title": "File checkpointing",
+          "type": "guide",
+          "description": "Rewind file changes with checkpointing"
+        },
+        {
+          "path": "/docs/en/agent-sdk/tool-search",
+          "title": "Tool search",
+          "type": "guide",
+          "description": "Scale to many tools with tool search"
+        },
+        {
+          "path": "/docs/en/agent-sdk/secure-deployment",
+          "title": "Securely deploying AI agents",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/slash-commands",
+          "title": "Slash Commands in the SDK",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/streaming-output",
+          "title": "Stream responses in real-time",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/streaming-vs-single-mode",
+          "title": "Streaming Input",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/subagents",
+          "title": "Subagents in the SDK",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/todo-tracking",
+          "title": "Todo Lists",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/cost-tracking",
+          "title": "Track cost and usage",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agent-sdk/typescript-v2-preview",
+          "title": "TypeScript V2 (preview)",
+          "type": "guide",
+          "description": "TypeScript SDK V2 interface (preview)"
+        },
+        {
+          "path": "/docs/en/agent-sdk/claude-code-features",
+          "title": "Use Claude Code features",
+          "type": "guide",
+          "description": "Use Claude Code features in the SDK"
+        },
+        {
+          "path": "/docs/en/agent-sdk/sessions",
+          "title": "Work with sessions",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "Agents & Tools",
+      "path_prefix": "/docs/en/agents-and-tools",
+      "page_count": 31,
+      "pages": [
+        {
+          "path": "/docs/en/agents-and-tools/agent-skills/overview",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Agent Skills"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/agent-skills/quickstart",
+          "title": "Quickstart",
+          "type": "tutorial",
+          "description": "Get started with Agent Skills in the API"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/overview",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Tool use with Claude"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/bash-tool",
+          "title": "Bash tool",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/agent-skills/claude-api-skill",
+          "title": "Claude API skill",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/code-execution-tool",
+          "title": "Code execution tool",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/computer-use-tool",
+          "title": "Computer use tool",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/define-tools",
+          "title": "Define tools",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/fine-grained-tool-streaming",
+          "title": "Fine-grained tool streaming",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/handle-tool-calls",
+          "title": "Handle tool calls",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+          "title": "How tool use works",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/manage-tool-context",
+          "title": "Manage tool context",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/mcp-connector",
+          "title": "MCP connector",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/memory-tool",
+          "title": "Memory tool",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/parallel-tool-use",
+          "title": "Parallel tool use",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/programmatic-tool-calling",
+          "title": "Programmatic tool calling",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/remote-mcp-servers",
+          "title": "Remote MCP servers",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/server-tools",
+          "title": "Server tools",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/agent-skills/best-practices",
+          "title": "Best practices",
+          "type": "best-practices",
+          "description": "Skill authoring best practices"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/agent-skills/enterprise",
+          "title": "Skills for enterprise",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/strict-tool-use",
+          "title": "Strict tool use",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/text-editor-tool",
+          "title": "Text editor tool",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/tool-combinations",
+          "title": "Tool combinations",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/tool-reference",
+          "title": "Tool reference",
+          "type": "reference"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/tool-runner",
+          "title": "Tool Runner (SDK)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/tool-search-tool",
+          "title": "Tool search",
+          "type": "guide",
+          "description": "Tool search tool"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/tool-use-with-prompt-caching",
+          "title": "Tool use with prompt caching",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/troubleshooting-tool-use",
+          "title": "Troubleshooting",
+          "type": "guide",
+          "description": "Troubleshooting tool use"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/build-a-tool-using-agent",
+          "title": "Tutorial: Build a tool-using agent",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/web-fetch-tool",
+          "title": "Web fetch tool",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/web-search-tool",
+          "title": "Web search tool",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "Test & Evaluate",
+      "path_prefix": "/docs/en/test-and-evaluate",
+      "page_count": 8,
+      "pages": [
+        {
+          "path": "/docs/en/test-and-evaluate/develop-tests",
+          "title": "Define success and build evaluations",
+          "type": "guide",
+          "description": "Define success criteria and build evaluations"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency",
+          "title": "Increase output consistency",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks",
+          "title": "Mitigate jailbreaks",
+          "type": "guide",
+          "description": "Mitigate jailbreaks and prompt injections"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+          "title": "Reduce hallucinations",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/strengthen-guardrails/reduce-prompt-leak",
+          "title": "Reduce prompt leak",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency",
+          "title": "Reducing latency",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/strengthen-guardrails/handle-streaming-refusals",
+          "title": "Streaming refusals",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/eval-tool",
+          "title": "Using the Evaluation Tool",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "API Overview & SDKs",
+      "path_prefix": "/docs/en/api",
+      "page_count": 18,
+      "pages": [
+        {
+          "path": "/docs/en/api/overview",
+          "title": "API overview",
+          "type": "overview",
+          "description": "API Overview"
+        },
+        {
+          "path": "/docs/en/api/admin",
+          "title": "Admin",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/beta-headers",
+          "title": "Beta headers",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/sdks/csharp",
+          "title": "C# SDK",
+          "type": "sdk-guide"
+        },
+        {
+          "path": "/docs/en/api/client-sdks",
+          "title": "Overview",
+          "type": "sdk-guide",
+          "description": "Client SDKs"
+        },
+        {
+          "path": "/docs/en/api/errors",
+          "title": "Errors",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/sdks/go",
+          "title": "Go SDK",
+          "type": "sdk-guide"
+        },
+        {
+          "path": "/docs/en/api/ip-addresses",
+          "title": "IP addresses",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/sdks/java",
+          "title": "Java SDK",
+          "type": "sdk-guide"
+        },
+        {
+          "path": "/docs/en/api/openai-sdk",
+          "title": "OpenAI SDK compatibility",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/sdks/php",
+          "title": "PHP SDK",
+          "type": "sdk-guide"
+        },
+        {
+          "path": "/docs/en/api/sdks/python",
+          "title": "Python SDK",
+          "type": "sdk-guide"
+        },
+        {
+          "path": "/docs/en/api/rate-limits",
+          "title": "Rate limits",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/sdks/ruby",
+          "title": "Ruby SDK",
+          "type": "sdk-guide"
+        },
+        {
+          "path": "/docs/en/api/service-tiers",
+          "title": "Service tiers",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/supported-regions",
+          "title": "Supported regions",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/sdks/typescript",
+          "title": "TypeScript SDK",
+          "type": "sdk-guide"
+        },
+        {
+          "path": "/docs/en/api/versioning",
+          "title": "Versions",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "Messages API",
+      "path_prefix": "/docs/en/api",
+      "page_count": 100,
+      "pages": [
+        {
+          "path": "/docs/en/api/messages/batches",
+          "title": "Batches",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/batches",
+          "title": "Batches (cli)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/batches",
+          "title": "Batches (csharp)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/go/messages/batches",
+          "title": "Batches (Go)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/java/messages/batches",
+          "title": "Batches (Java)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/php/messages/batches",
+          "title": "Batches (php)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/python/messages/batches",
+          "title": "Batches (Python)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/batches",
+          "title": "Batches (Ruby)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/batches",
+          "title": "Batches (terraform)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/batches",
+          "title": "Batches (TypeScript)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/messages/batches/cancel",
+          "title": "Cancel a Message Batch",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/batches/cancel",
+          "title": "Cancel a Message Batch (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/batches/cancel",
+          "title": "Cancel a Message Batch (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/messages/batches/cancel",
+          "title": "Cancel a Message Batch (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/batches/cancel",
+          "title": "Cancel a Message Batch (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/batches/cancel",
+          "title": "Cancel a Message Batch (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/messages/count_tokens",
+          "title": "Count tokens in a Message",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/count_tokens",
+          "title": "Count tokens in a Message (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/count_tokens",
+          "title": "Count tokens in a Message (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/messages/count_tokens",
+          "title": "Count tokens in a Message (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/messages/count_tokens",
+          "title": "Count tokens in a Message (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/messages/count_tokens",
+          "title": "Count tokens in a Message (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/messages/count_tokens",
+          "title": "Count tokens in a Message (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/count_tokens",
+          "title": "Count tokens in a Message (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/count_tokens",
+          "title": "Count tokens in a Message (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/count_tokens",
+          "title": "Count tokens in a Message (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/messages/create",
+          "title": "Create a Message",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/create",
+          "title": "Create a Message (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/create",
+          "title": "Create a Message (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/messages/create",
+          "title": "Create a Message (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/messages/create",
+          "title": "Create a Message (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/messages/create",
+          "title": "Create a Message (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/messages/create",
+          "title": "Create a Message (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/create",
+          "title": "Create a Message (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/create",
+          "title": "Create a Message (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/create",
+          "title": "Create a Message (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/messages/batches/create",
+          "title": "Create a Message Batch",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/batches/create",
+          "title": "Create a Message Batch (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/batches/create",
+          "title": "Create a Message Batch (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/messages/batches/create",
+          "title": "Create a Message Batch (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/messages/batches/create",
+          "title": "Create a Message Batch (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/messages/batches/create",
+          "title": "Create a Message Batch (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/messages/batches/create",
+          "title": "Create a Message Batch (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/batches/create",
+          "title": "Create a Message Batch (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/batches/create",
+          "title": "Create a Message Batch (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/batches/create",
+          "title": "Create a Message Batch (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/messages/batches/delete",
+          "title": "Delete a Message Batch",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/batches/delete",
+          "title": "Delete a Message Batch (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/batches/delete",
+          "title": "Delete a Message Batch (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/messages/batches/delete",
+          "title": "Delete a Message Batch (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/messages/batches/delete",
+          "title": "Delete a Message Batch (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/messages/batches/delete",
+          "title": "Delete a Message Batch (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/messages/batches/delete",
+          "title": "Delete a Message Batch (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/batches/delete",
+          "title": "Delete a Message Batch (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/batches/delete",
+          "title": "Delete a Message Batch (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/batches/delete",
+          "title": "Delete a Message Batch (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/messages/batches/list",
+          "title": "List Message Batches",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/batches/list",
+          "title": "List Message Batches (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/batches/list",
+          "title": "List Message Batches (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/messages/batches/list",
+          "title": "List Message Batches (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/messages/batches/list",
+          "title": "List Message Batches (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/messages/batches/list",
+          "title": "List Message Batches (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/messages/batches/list",
+          "title": "List Message Batches (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/batches/list",
+          "title": "List Message Batches (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/batches/list",
+          "title": "List Message Batches (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/batches/list",
+          "title": "List Message Batches (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/messages",
+          "title": "Messages",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/cli/messages",
+          "title": "Messages (cli)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages",
+          "title": "Messages (csharp)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/go/messages",
+          "title": "Messages (Go)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/java/messages",
+          "title": "Messages (Java)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/php/messages",
+          "title": "Messages (php)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/python/messages",
+          "title": "Messages (Python)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages",
+          "title": "Messages (Ruby)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages",
+          "title": "Messages (terraform)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages",
+          "title": "Messages (TypeScript)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/messages/batches/results",
+          "title": "Retrieve Message Batch results",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/messages/batches/results",
+          "title": "Retrieve Message Batch results (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/messages/batches/results",
+          "title": "Retrieve Message Batch results (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/messages/batches/results",
+          "title": "Retrieve Message Batch results (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/messages/batches/results",
+          "title": "Retrieve Message Batch results (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/messages/batches/results",
+          "title": "Retrieve Message Batch results (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/messages/batches/results",
+          "title": "Retrieve Message Batch results (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/messages/batches/results",
+          "title": "Retrieve Message Batch results (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/messages/batches/results",
+          "title": "Retrieve Message Batch results (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/messages/batches/results",
+          "title": "Retrieve Message Batch results (TypeScript)",
+          "type": "api-endpoint"
+        }
+      ]
+    },
+    {
+      "name": "Messages API (Beta)",
+      "path_prefix": "/docs/en/api",
+      "page_count": 100,
+      "pages": [
+        {
+          "path": "/docs/en/api/beta/messages/batches",
+          "title": "Batches (Beta)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/batches",
+          "title": "Batches (Beta) (cli)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/batches",
+          "title": "Batches (Beta) (csharp)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/batches",
+          "title": "Batches (Beta) (Go)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/batches",
+          "title": "Batches (Beta) (Java)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/batches",
+          "title": "Batches (Beta) (php)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/batches",
+          "title": "Batches (Beta) (Python)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/batches",
+          "title": "Batches (Beta) (Ruby)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/batches",
+          "title": "Batches (Beta) (terraform)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/batches",
+          "title": "Batches (Beta) (TypeScript)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/batches/cancel",
+          "title": "Cancel a Message Batch (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/count_tokens",
+          "title": "Count tokens in a Message (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/messages/create",
+          "title": "Create a Message (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/create",
+          "title": "Create a Message (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/create",
+          "title": "Create a Message (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/create",
+          "title": "Create a Message (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/create",
+          "title": "Create a Message (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/create",
+          "title": "Create a Message (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/create",
+          "title": "Create a Message (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/create",
+          "title": "Create a Message (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/create",
+          "title": "Create a Message (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/create",
+          "title": "Create a Message (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/batches/create",
+          "title": "Create a Message Batch (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/batches/delete",
+          "title": "Delete a Message Batch (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/messages/batches/list",
+          "title": "List Message Batches (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/batches/list",
+          "title": "List Message Batches (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/messages",
+          "title": "Messages (Beta)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages",
+          "title": "Messages (Beta) (cli)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages",
+          "title": "Messages (Beta) (csharp)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages",
+          "title": "Messages (Beta) (Go)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages",
+          "title": "Messages (Beta) (Java)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages",
+          "title": "Messages (Beta) (php)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages",
+          "title": "Messages (Beta) (Python)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages",
+          "title": "Messages (Beta) (Ruby)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages",
+          "title": "Messages (Beta) (terraform)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages",
+          "title": "Messages (Beta) (TypeScript)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/batches/retrieve",
+          "title": "Retrieve a Message Batch (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/messages/batches/results",
+          "title": "Retrieve Message Batch results (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        }
+      ]
+    },
+    {
+      "name": "Models API",
+      "path_prefix": "/docs/en/api",
+      "page_count": 30,
+      "pages": [
+        {
+          "path": "/docs/en/api/models/retrieve",
+          "title": "Get a Model",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/models/retrieve",
+          "title": "Get a Model (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/models/retrieve",
+          "title": "Get a Model (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/models/retrieve",
+          "title": "Get a Model (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/models/retrieve",
+          "title": "Get a Model (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/models/retrieve",
+          "title": "Get a Model (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/models/retrieve",
+          "title": "Get a Model (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/models/retrieve",
+          "title": "Get a Model (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/models/retrieve",
+          "title": "Get a Model (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/models/retrieve",
+          "title": "Get a Model (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/models/list",
+          "title": "List Models",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/models/list",
+          "title": "List Models (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/models/list",
+          "title": "List Models (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/models/list",
+          "title": "List Models (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/models/list",
+          "title": "List Models (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/models/list",
+          "title": "List Models (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/models/list",
+          "title": "List Models (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/models/list",
+          "title": "List Models (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/models/list",
+          "title": "List Models (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/models/list",
+          "title": "List Models (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/models",
+          "title": "Models",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/cli/models",
+          "title": "Models (cli)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/csharp/models",
+          "title": "Models (csharp)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/go/models",
+          "title": "Models (Go)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/java/models",
+          "title": "Models (Java)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/php/models",
+          "title": "Models (php)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/python/models",
+          "title": "Models (Python)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/ruby/models",
+          "title": "Models (Ruby)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/terraform/models",
+          "title": "Models (terraform)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/typescript/models",
+          "title": "Models (TypeScript)",
+          "type": "api-hub"
+        }
+      ]
+    },
+    {
+      "name": "Models API (Beta)",
+      "path_prefix": "/docs/en/api",
+      "page_count": 30,
+      "pages": [
+        {
+          "path": "/docs/en/api/beta/models/retrieve",
+          "title": "Get a Model (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/models/retrieve",
+          "title": "Get a Model (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/models/retrieve",
+          "title": "Get a Model (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/models/retrieve",
+          "title": "Get a Model (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/models/retrieve",
+          "title": "Get a Model (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/models/retrieve",
+          "title": "Get a Model (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/models/retrieve",
+          "title": "Get a Model (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/models/retrieve",
+          "title": "Get a Model (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/models/retrieve",
+          "title": "Get a Model (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/models/retrieve",
+          "title": "Get a Model (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/models/list",
+          "title": "List Models (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/models/list",
+          "title": "List Models (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/models/list",
+          "title": "List Models (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/models/list",
+          "title": "List Models (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/models/list",
+          "title": "List Models (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/models/list",
+          "title": "List Models (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/models/list",
+          "title": "List Models (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/models/list",
+          "title": "List Models (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/models/list",
+          "title": "List Models (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/models/list",
+          "title": "List Models (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/models",
+          "title": "Models (Beta)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/models",
+          "title": "Models (Beta) (cli)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/models",
+          "title": "Models (Beta) (csharp)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/go/beta/models",
+          "title": "Models (Beta) (Go)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/java/beta/models",
+          "title": "Models (Beta) (Java)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/php/beta/models",
+          "title": "Models (Beta) (php)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/python/beta/models",
+          "title": "Models (Beta) (Python)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/models",
+          "title": "Models (Beta) (Ruby)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/models",
+          "title": "Models (Beta) (terraform)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/models",
+          "title": "Models (Beta) (TypeScript)",
+          "type": "api-hub"
+        }
+      ]
+    },
+    {
+      "name": "Completions API",
+      "path_prefix": "/docs/en/api",
+      "page_count": 20,
+      "pages": [
+        {
+          "path": "/docs/en/api/completions",
+          "title": "Completions",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/cli/completions",
+          "title": "Completions (cli)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/csharp/completions",
+          "title": "Completions (csharp)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/go/completions",
+          "title": "Completions (Go)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/java/completions",
+          "title": "Completions (Java)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/php/completions",
+          "title": "Completions (php)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/python/completions",
+          "title": "Completions (Python)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/ruby/completions",
+          "title": "Completions (Ruby)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/terraform/completions",
+          "title": "Completions (terraform)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/typescript/completions",
+          "title": "Completions (TypeScript)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/completions/create",
+          "title": "Create a Text Completion",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/completions/create",
+          "title": "Create a Text Completion (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/completions/create",
+          "title": "Create a Text Completion (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/completions/create",
+          "title": "Create a Text Completion (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/completions/create",
+          "title": "Create a Text Completion (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/completions/create",
+          "title": "Create a Text Completion (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/completions/create",
+          "title": "Create a Text Completion (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/completions/create",
+          "title": "Create a Text Completion (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/completions/create",
+          "title": "Create a Text Completion (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/completions/create",
+          "title": "Create a Text Completion (TypeScript)",
+          "type": "api-endpoint"
+        }
+      ]
+    },
+    {
+      "name": "Admin API",
+      "path_prefix": "/docs/en/api/admin",
+      "page_count": 33,
+      "pages": [
+        {
+          "path": "/docs/en/api/admin/api_keys",
+          "title": "API Keys",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/archive",
+          "title": "Archive Workspace",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/cost_report",
+          "title": "Cost Report",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/admin/invites/create",
+          "title": "Create Invite",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/create",
+          "title": "Create Workspace",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/members/create",
+          "title": "Create Workspace Member",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/invites/delete",
+          "title": "Delete Invite",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/members/delete",
+          "title": "Delete Workspace Member",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/api_keys/retrieve",
+          "title": "Get API Key",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/usage_report/retrieve_claude_code",
+          "title": "Get Claude Code Usage Report",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/cost_report/retrieve",
+          "title": "Get Cost Report",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/organizations/me",
+          "title": "Get Current Organization",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/invites/retrieve",
+          "title": "Get Invite",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/usage_report/retrieve_messages",
+          "title": "Get Messages Usage Report",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/users/retrieve",
+          "title": "Get User",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/retrieve",
+          "title": "Get Workspace",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/members/retrieve",
+          "title": "Get Workspace Member",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/invites",
+          "title": "Invites",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/admin/api_keys/list",
+          "title": "List API Keys",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/invites/list",
+          "title": "List Invites",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/users/list",
+          "title": "List Users",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/members/list",
+          "title": "List Workspace Members",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/list",
+          "title": "List Workspaces",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/members",
+          "title": "Members",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/admin/organizations",
+          "title": "Organizations",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/admin/users/delete",
+          "title": "Remove User",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/api_keys/update",
+          "title": "Update API Key",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/users/update",
+          "title": "Update User",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/update",
+          "title": "Update Workspace",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces/members/update",
+          "title": "Update Workspace Member",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/admin/usage_report",
+          "title": "Usage Report",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/admin/users",
+          "title": "Users",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/admin/workspaces",
+          "title": "Workspaces",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "Files API (Beta)",
+      "path_prefix": "/docs/en/api",
+      "page_count": 60,
+      "pages": [
+        {
+          "path": "/docs/en/api/beta/files/delete",
+          "title": "Delete File (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/files/delete",
+          "title": "Delete File (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/files/delete",
+          "title": "Delete File (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/files/delete",
+          "title": "Delete File (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/files/delete",
+          "title": "Delete File (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/files/delete",
+          "title": "Delete File (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/files/delete",
+          "title": "Delete File (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/files/delete",
+          "title": "Delete File (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/files/delete",
+          "title": "Delete File (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/files/delete",
+          "title": "Delete File (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/files/download",
+          "title": "Download File (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/files/download",
+          "title": "Download File (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/files/download",
+          "title": "Download File (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/files/download",
+          "title": "Download File (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/files/download",
+          "title": "Download File (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/files/download",
+          "title": "Download File (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/files/download",
+          "title": "Download File (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/files/download",
+          "title": "Download File (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/files/download",
+          "title": "Download File (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/files/download",
+          "title": "Download File (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/files",
+          "title": "Files (Beta)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/files",
+          "title": "Files (Beta) (cli)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/files",
+          "title": "Files (Beta) (csharp)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/go/beta/files",
+          "title": "Files (Beta) (Go)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/java/beta/files",
+          "title": "Files (Beta) (Java)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/php/beta/files",
+          "title": "Files (Beta) (php)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/python/beta/files",
+          "title": "Files (Beta) (Python)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/files",
+          "title": "Files (Beta) (Ruby)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/files",
+          "title": "Files (Beta) (terraform)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/files",
+          "title": "Files (Beta) (TypeScript)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/files/retrieve_metadata",
+          "title": "Get File Metadata (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/files/list",
+          "title": "List Files (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/files/list",
+          "title": "List Files (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/files/list",
+          "title": "List Files (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/files/list",
+          "title": "List Files (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/files/list",
+          "title": "List Files (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/files/list",
+          "title": "List Files (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/files/list",
+          "title": "List Files (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/files/list",
+          "title": "List Files (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/files/list",
+          "title": "List Files (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/files/list",
+          "title": "List Files (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/files/upload",
+          "title": "Upload File (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/files/upload",
+          "title": "Upload File (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/files/upload",
+          "title": "Upload File (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/files/upload",
+          "title": "Upload File (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/files/upload",
+          "title": "Upload File (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/files/upload",
+          "title": "Upload File (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/files/upload",
+          "title": "Upload File (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/files/upload",
+          "title": "Upload File (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/files/upload",
+          "title": "Upload File (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/files/upload",
+          "title": "Upload File (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        }
+      ]
+    },
+    {
+      "name": "Skills API (Beta)",
+      "path_prefix": "/docs/en/api",
+      "page_count": 100,
+      "pages": [
+        {
+          "path": "/docs/en/api/beta/skills/create",
+          "title": "Create Skill (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/create",
+          "title": "Create Skill (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/create",
+          "title": "Create Skill (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/create",
+          "title": "Create Skill (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/create",
+          "title": "Create Skill (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/create",
+          "title": "Create Skill (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/create",
+          "title": "Create Skill (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/create",
+          "title": "Create Skill (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/create",
+          "title": "Create Skill (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/create",
+          "title": "Create Skill (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/versions/create",
+          "title": "Create Skill Version (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/skills/delete",
+          "title": "Delete Skill (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/delete",
+          "title": "Delete Skill (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/delete",
+          "title": "Delete Skill (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/delete",
+          "title": "Delete Skill (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/delete",
+          "title": "Delete Skill (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/delete",
+          "title": "Delete Skill (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/delete",
+          "title": "Delete Skill (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/delete",
+          "title": "Delete Skill (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/delete",
+          "title": "Delete Skill (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/delete",
+          "title": "Delete Skill (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/versions/delete",
+          "title": "Delete Skill Version (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/skills/retrieve",
+          "title": "Get Skill (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/retrieve",
+          "title": "Get Skill (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/versions/retrieve",
+          "title": "Get Skill Version (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/versions/list",
+          "title": "List Skill Versions (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/skills/list",
+          "title": "List Skills (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/list",
+          "title": "List Skills (Beta) (cli)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/list",
+          "title": "List Skills (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/list",
+          "title": "List Skills (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/list",
+          "title": "List Skills (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/list",
+          "title": "List Skills (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/list",
+          "title": "List Skills (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/list",
+          "title": "List Skills (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/list",
+          "title": "List Skills (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/list",
+          "title": "List Skills (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/skills",
+          "title": "Skills (Beta)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills",
+          "title": "Skills (Beta) (cli)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills",
+          "title": "Skills (Beta) (csharp)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills",
+          "title": "Skills (Beta) (Go)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills",
+          "title": "Skills (Beta) (Java)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills",
+          "title": "Skills (Beta) (php)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills",
+          "title": "Skills (Beta) (Python)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills",
+          "title": "Skills (Beta) (Ruby)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills",
+          "title": "Skills (Beta) (terraform)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills",
+          "title": "Skills (Beta) (TypeScript)",
+          "type": "api-hub"
+        },
+        {
+          "path": "/docs/en/api/beta/skills/versions",
+          "title": "Versions (Beta)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/skills/versions",
+          "title": "Versions (Beta) (cli)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/skills/versions",
+          "title": "Versions (Beta) (csharp)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/go/beta/skills/versions",
+          "title": "Versions (Beta) (Go)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/java/beta/skills/versions",
+          "title": "Versions (Beta) (Java)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/php/beta/skills/versions",
+          "title": "Versions (Beta) (php)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/python/beta/skills/versions",
+          "title": "Versions (Beta) (Python)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/skills/versions",
+          "title": "Versions (Beta) (Ruby)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/skills/versions",
+          "title": "Versions (Beta) (terraform)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/skills/versions",
+          "title": "Versions (Beta) (TypeScript)",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "Beta API Overview",
+      "path_prefix": "/docs/en/api",
+      "page_count": 10,
+      "pages": [
+        {
+          "path": "/docs/en/api/beta",
+          "title": "Beta (Beta)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/cli/beta",
+          "title": "Beta (Beta) (cli)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta",
+          "title": "Beta (Beta) (csharp)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/go/beta",
+          "title": "Beta (Beta) (Go)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/java/beta",
+          "title": "Beta (Beta) (Java)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/php/beta",
+          "title": "Beta (Beta) (php)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/python/beta",
+          "title": "Beta (Beta) (Python)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta",
+          "title": "Beta (Beta) (Ruby)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta",
+          "title": "Beta (Beta) (terraform)",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta",
+          "title": "Beta (Beta) (TypeScript)",
+          "type": "guide"
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "path_prefix": "/docs/en",
+      "page_count": 8,
+      "pages": [
+        {
+          "path": "/docs/en/about-claude/use-case-guides/overview",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Guides to common use cases"
+        },
+        {
+          "path": "/docs/en/resources/overview",
+          "title": "Overview",
+          "type": "overview"
+        },
+        {
+          "path": "/docs/en/about-claude/use-case-guides/content-moderation",
+          "title": "Content moderation",
+          "type": "use-case"
+        },
+        {
+          "path": "/docs/en/about-claude/use-case-guides/customer-support-chat",
+          "title": "Customer support agent",
+          "type": "use-case"
+        },
+        {
+          "path": "/docs/en/about-claude/glossary",
+          "title": "Glossary",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/about-claude/use-case-guides/legal-summarization",
+          "title": "Legal summarization",
+          "type": "use-case"
+        },
+        {
+          "path": "/docs/en/release-notes/system-prompts",
+          "title": "System Prompts",
+          "type": "changelog"
+        },
+        {
+          "path": "/docs/en/about-claude/use-case-guides/ticket-routing",
+          "title": "Ticket routing",
+          "type": "use-case"
+        }
+      ]
+    },
+    {
+      "name": "Release Notes",
+      "path_prefix": "/docs/en/release-notes",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/docs/en/release-notes/overview",
+          "title": "Claude Platform",
+          "type": "overview"
+        }
+      ]
+    }
+  ]
+}

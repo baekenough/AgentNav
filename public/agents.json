@@ -4,7 +4,7 @@
     "name": "AgentNav",
     "url": "https://agentnav.baekenough.com",
     "description": "AI Agent Documentation Navigator — agents.txt standard implementation providing structured documentation for AI coding assistants",
-    "total_documentation_sets": 3,
+    "total_documentation_sets": 4,
     "last_updated": "2026-03-28"
   },
   "documentation_sets": [
@@ -45,6 +45,19 @@
         "markdown": "/gemini-cli/agents.md",
         "xml": "/gemini-cli/agents.xml",
         "text": "/gemini-cli/agents.txt"
+      }
+    },
+    {
+      "name": "Claude API",
+      "path": "/claude-api/",
+      "source_url": "https://platform.claude.com",
+      "total_pages": 620,
+      "sections": 18,
+      "formats": {
+        "json": "/claude-api/agents.json",
+        "markdown": "/claude-api/agents.md",
+        "xml": "/claude-api/agents.xml",
+        "text": "/claude-api/agents.txt"
       }
     }
   ],
