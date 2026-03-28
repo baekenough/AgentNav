@@ -5,7 +5,7 @@ schema:
   sections: "## heading = section name"
   subsections: "### heading = subsection grouping"
   pages: "- [title](path) {type}"
-  page_types: [overview, tutorial, guide, reference, tool-reference, best-practices, changelog]
+  page_types: [overview, tutorial, guide, reference, tool-reference, changelog]
   navigation: "See ## Navigation Guide section"
 ---
 
@@ -13,36 +13,33 @@ schema:
 
 - **URL**: https://geminicli.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 69
+- **Total Pages**: 57
 - **Last Updated**: 2026-03-28
 
 ## Site Overview
 
 | # | Section | Pages | Base Path |
 |---|---------|-------|-----------|
-| 1 | Get Started | 7 | /docs/ |
-| 2 | Tutorials | 10 | /docs/cli/tutorials/ |
-| 3 | Extensions | 5 | /docs/extensions/ |
-| 4 | Features | 20 | /docs/ |
-| 5 | Configuration | 8 | /docs/cli/ |
-| 6 | Reference | 6 | /docs/reference/ |
-| 7 | Resources | 5 | /docs/resources/ |
-| 8 | Development | 5 | /docs/ |
-| 9 | Releases | 3 | /docs/changelogs/ |
+| 1 | Get Started | 5 | /docs/ |
+| 2 | Use Gemini CLI | 9 | /docs/cli/tutorials/ |
+| 3 | Features | 17 | /docs/ |
+| 4 | Configuration | 8 | /docs/cli/ |
+| 5 | Reference | 6 | /docs/reference/ |
+| 6 | Resources | 5 | /docs/resources/ |
+| 7 | Development | 4 | /docs/ |
+| 8 | Releases | 3 | /docs/changelogs/ |
 
 ---
 
-## Get Started (7 pages)
+## Get Started (5 pages)
 
-- [Overview](/docs/) {overview}
 - [Quickstart](/docs/get-started/) {tutorial}
 - [Installation](/docs/get-started/installation/) {tutorial}
 - [Authentication](/docs/get-started/authentication/) {tutorial}
-- [Examples](/docs/get-started/examples/) {tutorial}
 - [CLI Cheatsheet](/docs/cli/cli-reference/) {reference}
 - [Gemini 3 on Gemini CLI](/docs/get-started/gemini-3/) {overview}
 
-## Tutorials (10 pages)
+## Use Gemini CLI (9 pages)
 
 - [File Management](/docs/cli/tutorials/file-management/) {tutorial}
 - [Get Started with Agent Skills](/docs/cli/tutorials/skills-getting-started/) {tutorial}
@@ -50,33 +47,20 @@ schema:
 - [Execute Shell Commands](/docs/cli/tutorials/shell-commands/) {tutorial}
 - [Manage Sessions and History](/docs/cli/tutorials/session-management/) {tutorial}
 - [Plan Tasks with Todos](/docs/cli/tutorials/task-planning/) {tutorial}
-- [Use Plan Mode with Model Steering](/docs/cli/tutorials/plan-mode-steering/) {tutorial}
 - [Web Search and Fetch](/docs/cli/tutorials/web-tools/) {tutorial}
 - [Set Up an MCP Server](/docs/cli/tutorials/mcp-setup/) {tutorial}
 - [Automate Tasks](/docs/cli/tutorials/automation/) {tutorial}
 
-## Extensions (5 pages)
-
-- [Extensions Overview](/docs/extensions/) {overview}
-- [Developer Guide: Build Extensions](/docs/extensions/writing-extensions/) {guide}
-- [Developer Guide: Best Practices](/docs/extensions/best-practices/) {best-practices}
-- [Developer Guide: Releasing](/docs/extensions/releasing/) {guide}
-- [Developer Guide: Reference](/docs/extensions/reference/) {reference}
-
-## Features (20 pages)
+## Features (17 pages)
 
 - [Agent Skills](/docs/cli/skills/) {guide}
 - [Checkpointing](/docs/cli/checkpointing/) {guide}
 - [Headless Mode](/docs/cli/headless/) {guide}
-- [Git Worktrees](/docs/cli/git-worktrees/) {guide}
 - [Hooks Overview](/docs/hooks/) {guide}
-- [Hooks Reference](/docs/hooks/reference/) {reference}
 - [IDE Integration](/docs/ide-integration/) {guide}
 - [MCP Servers](/docs/tools/mcp-server/) {guide}
 - [Model Routing](/docs/cli/model-routing/) {guide}
 - [Model Selection](/docs/cli/model/) {guide}
-- [Model Steering](/docs/cli/model-steering/) {guide}
-- [Notifications](/docs/cli/notifications/) {guide}
 - [Plan Mode](/docs/cli/plan-mode/) {guide}
 - [Subagents](/docs/core/subagents/) {guide}
 - [Remote Subagents](/docs/core/remote-agents/) {guide}
@@ -85,6 +69,8 @@ schema:
 - [Settings](/docs/cli/settings/) {reference}
 - [Telemetry](/docs/cli/telemetry/) {reference}
 - [Token Caching](/docs/cli/token-caching/) {guide}
+
+- [Extensions](/docs/extensions/) {guide}
 
 ## Configuration (8 pages)
 
@@ -114,11 +100,10 @@ schema:
 - [Troubleshooting](/docs/resources/troubleshooting/) {guide}
 - [Uninstall](/docs/resources/uninstall/) {guide}
 
-## Development (5 pages)
+## Development (4 pages)
 
 - [Contribution Guide](/docs/contributing/) {guide}
 - [Integration Testing](/docs/integration-tests/) {guide}
-- [Issue and PR Automation](/docs/issue-and-pr-automation/) {guide}
 - [Local Development](/docs/local-development/) {guide}
 - [NPM Package Structure](/docs/npm/) {reference}
 

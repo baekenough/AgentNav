@@ -1,11 +1,11 @@
 # agents.txt v0.2
 # Gemini CLI Documentation — https://geminicli.com
-# Total: 69 pages | Last updated: 2026-03-28
+# Total: 57 pages | Last updated: 2026-03-28
 
 SITE: Gemini CLI Documentation
 URL: https://geminicli.com
-PAGES: 69
-SECTIONS: 9
+PAGES: 57
+SECTIONS: 8
 
 == SCHEMA ==
 # Formal grammar for parsing this file
@@ -20,47 +20,34 @@ SECTIONS: 9
 
 == SECTIONS ==
 
-[Get Started] 7 pages | prefix=/docs/
-   | type=overview
+[Get Started] 5 pages | prefix=/docs/
   get-started/ | type=tutorial
   get-started/installation/ | type=tutorial
   get-started/authentication/ | type=tutorial
-  get-started/examples/ | type=tutorial
   cli/cli-reference/ | type=reference
   get-started/gemini-3/ | type=overview
 
-[Tutorials] 10 pages | prefix=/docs/cli/tutorials/
+[Use Gemini CLI] 9 pages | prefix=/docs/cli/tutorials/
   file-management/ | type=tutorial
   skills-getting-started/ | type=tutorial
   memory-management/ | type=tutorial
   shell-commands/ | type=tutorial
   session-management/ | type=tutorial
   task-planning/ | type=tutorial
-  plan-mode-steering/ | type=tutorial
   web-tools/ | type=tutorial
   mcp-setup/ | type=tutorial
   automation/ | type=tutorial
 
-[Extensions] 5 pages | prefix=/docs/extensions/
-   | type=overview
-  writing-extensions/ | type=guide
-  best-practices/ | type=best-practices
-  releasing/ | type=guide
-  reference/ | type=reference
-
-[Features] 20 pages | prefix=/docs/
+[Features] 17 pages | prefix=/docs/
+  extensions/ | type=guide
   cli/skills/ | type=guide
   cli/checkpointing/ | type=guide
   cli/headless/ | type=guide
-  cli/git-worktrees/ | type=guide
   hooks/ | type=guide
-  hooks/reference/ | type=reference
   ide-integration/ | type=guide
   tools/mcp-server/ | type=guide
   cli/model-routing/ | type=guide
   cli/model/ | type=guide
-  cli/model-steering/ | type=guide
-  cli/notifications/ | type=guide
   cli/plan-mode/ | type=guide
   core/subagents/ | type=guide
   core/remote-agents/ | type=guide
@@ -95,10 +82,9 @@ SECTIONS: 9
   troubleshooting/ | type=guide
   uninstall/ | type=guide
 
-[Development] 5 pages | prefix=/docs/
+[Development] 4 pages | prefix=/docs/
   contributing/ | type=guide
   integration-tests/ | type=guide
-  issue-and-pr-automation/ | type=guide
   local-development/ | type=guide
   npm/ | type=reference
 

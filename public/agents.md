@@ -9,7 +9,7 @@ type: site-index
 - **URL**: https://agentnav.baekenough.com
 - **Standard**: agents.txt v0.2
 - **Documentation Sets**: 3
-- **Total Pages**: 792
+- **Total Pages**: 780
 - **Last Updated**: 2026-03-28
 
 ## Available Documentation Sets
@@ -34,7 +34,7 @@ type: site-index
 
 ### Gemini CLI
 - **Source**: [geminicli.com](https://geminicli.com)
-- **Pages**: 69 | **Sections**: 9
+- **Pages**: 57 | **Sections**: 8
 - **Formats**:
   - [agents.json](/gemini-cli/agents.json)
   - [agents.md](/gemini-cli/agents.md)

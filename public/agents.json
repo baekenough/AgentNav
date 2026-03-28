@@ -38,8 +38,8 @@
       "name": "Gemini CLI",
       "path": "/gemini-cli/",
       "source_url": "https://geminicli.com",
-      "total_pages": 69,
-      "sections": 9,
+      "total_pages": 57,
+      "sections": 8,
       "formats": {
         "json": "/gemini-cli/agents.json",
         "markdown": "/gemini-cli/agents.md",

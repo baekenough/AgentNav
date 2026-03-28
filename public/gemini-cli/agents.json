@@ -3,28 +3,26 @@
   "site": {
     "name": "Gemini CLI Documentation",
     "url": "https://geminicli.com",
-    "total_pages": 69,
+    "total_pages": 57,
     "last_updated": "2026-03-28"
   },
   "sections": [
     {
       "name": "Get Started",
       "path_prefix": "/docs",
-      "page_count": 7,
+      "page_count": 5,
       "pages": [
-        { "path": "/docs/", "title": "Overview", "type": "overview" },
         { "path": "/docs/get-started/", "title": "Quickstart", "type": "tutorial" },
         { "path": "/docs/get-started/installation/", "title": "Installation", "type": "tutorial" },
         { "path": "/docs/get-started/authentication/", "title": "Authentication", "type": "tutorial" },
-        { "path": "/docs/get-started/examples/", "title": "Examples", "type": "tutorial" },
         { "path": "/docs/cli/cli-reference/", "title": "CLI Cheatsheet", "type": "reference" },
         { "path": "/docs/get-started/gemini-3/", "title": "Gemini 3 on Gemini CLI", "type": "overview" }
       ]
     },
     {
-      "name": "Tutorials",
+      "name": "Use Gemini CLI",
       "path_prefix": "/docs/cli/tutorials",
-      "page_count": 10,
+      "page_count": 9,
       "pages": [
         { "path": "/docs/cli/tutorials/file-management/", "title": "File Management", "type": "tutorial" },
         { "path": "/docs/cli/tutorials/skills-getting-started/", "title": "Get Started with Agent Skills", "type": "tutorial" },
@@ -32,41 +30,25 @@
         { "path": "/docs/cli/tutorials/shell-commands/", "title": "Execute Shell Commands", "type": "tutorial" },
         { "path": "/docs/cli/tutorials/session-management/", "title": "Manage Sessions and History", "type": "tutorial" },
         { "path": "/docs/cli/tutorials/task-planning/", "title": "Plan Tasks with Todos", "type": "tutorial" },
-        { "path": "/docs/cli/tutorials/plan-mode-steering/", "title": "Use Plan Mode with Model Steering", "type": "tutorial" },
         { "path": "/docs/cli/tutorials/web-tools/", "title": "Web Search and Fetch", "type": "tutorial" },
         { "path": "/docs/cli/tutorials/mcp-setup/", "title": "Set Up an MCP Server", "type": "tutorial" },
         { "path": "/docs/cli/tutorials/automation/", "title": "Automate Tasks", "type": "tutorial" }
       ]
     },
     {
-      "name": "Extensions",
-      "path_prefix": "/docs/extensions",
-      "page_count": 5,
-      "pages": [
-        { "path": "/docs/extensions/", "title": "Extensions Overview", "type": "overview" },
-        { "path": "/docs/extensions/writing-extensions/", "title": "Developer Guide: Build Extensions", "type": "guide" },
-        { "path": "/docs/extensions/best-practices/", "title": "Developer Guide: Best Practices", "type": "best-practices" },
-        { "path": "/docs/extensions/releasing/", "title": "Developer Guide: Releasing", "type": "guide" },
-        { "path": "/docs/extensions/reference/", "title": "Developer Guide: Reference", "type": "reference" }
-      ]
-    },
-    {
       "name": "Features",
       "path_prefix": "/docs",
-      "page_count": 20,
+      "page_count": 17,
       "pages": [
+        { "path": "/docs/extensions/", "title": "Extensions", "type": "guide" },
         { "path": "/docs/cli/skills/", "title": "Agent Skills", "type": "guide" },
         { "path": "/docs/cli/checkpointing/", "title": "Checkpointing", "type": "guide" },
         { "path": "/docs/cli/headless/", "title": "Headless Mode", "type": "guide" },
-        { "path": "/docs/cli/git-worktrees/", "title": "Git Worktrees", "type": "guide" },
         { "path": "/docs/hooks/", "title": "Hooks Overview", "type": "guide" },
-        { "path": "/docs/hooks/reference/", "title": "Hooks Reference", "type": "reference" },
         { "path": "/docs/ide-integration/", "title": "IDE Integration", "type": "guide" },
         { "path": "/docs/tools/mcp-server/", "title": "MCP Servers", "type": "guide" },
         { "path": "/docs/cli/model-routing/", "title": "Model Routing", "type": "guide" },
         { "path": "/docs/cli/model/", "title": "Model Selection", "type": "guide" },
-        { "path": "/docs/cli/model-steering/", "title": "Model Steering", "type": "guide" },
-        { "path": "/docs/cli/notifications/", "title": "Notifications", "type": "guide" },
         { "path": "/docs/cli/plan-mode/", "title": "Plan Mode", "type": "guide" },
         { "path": "/docs/core/subagents/", "title": "Subagents", "type": "guide" },
         { "path": "/docs/core/remote-agents/", "title": "Remote Subagents", "type": "guide" },
@@ -120,11 +102,10 @@
     {
       "name": "Development",
       "path_prefix": "/docs",
-      "page_count": 5,
+      "page_count": 4,
       "pages": [
         { "path": "/docs/contributing/", "title": "Contribution Guide", "type": "guide" },
         { "path": "/docs/integration-tests/", "title": "Integration Testing", "type": "guide" },
-        { "path": "/docs/issue-and-pr-automation/", "title": "Issue and PR Automation", "type": "guide" },
         { "path": "/docs/local-development/", "title": "Local Development", "type": "guide" },
         { "path": "/docs/npm/", "title": "NPM Package Structure", "type": "reference" }
       ]
@@ -142,11 +123,11 @@
   ],
   "navigation": {
     "default_section": "Get Started",
-    "search_priority": ["Get Started", "Tutorials", "Features", "Configuration", "Reference", "Extensions"],
+    "search_priority": ["Get Started", "Use Gemini CLI", "Features", "Configuration", "Reference"],
     "tips": [
       "Start with /docs/get-started/ for initial setup",
       "Use /docs/cli/tutorials/ for step-by-step guides on common tasks",
-      "Extensions at /docs/extensions/ for building plugins",
+      "Extensions are now part of the Features section",
       "Configuration covers GEMINI.md, model settings, themes, and enterprise setup",
       "For complete tool and command reference, see the Reference section",
       "Subagents and model routing are key features for advanced workflows"
