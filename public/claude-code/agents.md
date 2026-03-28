@@ -15,7 +15,7 @@ schema:
 - **URL**: https://platform.claude.com/docs
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 652
-- **Last Updated**: 2026-03-24
+- **Last Updated**: 2026-03-28
 
 ## Site Overview
 
@@ -197,7 +197,6 @@ schema:
 - [Cost Tracking](/docs/en/agent-sdk/cost-tracking) {guide}
 - [Hosting](/docs/en/agent-sdk/hosting) {guide}
 - [Secure Deployment](/docs/en/agent-sdk/secure-deployment) {guide}
-
 - [Tool Search](/docs/en/agent-sdk/tool-search) {tool-reference}
 
 ## API Reference (546 pages)

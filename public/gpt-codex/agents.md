@@ -13,8 +13,8 @@ schema:
 
 - **URL**: https://developers.openai.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 68
-- **Last Updated**: 2026-03-24
+- **Total Pages**: 71
+- **Last Updated**: 2026-03-28
 
 ## Site Overview
 
@@ -28,7 +28,7 @@ schema:
 | 6 | Using Codex — Web | 3 | /codex/cloud/ |
 | 7 | Integrations | 3 | /codex/integrations/ |
 | 8 | Codex Security | 4 | /codex/security/ |
-| 9 | Configuration | 11 | /codex/ |
+| 9 | Configuration | 14 | /codex/ |
 | 10 | Administration | 6 | /codex/ |
 | 11 | Automation | 5 | /codex/ |
 | 12 | Learn | 3 | /codex/ |
@@ -101,7 +101,7 @@ schema:
 - [Improving the threat model](/codex/security/threat-model) {guide}
 - [FAQ](/codex/security/faq) {reference}
 
-## Configuration (11 pages)
+## Configuration (14 pages)
 
 ### Config File
 
@@ -119,6 +119,10 @@ schema:
 - [Agent Skills](/codex/skills) {guide}
 - [Subagents](/codex/subagents) {guide}
 - [Custom Prompts](/codex/custom-prompts) {best-practices}
+
+- [Hooks](/codex/hooks) {guide}
+- [Plugins](/codex/plugins) {guide}
+- [Build plugins](/codex/plugins/build) {guide}
 
 ## Administration (6 pages)
 

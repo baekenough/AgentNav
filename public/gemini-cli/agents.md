@@ -14,7 +14,7 @@ schema:
 - **URL**: https://geminicli.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 69
-- **Last Updated**: 2026-03-24
+- **Last Updated**: 2026-03-28
 
 ## Site Overview
 

@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Codex Documentation — https://developers.openai.com
-# Total: 68 pages | Last updated: 2026-03-24
+# Total: 71 pages | Last updated: 2026-03-28
 
 SITE: Codex Documentation
 URL: https://developers.openai.com
-PAGES: 68
+PAGES: 71
 SECTIONS: 14
 
 == SCHEMA ==
@@ -76,7 +76,7 @@ SECTIONS: 14
   threat-model | type=guide
   faq | type=reference
 
-[Configuration] 11 pages
+[Configuration] 14 pages
   /codex/config-basic | type=guide
   /codex/config-advanced | type=guide
   /codex/config-reference | type=reference
@@ -87,6 +87,9 @@ SECTIONS: 14
   /codex/mcp | type=guide
   /codex/skills | type=guide
   /codex/subagents | type=guide
+  /codex/hooks | type=guide
+  /codex/plugins | type=guide
+  /codex/plugins/build | type=guide
   /codex/custom-prompts | type=best-practices
 
 [Administration] 6 pages

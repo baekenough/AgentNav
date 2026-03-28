@@ -9,8 +9,8 @@ type: site-index
 - **URL**: https://agentnav.baekenough.com
 - **Standard**: agents.txt v0.2
 - **Documentation Sets**: 3
-- **Total Pages**: 789
-- **Last Updated**: 2026-03-24
+- **Total Pages**: 792
+- **Last Updated**: 2026-03-28
 
 ## Available Documentation Sets
 
@@ -25,7 +25,7 @@ type: site-index
 
 ### GPT Codex
 - **Source**: [developers.openai.com](https://developers.openai.com)
-- **Pages**: 68 | **Sections**: 14
+- **Pages**: 71 | **Sections**: 14
 - **Formats**:
   - [agents.json](/gpt-codex/agents.json)
   - [agents.md](/gpt-codex/agents.md)

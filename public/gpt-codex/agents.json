@@ -3,8 +3,8 @@
   "site": {
     "name": "Codex Documentation",
     "url": "https://developers.openai.com",
-    "total_pages": 68,
-    "last_updated": "2026-03-24"
+    "total_pages": 71,
+    "last_updated": "2026-03-28"
   },
   "sections": [
     {
@@ -106,7 +106,7 @@
     {
       "name": "Configuration",
       "path_prefix": "/codex",
-      "page_count": 11,
+      "page_count": 14,
       "pages": [
         { "path": "/codex/config-basic", "title": "Config basics", "type": "guide" },
         { "path": "/codex/config-advanced", "title": "Advanced Configuration", "type": "guide" },
@@ -118,6 +118,9 @@
         { "path": "/codex/mcp", "title": "Model Context Protocol", "type": "guide" },
         { "path": "/codex/skills", "title": "Agent Skills", "type": "guide" },
         { "path": "/codex/subagents", "title": "Subagents", "type": "guide" },
+        { "path": "/codex/hooks", "title": "Hooks", "description": "Run deterministic scripts during the Codex lifecycle", "type": "guide" },
+        { "path": "/codex/plugins", "title": "Plugins", "description": "Use plugins in Codex to add reusable workflows with skills and app integrations", "type": "guide" },
+        { "path": "/codex/plugins/build", "title": "Build plugins", "description": "Create, test, and distribute plugins for Codex", "type": "guide" },
         { "path": "/codex/custom-prompts", "title": "Custom Prompts", "type": "best-practices" }
       ]
     },
