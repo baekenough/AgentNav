@@ -1,12 +1,12 @@
 # agents.txt v0.2
 # AgentNav — https://agentnav.baekenough.com
-# Documentation Sets: 4 | Total Pages: 820 | Last updated: 2026-03-28
+# Documentation Sets: 4 | Total Pages: 853 | Last updated: 2026-03-30
 
 SITE: AgentNav
 URL: https://agentnav.baekenough.com
 TYPE: site-index
 SETS: 4
-PAGES: 820
+PAGES: 853
 
 == DOCUMENTATION SETS ==
 
@@ -22,7 +22,7 @@ PAGES: 820
   xml: /gpt-codex/agents.xml
   txt: /gpt-codex/agents.txt
 
-[Gemini CLI] 57 pages, 8 sections | source=https://geminicli.com
+[Gemini CLI] 90 pages, 14 sections | source=https://geminicli.com
   json: /gemini-cli/agents.json
   md: /gemini-cli/agents.md
   xml: /gemini-cli/agents.xml

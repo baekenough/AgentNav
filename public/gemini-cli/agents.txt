@@ -1,11 +1,11 @@
 # agents.txt v0.2
 # Gemini CLI Documentation — https://geminicli.com
-# Total: 57 pages | Last updated: 2026-03-28
+# Total: 90 pages | Last updated: 2026-03-30
 
 SITE: Gemini CLI Documentation
 URL: https://geminicli.com
-PAGES: 57
-SECTIONS: 8
+PAGES: 90
+SECTIONS: 14
 
 == SCHEMA ==
 # Formal grammar for parsing this file
@@ -21,13 +21,13 @@ SECTIONS: 8
 == SECTIONS ==
 
 [Get Started] 5 pages | prefix=/docs/
+   | type=overview
   get-started/ | type=tutorial
   get-started/installation/ | type=tutorial
   get-started/authentication/ | type=tutorial
-  cli/cli-reference/ | type=reference
   get-started/gemini-3/ | type=overview
 
-[Use Gemini CLI] 9 pages | prefix=/docs/cli/tutorials/
+[Tutorials] 10 pages | prefix=/docs/cli/tutorials/
   file-management/ | type=tutorial
   skills-getting-started/ | type=tutorial
   memory-management/ | type=tutorial
@@ -37,43 +37,81 @@ SECTIONS: 8
   web-tools/ | type=tutorial
   mcp-setup/ | type=tutorial
   automation/ | type=tutorial
+  plan-mode-steering/ | type=tutorial
 
-[Features] 17 pages | prefix=/docs/
-  extensions/ | type=guide
-  cli/skills/ | type=guide
-  cli/checkpointing/ | type=guide
-  cli/headless/ | type=guide
-  hooks/ | type=guide
-  ide-integration/ | type=guide
-  tools/mcp-server/ | type=guide
-  cli/model-routing/ | type=guide
-  cli/model/ | type=guide
-  cli/plan-mode/ | type=guide
-  core/subagents/ | type=guide
-  core/remote-agents/ | type=guide
-  cli/rewind/ | type=guide
-  cli/sandbox/ | type=guide
-  cli/settings/ | type=reference
-  cli/telemetry/ | type=reference
-  cli/token-caching/ | type=guide
+[CLI Features] 16 pages | prefix=/docs/cli/
+  skills/ | type=guide
+  creating-skills/ | type=guide
+  acp-mode/ | type=guide
+  checkpointing/ | type=guide
+  git-worktrees/ | type=guide
+  headless/ | type=guide
+  model/ | type=guide
+  model-routing/ | type=guide
+  model-steering/ | type=guide
+  notifications/ | type=guide
+  plan-mode/ | type=guide
+  rewind/ | type=guide
+  sandbox/ | type=guide
+  session-management/ | type=guide
+  telemetry/ | type=reference
+  token-caching/ | type=guide
 
-[Configuration] 8 pages | prefix=/docs/cli/
+[Configuration] 10 pages | prefix=/docs/cli/
+  cli-reference/ | type=reference
   custom-commands/ | type=guide
   enterprise/ | type=guide
   gemini-ignore/ | type=reference
-  generation-settings/ | type=reference
   gemini-md/ | type=guide
+  generation-settings/ | type=reference
+  settings/ | type=reference
   system-prompt/ | type=guide
   themes/ | type=guide
   trusted-folders/ | type=guide
 
-[Reference] 6 pages | prefix=/docs/reference/
+[Core] 4 pages | prefix=/docs/core/
+   | type=overview
+  subagents/ | type=guide
+  remote-agents/ | type=guide
+  local-model-routing/ | type=guide
+
+[Extensions] 5 pages | prefix=/docs/extensions/
+   | type=guide
+  best-practices/ | type=best-practices
+  reference/ | type=reference
+  releasing/ | type=guide
+  writing-extensions/ | type=guide
+
+[Hooks] 4 pages | prefix=/docs/hooks/
+   | type=guide
+  best-practices/ | type=best-practices
+  reference/ | type=reference
+  writing-hooks/ | type=guide
+
+[IDE Integration] 2 pages | prefix=/docs/ide-integration/
+   | type=guide
+  ide-companion-spec/ | type=reference
+
+[Tools] 12 pages | prefix=/docs/tools/
+  /docs/reference/tools/ | type=tool-reference
+  activate-skill/ | type=tool-reference
+  ask-user/ | type=tool-reference
+  file-system/ | type=tool-reference
+  internal-docs/ | type=tool-reference
+  mcp-server/ | type=tool-reference
+  memory/ | type=tool-reference
+  planning/ | type=tool-reference
+  shell/ | type=tool-reference
+  todos/ | type=tool-reference
+  web-fetch/ | type=tool-reference
+  web-search/ | type=tool-reference
+
+[Reference] 5 pages | prefix=/docs/reference/
   commands/ | type=reference
   configuration/ | type=reference
   keyboard-shortcuts/ | type=reference
   memport/ | type=tool-reference
   policy-engine/ | type=reference
-  tools/ | type=tool-reference
 
 [Resources] 5 pages | prefix=/docs/resources/
   faq/ | type=reference
@@ -82,16 +120,23 @@ SECTIONS: 8
   troubleshooting/ | type=guide
   uninstall/ | type=guide
 
-[Development] 4 pages | prefix=/docs/
+[Admin] 1 page | prefix=/docs/admin/
+  enterprise-controls/ | type=guide
+
+[Development] 7 pages | prefix=/docs/
   contributing/ | type=guide
   integration-tests/ | type=guide
   local-development/ | type=guide
   npm/ | type=reference
+  issue-and-pr-automation/ | type=guide
+  release-confidence/ | type=guide
+  examples/proxy-script/ | type=tutorial
 
-[Releases] 3 pages | prefix=/docs/changelogs/
+[Releases] 4 pages | prefix=/docs/changelogs/
    | type=changelog
   latest/ | type=changelog
   preview/ | type=changelog
+  /docs/releases/ | type=changelog
 
 == NAVIGATION ==
 

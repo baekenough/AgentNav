@@ -5,7 +5,7 @@
     "url": "https://agentnav.baekenough.com",
     "description": "AI Agent Documentation Navigator — agents.txt standard implementation providing structured documentation for AI coding assistants",
     "total_documentation_sets": 4,
-    "last_updated": "2026-03-28"
+    "last_updated": "2026-03-30"
   },
   "documentation_sets": [
     {
@@ -38,8 +38,8 @@
       "name": "Gemini CLI",
       "path": "/gemini-cli/",
       "source_url": "https://geminicli.com",
-      "total_pages": 57,
-      "sections": 8,
+      "total_pages": 90,
+      "sections": 14,
       "formats": {
         "json": "/gemini-cli/agents.json",
         "markdown": "/gemini-cli/agents.md",

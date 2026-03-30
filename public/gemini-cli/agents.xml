@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Gemini CLI Documentation" url="https://geminicli.com" total-pages="57" last-updated="2026-03-28" />
+  <site name="Gemini CLI Documentation" url="https://geminicli.com" total-pages="90" last-updated="2026-03-30" />
 
   <sections>
     <!-- 1. Get Started -->
     <section name="Get Started" path-prefix="/docs" page-count="5">
-      <page path="/docs/get-started/" title="Quickstart" type="tutorial" />
+      <page path="/docs/" title="Gemini CLI Documentation" type="overview" />
+      <page path="/docs/get-started/" title="Get started with Gemini CLI" type="tutorial" />
       <page path="/docs/get-started/installation/" title="Installation" type="tutorial" />
       <page path="/docs/get-started/authentication/" title="Authentication" type="tutorial" />
-      <page path="/docs/cli/cli-reference/" title="CLI Cheatsheet" type="reference" />
       <page path="/docs/get-started/gemini-3/" title="Gemini 3 on Gemini CLI" type="overview" />
     </section>
 
-    <!-- 2. Use Gemini CLI -->
-    <section name="Use Gemini CLI" path-prefix="/docs/cli/tutorials" page-count="9">
+    <!-- 2. Tutorials -->
+    <section name="Tutorials" path-prefix="/docs/cli/tutorials" page-count="10">
       <page path="/docs/cli/tutorials/file-management/" title="File Management" type="tutorial" />
       <page path="/docs/cli/tutorials/skills-getting-started/" title="Get Started with Agent Skills" type="tutorial" />
       <page path="/docs/cli/tutorials/memory-management/" title="Manage Context and Memory" type="tutorial" />
@@ -23,52 +23,100 @@
       <page path="/docs/cli/tutorials/web-tools/" title="Web Search and Fetch" type="tutorial" />
       <page path="/docs/cli/tutorials/mcp-setup/" title="Set Up an MCP Server" type="tutorial" />
       <page path="/docs/cli/tutorials/automation/" title="Automate Tasks" type="tutorial" />
+      <page path="/docs/cli/tutorials/plan-mode-steering/" title="Plan Mode with Model Steering" type="tutorial" />
     </section>
 
-    <!-- 3. Features -->
-    <section name="Features" path-prefix="/docs" page-count="17">
-      <page path="/docs/extensions/" title="Extensions" type="guide" />
+    <!-- 3. CLI Features -->
+    <section name="CLI Features" path-prefix="/docs/cli" page-count="16">
       <page path="/docs/cli/skills/" title="Agent Skills" type="guide" />
+      <page path="/docs/cli/creating-skills/" title="Creating Agent Skills" type="guide" />
+      <page path="/docs/cli/acp-mode/" title="ACP Mode" type="guide" />
       <page path="/docs/cli/checkpointing/" title="Checkpointing" type="guide" />
+      <page path="/docs/cli/git-worktrees/" title="Git Worktrees" type="guide" />
       <page path="/docs/cli/headless/" title="Headless Mode" type="guide" />
-      <page path="/docs/hooks/" title="Hooks Overview" type="guide" />
-      <page path="/docs/ide-integration/" title="IDE Integration" type="guide" />
-      <page path="/docs/tools/mcp-server/" title="MCP Servers" type="guide" />
-      <page path="/docs/cli/model-routing/" title="Model Routing" type="guide" />
       <page path="/docs/cli/model/" title="Model Selection" type="guide" />
+      <page path="/docs/cli/model-routing/" title="Model Routing" type="guide" />
+      <page path="/docs/cli/model-steering/" title="Model Steering" type="guide" />
+      <page path="/docs/cli/notifications/" title="Notifications" type="guide" />
       <page path="/docs/cli/plan-mode/" title="Plan Mode" type="guide" />
-      <page path="/docs/core/subagents/" title="Subagents" type="guide" />
-      <page path="/docs/core/remote-agents/" title="Remote Subagents" type="guide" />
       <page path="/docs/cli/rewind/" title="Rewind" type="guide" />
       <page path="/docs/cli/sandbox/" title="Sandboxing" type="guide" />
-      <page path="/docs/cli/settings/" title="Settings" type="reference" />
-      <page path="/docs/cli/telemetry/" title="Telemetry" type="reference" />
+      <page path="/docs/cli/session-management/" title="Session Management" type="guide" />
+      <page path="/docs/cli/telemetry/" title="Observability with OpenTelemetry" type="reference" />
       <page path="/docs/cli/token-caching/" title="Token Caching" type="guide" />
     </section>
 
     <!-- 4. Configuration -->
-    <section name="Configuration" path-prefix="/docs/cli" page-count="8">
+    <section name="Configuration" path-prefix="/docs/cli" page-count="10">
+      <page path="/docs/cli/cli-reference/" title="CLI Cheatsheet" type="reference" />
       <page path="/docs/cli/custom-commands/" title="Custom Commands" type="guide" />
       <page path="/docs/cli/enterprise/" title="Enterprise Configuration" type="guide" />
       <page path="/docs/cli/gemini-ignore/" title="Ignore Files (.geminiignore)" type="reference" />
-      <page path="/docs/cli/generation-settings/" title="Model Configuration" type="reference" />
       <page path="/docs/cli/gemini-md/" title="Project Context (GEMINI.md)" type="guide" />
+      <page path="/docs/cli/generation-settings/" title="Advanced Model Configuration" type="reference" />
+      <page path="/docs/cli/settings/" title="Settings" type="reference" />
       <page path="/docs/cli/system-prompt/" title="System Prompt Override" type="guide" />
       <page path="/docs/cli/themes/" title="Themes" type="guide" />
       <page path="/docs/cli/trusted-folders/" title="Trusted Folders" type="guide" />
     </section>
 
-    <!-- 5. Reference -->
-    <section name="Reference" path-prefix="/docs/reference" page-count="6">
-      <page path="/docs/reference/commands/" title="Command Reference" type="reference" />
+    <!-- 5. Core -->
+    <section name="Core" path-prefix="/docs/core" page-count="4">
+      <page path="/docs/core/" title="Gemini CLI Core" type="overview" />
+      <page path="/docs/core/subagents/" title="Subagents" type="guide" />
+      <page path="/docs/core/remote-agents/" title="Remote Subagents" type="guide" />
+      <page path="/docs/core/local-model-routing/" title="Local Model Routing" type="guide" />
+    </section>
+
+    <!-- 6. Extensions -->
+    <section name="Extensions" path-prefix="/docs/extensions" page-count="5">
+      <page path="/docs/extensions/" title="Extensions" type="guide" />
+      <page path="/docs/extensions/best-practices/" title="Extension Best Practices" type="best-practices" />
+      <page path="/docs/extensions/reference/" title="Extension Reference" type="reference" />
+      <page path="/docs/extensions/releasing/" title="Release Extensions" type="guide" />
+      <page path="/docs/extensions/writing-extensions/" title="Build Extensions" type="guide" />
+    </section>
+
+    <!-- 7. Hooks -->
+    <section name="Hooks" path-prefix="/docs/hooks" page-count="4">
+      <page path="/docs/hooks/" title="Hooks Overview" type="guide" />
+      <page path="/docs/hooks/best-practices/" title="Hooks Best Practices" type="best-practices" />
+      <page path="/docs/hooks/reference/" title="Hooks Reference" type="reference" />
+      <page path="/docs/hooks/writing-hooks/" title="Writing Hooks" type="guide" />
+    </section>
+
+    <!-- 8. IDE Integration -->
+    <section name="IDE Integration" path-prefix="/docs/ide-integration" page-count="2">
+      <page path="/docs/ide-integration/" title="IDE Integration" type="guide" />
+      <page path="/docs/ide-integration/ide-companion-spec/" title="IDE Companion Plugin Spec" type="reference" />
+    </section>
+
+    <!-- 9. Tools -->
+    <section name="Tools" path-prefix="/docs/tools" page-count="12">
+      <page path="/docs/reference/tools/" title="Tools Reference" type="tool-reference" />
+      <page path="/docs/tools/activate-skill/" title="Activate Skill Tool" type="tool-reference" />
+      <page path="/docs/tools/ask-user/" title="Ask User Tool" type="tool-reference" />
+      <page path="/docs/tools/file-system/" title="File System Tools" type="tool-reference" />
+      <page path="/docs/tools/internal-docs/" title="Internal Docs Tool" type="tool-reference" />
+      <page path="/docs/tools/mcp-server/" title="MCP Servers" type="tool-reference" />
+      <page path="/docs/tools/memory/" title="Memory Tool" type="tool-reference" />
+      <page path="/docs/tools/planning/" title="Planning Tools" type="tool-reference" />
+      <page path="/docs/tools/shell/" title="Shell Tool" type="tool-reference" />
+      <page path="/docs/tools/todos/" title="Todo Tool" type="tool-reference" />
+      <page path="/docs/tools/web-fetch/" title="Web Fetch Tool" type="tool-reference" />
+      <page path="/docs/tools/web-search/" title="Web Search Tool" type="tool-reference" />
+    </section>
+
+    <!-- 10. Reference -->
+    <section name="Reference" path-prefix="/docs/reference" page-count="5">
+      <page path="/docs/reference/commands/" title="CLI Commands" type="reference" />
       <page path="/docs/reference/configuration/" title="Configuration Reference" type="reference" />
       <page path="/docs/reference/keyboard-shortcuts/" title="Keyboard Shortcuts" type="reference" />
       <page path="/docs/reference/memport/" title="Memory Import Processor" type="tool-reference" />
       <page path="/docs/reference/policy-engine/" title="Policy Engine" type="reference" />
-      <page path="/docs/reference/tools/" title="Tools Reference" type="tool-reference" />
     </section>
 
-    <!-- 6. Resources -->
+    <!-- 11. Resources -->
     <section name="Resources" path-prefix="/docs/resources" page-count="5">
       <page path="/docs/resources/faq/" title="FAQ" type="reference" />
       <page path="/docs/resources/quota-and-pricing/" title="Quota and Pricing" type="reference" />
@@ -77,19 +125,28 @@
       <page path="/docs/resources/uninstall/" title="Uninstall" type="guide" />
     </section>
 
-    <!-- 7. Development -->
-    <section name="Development" path-prefix="/docs" page-count="4">
+    <!-- 12. Admin -->
+    <section name="Admin" path-prefix="/docs/admin" page-count="1">
+      <page path="/docs/admin/enterprise-controls/" title="Enterprise Admin Controls" type="guide" />
+    </section>
+
+    <!-- 13. Development -->
+    <section name="Development" path-prefix="/docs" page-count="7">
       <page path="/docs/contributing/" title="Contribution Guide" type="guide" />
       <page path="/docs/integration-tests/" title="Integration Testing" type="guide" />
       <page path="/docs/local-development/" title="Local Development" type="guide" />
       <page path="/docs/npm/" title="NPM Package Structure" type="reference" />
+      <page path="/docs/issue-and-pr-automation/" title="Issue and PR Automation" type="guide" />
+      <page path="/docs/release-confidence/" title="Release Confidence Strategy" type="guide" />
+      <page path="/docs/examples/proxy-script/" title="Example Proxy Script" type="tutorial" />
     </section>
 
-    <!-- 8. Releases -->
-    <section name="Releases" path-prefix="/docs/changelogs" page-count="3">
+    <!-- 14. Releases -->
+    <section name="Releases" path-prefix="/docs/changelogs" page-count="4">
       <page path="/docs/changelogs/" title="Release Notes" type="changelog" />
-      <page path="/docs/changelogs/latest/" title="Stable Release" type="changelog" />
-      <page path="/docs/changelogs/preview/" title="Preview Release" type="changelog" />
+      <page path="/docs/changelogs/latest/" title="Stable Release (v0.35.2)" type="changelog" />
+      <page path="/docs/changelogs/preview/" title="Preview Release (v0.36.0-preview.5)" type="changelog" />
+      <page path="/docs/releases/" title="Gemini CLI Releases" type="changelog" />
     </section>
   </sections>
 
@@ -97,9 +154,10 @@
     <default-section>Get Started</default-section>
     <search-priority>
       <section>Get Started</section>
-      <section>Use Gemini CLI</section>
-      <section>Features</section>
+      <section>Tutorials</section>
+      <section>CLI Features</section>
       <section>Configuration</section>
+      <section>Tools</section>
       <section>Reference</section>
     </search-priority>
     <tips>

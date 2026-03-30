@@ -5,7 +5,7 @@ schema:
   sections: "## heading = section name"
   subsections: "### heading = subsection grouping"
   pages: "- [title](path) {type}"
-  page_types: [overview, tutorial, guide, reference, tool-reference, changelog]
+  page_types: [overview, tutorial, guide, reference, tool-reference, best-practices, changelog]
   navigation: "See ## Navigation Guide section"
 ---
 
@@ -13,33 +13,40 @@ schema:
 
 - **URL**: https://geminicli.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 57
-- **Last Updated**: 2026-03-28
+- **Total Pages**: 90
+- **Last Updated**: 2026-03-30
 
 ## Site Overview
 
 | # | Section | Pages | Base Path |
 |---|---------|-------|-----------|
 | 1 | Get Started | 5 | /docs/ |
-| 2 | Use Gemini CLI | 9 | /docs/cli/tutorials/ |
-| 3 | Features | 17 | /docs/ |
-| 4 | Configuration | 8 | /docs/cli/ |
-| 5 | Reference | 6 | /docs/reference/ |
-| 6 | Resources | 5 | /docs/resources/ |
-| 7 | Development | 4 | /docs/ |
-| 8 | Releases | 3 | /docs/changelogs/ |
+| 2 | Tutorials | 10 | /docs/cli/tutorials/ |
+| 3 | CLI Features | 16 | /docs/cli/ |
+| 4 | Configuration | 10 | /docs/cli/ |
+| 5 | Core | 4 | /docs/core/ |
+| 6 | Extensions | 5 | /docs/extensions/ |
+| 7 | Hooks | 4 | /docs/hooks/ |
+| 8 | IDE Integration | 2 | /docs/ide-integration/ |
+| 9 | Tools | 12 | /docs/tools/ |
+| 10 | Reference | 5 | /docs/reference/ |
+| 11 | Resources | 5 | /docs/resources/ |
+| 12 | Admin | 1 | /docs/admin/ |
+| 13 | Development | 7 | /docs/ |
+| 14 | Releases | 4 | /docs/changelogs/ |
 
 ---
 
 ## Get Started (5 pages)
 
-- [Quickstart](/docs/get-started/) {tutorial}
+- [Get started with Gemini CLI](/docs/get-started/) {tutorial}
 - [Installation](/docs/get-started/installation/) {tutorial}
 - [Authentication](/docs/get-started/authentication/) {tutorial}
-- [CLI Cheatsheet](/docs/cli/cli-reference/) {reference}
 - [Gemini 3 on Gemini CLI](/docs/get-started/gemini-3/) {overview}
 
-## Use Gemini CLI (9 pages)
+- [Gemini CLI Documentation](/docs/) {overview}
+
+## Tutorials (10 pages)
 
 - [File Management](/docs/cli/tutorials/file-management/) {tutorial}
 - [Get Started with Agent Skills](/docs/cli/tutorials/skills-getting-started/) {tutorial}
@@ -50,47 +57,90 @@ schema:
 - [Web Search and Fetch](/docs/cli/tutorials/web-tools/) {tutorial}
 - [Set Up an MCP Server](/docs/cli/tutorials/mcp-setup/) {tutorial}
 - [Automate Tasks](/docs/cli/tutorials/automation/) {tutorial}
+- [Plan Mode with Model Steering](/docs/cli/tutorials/plan-mode-steering/) {tutorial}
 
-## Features (17 pages)
+## CLI Features (16 pages)
 
 - [Agent Skills](/docs/cli/skills/) {guide}
+- [Creating Agent Skills](/docs/cli/creating-skills/) {guide}
+- [ACP Mode](/docs/cli/acp-mode/) {guide}
 - [Checkpointing](/docs/cli/checkpointing/) {guide}
+- [Git Worktrees](/docs/cli/git-worktrees/) {guide}
 - [Headless Mode](/docs/cli/headless/) {guide}
-- [Hooks Overview](/docs/hooks/) {guide}
-- [IDE Integration](/docs/ide-integration/) {guide}
-- [MCP Servers](/docs/tools/mcp-server/) {guide}
-- [Model Routing](/docs/cli/model-routing/) {guide}
 - [Model Selection](/docs/cli/model/) {guide}
+- [Model Routing](/docs/cli/model-routing/) {guide}
+- [Model Steering](/docs/cli/model-steering/) {guide}
+- [Notifications](/docs/cli/notifications/) {guide}
 - [Plan Mode](/docs/cli/plan-mode/) {guide}
-- [Subagents](/docs/core/subagents/) {guide}
-- [Remote Subagents](/docs/core/remote-agents/) {guide}
 - [Rewind](/docs/cli/rewind/) {guide}
 - [Sandboxing](/docs/cli/sandbox/) {guide}
-- [Settings](/docs/cli/settings/) {reference}
-- [Telemetry](/docs/cli/telemetry/) {reference}
+- [Session Management](/docs/cli/session-management/) {guide}
+- [Observability with OpenTelemetry](/docs/cli/telemetry/) {reference}
 - [Token Caching](/docs/cli/token-caching/) {guide}
 
-- [Extensions](/docs/extensions/) {guide}
-
-## Configuration (8 pages)
+## Configuration (10 pages)
 
 - [Custom Commands](/docs/cli/custom-commands/) {guide}
 - [Enterprise Configuration](/docs/cli/enterprise/) {guide}
 - [Ignore Files (.geminiignore)](/docs/cli/gemini-ignore/) {reference}
-- [Model Configuration](/docs/cli/generation-settings/) {reference}
+- [Advanced Model Configuration](/docs/cli/generation-settings/) {reference}
 - [Project Context (GEMINI.md)](/docs/cli/gemini-md/) {guide}
 - [System Prompt Override](/docs/cli/system-prompt/) {guide}
 - [Themes](/docs/cli/themes/) {guide}
 - [Trusted Folders](/docs/cli/trusted-folders/) {guide}
 
-## Reference (6 pages)
+- [CLI Cheatsheet](/docs/cli/cli-reference/) {reference}
+- [Settings](/docs/cli/settings/) {reference}
 
-- [Command Reference](/docs/reference/commands/) {reference}
+## Core (4 pages)
+
+- [Gemini CLI Core](/docs/core/) {overview}
+- [Subagents](/docs/core/subagents/) {guide}
+- [Remote Subagents](/docs/core/remote-agents/) {guide}
+- [Local Model Routing](/docs/core/local-model-routing/) {guide}
+
+## Extensions (5 pages)
+
+- [Extensions](/docs/extensions/) {guide}
+- [Extension Best Practices](/docs/extensions/best-practices/) {best-practices}
+- [Extension Reference](/docs/extensions/reference/) {reference}
+- [Release Extensions](/docs/extensions/releasing/) {guide}
+- [Build Extensions](/docs/extensions/writing-extensions/) {guide}
+
+## Hooks (4 pages)
+
+- [Hooks Overview](/docs/hooks/) {guide}
+- [Hooks Best Practices](/docs/hooks/best-practices/) {best-practices}
+- [Hooks Reference](/docs/hooks/reference/) {reference}
+- [Writing Hooks](/docs/hooks/writing-hooks/) {guide}
+
+## IDE Integration (2 pages)
+
+- [IDE Integration](/docs/ide-integration/) {guide}
+- [IDE Companion Plugin Spec](/docs/ide-integration/ide-companion-spec/) {reference}
+
+## Tools (12 pages)
+
+- [Tools Reference](/docs/reference/tools/) {tool-reference}
+- [Activate Skill Tool](/docs/tools/activate-skill/) {tool-reference}
+- [Ask User Tool](/docs/tools/ask-user/) {tool-reference}
+- [File System Tools](/docs/tools/file-system/) {tool-reference}
+- [Internal Docs Tool](/docs/tools/internal-docs/) {tool-reference}
+- [MCP Servers](/docs/tools/mcp-server/) {tool-reference}
+- [Memory Tool](/docs/tools/memory/) {tool-reference}
+- [Planning Tools](/docs/tools/planning/) {tool-reference}
+- [Shell Tool](/docs/tools/shell/) {tool-reference}
+- [Todo Tool](/docs/tools/todos/) {tool-reference}
+- [Web Fetch Tool](/docs/tools/web-fetch/) {tool-reference}
+- [Web Search Tool](/docs/tools/web-search/) {tool-reference}
+
+## Reference (5 pages)
+
+- [CLI Commands](/docs/reference/commands/) {reference}
 - [Configuration Reference](/docs/reference/configuration/) {reference}
 - [Keyboard Shortcuts](/docs/reference/keyboard-shortcuts/) {reference}
 - [Memory Import Processor](/docs/reference/memport/) {tool-reference}
 - [Policy Engine](/docs/reference/policy-engine/) {reference}
-- [Tools Reference](/docs/reference/tools/) {tool-reference}
 
 ## Resources (5 pages)
 
@@ -100,18 +150,28 @@ schema:
 - [Troubleshooting](/docs/resources/troubleshooting/) {guide}
 - [Uninstall](/docs/resources/uninstall/) {guide}
 
-## Development (4 pages)
+## Admin (1 page)
+
+- [Enterprise Admin Controls](/docs/admin/enterprise-controls/) {guide}
+
+## Development (7 pages)
 
 - [Contribution Guide](/docs/contributing/) {guide}
 - [Integration Testing](/docs/integration-tests/) {guide}
 - [Local Development](/docs/local-development/) {guide}
 - [NPM Package Structure](/docs/npm/) {reference}
 
-## Releases (3 pages)
+- [Issue and PR Automation](/docs/issue-and-pr-automation/) {guide}
+- [Release Confidence Strategy](/docs/release-confidence/) {guide}
+- [Example Proxy Script](/docs/examples/proxy-script/) {tutorial}
+
+## Releases (4 pages)
 
 - [Release Notes](/docs/changelogs/) {changelog}
-- [Stable Release](/docs/changelogs/latest/) {changelog}
-- [Preview Release](/docs/changelogs/preview/) {changelog}
+- [Stable Release (v0.35.2)](/docs/changelogs/latest/) {changelog}
+- [Preview Release (v0.36.0-preview.5)](/docs/changelogs/preview/) {changelog}
+
+- [Gemini CLI Releases](/docs/releases/) {changelog}
 
 ---
 
