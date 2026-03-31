@@ -4,7 +4,7 @@
     "name": "Gemini CLI Documentation",
     "url": "https://geminicli.com",
     "total_pages": 90,
-    "last_updated": "2026-03-30"
+    "last_updated": "2026-03-31"
   },
   "sections": [
     {
@@ -190,8 +190,8 @@
       "page_count": 4,
       "pages": [
         { "path": "/docs/changelogs/", "title": "Release Notes", "type": "changelog" },
-        { "path": "/docs/changelogs/latest/", "title": "Stable Release (v0.35.2)", "type": "changelog" },
-        { "path": "/docs/changelogs/preview/", "title": "Preview Release (v0.36.0-preview.5)", "type": "changelog" },
+        { "path": "/docs/changelogs/latest/", "title": "Stable Release (v0.35.3)", "type": "changelog" },
+        { "path": "/docs/changelogs/preview/", "title": "Preview Release (v0.36.0-preview.6)", "type": "changelog" },
         { "path": "/docs/releases/", "title": "Gemini CLI Releases", "type": "changelog" }
       ]
     }

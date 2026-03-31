@@ -9,14 +9,14 @@ type: site-index
 - **URL**: https://agentnav.baekenough.com
 - **Standard**: agents.txt v0.2
 - **Documentation Sets**: 4
-- **Total Pages**: 853
-- **Last Updated**: 2026-03-30
+- **Total Pages**: 856
+- **Last Updated**: 2026-03-31
 
 ## Available Documentation Sets
 
 ### Claude Code
 - **Source**: [code.claude.com](https://code.claude.com)
-- **Pages**: 72 | **Sections**: 12
+- **Pages**: 75 | **Sections**: 12
 - **Formats**:
   - [agents.json](/claude-code/agents.json)
   - [agents.md](/claude-code/agents.md)

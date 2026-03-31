@@ -5,14 +5,14 @@
     "url": "https://agentnav.baekenough.com",
     "description": "AI Agent Documentation Navigator — agents.txt standard implementation providing structured documentation for AI coding assistants",
     "total_documentation_sets": 4,
-    "last_updated": "2026-03-30"
+    "last_updated": "2026-03-31"
   },
   "documentation_sets": [
     {
       "name": "Claude Code",
       "path": "/claude-code/",
       "source_url": "https://code.claude.com",
-      "total_pages": 72,
+      "total_pages": 75,
       "sections": 12,
       "formats": {
         "json": "/claude-code/agents.json",

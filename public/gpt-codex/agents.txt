@@ -1,6 +1,6 @@
 # agents.txt v0.2
 # Codex Documentation — https://developers.openai.com
-# Total: 71 pages | Last updated: 2026-03-28
+# Total: 71 pages | Last updated: 2026-03-31
 
 SITE: Codex Documentation
 URL: https://developers.openai.com

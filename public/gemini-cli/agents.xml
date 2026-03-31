@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Gemini CLI Documentation" url="https://geminicli.com" total-pages="90" last-updated="2026-03-30" />
+  <site name="Gemini CLI Documentation" url="https://geminicli.com" total-pages="90" last-updated="2026-03-31" />
 
   <sections>
     <!-- 1. Get Started -->
@@ -144,8 +144,8 @@
     <!-- 14. Releases -->
     <section name="Releases" path-prefix="/docs/changelogs" page-count="4">
       <page path="/docs/changelogs/" title="Release Notes" type="changelog" />
-      <page path="/docs/changelogs/latest/" title="Stable Release (v0.35.2)" type="changelog" />
-      <page path="/docs/changelogs/preview/" title="Preview Release (v0.36.0-preview.5)" type="changelog" />
+      <page path="/docs/changelogs/latest/" title="Stable Release (v0.35.3)" type="changelog" />
+      <page path="/docs/changelogs/preview/" title="Preview Release (v0.36.0-preview.6)" type="changelog" />
       <page path="/docs/releases/" title="Gemini CLI Releases" type="changelog" />
     </section>
   </sections>

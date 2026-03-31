@@ -12,21 +12,21 @@ schema:
 
 - **URL**: https://code.claude.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 72
-- **Last Updated**: 2026-03-28
+- **Total Pages**: 75
+- **Last Updated**: 2026-03-31
 
 ## Site Overview
 
 | # | Section | Pages | Base Path |
 |---|---------|-------|-----------|
 | 1 | Getting Started | 5 | /docs/en/ |
-| 2 | Interfaces | 9 | /docs/en/ |
+| 2 | Interfaces | 10 | /docs/en/ |
 | 3 | Core Features | 11 | /docs/en/ |
 | 4 | Plugins | 4 | /docs/en/ |
-| 5 | Configuration | 9 | /docs/en/ |
+| 5 | Configuration | 10 | /docs/en/ |
 | 6 | Automation | 6 | /docs/en/ |
 | 7 | Cloud Providers | 4 | /docs/en/ |
-| 8 | CI/CD & Integrations | 5 | /docs/en/ |
+| 8 | CI/CD & Integrations | 6 | /docs/en/ |
 | 9 | Channels | 2 | /docs/en/ |
 | 10 | Enterprise | 6 | /docs/en/ |
 | 11 | Monitoring & Costs | 3 | /docs/en/ |
@@ -42,7 +42,7 @@ schema:
 - [How Claude Code works](/docs/en/how-claude-code-works) {overview}
 - [Common workflows](/docs/en/common-workflows) {guide}
 
-## Interfaces (9 pages)
+## Interfaces (10 pages)
 
 - [Interactive mode](/docs/en/interactive-mode) {guide}
 - [CLI reference](/docs/en/cli-reference) {reference}
@@ -53,6 +53,8 @@ schema:
 - [JetBrains IDEs](/docs/en/jetbrains) {guide}
 - [Use Claude Code with Chrome (beta)](/docs/en/chrome) {guide}
 - [Claude Code on the web](/docs/en/claude-code-on-the-web) {guide}
+
+- [Let Claude use your computer from the CLI](/docs/en/computer-use) {guide}
 
 ## Core Features (11 pages)
 
@@ -75,7 +77,7 @@ schema:
 - [Discover and install prebuilt plugins through marketplaces](/docs/en/discover-plugins) {guide}
 - [Create and distribute a plugin marketplace](/docs/en/plugin-marketplaces) {guide}
 
-## Configuration (9 pages)
+## Configuration (10 pages)
 
 - [Claude Code settings](/docs/en/settings) {reference}
 - [Configure permissions](/docs/en/permissions) {guide}
@@ -86,6 +88,8 @@ schema:
 - [Customize your status line](/docs/en/statusline) {guide}
 - [Optimize your terminal setup](/docs/en/terminal-config) {guide}
 - [Explore the .claude directory](/docs/en/claude-directory) {reference}
+
+- [Fullscreen rendering](/docs/en/fullscreen) {guide}
 
 ## Automation (6 pages)
 
@@ -103,13 +107,15 @@ schema:
 - [Claude Code on Microsoft Foundry](/docs/en/microsoft-foundry) {guide}
 - [LLM gateway configuration](/docs/en/llm-gateway) {guide}
 
-## CI/CD & Integrations (5 pages)
+## CI/CD & Integrations (6 pages)
 
 - [Claude Code GitHub Actions](/docs/en/github-actions) {guide}
 - [Claude Code GitLab CI/CD](/docs/en/gitlab-ci-cd) {guide}
 - [Claude Code in Slack](/docs/en/slack) {guide}
 - [Continue local sessions from any device with Remote Control](/docs/en/remote-control) {guide}
 - [Platforms and integrations](/docs/en/platforms) {overview}
+
+- [Claude Code with GitHub Enterprise Server](/docs/en/github-enterprise-server) {guide}
 
 ## Channels (2 pages)
 

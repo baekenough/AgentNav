@@ -14,7 +14,7 @@ schema:
 - **URL**: https://developers.openai.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 71
-- **Last Updated**: 2026-03-28
+- **Last Updated**: 2026-03-31
 
 ## Site Overview
 
@@ -119,7 +119,6 @@ schema:
 - [Agent Skills](/codex/skills) {guide}
 - [Subagents](/codex/subagents) {guide}
 - [Custom Prompts](/codex/custom-prompts) {best-practices}
-
 - [Hooks](/codex/hooks) {guide}
 - [Plugins](/codex/plugins) {guide}
 - [Build plugins](/codex/plugins/build) {guide}

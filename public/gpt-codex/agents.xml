@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Codex Documentation" url="https://developers.openai.com" total-pages="71" last-updated="2026-03-28" />
+  <site name="Codex Documentation" url="https://developers.openai.com" total-pages="71" last-updated="2026-03-31" />
 
   <sections>
     <!-- 1. Getting Started -->

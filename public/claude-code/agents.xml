@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Claude Code Documentation" url="https://code.claude.com" total-pages="72" last-updated="2026-03-28" />
+  <site name="Claude Code Documentation" url="https://code.claude.com" total-pages="75" last-updated="2026-03-31" />
 
   <sections>
     <!-- 1. Getting Started -->
@@ -13,7 +13,7 @@
     </section>
 
     <!-- 2. Interfaces -->
-    <section name="Interfaces" path-prefix="/docs/en" page-count="9">
+    <section name="Interfaces" path-prefix="/docs/en" page-count="10">
       <page path="/docs/en/interactive-mode" title="Interactive mode" type="guide" />
       <page path="/docs/en/cli-reference" title="CLI reference" type="reference" />
       <page path="/docs/en/commands" title="Built-in commands" type="reference" />
@@ -23,6 +23,7 @@
       <page path="/docs/en/jetbrains" title="JetBrains IDEs" type="guide" />
       <page path="/docs/en/chrome" title="Use Claude Code with Chrome (beta)" type="guide" />
       <page path="/docs/en/claude-code-on-the-web" title="Claude Code on the web" type="guide" />
+      <page path="/docs/en/computer-use" title="Let Claude use your computer from the CLI" type="guide" />
     </section>
 
     <!-- 3. Core Features -->
@@ -49,7 +50,7 @@
     </section>
 
     <!-- 5. Configuration -->
-    <section name="Configuration" path-prefix="/docs/en" page-count="9">
+    <section name="Configuration" path-prefix="/docs/en" page-count="10">
       <page path="/docs/en/settings" title="Claude Code settings" type="reference" />
       <page path="/docs/en/permissions" title="Configure permissions" type="guide" />
       <page path="/docs/en/permission-modes" title="Choose a permission mode" type="guide" />
@@ -58,6 +59,7 @@
       <page path="/docs/en/model-config" title="Model configuration" type="guide" />
       <page path="/docs/en/statusline" title="Customize your status line" type="guide" />
       <page path="/docs/en/terminal-config" title="Optimize your terminal setup" type="guide" />
+      <page path="/docs/en/fullscreen" title="Fullscreen rendering" type="guide" />
       <page path="/docs/en/claude-directory" title="Explore the .claude directory" type="reference" />
     </section>
 
@@ -80,8 +82,9 @@
     </section>
 
     <!-- 8. CI/CD & Integrations -->
-    <section name="CI/CD &amp; Integrations" path-prefix="/docs/en" page-count="5">
+    <section name="CI/CD &amp; Integrations" path-prefix="/docs/en" page-count="6">
       <page path="/docs/en/github-actions" title="Claude Code GitHub Actions" type="guide" />
+      <page path="/docs/en/github-enterprise-server" title="Claude Code with GitHub Enterprise Server" type="guide" />
       <page path="/docs/en/gitlab-ci-cd" title="Claude Code GitLab CI/CD" type="guide" />
       <page path="/docs/en/slack" title="Claude Code in Slack" type="guide" />
       <page path="/docs/en/remote-control" title="Continue local sessions from any device with Remote Control" type="guide" />

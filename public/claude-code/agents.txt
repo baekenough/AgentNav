@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Claude Code Documentation — https://code.claude.com
-# Total: 72 pages | Last updated: 2026-03-28
+# Total: 75 pages | Last updated: 2026-03-31
 
 SITE: Claude Code Documentation
 URL: https://code.claude.com
-PAGES: 72
+PAGES: 75
 SECTIONS: 12
 
 == SCHEMA ==
@@ -27,7 +27,7 @@ SECTIONS: 12
   how-claude-code-works | type=overview
   common-workflows | type=guide
 
-[Interfaces] 9 pages | prefix=/docs/en/
+[Interfaces] 10 pages | prefix=/docs/en/
   interactive-mode | type=guide
   cli-reference | type=reference
   commands | type=reference
@@ -37,6 +37,7 @@ SECTIONS: 12
   jetbrains | type=guide
   chrome | type=guide
   claude-code-on-the-web | type=guide
+  computer-use | type=guide
 
 [Core Features] 11 pages | prefix=/docs/en/
   memory | type=guide
@@ -57,7 +58,7 @@ SECTIONS: 12
   discover-plugins | type=guide
   plugin-marketplaces | type=guide
 
-[Configuration] 9 pages | prefix=/docs/en/
+[Configuration] 10 pages | prefix=/docs/en/
   settings | type=reference
   permissions | type=guide
   permission-modes | type=guide
@@ -66,6 +67,7 @@ SECTIONS: 12
   model-config | type=guide
   statusline | type=guide
   terminal-config | type=guide
+  fullscreen | type=guide
   claude-directory | type=reference
 
 [Automation] 6 pages | prefix=/docs/en/
@@ -82,8 +84,9 @@ SECTIONS: 12
   microsoft-foundry | type=guide
   llm-gateway | type=guide
 
-[CI/CD & Integrations] 5 pages | prefix=/docs/en/
+[CI/CD & Integrations] 6 pages | prefix=/docs/en/
   github-actions | type=guide
+  github-enterprise-server | type=guide
   gitlab-ci-cd | type=guide
   slack | type=guide
   remote-control | type=guide

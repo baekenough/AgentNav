@@ -3,8 +3,8 @@
   "site": {
     "name": "Claude Code Documentation",
     "url": "https://code.claude.com",
-    "total_pages": 72,
-    "last_updated": "2026-03-28"
+    "total_pages": 75,
+    "last_updated": "2026-03-31"
   },
   "sections": [
     {
@@ -42,7 +42,7 @@
     {
       "name": "Interfaces",
       "path_prefix": "/docs/en",
-      "page_count": 9,
+      "page_count": 10,
       "pages": [
         {
           "path": "/docs/en/interactive-mode",
@@ -87,6 +87,11 @@
         {
           "path": "/docs/en/claude-code-on-the-web",
           "title": "Claude Code on the web",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/computer-use",
+          "title": "Let Claude use your computer from the CLI",
           "type": "guide"
         }
       ]
@@ -183,7 +188,7 @@
     {
       "name": "Configuration",
       "path_prefix": "/docs/en",
-      "page_count": 9,
+      "page_count": 10,
       "pages": [
         {
           "path": "/docs/en/settings",
@@ -223,6 +228,11 @@
         {
           "path": "/docs/en/terminal-config",
           "title": "Optimize your terminal setup",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/fullscreen",
+          "title": "Fullscreen rendering",
           "type": "guide"
         },
         {
@@ -299,11 +309,16 @@
     {
       "name": "CI/CD & Integrations",
       "path_prefix": "/docs/en",
-      "page_count": 5,
+      "page_count": 6,
       "pages": [
         {
           "path": "/docs/en/github-actions",
           "title": "Claude Code GitHub Actions",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/github-enterprise-server",
+          "title": "Claude Code with GitHub Enterprise Server",
           "type": "guide"
         },
         {

@@ -1,16 +1,16 @@
 # agents.txt v0.2
 # AgentNav — https://agentnav.baekenough.com
-# Documentation Sets: 4 | Total Pages: 853 | Last updated: 2026-03-30
+# Documentation Sets: 4 | Total Pages: 856 | Last updated: 2026-03-31
 
 SITE: AgentNav
 URL: https://agentnav.baekenough.com
 TYPE: site-index
 SETS: 4
-PAGES: 853
+PAGES: 856
 
 == DOCUMENTATION SETS ==
 
-[Claude Code] 72 pages, 12 sections | source=https://code.claude.com
+[Claude Code] 75 pages, 12 sections | source=https://code.claude.com
   json: /claude-code/agents.json
   md: /claude-code/agents.md
   xml: /claude-code/agents.xml

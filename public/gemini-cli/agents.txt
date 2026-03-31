@@ -1,6 +1,6 @@
 # agents.txt v0.2
 # Gemini CLI Documentation — https://geminicli.com
-# Total: 90 pages | Last updated: 2026-03-30
+# Total: 90 pages | Last updated: 2026-03-31
 
 SITE: Gemini CLI Documentation
 URL: https://geminicli.com

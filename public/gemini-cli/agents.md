@@ -14,7 +14,7 @@ schema:
 - **URL**: https://geminicli.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 90
-- **Last Updated**: 2026-03-30
+- **Last Updated**: 2026-03-31
 
 ## Site Overview
 
@@ -43,7 +43,6 @@ schema:
 - [Installation](/docs/get-started/installation/) {tutorial}
 - [Authentication](/docs/get-started/authentication/) {tutorial}
 - [Gemini 3 on Gemini CLI](/docs/get-started/gemini-3/) {overview}
-
 - [Gemini CLI Documentation](/docs/) {overview}
 
 ## Tutorials (10 pages)
@@ -88,7 +87,6 @@ schema:
 - [System Prompt Override](/docs/cli/system-prompt/) {guide}
 - [Themes](/docs/cli/themes/) {guide}
 - [Trusted Folders](/docs/cli/trusted-folders/) {guide}
-
 - [CLI Cheatsheet](/docs/cli/cli-reference/) {reference}
 - [Settings](/docs/cli/settings/) {reference}
 
@@ -160,7 +158,6 @@ schema:
 - [Integration Testing](/docs/integration-tests/) {guide}
 - [Local Development](/docs/local-development/) {guide}
 - [NPM Package Structure](/docs/npm/) {reference}
-
 - [Issue and PR Automation](/docs/issue-and-pr-automation/) {guide}
 - [Release Confidence Strategy](/docs/release-confidence/) {guide}
 - [Example Proxy Script](/docs/examples/proxy-script/) {tutorial}
@@ -168,9 +165,8 @@ schema:
 ## Releases (4 pages)
 
 - [Release Notes](/docs/changelogs/) {changelog}
-- [Stable Release (v0.35.2)](/docs/changelogs/latest/) {changelog}
-- [Preview Release (v0.36.0-preview.5)](/docs/changelogs/preview/) {changelog}
-
+- [Stable Release (v0.35.3)](/docs/changelogs/latest/) {changelog}
+- [Preview Release (v0.36.0-preview.6)](/docs/changelogs/preview/) {changelog}
 - [Gemini CLI Releases](/docs/releases/) {changelog}
 
 ---
