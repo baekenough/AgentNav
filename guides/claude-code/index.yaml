@@ -49,3 +49,13 @@ documents:
     description: 프로덕션 에이전트 운영
     path: ./10-monitoring.md
     status: placeholder  # 공식 문서 미공개
+
+  - name: workflow-patterns
+    title: 워크플로우 패턴
+    description: AI 에이전트 작업에 적합한 워크플로우 패턴 선택 가이드
+    path: ./12-workflow-patterns.md
+
+  - name: cli-flags
+    title: CLI 플래그 및 모드
+    description: CLI 플래그, 헤드리스 모드, 스케줄링, 환경변수 레퍼런스
+    path: ./13-cli-flags.md

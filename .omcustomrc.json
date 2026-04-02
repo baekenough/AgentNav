@@ -1,9 +1,9 @@
 {
   "configVersion": 1,
-  "version": "0.24.0",
+  "version": "0.68.2",
   "language": "ko",
   "installedAt": "2026-03-07T08:43:14.855Z",
-  "lastUpdated": "2026-03-09T03:59:39.633Z",
+  "lastUpdated": "2026-03-31T08:17:34.404Z",
   "installedComponents": [
     "rules",
     "agents",
@@ -28,6 +28,12 @@
     "checkIntervalHours": 24,
     "autoApplyMinor": false
   },
-  "preserveFiles": [],
-  "customComponents": []
+  "preserveFiles": [
+    ".claude/settings.json",
+    ".claude/settings.local.json",
+    ".claude/agent-memory/",
+    ".claude/agent-memory-local/"
+  ],
+  "customComponents": [],
+  "teamMode": false
 }
