@@ -215,6 +215,14 @@ guides:
       origin: redis.io
       url: https://redis.io/docs/
 
+  - name: drizzle-orm
+    description: Drizzle ORM TypeScript-first SQL toolkit for type-safe database access
+    path: ./drizzle-orm/
+    source:
+      type: external
+      origin: orm.drizzle.team
+      url: https://orm.drizzle.team/docs/overview
+
   # Git
   - name: git-worktree-workflow
     description: Git worktree workflow for parallel branch development
