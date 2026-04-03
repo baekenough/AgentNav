@@ -646,6 +646,7 @@ https://supabase.com/docs/reference/javascript/auth-getuseridentities
 https://supabase.com/docs/reference/javascript/auth-linkidentity
 https://supabase.com/docs/reference/javascript/auth-mfa-api
 https://supabase.com/docs/reference/javascript/auth-oauth
+https://supabase.com/docs/reference/javascript/auth-reauthentication
 https://supabase.com/docs/reference/javascript/auth-signinanonymously
 https://supabase.com/docs/reference/javascript/auth-signinwithidtoken
 https://supabase.com/docs/reference/javascript/auth-signinwithoauth
