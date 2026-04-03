@@ -2,7 +2,7 @@ name: Docs Drift Detector
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Daily at 06:00 UTC (15:00 KST)
+    - cron: '0 0,8,16 * * *'  # 3x daily at 00/08/16 UTC (09/17/01 KST)
   workflow_dispatch:
 
 permissions:
