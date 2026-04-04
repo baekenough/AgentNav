@@ -74,4 +74,7 @@ https://code.claude.com/docs/en/ultraplan.md
 https://code.claude.com/docs/en/voice-dictation.md
 https://code.claude.com/docs/en/vs-code.md
 https://code.claude.com/docs/en/web-scheduled-tasks.md
+https://code.claude.com/docs/en/whats-new/2026-w13.md
+https://code.claude.com/docs/en/whats-new/2026-w14.md
+https://code.claude.com/docs/en/whats-new/index.md
 https://code.claude.com/docs/en/zero-data-retention.md
