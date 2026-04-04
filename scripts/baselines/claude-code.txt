@@ -19,6 +19,7 @@ https://code.claude.com/docs/en/context-window.md
 https://code.claude.com/docs/en/costs.md
 https://code.claude.com/docs/en/data-usage.md
 https://code.claude.com/docs/en/desktop-quickstart.md
+https://code.claude.com/docs/en/desktop-scheduled-tasks.md
 https://code.claude.com/docs/en/desktop.md
 https://code.claude.com/docs/en/devcontainer.md
 https://code.claude.com/docs/en/discover-plugins.md
@@ -69,6 +70,7 @@ https://code.claude.com/docs/en/terminal-config.md
 https://code.claude.com/docs/en/third-party-integrations.md
 https://code.claude.com/docs/en/tools-reference.md
 https://code.claude.com/docs/en/troubleshooting.md
+https://code.claude.com/docs/en/ultraplan.md
 https://code.claude.com/docs/en/voice-dictation.md
 https://code.claude.com/docs/en/vs-code.md
 https://code.claude.com/docs/en/web-scheduled-tasks.md

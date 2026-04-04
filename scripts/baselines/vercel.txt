@@ -1344,6 +1344,7 @@ https://vercel.com/kb/guide/blue_green_deployments_on_vercel
 https://vercel.com/kb/guide/branch-variables-and-domains-not-linked-to-cli-deployments
 https://vercel.com/kb/guide/build-ai-agent-weather-api
 https://vercel.com/kb/guide/build-commission-free-ios-checkouts-with-vercel-and-paddle
+https://vercel.com/kb/guide/building-a-slack-agent-with-durable-workflows
 https://vercel.com/kb/guide/building-ecommerce-sites-with-next-js-and-shopify
 https://vercel.com/kb/guide/building-nextjs-apps-with-graphql-fragment-colocation-and-sanity-cms
 https://vercel.com/kb/guide/can-a-caa-record-be-added-to-a-subdomain-configured-with-cname
@@ -1608,6 +1609,7 @@ https://vercel.com/kb/guide/rendering-content-based-on-device
 https://vercel.com/kb/guide/renewal-of-ssl-certificates-with-a-vercel-domain
 https://vercel.com/kb/guide/resolve-err-ssl-protocol-error-with-vercel
 https://vercel.com/kb/guide/resolve-err-too-many-redirects-when-using-cloudflare-proxy-with-vercel
+https://vercel.com/kb/guide/run-and-track-deploys-from-slack
 https://vercel.com/kb/guide/running-ai-generated-code-sandbox
 https://vercel.com/kb/guide/running-openclaw-in-vercel-sandbox
 https://vercel.com/kb/guide/running-opencode-securely-with-the-vercel-sandbox
