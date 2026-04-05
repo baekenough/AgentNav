@@ -3,7 +3,7 @@
   "site": {
     "name": "Claude Code Documentation",
     "url": "https://code.claude.com",
-    "total_pages": 75,
+    "total_pages": 77,
     "last_updated": "2026-03-31"
   },
   "sections": [
@@ -99,7 +99,7 @@
     {
       "name": "Core Features",
       "path_prefix": "/docs/en",
-      "page_count": 11,
+      "page_count": 12,
       "pages": [
         {
           "path": "/docs/en/memory",
@@ -154,6 +154,11 @@
         {
           "path": "/docs/en/fast-mode",
           "title": "Speed up responses with fast mode",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/ultraplan",
+          "title": "Plan in the cloud with ultraplan",
           "type": "guide"
         }
       ]
@@ -245,7 +250,7 @@
     {
       "name": "Automation",
       "path_prefix": "/docs/en",
-      "page_count": 6,
+      "page_count": 7,
       "pages": [
         {
           "path": "/docs/en/headless",
@@ -260,6 +265,11 @@
         {
           "path": "/docs/en/web-scheduled-tasks",
           "title": "Schedule tasks on the web",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/desktop-scheduled-tasks",
+          "title": "Schedule recurring tasks in Claude Code Desktop",
           "type": "guide"
         },
         {

@@ -8,15 +8,15 @@ type: site-index
 
 - **URL**: https://agentnav.baekenough.com
 - **Standard**: agents.txt v0.2
-- **Documentation Sets**: 6
-- **Total Pages**: 2625
-- **Last Updated**: 2026-04-03
+- **Documentation Sets**: 4
+- **Total Pages**: 858
+- **Last Updated**: 2026-04-05
 
 ## Available Documentation Sets
 
 ### Claude Code
 - **Source**: [code.claude.com](https://code.claude.com)
-- **Pages**: 75 | **Sections**: 12
+- **Pages**: 77 | **Sections**: 12
 - **Formats**:
   - [agents.json](/claude-code/agents.json)
   - [agents.md](/claude-code/agents.md)
@@ -49,24 +49,6 @@ type: site-index
   - [agents.md](/claude-api/agents.md)
   - [agents.xml](/claude-api/agents.xml)
   - [agents.txt](/claude-api/agents.txt)
-
-### Vercel
-- **Source**: [vercel.com](https://vercel.com)
-- **Pages**: 1078 | **Sections**: 19
-- **Formats**:
-  - [agents.json](/vercel/agents.json)
-  - [agents.md](/vercel/agents.md)
-  - [agents.xml](/vercel/agents.xml)
-  - [agents.txt](/vercel/agents.txt)
-
-### Supabase
-- **Source**: [supabase.com](https://supabase.com)
-- **Pages**: 691 | **Sections**: 20
-- **Formats**:
-  - [agents.json](/supabase/agents.json)
-  - [agents.md](/supabase/agents.md)
-  - [agents.xml](/supabase/agents.xml)
-  - [agents.txt](/supabase/agents.txt)
 
 ## Navigation Guide
 

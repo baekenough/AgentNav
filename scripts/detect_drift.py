@@ -58,19 +58,6 @@ SOURCES: dict[str, dict] = {
         "strategy": "markdown_links",
         "domain_filter": "platform.claude.com",
     },
-    "vercel": {
-        "name": "Vercel",
-        "llms_url": "https://vercel.com/llms.txt",
-        "strategy": "markdown_links",
-        "domain_filter": "vercel.com",
-    },
-    "supabase": {
-        "name": "Supabase",
-        "llms_url": "https://supabase.com/llms.txt",
-        "strategy": "supabase_subfiles",
-        "domain_filter": "supabase.com",
-        "base_url": "https://supabase.com",
-    },
 }
 
 GITHUB_API = "https://api.github.com"

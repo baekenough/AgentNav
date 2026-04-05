@@ -1,16 +1,16 @@
 # agents.txt v0.2
 # AgentNav — https://agentnav.baekenough.com
-# Documentation Sets: 6 | Total Pages: 2625 | Last updated: 2026-04-03
+# Documentation Sets: 4 | Total Pages: 858 | Last updated: 2026-04-05
 
 SITE: AgentNav
 URL: https://agentnav.baekenough.com
 TYPE: site-index
-SETS: 6
-PAGES: 2625
+SETS: 4
+PAGES: 858
 
 == DOCUMENTATION SETS ==
 
-[Claude Code] 75 pages, 12 sections | source=https://code.claude.com
+[Claude Code] 77 pages, 12 sections | source=https://code.claude.com
   json: /claude-code/agents.json
   md: /claude-code/agents.md
   xml: /claude-code/agents.xml
@@ -33,18 +33,6 @@ PAGES: 2625
   md: /claude-api/agents.md
   xml: /claude-api/agents.xml
   txt: /claude-api/agents.txt
-
-[Vercel] 1078 pages, 19 sections | source=https://vercel.com
-  json: /vercel/agents.json
-  md: /vercel/agents.md
-  xml: /vercel/agents.xml
-  txt: /vercel/agents.txt
-
-[Supabase] 691 pages, 20 sections | source=https://supabase.com
-  json: /supabase/agents.json
-  md: /supabase/agents.md
-  xml: /supabase/agents.xml
-  txt: /supabase/agents.txt
 
 == NAVIGATION ==
 RULES:

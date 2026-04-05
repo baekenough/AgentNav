@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Claude Code Documentation — https://code.claude.com
-# Total: 75 pages | Last updated: 2026-03-31
+# Total: 77 pages | Last updated: 2026-03-31
 
 SITE: Claude Code Documentation
 URL: https://code.claude.com
-PAGES: 75
+PAGES: 77
 SECTIONS: 12
 
 == SCHEMA ==
@@ -39,7 +39,7 @@ SECTIONS: 12
   claude-code-on-the-web | type=guide
   computer-use | type=guide
 
-[Core Features] 11 pages | prefix=/docs/en/
+[Core Features] 12 pages | prefix=/docs/en/
   memory | type=guide
   context-window | type=guide
   checkpointing | type=guide
@@ -51,6 +51,7 @@ SECTIONS: 12
   hooks | type=reference
   mcp | type=guide
   fast-mode | type=guide
+  ultraplan | type=guide
 
 [Plugins] 4 pages | prefix=/docs/en/
   plugins | type=guide
@@ -70,10 +71,11 @@ SECTIONS: 12
   fullscreen | type=guide
   claude-directory | type=reference
 
-[Automation] 6 pages | prefix=/docs/en/
+[Automation] 7 pages | prefix=/docs/en/
   headless | type=guide
   scheduled-tasks | type=guide
   web-scheduled-tasks | type=guide
+  desktop-scheduled-tasks | type=guide
   code-review | type=guide
   output-styles | type=guide
   voice-dictation | type=guide

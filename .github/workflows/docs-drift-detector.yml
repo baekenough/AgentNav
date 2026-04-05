@@ -9,6 +9,9 @@ permissions:
   issues: write
   contents: write  # For baseline update commits
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   detect-drift:
     runs-on: ubuntu-latest

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Claude Code Documentation" url="https://code.claude.com" total-pages="75" last-updated="2026-03-31" />
+  <site name="Claude Code Documentation" url="https://code.claude.com" total-pages="77" last-updated="2026-03-31" />
 
   <sections>
     <!-- 1. Getting Started -->
@@ -27,7 +27,7 @@
     </section>
 
     <!-- 3. Core Features -->
-    <section name="Core Features" path-prefix="/docs/en" page-count="11">
+    <section name="Core Features" path-prefix="/docs/en" page-count="12">
       <page path="/docs/en/memory" title="How Claude remembers your project" type="guide" />
       <page path="/docs/en/context-window" title="Explore the context window" type="guide" />
       <page path="/docs/en/checkpointing" title="Checkpointing" type="guide" />
@@ -39,6 +39,7 @@
       <page path="/docs/en/hooks" title="Hooks reference" type="reference" />
       <page path="/docs/en/mcp" title="Connect Claude Code to tools via MCP" type="guide" />
       <page path="/docs/en/fast-mode" title="Speed up responses with fast mode" type="guide" />
+      <page path="/docs/en/ultraplan" title="Plan in the cloud with ultraplan" type="guide" />
     </section>
 
     <!-- 4. Plugins -->
@@ -64,10 +65,11 @@
     </section>
 
     <!-- 6. Automation -->
-    <section name="Automation" path-prefix="/docs/en" page-count="6">
+    <section name="Automation" path-prefix="/docs/en" page-count="7">
       <page path="/docs/en/headless" title="Run Claude Code programmatically" type="guide" />
       <page path="/docs/en/scheduled-tasks" title="Run prompts on a schedule" type="guide" />
       <page path="/docs/en/web-scheduled-tasks" title="Schedule tasks on the web" type="guide" />
+      <page path="/docs/en/desktop-scheduled-tasks" title="Schedule recurring tasks in Claude Code Desktop" type="guide" />
       <page path="/docs/en/code-review" title="Code Review" type="guide" />
       <page path="/docs/en/output-styles" title="Output styles" type="guide" />
       <page path="/docs/en/voice-dictation" title="Voice dictation" type="guide" />

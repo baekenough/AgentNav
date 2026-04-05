@@ -12,7 +12,7 @@ schema:
 
 - **URL**: https://code.claude.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 75
+- **Total Pages**: 77
 - **Last Updated**: 2026-03-31
 
 ## Site Overview
@@ -21,10 +21,10 @@ schema:
 |---|---------|-------|-----------|
 | 1 | Getting Started | 5 | /docs/en/ |
 | 2 | Interfaces | 10 | /docs/en/ |
-| 3 | Core Features | 11 | /docs/en/ |
+| 3 | Core Features | 12 | /docs/en/ |
 | 4 | Plugins | 4 | /docs/en/ |
 | 5 | Configuration | 10 | /docs/en/ |
-| 6 | Automation | 6 | /docs/en/ |
+| 6 | Automation | 7 | /docs/en/ |
 | 7 | Cloud Providers | 4 | /docs/en/ |
 | 8 | CI/CD & Integrations | 6 | /docs/en/ |
 | 9 | Channels | 2 | /docs/en/ |
@@ -53,10 +53,9 @@ schema:
 - [JetBrains IDEs](/docs/en/jetbrains) {guide}
 - [Use Claude Code with Chrome (beta)](/docs/en/chrome) {guide}
 - [Claude Code on the web](/docs/en/claude-code-on-the-web) {guide}
-
 - [Let Claude use your computer from the CLI](/docs/en/computer-use) {guide}
 
-## Core Features (11 pages)
+## Core Features (12 pages)
 
 - [How Claude remembers your project](/docs/en/memory) {guide}
 - [Explore the context window](/docs/en/context-window) {guide}
@@ -69,6 +68,8 @@ schema:
 - [Hooks reference](/docs/en/hooks) {reference}
 - [Connect Claude Code to tools via MCP](/docs/en/mcp) {guide}
 - [Speed up responses with fast mode](/docs/en/fast-mode) {guide}
+
+- [Plan in the cloud with ultraplan](/docs/en/ultraplan) {guide}
 
 ## Plugins (4 pages)
 
@@ -88,10 +89,9 @@ schema:
 - [Customize your status line](/docs/en/statusline) {guide}
 - [Optimize your terminal setup](/docs/en/terminal-config) {guide}
 - [Explore the .claude directory](/docs/en/claude-directory) {reference}
-
 - [Fullscreen rendering](/docs/en/fullscreen) {guide}
 
-## Automation (6 pages)
+## Automation (7 pages)
 
 - [Run Claude Code programmatically](/docs/en/headless) {guide}
 - [Run prompts on a schedule](/docs/en/scheduled-tasks) {guide}
@@ -99,6 +99,8 @@ schema:
 - [Code Review](/docs/en/code-review) {guide}
 - [Output styles](/docs/en/output-styles) {guide}
 - [Voice dictation](/docs/en/voice-dictation) {guide}
+
+- [Schedule recurring tasks in Claude Code Desktop](/docs/en/desktop-scheduled-tasks) {guide}
 
 ## Cloud Providers (4 pages)
 
@@ -114,7 +116,6 @@ schema:
 - [Claude Code in Slack](/docs/en/slack) {guide}
 - [Continue local sessions from any device with Remote Control](/docs/en/remote-control) {guide}
 - [Platforms and integrations](/docs/en/platforms) {overview}
-
 - [Claude Code with GitHub Enterprise Server](/docs/en/github-enterprise-server) {guide}
 
 ## Channels (2 pages)
