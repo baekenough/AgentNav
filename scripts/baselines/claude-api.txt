@@ -998,6 +998,7 @@ https://platform.claude.com/docs/en/build-with-claude/api-and-data-retention.md
 https://platform.claude.com/docs/en/build-with-claude/batch-processing.md
 https://platform.claude.com/docs/en/build-with-claude/citations.md
 https://platform.claude.com/docs/en/build-with-claude/claude-code-analytics-api.md
+https://platform.claude.com/docs/en/build-with-claude/claude-in-amazon-bedrock-research-preview.md
 https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry.md
 https://platform.claude.com/docs/en/build-with-claude/claude-on-amazon-bedrock.md
 https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai.md
