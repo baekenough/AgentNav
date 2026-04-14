@@ -141,6 +141,7 @@ https://platform.claude.com/docs/en/api/beta/vaults/delete.md
 https://platform.claude.com/docs/en/api/beta/vaults/list.md
 https://platform.claude.com/docs/en/api/beta/vaults/retrieve.md
 https://platform.claude.com/docs/en/api/beta/vaults/update.md
+https://platform.claude.com/docs/en/api/claude-code/routines-fire.md
 https://platform.claude.com/docs/en/api/cli/beta.md
 https://platform.claude.com/docs/en/api/cli/beta/agents.md
 https://platform.claude.com/docs/en/api/cli/beta/agents/archive.md

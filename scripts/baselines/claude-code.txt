@@ -85,6 +85,7 @@ https://code.claude.com/docs/en/plugins-reference.md
 https://code.claude.com/docs/en/plugins.md
 https://code.claude.com/docs/en/quickstart.md
 https://code.claude.com/docs/en/remote-control.md
+https://code.claude.com/docs/en/routines.md
 https://code.claude.com/docs/en/sandboxing.md
 https://code.claude.com/docs/en/scheduled-tasks.md
 https://code.claude.com/docs/en/security.md
@@ -103,7 +104,6 @@ https://code.claude.com/docs/en/ultraplan.md
 https://code.claude.com/docs/en/voice-dictation.md
 https://code.claude.com/docs/en/vs-code.md
 https://code.claude.com/docs/en/web-quickstart.md
-https://code.claude.com/docs/en/web-scheduled-tasks.md
 https://code.claude.com/docs/en/whats-new/2026-w13.md
 https://code.claude.com/docs/en/whats-new/2026-w14.md
 https://code.claude.com/docs/en/whats-new/2026-w15.md
