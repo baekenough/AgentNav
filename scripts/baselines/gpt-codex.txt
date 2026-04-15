@@ -31,7 +31,6 @@ https://developers.openai.com/codex/custom-prompts.md
 https://developers.openai.com/codex/enterprise/admin-setup.md
 https://developers.openai.com/codex/enterprise/governance.md
 https://developers.openai.com/codex/enterprise/managed-configuration.md
-https://developers.openai.com/codex/explore.md
 https://developers.openai.com/codex/feature-maturity.md
 https://developers.openai.com/codex/github-action.md
 https://developers.openai.com/codex/guides/agents-md.md
