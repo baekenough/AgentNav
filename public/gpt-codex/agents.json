@@ -1,209 +1,718 @@
 {
   "agents_txt_version": "0.2",
   "site": {
-    "name": "Codex Documentation",
-    "url": "https://developers.openai.com",
+    "name": "GPT Codex Documentation",
+    "url": "https://developers.openai.com/codex",
     "total_pages": 71,
-    "last_updated": "2026-03-31"
+    "last_updated": "2026-04-15",
+    "description": "Build with the Codex CLI, IDE extension, and cloud automation to speed up development."
   },
   "sections": [
     {
-      "name": "Getting Started",
-      "path_prefix": "/codex",
-      "page_count": 4,
+      "name": "Documentation sets",
+      "page_count": 1,
       "pages": [
-        { "path": "/codex/overview", "title": "Codex", "type": "overview" },
-        { "path": "/codex/quickstart", "title": "Quickstart", "type": "tutorial" },
-        { "path": "/codex/explore", "title": "Explore", "type": "use-case" },
-        { "path": "/codex/pricing", "title": "Codex Pricing", "type": "reference" }
-      ]
+        {
+          "path": "/codex/llms-full.txt",
+          "title": "Combined Codex docs",
+          "type": "guide",
+          "description": "Single-file Markdown export of Codex guides and references."
+        }
+      ],
+      "path_prefix": "/codex/"
     },
     {
-      "name": "Concepts",
-      "path_prefix": "/codex",
-      "page_count": 7,
+      "name": "Agent Approvals Security",
+      "page_count": 1,
       "pages": [
-        { "path": "/codex/prompting", "title": "Prompting", "type": "guide" },
-        { "path": "/codex/concepts/customization", "title": "Customization", "type": "guide" },
-        { "path": "/codex/concepts/sandboxing", "title": "Sandboxing", "type": "guide" },
-        { "path": "/codex/concepts/subagents", "title": "Subagents", "type": "guide" },
-        { "path": "/codex/workflows", "title": "Workflows", "type": "guide" },
-        { "path": "/codex/models", "title": "Codex Models", "type": "reference" },
-        { "path": "/codex/concepts/cyber-safety", "title": "Cyber Safety", "type": "guide" }
-      ]
+        {
+          "path": "/codex/agent-approvals-security.md",
+          "title": "Agent approvals & security",
+          "type": "guide",
+          "description": "How to securely operate Codex with sandboxing, approvals, and network controls"
+        }
+      ],
+      "path_prefix": "/codex/"
     },
     {
-      "name": "Using Codex — App",
-      "path_prefix": "/codex/app",
+      "name": "App",
       "page_count": 10,
       "pages": [
-        { "path": "/codex/app", "title": "Codex app", "type": "overview" },
-        { "path": "/codex/app/features", "title": "Codex app features", "type": "tool-reference" },
-        { "path": "/codex/app/settings", "title": "Codex app settings", "type": "reference" },
-        { "path": "/codex/app/review", "title": "Review", "type": "guide" },
-        { "path": "/codex/app/automations", "title": "Automations", "type": "guide" },
-        { "path": "/codex/app/worktrees", "title": "Worktrees", "type": "guide" },
-        { "path": "/codex/app/local-environments", "title": "Local environments", "type": "guide" },
-        { "path": "/codex/app/commands", "title": "Codex app commands", "type": "reference" },
-        { "path": "/codex/app/windows", "title": "Windows", "type": "guide" },
-        { "path": "/codex/app/troubleshooting", "title": "Troubleshooting", "type": "guide" }
-      ]
+        {
+          "path": "/codex/app.md",
+          "title": "Codex app",
+          "type": "guide",
+          "description": "Your Codex command center"
+        },
+        {
+          "path": "/codex/app/automations.md",
+          "title": "Automations",
+          "type": "guide",
+          "description": "Schedule recurring Codex tasks"
+        },
+        {
+          "path": "/codex/app/commands.md",
+          "title": "Codex app commands",
+          "type": "tool-reference",
+          "description": "Reference for Codex app commands and keyboard shortcuts"
+        },
+        {
+          "path": "/codex/app/features.md",
+          "title": "Codex app features",
+          "type": "guide",
+          "description": "What you can do with the Codex app"
+        },
+        {
+          "path": "/codex/app/settings.md",
+          "title": "Codex app settings",
+          "type": "reference",
+          "description": "Configure Codex app behavior and preferences"
+        },
+        {
+          "path": "/codex/app/local-environments.md",
+          "title": "Local environments",
+          "type": "guide",
+          "description": "Configure common actions and setup scripts for worktrees"
+        },
+        {
+          "path": "/codex/app/review.md",
+          "title": "Review",
+          "type": "guide",
+          "description": "Review and iterate with Codex on changes inside the app"
+        },
+        {
+          "path": "/codex/app/troubleshooting.md",
+          "title": "Troubleshooting",
+          "type": "guide",
+          "description": "FAQ and fixes for common Codex app issues"
+        },
+        {
+          "path": "/codex/app/windows.md",
+          "title": "Windows",
+          "type": "guide",
+          "description": "Use the Codex app on Windows with native sandbox and PowerShell support"
+        },
+        {
+          "path": "/codex/app/worktrees.md",
+          "title": "Worktrees",
+          "type": "guide",
+          "description": "Leverage Git worktrees within the Codex app to let Codex work in parallel"
+        }
+      ],
+      "path_prefix": "/codex/"
     },
     {
-      "name": "Using Codex — IDE Extension",
-      "path_prefix": "/codex/ide",
-      "page_count": 5,
+      "name": "App Server",
+      "page_count": 1,
       "pages": [
-        { "path": "/codex/ide", "title": "Codex IDE extension", "type": "overview" },
-        { "path": "/codex/ide/features", "title": "Codex IDE extension features", "type": "tool-reference" },
-        { "path": "/codex/ide/settings", "title": "Codex IDE extension settings", "type": "reference" },
-        { "path": "/codex/ide/commands", "title": "Codex IDE extension commands", "type": "reference" },
-        { "path": "/codex/ide/slash-commands", "title": "Codex IDE extension slash commands", "type": "reference" }
-      ]
+        {
+          "path": "/codex/app-server.md",
+          "title": "Codex App Server",
+          "type": "guide",
+          "description": "Embed Codex into your product with the app-server protocol"
+        }
+      ],
+      "path_prefix": "/codex/"
     },
     {
-      "name": "Using Codex — CLI",
-      "path_prefix": "/codex/cli",
+      "name": "Auth",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/auth.md",
+          "title": "Authentication",
+          "type": "guide",
+          "description": "Sign-in methods for Codex"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Cli",
       "page_count": 4,
       "pages": [
-        { "path": "/codex/cli", "title": "Codex CLI", "type": "overview" },
-        { "path": "/codex/cli/features", "title": "Codex CLI features", "type": "tool-reference" },
-        { "path": "/codex/cli/reference", "title": "Command line options", "type": "reference" },
-        { "path": "/codex/cli/slash-commands", "title": "Slash commands in Codex CLI", "type": "reference" }
-      ]
+        {
+          "path": "/codex/cli.md",
+          "title": "Codex CLI",
+          "type": "tool-reference",
+          "description": "Pair with Codex in your terminal"
+        },
+        {
+          "path": "/codex/cli/features.md",
+          "title": "Codex CLI features",
+          "type": "tool-reference",
+          "description": "Overview of functionality in the Codex terminal client"
+        },
+        {
+          "path": "/codex/cli/reference.md",
+          "title": "Command line options",
+          "type": "tool-reference",
+          "description": "Options and flags for the Codex terminal client"
+        },
+        {
+          "path": "/codex/cli/slash-commands.md",
+          "title": "Slash commands in Codex CLI",
+          "type": "tool-reference",
+          "description": "Control Codex during interactive sessions"
+        }
+      ],
+      "path_prefix": "/codex/"
     },
     {
-      "name": "Using Codex — Web",
-      "path_prefix": "/codex/cloud",
+      "name": "Cloud",
       "page_count": 3,
       "pages": [
-        { "path": "/codex/cloud", "title": "Codex web", "type": "overview" },
-        { "path": "/codex/cloud/environments", "title": "Cloud environments", "type": "guide" },
-        { "path": "/codex/cloud/internet-access", "title": "Agent internet access", "type": "guide" }
-      ]
-    },
-    {
-      "name": "Integrations",
-      "path_prefix": "/codex/integrations",
-      "page_count": 3,
-      "pages": [
-        { "path": "/codex/integrations/github", "title": "Use Codex in GitHub", "type": "guide" },
-        { "path": "/codex/integrations/slack", "title": "Use Codex in Slack", "type": "guide" },
-        { "path": "/codex/integrations/linear", "title": "Use Codex in Linear", "type": "guide" }
-      ]
-    },
-    {
-      "name": "Codex Security",
-      "path_prefix": "/codex/security",
-      "page_count": 4,
-      "pages": [
-        { "path": "/codex/security", "title": "Codex Security", "type": "overview" },
-        { "path": "/codex/security/setup", "title": "Codex Security setup", "type": "tutorial" },
-        { "path": "/codex/security/threat-model", "title": "Improving the threat model", "type": "guide" },
-        { "path": "/codex/security/faq", "title": "FAQ", "type": "reference" }
-      ]
-    },
-    {
-      "name": "Configuration",
-      "path_prefix": "/codex",
-      "page_count": 14,
-      "pages": [
-        { "path": "/codex/config-basic", "title": "Config basics", "type": "guide" },
-        { "path": "/codex/config-advanced", "title": "Advanced Configuration", "type": "guide" },
-        { "path": "/codex/config-reference", "title": "Configuration Reference", "type": "reference" },
-        { "path": "/codex/config-sample", "title": "Sample Configuration", "type": "reference" },
-        { "path": "/codex/speed", "title": "Speed", "type": "guide" },
-        { "path": "/codex/rules", "title": "Rules", "type": "guide" },
-        { "path": "/codex/guides/agents-md", "title": "Custom instructions with AGENTS.md", "type": "guide" },
-        { "path": "/codex/mcp", "title": "Model Context Protocol", "type": "guide" },
-        { "path": "/codex/skills", "title": "Agent Skills", "type": "guide" },
-        { "path": "/codex/subagents", "title": "Subagents", "type": "guide" },
-        { "path": "/codex/hooks", "title": "Hooks", "description": "Run deterministic scripts during the Codex lifecycle", "type": "guide" },
-        { "path": "/codex/plugins", "title": "Plugins", "description": "Use plugins in Codex to add reusable workflows with skills and app integrations", "type": "guide" },
-        { "path": "/codex/plugins/build", "title": "Build plugins", "description": "Create, test, and distribute plugins for Codex", "type": "guide" },
-        { "path": "/codex/custom-prompts", "title": "Custom Prompts", "type": "best-practices" }
-      ]
-    },
-    {
-      "name": "Administration",
-      "path_prefix": "/codex",
-      "page_count": 6,
-      "pages": [
-        { "path": "/codex/auth", "title": "Authentication", "type": "guide" },
-        { "path": "/codex/agent-approvals-security", "title": "Agent approvals & security", "type": "guide" },
-        { "path": "/codex/enterprise/admin-setup", "title": "Admin Setup", "type": "tutorial" },
-        { "path": "/codex/enterprise/governance", "title": "Governance", "type": "guide" },
-        { "path": "/codex/enterprise/managed-configuration", "title": "Managed configuration", "type": "guide" },
-        { "path": "/codex/windows", "title": "Windows", "type": "guide" }
-      ]
-    },
-    {
-      "name": "Automation",
-      "path_prefix": "/codex",
-      "page_count": 5,
-      "pages": [
-        { "path": "/codex/noninteractive", "title": "Non-interactive mode", "type": "guide" },
-        { "path": "/codex/sdk", "title": "Codex SDK", "type": "sdk-guide" },
-        { "path": "/codex/app-server", "title": "Codex App Server", "type": "guide" },
-        { "path": "/codex/guides/agents-sdk", "title": "Use Codex with the Agents SDK", "type": "sdk-guide" },
-        { "path": "/codex/github-action", "title": "Codex GitHub Action", "type": "guide" }
-      ]
-    },
-    {
-      "name": "Learn",
-      "path_prefix": "/codex",
-      "page_count": 3,
-      "pages": [
-        { "path": "/codex/videos", "title": "Videos", "type": "reference" },
-        { "path": "/codex/guides/build-ai-native-engineering-team", "title": "Building an AI-Native Engineering Team", "type": "guide" },
-        { "path": "/codex/learn/best-practices", "title": "Best Practices", "type": "reference" }
-      ]
+        {
+          "path": "/codex/cloud.md",
+          "title": "Codex web",
+          "type": "guide",
+          "description": "Delegate to Codex in the cloud"
+        },
+        {
+          "path": "/codex/cloud/internet-access.md",
+          "title": "Agent internet access",
+          "type": "guide",
+          "description": "Control internet access for Codex cloud tasks"
+        },
+        {
+          "path": "/codex/cloud/environments.md",
+          "title": "Cloud environments",
+          "type": "guide",
+          "description": "Customize dependencies and tools for Codex"
+        }
+      ],
+      "path_prefix": "/codex/"
     },
     {
       "name": "Community",
-      "path_prefix": "/codex",
       "page_count": 1,
       "pages": [
-        { "path": "/codex/community/codex-for-oss", "title": "Codex for Open Source", "type": "overview" }
-      ]
+        {
+          "path": "/codex/community/codex-for-oss.md",
+          "title": "Codex for Open Source",
+          "type": "guide",
+          "description": "Open-source maintainers can apply for API credits, six months of ChatGPT Pro with Codex, and Codex Security."
+        }
+      ],
+      "path_prefix": "/codex/community/"
     },
     {
-      "name": "Releases",
-      "path_prefix": "/codex",
+      "name": "Concepts",
+      "page_count": 4,
+      "pages": [
+        {
+          "path": "/codex/concepts/customization.md",
+          "title": "Customization",
+          "type": "guide",
+          "description": "How to customize Codex with project guidance, skills, MCP, and subagents"
+        },
+        {
+          "path": "/codex/concepts/cyber-safety.md",
+          "title": "Cyber Safety",
+          "type": "guide",
+          "description": "Cybersecurity safeguards and trusted access for Codex users"
+        },
+        {
+          "path": "/codex/concepts/sandboxing.md",
+          "title": "Sandbox",
+          "type": "guide",
+          "description": "How Codex uses sandboxes across the Codex app, IDE, and CLI"
+        },
+        {
+          "path": "/codex/concepts/subagents.md",
+          "title": "Subagents",
+          "type": "guide",
+          "description": "How subagent workflows keep Codex focused and how to choose models for different agents"
+        }
+      ],
+      "path_prefix": "/codex/concepts/"
+    },
+    {
+      "name": "Config Advanced",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/config-advanced.md",
+          "title": "Advanced Configuration",
+          "type": "reference",
+          "description": "More advanced configuration options for Codex local clients"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Config Basic",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/config-basic.md",
+          "title": "Config basics",
+          "type": "reference",
+          "description": "Learn the basics of configuring your local Codex client"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Config Reference",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/config-reference.md",
+          "title": "Configuration Reference",
+          "type": "reference",
+          "description": "Complete reference for Codex config.toml and requirements.toml"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Config Sample",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/config-sample.md",
+          "title": "Sample Configuration",
+          "type": "reference",
+          "description": "A complete example config.toml you can copy and adapt"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Custom Prompts",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/custom-prompts.md",
+          "title": "Custom Prompts",
+          "type": "guide",
+          "description": "Deprecated. Use skills for reusable prompts"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Enterprise",
+      "page_count": 3,
+      "pages": [
+        {
+          "path": "/codex/enterprise/admin-setup.md",
+          "title": "Admin Setup",
+          "type": "guide",
+          "description": "Set up Codex for your ChatGPT Enterprise workspace"
+        },
+        {
+          "path": "/codex/enterprise/governance.md",
+          "title": "Governance",
+          "type": "guide",
+          "description": "Governance guidance for managing Codex in your organization"
+        },
+        {
+          "path": "/codex/enterprise/managed-configuration.md",
+          "title": "Managed configuration",
+          "type": "reference",
+          "description": "Configure managed Codex requirements and defaults"
+        }
+      ],
+      "path_prefix": "/codex/enterprise/"
+    },
+    {
+      "name": "Feature Maturity",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/feature-maturity.md",
+          "title": "Feature Maturity",
+          "type": "guide",
+          "description": "How to interpret feature maturity levels in Codex docs and releases"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Github Action",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/github-action.md",
+          "title": "Codex GitHub Action",
+          "type": "guide",
+          "description": "Trigger Codex actions from GitHub Events"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Guides",
+      "page_count": 3,
+      "pages": [
+        {
+          "path": "/codex/guides/build-ai-native-engineering-team.md",
+          "title": "Building an AI-Native Engineering Team",
+          "type": "guide",
+          "description": "How coding agents speed up the software development lifecycle"
+        },
+        {
+          "path": "/codex/guides/agents-md.md",
+          "title": "Custom instructions with AGENTS.md",
+          "type": "guide",
+          "description": "Give Codex extra instructions and context for your project"
+        },
+        {
+          "path": "/codex/guides/agents-sdk.md",
+          "title": "Use Codex with the Agents SDK",
+          "type": "sdk-guide",
+          "description": "Invoke Codex as an MCP server to build multi-agent development workflows"
+        }
+      ],
+      "path_prefix": "/codex/guides/"
+    },
+    {
+      "name": "Hooks",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/hooks.md",
+          "title": "Hooks",
+          "type": "guide",
+          "description": "Run deterministic scripts during the Codex lifecycle"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Ide",
+      "page_count": 5,
+      "pages": [
+        {
+          "path": "/codex/ide.md",
+          "title": "Codex IDE extension",
+          "type": "guide",
+          "description": "Pair with Codex in your IDE"
+        },
+        {
+          "path": "/codex/ide/commands.md",
+          "title": "Codex IDE extension commands",
+          "type": "tool-reference",
+          "description": "Reference for Codex IDE extension commands and keyboard shortcuts"
+        },
+        {
+          "path": "/codex/ide/features.md",
+          "title": "Codex IDE extension features",
+          "type": "guide",
+          "description": "What you can do with the Codex IDE extension"
+        },
+        {
+          "path": "/codex/ide/settings.md",
+          "title": "Codex IDE extension settings",
+          "type": "reference",
+          "description": "Reference for Codex IDE extension settings"
+        },
+        {
+          "path": "/codex/ide/slash-commands.md",
+          "title": "Codex IDE extension slash commands",
+          "type": "tool-reference",
+          "description": "Reference for slash commands in the Codex IDE extension"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Integrations",
+      "page_count": 3,
+      "pages": [
+        {
+          "path": "/codex/integrations/github.md",
+          "title": "Use Codex in GitHub",
+          "type": "guide",
+          "description": "Run Codex code review in pull requests"
+        },
+        {
+          "path": "/codex/integrations/linear.md",
+          "title": "Use Codex in Linear",
+          "type": "guide",
+          "description": "Run Codex tasks from Linear issues"
+        },
+        {
+          "path": "/codex/integrations/slack.md",
+          "title": "Use Codex in Slack",
+          "type": "guide",
+          "description": "Ask Codex to run tasks from channels and threads"
+        }
+      ],
+      "path_prefix": "/codex/integrations/"
+    },
+    {
+      "name": "Learn",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/learn/best-practices.md",
+          "title": "Best practices",
+          "type": "best-practices",
+          "description": "Getting started with Codex and proven practices for better results"
+        }
+      ],
+      "path_prefix": "/codex/learn/"
+    },
+    {
+      "name": "Mcp",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/mcp.md",
+          "title": "Model Context Protocol",
+          "type": "guide",
+          "description": "Give Codex access to third-party tools and context"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Models",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/models.md",
+          "title": "Codex Models",
+          "type": "guide",
+          "description": "Meet the AI models that power Codex"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Noninteractive",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/noninteractive.md",
+          "title": "Non-interactive mode",
+          "type": "guide",
+          "description": "Use `codex exec` to run Codex in scripts and CI"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Open Source",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/open-source.md",
+          "title": "Open Source",
+          "type": "guide",
+          "description": "Open-source components of Codex and where to collaborate"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Overview",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/overview.md",
+          "title": "Codex",
+          "type": "overview",
+          "description": "One agent for everywhere you code"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Plugins",
       "page_count": 2,
       "pages": [
-        { "path": "/codex/feature-maturity", "title": "Feature Maturity", "type": "reference" },
-        { "path": "/codex/open-source", "title": "Open Source", "type": "reference" }
-      ]
-    }
-  ],
-  "external_references": [
-    {
-      "name": "Blog Posts",
-      "pages": [
-        { "path": "/blog/building-frontend-uis-with-codex-and-figma", "title": "Building Frontend UIs with Codex and Figma" },
-        { "path": "/blog/run-long-horizon-tasks-with-codex", "title": "Run Long Horizon Tasks with Codex" },
-        { "path": "/blog/topic/codex", "title": "All Codex Blog Posts" }
-      ]
+        {
+          "path": "/codex/plugins.md",
+          "title": "Plugins",
+          "type": "guide",
+          "description": "Use plugins in Codex to add reusable workflows with skills and app integrations"
+        },
+        {
+          "path": "/codex/plugins/build.md",
+          "title": "Build plugins",
+          "type": "guide",
+          "description": "Create, test, and distribute plugins for Codex"
+        }
+      ],
+      "path_prefix": "/codex/"
     },
     {
-      "name": "Cookbooks",
+      "name": "Pricing",
+      "page_count": 1,
       "pages": [
-        { "path": "/cookbook/examples/gpt-5/codex_prompting_guide", "title": "Codex Prompting Guide" },
-        { "path": "/cookbook/examples/codex/code_modernization", "title": "Modernizing Your Codebase with Codex" },
-        { "path": "/cookbook/topic/codex", "title": "All Codex Cookbooks" }
-      ]
+        {
+          "path": "/codex/pricing.md",
+          "title": "Codex Pricing",
+          "type": "reference",
+          "description": "Codex is included in your ChatGPT Free, Go, Plus, Pro, Business, Edu, or Enterprise plan"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Prompting",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/prompting.md",
+          "title": "Prompting",
+          "type": "guide",
+          "description": "Interacting with the Codex agent"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Quickstart",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/quickstart.md",
+          "title": "Quickstart",
+          "type": "tutorial",
+          "description": "Start using Codex in your IDE, CLI, or the cloud"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Rules",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/rules.md",
+          "title": "Rules",
+          "type": "guide",
+          "description": "Control which commands Codex can run outside the sandbox"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Sdk",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/sdk.md",
+          "title": "Codex SDK",
+          "type": "sdk-guide",
+          "description": "Programmatically control local Codex agents"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Security",
+      "page_count": 4,
+      "pages": [
+        {
+          "path": "/codex/security.md",
+          "title": "Codex Security",
+          "type": "guide",
+          "description": "Find, validate, and remediate security issues with Codex"
+        },
+        {
+          "path": "/codex/security/setup.md",
+          "title": "Codex Security setup",
+          "type": "guide",
+          "description": "Set up Codex Security, wait for initial findings, and improve results with threat model edits"
+        },
+        {
+          "path": "/codex/security/faq.md",
+          "title": "FAQ",
+          "type": "guide",
+          "description": "Common questions about Codex Security"
+        },
+        {
+          "path": "/codex/security/threat-model.md",
+          "title": "Improving the threat model",
+          "type": "guide",
+          "description": "Refine the Codex Security context that ranks findings and helps you review faster"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Skills",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/skills.md",
+          "title": "Agent Skills",
+          "type": "guide",
+          "description": "Give Codex new capabilities and expertise"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Speed",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/speed.md",
+          "title": "Speed",
+          "type": "guide",
+          "description": "Increase speed without sacrificing intelligence"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Subagents",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/subagents.md",
+          "title": "Subagents",
+          "type": "guide",
+          "description": "Use subagents and custom agents in Codex"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Videos",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/videos.md",
+          "title": "Videos",
+          "type": "guide",
+          "description": "Learn how to use Codex with demos, walkthroughs, and talks"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Windows",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/windows.md",
+          "title": "Windows",
+          "type": "guide",
+          "description": "Tips for running Codex on Windows"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Workflows",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/workflows.md",
+          "title": "Workflows",
+          "type": "guide",
+          "description": "Development usage patterns with Codex"
+        }
+      ],
+      "path_prefix": "/codex/"
     }
-  ],
-  "navigation": {
-    "default_section": "Getting Started",
-    "search_priority": ["Getting Started", "Concepts", "Configuration", "Using Codex — App", "Using Codex — CLI", "Automation"],
-    "tips": [
-      "Start with /codex/quickstart for initial setup",
-      "Use /codex/prompting to learn how to interact with Codex effectively",
-      "Configuration guides cover AGENTS.md, MCP, Skills, and Rules",
-      "Platform-specific guides: App for desktop, IDE for VS Code, CLI for terminal, Web for cloud",
-      "For CI/CD automation, see Non-interactive Mode and GitHub Action"
-    ]
-  }
+  ]
 }

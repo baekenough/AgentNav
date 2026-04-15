@@ -3,478 +3,683 @@
   "site": {
     "name": "Claude Code Documentation",
     "url": "https://code.claude.com",
-    "total_pages": 77,
-    "last_updated": "2026-03-31"
+    "total_pages": 111,
+    "last_updated": "2026-04-15",
+    "description": "Official documentation for Claude Code, Anthropic's agentic coding tool available in the terminal, IDE, desktop app, and browser. Covers installation, configuration, skills, subagents, hooks, MCP, the Agent SDK, and reference material."
   },
   "sections": [
     {
-      "name": "Getting Started",
-      "path_prefix": "/docs/en",
-      "page_count": 5,
+      "name": "Docs",
+      "page_count": 111,
       "pages": [
         {
-          "path": "/docs/en/overview",
-          "title": "Claude Code overview",
-          "type": "overview"
+          "path": "/docs/en/agent-sdk/agent-loop.md",
+          "title": "How the agent loop works",
+          "type": "sdk-guide",
+          "description": "Understand the message lifecycle, tool execution, context window, and architecture that power your SDK agents."
         },
         {
-          "path": "/docs/en/quickstart",
-          "title": "Quickstart",
-          "type": "tutorial"
+          "path": "/docs/en/agent-sdk/claude-code-features.md",
+          "title": "Use Claude Code features in the SDK",
+          "type": "sdk-guide",
+          "description": "Load project instructions, skills, hooks, and other Claude Code features into your SDK agents."
         },
         {
-          "path": "/docs/en/setup",
-          "title": "Advanced setup",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/cost-tracking.md",
+          "title": "Track cost and usage",
+          "type": "sdk-guide",
+          "description": "Learn how to track token usage, deduplicate parallel tool calls, and calculate costs with the Claude Agent SDK."
         },
         {
-          "path": "/docs/en/how-claude-code-works",
-          "title": "How Claude Code works",
-          "type": "overview"
+          "path": "/docs/en/agent-sdk/custom-tools.md",
+          "title": "Give Claude custom tools",
+          "type": "sdk-guide",
+          "description": "Define custom tools with the Claude Agent SDK's in-process MCP server so Claude can call your functions, hit your APIs, and perform domain-specific operations."
         },
         {
-          "path": "/docs/en/common-workflows",
-          "title": "Common workflows",
-          "type": "guide"
-        }
-      ]
-    },
-    {
-      "name": "Interfaces",
-      "path_prefix": "/docs/en",
-      "page_count": 10,
-      "pages": [
-        {
-          "path": "/docs/en/interactive-mode",
-          "title": "Interactive mode",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/file-checkpointing.md",
+          "title": "Rewind file changes with checkpointing",
+          "type": "sdk-guide",
+          "description": "Track file changes during agent sessions and restore files to any previous state"
         },
         {
-          "path": "/docs/en/cli-reference",
-          "title": "CLI reference",
-          "type": "reference"
+          "path": "/docs/en/agent-sdk/hooks.md",
+          "title": "Intercept and control agent behavior with hooks",
+          "type": "sdk-guide",
+          "description": "Intercept and customize agent behavior at key execution points with hooks"
         },
         {
-          "path": "/docs/en/commands",
-          "title": "Built-in commands",
-          "type": "reference"
+          "path": "/docs/en/agent-sdk/hosting.md",
+          "title": "Hosting the Agent SDK",
+          "type": "sdk-guide",
+          "description": "Deploy and host Claude Agent SDK in production environments"
         },
         {
-          "path": "/docs/en/desktop",
-          "title": "Use Claude Code Desktop",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/mcp.md",
+          "title": "Connect to external tools with MCP",
+          "type": "sdk-guide",
+          "description": "Configure MCP servers to extend your agent with external tools. Covers transport types, tool search for large tool sets, authentication, and error handling."
         },
         {
-          "path": "/docs/en/desktop-quickstart",
-          "title": "Get started with the desktop app",
-          "type": "tutorial"
+          "path": "/docs/en/agent-sdk/migration-guide.md",
+          "title": "Migrate to Claude Agent SDK",
+          "type": "sdk-guide",
+          "description": "Guide for migrating the Claude Code TypeScript and Python SDKs to the Claude Agent SDK"
         },
         {
-          "path": "/docs/en/vs-code",
-          "title": "Use Claude Code in VS Code",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/modifying-system-prompts.md",
+          "title": "Modifying system prompts",
+          "type": "sdk-guide",
+          "description": "Learn how to customize Claude's behavior by modifying system prompts using three approaches - output styles, systemPrompt with append, and custom system prompts."
         },
         {
-          "path": "/docs/en/jetbrains",
-          "title": "JetBrains IDEs",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/observability.md",
+          "title": "Observability with OpenTelemetry",
+          "type": "sdk-guide",
+          "description": "Export traces, metrics, and events from the Agent SDK to your observability backend using OpenTelemetry."
         },
         {
-          "path": "/docs/en/chrome",
-          "title": "Use Claude Code with Chrome (beta)",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/overview.md",
+          "title": "Agent SDK overview",
+          "type": "overview",
+          "description": "Build production AI agents with Claude Code as a library"
         },
         {
-          "path": "/docs/en/claude-code-on-the-web",
-          "title": "Claude Code on the web",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/computer-use",
-          "title": "Let Claude use your computer from the CLI",
-          "type": "guide"
-        }
-      ]
-    },
-    {
-      "name": "Core Features",
-      "path_prefix": "/docs/en",
-      "page_count": 12,
-      "pages": [
-        {
-          "path": "/docs/en/memory",
-          "title": "How Claude remembers your project",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/context-window",
-          "title": "Explore the context window",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/checkpointing",
-          "title": "Checkpointing",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/features-overview",
-          "title": "Extend Claude Code",
-          "type": "overview"
-        },
-        {
-          "path": "/docs/en/skills",
-          "title": "Extend Claude with skills",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/sub-agents",
-          "title": "Create custom subagents",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/agent-teams",
-          "title": "Orchestrate teams of Claude Code sessions",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/hooks-guide",
-          "title": "Automate workflows with hooks",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/hooks",
-          "title": "Hooks reference",
-          "type": "reference"
-        },
-        {
-          "path": "/docs/en/mcp",
-          "title": "Connect Claude Code to tools via MCP",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/fast-mode",
-          "title": "Speed up responses with fast mode",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/ultraplan",
-          "title": "Plan in the cloud with ultraplan",
-          "type": "guide"
-        }
-      ]
-    },
-    {
-      "name": "Plugins",
-      "path_prefix": "/docs/en",
-      "page_count": 4,
-      "pages": [
-        {
-          "path": "/docs/en/plugins",
-          "title": "Create plugins",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/plugins-reference",
-          "title": "Plugins reference",
-          "type": "reference"
-        },
-        {
-          "path": "/docs/en/discover-plugins",
-          "title": "Discover and install prebuilt plugins through marketplaces",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/plugin-marketplaces",
-          "title": "Create and distribute a plugin marketplace",
-          "type": "guide"
-        }
-      ]
-    },
-    {
-      "name": "Configuration",
-      "path_prefix": "/docs/en",
-      "page_count": 10,
-      "pages": [
-        {
-          "path": "/docs/en/settings",
-          "title": "Claude Code settings",
-          "type": "reference"
-        },
-        {
-          "path": "/docs/en/permissions",
+          "path": "/docs/en/agent-sdk/permissions.md",
           "title": "Configure permissions",
-          "type": "guide"
+          "type": "sdk-guide",
+          "description": "Control how your agent uses tools with permission modes, hooks, and declarative allow/deny rules."
         },
         {
-          "path": "/docs/en/permission-modes",
-          "title": "Choose a permission mode",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/plugins.md",
+          "title": "Plugins in the SDK",
+          "type": "sdk-guide",
+          "description": "Load custom plugins to extend Claude Code with commands, agents, skills, and hooks through the Agent SDK"
         },
         {
-          "path": "/docs/en/keybindings",
-          "title": "Customize keyboard shortcuts",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/python.md",
+          "title": "Agent SDK reference - Python",
+          "type": "sdk-guide",
+          "description": "Complete API reference for the Python Agent SDK, including all functions, types, and classes."
         },
         {
-          "path": "/docs/en/env-vars",
-          "title": "Environment variables",
-          "type": "reference"
+          "path": "/docs/en/agent-sdk/quickstart.md",
+          "title": "Quickstart",
+          "type": "tutorial",
+          "description": "Get started with the Python or TypeScript Agent SDK to build AI agents that work autonomously"
         },
         {
-          "path": "/docs/en/model-config",
-          "title": "Model configuration",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/secure-deployment.md",
+          "title": "Securely deploying AI agents",
+          "type": "sdk-guide",
+          "description": "A guide to securing Claude Code and Agent SDK deployments with isolation, credential management, and network controls"
         },
         {
-          "path": "/docs/en/statusline",
-          "title": "Customize your status line",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/sessions.md",
+          "title": "Work with sessions",
+          "type": "sdk-guide",
+          "description": "How sessions persist agent conversation history, and when to use continue, resume, and fork to return to a prior run."
         },
         {
-          "path": "/docs/en/terminal-config",
-          "title": "Optimize your terminal setup",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/skills.md",
+          "title": "Agent Skills in the SDK",
+          "type": "sdk-guide",
+          "description": "Extend Claude with specialized capabilities using Agent Skills in the Claude Agent SDK"
         },
         {
-          "path": "/docs/en/fullscreen",
-          "title": "Fullscreen rendering",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/slash-commands.md",
+          "title": "Slash Commands in the SDK",
+          "type": "tool-reference",
+          "description": "Learn how to use slash commands to control Claude Code sessions through the SDK"
         },
         {
-          "path": "/docs/en/claude-directory",
-          "title": "Explore the .claude directory",
-          "type": "reference"
-        }
-      ]
-    },
-    {
-      "name": "Automation",
-      "path_prefix": "/docs/en",
-      "page_count": 7,
-      "pages": [
-        {
-          "path": "/docs/en/headless",
-          "title": "Run Claude Code programmatically",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/streaming-output.md",
+          "title": "Stream responses in real-time",
+          "type": "sdk-guide",
+          "description": "Get real-time responses from the Agent SDK as text and tool calls stream in"
         },
         {
-          "path": "/docs/en/scheduled-tasks",
-          "title": "Run prompts on a schedule",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/streaming-vs-single-mode.md",
+          "title": "Streaming Input",
+          "type": "sdk-guide",
+          "description": "Understanding the two input modes for Claude Agent SDK and when to use each"
         },
         {
-          "path": "/docs/en/web-scheduled-tasks",
-          "title": "Schedule tasks on the web",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/structured-outputs.md",
+          "title": "Get structured output from agents",
+          "type": "sdk-guide",
+          "description": "Return validated JSON from agent workflows using JSON Schema, Zod, or Pydantic. Get type-safe, structured data after multi-turn tool use."
         },
         {
-          "path": "/docs/en/desktop-scheduled-tasks",
-          "title": "Schedule recurring tasks in Claude Code Desktop",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/subagents.md",
+          "title": "Subagents in the SDK",
+          "type": "sdk-guide",
+          "description": "Define and invoke subagents to isolate context, run tasks in parallel, and apply specialized instructions in your Claude Agent SDK applications."
         },
         {
-          "path": "/docs/en/code-review",
-          "title": "Code Review",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/todo-tracking.md",
+          "title": "Todo Lists",
+          "type": "sdk-guide",
+          "description": "Track and display todos using the Claude Agent SDK for organized task management"
         },
         {
-          "path": "/docs/en/output-styles",
-          "title": "Output styles",
-          "type": "guide"
+          "path": "/docs/en/agent-sdk/tool-search.md",
+          "title": "Scale to many tools with tool search",
+          "type": "sdk-guide",
+          "description": "Scale your agent to thousands of tools by discovering and loading only what's needed, on demand."
         },
         {
-          "path": "/docs/en/voice-dictation",
-          "title": "Voice dictation",
-          "type": "guide"
-        }
-      ]
-    },
-    {
-      "name": "Cloud Providers",
-      "path_prefix": "/docs/en",
-      "page_count": 4,
-      "pages": [
+          "path": "/docs/en/agent-sdk/typescript.md",
+          "title": "Agent SDK reference - TypeScript",
+          "type": "sdk-guide",
+          "description": "Complete API reference for the TypeScript Agent SDK, including all functions, types, and interfaces."
+        },
         {
-          "path": "/docs/en/amazon-bedrock",
+          "path": "/docs/en/agent-sdk/typescript-v2-preview.md",
+          "title": "TypeScript SDK V2 interface (preview)",
+          "type": "sdk-guide",
+          "description": "Preview of the simplified V2 TypeScript Agent SDK, with session-based send/stream patterns for multi-turn conversations."
+        },
+        {
+          "path": "/docs/en/agent-sdk/user-input.md",
+          "title": "Handle approvals and user input",
+          "type": "sdk-guide",
+          "description": "Surface Claude's approval requests and clarifying questions to users, then return their decisions to the SDK."
+        },
+        {
+          "path": "/docs/en/agent-teams.md",
+          "title": "Orchestrate teams of Claude Code sessions",
+          "type": "guide",
+          "description": "Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management."
+        },
+        {
+          "path": "/docs/en/amazon-bedrock.md",
           "title": "Claude Code on Amazon Bedrock",
-          "type": "guide"
+          "type": "guide",
+          "description": "Learn about configuring Claude Code through Amazon Bedrock, including setup, IAM configuration, and troubleshooting."
         },
         {
-          "path": "/docs/en/google-vertex-ai",
-          "title": "Claude Code on Google Vertex AI",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/microsoft-foundry",
-          "title": "Claude Code on Microsoft Foundry",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/llm-gateway",
-          "title": "LLM gateway configuration",
-          "type": "guide"
-        }
-      ]
-    },
-    {
-      "name": "CI/CD & Integrations",
-      "path_prefix": "/docs/en",
-      "page_count": 6,
-      "pages": [
-        {
-          "path": "/docs/en/github-actions",
-          "title": "Claude Code GitHub Actions",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/github-enterprise-server",
-          "title": "Claude Code with GitHub Enterprise Server",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/gitlab-ci-cd",
-          "title": "Claude Code GitLab CI/CD",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/slack",
-          "title": "Claude Code in Slack",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/remote-control",
-          "title": "Continue local sessions from any device with Remote Control",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/platforms",
-          "title": "Platforms and integrations",
-          "type": "overview"
-        }
-      ]
-    },
-    {
-      "name": "Channels",
-      "path_prefix": "/docs/en",
-      "page_count": 2,
-      "pages": [
-        {
-          "path": "/docs/en/channels",
-          "title": "Push events into a running session with channels",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/channels-reference",
-          "title": "Channels reference",
-          "type": "reference"
-        }
-      ]
-    },
-    {
-      "name": "Enterprise",
-      "path_prefix": "/docs/en",
-      "page_count": 6,
-      "pages": [
-        {
-          "path": "/docs/en/authentication",
-          "title": "Authentication",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/sandboxing",
-          "title": "Sandboxing",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/server-managed-settings",
-          "title": "Configure server-managed settings (public beta)",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/network-config",
-          "title": "Enterprise network configuration",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/devcontainer",
-          "title": "Development containers",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/third-party-integrations",
-          "title": "Enterprise deployment overview",
-          "type": "overview"
-        }
-      ]
-    },
-    {
-      "name": "Monitoring & Costs",
-      "path_prefix": "/docs/en",
-      "page_count": 3,
-      "pages": [
-        {
-          "path": "/docs/en/monitoring-usage",
-          "title": "Monitoring",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/costs",
-          "title": "Manage costs effectively",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/analytics",
+          "path": "/docs/en/analytics.md",
           "title": "Track team usage with analytics",
-          "type": "guide"
-        }
-      ]
-    },
-    {
-      "name": "Reference",
-      "path_prefix": "/docs/en",
-      "page_count": 8,
-      "pages": [
+          "type": "guide",
+          "description": "View Claude Code usage metrics, track adoption, and measure engineering velocity in the analytics dashboard."
+        },
         {
-          "path": "/docs/en/best-practices",
+          "path": "/docs/en/authentication.md",
+          "title": "Authentication",
+          "type": "guide",
+          "description": "Log in to Claude Code and configure authentication for individuals, teams, and organizations."
+        },
+        {
+          "path": "/docs/en/best-practices.md",
           "title": "Best Practices for Claude Code",
-          "type": "best-practices"
+          "type": "best-practices",
+          "description": "Tips and patterns for getting the most out of Claude Code, from configuring your environment to scaling across parallel sessions."
         },
         {
-          "path": "/docs/en/security",
-          "title": "Security",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/data-usage",
-          "title": "Data usage",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/legal-and-compliance",
-          "title": "Legal and compliance",
-          "type": "reference"
-        },
-        {
-          "path": "/docs/en/troubleshooting",
-          "title": "Troubleshooting",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/tools-reference",
-          "title": "Tools reference",
-          "type": "tool-reference"
-        },
-        {
-          "path": "/docs/en/zero-data-retention",
-          "title": "Zero data retention",
-          "type": "guide"
-        },
-        {
-          "path": "/docs/en/changelog",
+          "path": "/docs/en/changelog.md",
           "title": "Changelog",
-          "type": "changelog"
+          "type": "changelog",
+          "description": "Release notes for Claude Code, including new features, improvements, and bug fixes by version."
+        },
+        {
+          "path": "/docs/en/channels.md",
+          "title": "Push events into a running session with channels",
+          "type": "guide",
+          "description": "Use channels to push messages, alerts, and webhooks into your Claude Code session from an MCP server. Forward CI results, chat messages, and monitoring events so Claude can react while you're away."
+        },
+        {
+          "path": "/docs/en/channels-reference.md",
+          "title": "Channels reference",
+          "type": "guide",
+          "description": "Build an MCP server that pushes webhooks, alerts, and chat messages into a Claude Code session. Reference for the channel contract: capability declaration, notification events, reply tools, sender gating, and permission relay."
+        },
+        {
+          "path": "/docs/en/checkpointing.md",
+          "title": "Checkpointing",
+          "type": "guide",
+          "description": "Track, rewind, and summarize Claude's edits and conversation to manage session state."
+        },
+        {
+          "path": "/docs/en/chrome.md",
+          "title": "Use Claude Code with Chrome (beta)",
+          "type": "guide",
+          "description": "Connect Claude Code to your Chrome browser to test web apps, debug with console logs, automate form filling, and extract data from web pages."
+        },
+        {
+          "path": "/docs/en/claude-code-on-the-web.md",
+          "title": "Use Claude Code on the web",
+          "type": "guide",
+          "description": "Configure cloud environments, setup scripts, network access, and Docker in Anthropic's sandbox. Move sessions between web and terminal with `--remote` and `--teleport`."
+        },
+        {
+          "path": "/docs/en/claude-directory.md",
+          "title": "Explore the .claude directory",
+          "type": "guide",
+          "description": "Where Claude Code reads CLAUDE.md, settings.json, hooks, skills, commands, subagents, rules, and auto memory. Explore the .claude directory in your project and ~/.claude in your home directory."
+        },
+        {
+          "path": "/docs/en/cli-reference.md",
+          "title": "CLI reference",
+          "type": "tool-reference",
+          "description": "Complete reference for Claude Code command-line interface, including commands and flags."
+        },
+        {
+          "path": "/docs/en/code-review.md",
+          "title": "Code Review",
+          "type": "guide",
+          "description": "Set up automated PR reviews that catch logic errors, security vulnerabilities, and regressions using multi-agent analysis of your full codebase"
+        },
+        {
+          "path": "/docs/en/commands.md",
+          "title": "Commands",
+          "type": "tool-reference",
+          "description": "Complete reference for commands available in Claude Code, including built-in commands and bundled skills."
+        },
+        {
+          "path": "/docs/en/common-workflows.md",
+          "title": "Common workflows",
+          "type": "guide",
+          "description": "Step-by-step guides for exploring codebases, fixing bugs, refactoring, testing, and other everyday tasks with Claude Code."
+        },
+        {
+          "path": "/docs/en/computer-use.md",
+          "title": "Let Claude use your computer from the CLI",
+          "type": "guide",
+          "description": "Enable computer use in the Claude Code CLI so Claude can open apps, click, type, and see your screen on macOS. Test native apps, debug visual issues, and automate GUI-only tools without leaving your terminal."
+        },
+        {
+          "path": "/docs/en/context-window.md",
+          "title": "Explore the context window",
+          "type": "guide",
+          "description": "An interactive simulation of how Claude Code's context window fills during a session. See what loads automatically, what each file read costs, and when rules and hooks fire."
+        },
+        {
+          "path": "/docs/en/costs.md",
+          "title": "Manage costs effectively",
+          "type": "guide",
+          "description": "Track token usage, set team spend limits, and reduce Claude Code costs with context management, model selection, extended thinking settings, and preprocessing hooks."
+        },
+        {
+          "path": "/docs/en/data-usage.md",
+          "title": "Data usage",
+          "type": "guide",
+          "description": "Learn about Anthropic's data usage policies for Claude"
+        },
+        {
+          "path": "/docs/en/desktop.md",
+          "title": "Use Claude Code Desktop",
+          "type": "guide",
+          "description": "Get more out of Claude Code Desktop: parallel sessions with Git isolation, drag-and-drop pane layout, integrated terminal and file editor, side chats, computer use, Dispatch sessions from your phone, visual diff review, app previews, PR monitoring, connectors, and enterprise configuration."
+        },
+        {
+          "path": "/docs/en/desktop-quickstart.md",
+          "title": "Get started with the desktop app",
+          "type": "tutorial",
+          "description": "Install Claude Code on desktop and start your first coding session"
+        },
+        {
+          "path": "/docs/en/desktop-scheduled-tasks.md",
+          "title": "Schedule recurring tasks in Claude Code Desktop",
+          "type": "guide",
+          "description": "Set up scheduled tasks in Claude Code Desktop to run Claude automatically on a recurring basis for daily code reviews, dependency audits, or morning briefings."
+        },
+        {
+          "path": "/docs/en/devcontainer.md",
+          "title": "Development containers",
+          "type": "guide",
+          "description": "Learn about the Claude Code development container for teams that need consistent, secure environments."
+        },
+        {
+          "path": "/docs/en/discover-plugins.md",
+          "title": "Discover and install prebuilt plugins through marketplaces",
+          "type": "guide",
+          "description": "Find and install plugins from marketplaces to extend Claude Code with new skills, agents, and capabilities."
+        },
+        {
+          "path": "/docs/en/env-vars.md",
+          "title": "Environment variables",
+          "type": "guide",
+          "description": "Complete reference for environment variables that control Claude Code behavior."
+        },
+        {
+          "path": "/docs/en/fast-mode.md",
+          "title": "Speed up responses with fast mode",
+          "type": "guide",
+          "description": "Get faster Opus 4.6 responses in Claude Code by toggling fast mode."
+        },
+        {
+          "path": "/docs/en/features-overview.md",
+          "title": "Extend Claude Code",
+          "type": "overview",
+          "description": "Understand when to use CLAUDE.md, Skills, subagents, hooks, MCP, and plugins."
+        },
+        {
+          "path": "/docs/en/fullscreen.md",
+          "title": "Fullscreen rendering",
+          "type": "guide",
+          "description": "Enable a smoother, flicker-free rendering mode with mouse support and stable memory usage in long conversations."
+        },
+        {
+          "path": "/docs/en/github-actions.md",
+          "title": "Claude Code GitHub Actions",
+          "type": "guide",
+          "description": "Learn about integrating Claude Code into your development workflow with Claude Code GitHub Actions"
+        },
+        {
+          "path": "/docs/en/github-enterprise-server.md",
+          "title": "Claude Code with GitHub Enterprise Server",
+          "type": "guide",
+          "description": "Connect Claude Code to your self-hosted GitHub Enterprise Server instance for web sessions, code review, and plugin marketplaces."
+        },
+        {
+          "path": "/docs/en/gitlab-ci-cd.md",
+          "title": "Claude Code GitLab CI/CD",
+          "type": "guide",
+          "description": "Learn about integrating Claude Code into your development workflow with GitLab CI/CD"
+        },
+        {
+          "path": "/docs/en/google-vertex-ai.md",
+          "title": "Claude Code on Google Vertex AI",
+          "type": "guide",
+          "description": "Learn about configuring Claude Code through Google Vertex AI, including setup, IAM configuration, and troubleshooting."
+        },
+        {
+          "path": "/docs/en/headless.md",
+          "title": "Run Claude Code programmatically",
+          "type": "guide",
+          "description": "Use the Agent SDK to run Claude Code programmatically from the CLI, Python, or TypeScript."
+        },
+        {
+          "path": "/docs/en/hooks.md",
+          "title": "Hooks reference",
+          "type": "guide",
+          "description": "Reference for Claude Code hook events, configuration schema, JSON input/output formats, exit codes, async hooks, HTTP hooks, prompt hooks, and MCP tool hooks."
+        },
+        {
+          "path": "/docs/en/hooks-guide.md",
+          "title": "Automate workflows with hooks",
+          "type": "guide",
+          "description": "Run shell commands automatically when Claude Code edits files, finishes tasks, or needs input. Format code, send notifications, validate commands, and enforce project rules."
+        },
+        {
+          "path": "/docs/en/how-claude-code-works.md",
+          "title": "How Claude Code works",
+          "type": "guide",
+          "description": "Understand the agentic loop, built-in tools, and how Claude Code interacts with your project."
+        },
+        {
+          "path": "/docs/en/interactive-mode.md",
+          "title": "Interactive mode",
+          "type": "guide",
+          "description": "Complete reference for keyboard shortcuts, input modes, and interactive features in Claude Code sessions."
+        },
+        {
+          "path": "/docs/en/jetbrains.md",
+          "title": "JetBrains IDEs",
+          "type": "guide",
+          "description": "Use Claude Code with JetBrains IDEs including IntelliJ, PyCharm, WebStorm, and more"
+        },
+        {
+          "path": "/docs/en/keybindings.md",
+          "title": "Customize keyboard shortcuts",
+          "type": "guide",
+          "description": "Customize keyboard shortcuts in Claude Code with a keybindings configuration file."
+        },
+        {
+          "path": "/docs/en/legal-and-compliance.md",
+          "title": "Legal and compliance",
+          "type": "guide",
+          "description": "Legal agreements, compliance certifications, and security information for Claude Code."
+        },
+        {
+          "path": "/docs/en/llm-gateway.md",
+          "title": "LLM gateway configuration",
+          "type": "reference",
+          "description": "Learn how to configure Claude Code to work with LLM gateway solutions. Covers gateway requirements, authentication configuration, model selection, and provider-specific endpoint setup."
+        },
+        {
+          "path": "/docs/en/mcp.md",
+          "title": "Connect Claude Code to tools via MCP",
+          "type": "guide",
+          "description": "Learn how to connect Claude Code to your tools with the Model Context Protocol."
+        },
+        {
+          "path": "/docs/en/memory.md",
+          "title": "How Claude remembers your project",
+          "type": "guide",
+          "description": "Give Claude persistent instructions with CLAUDE.md files, and let Claude accumulate learnings automatically with auto memory."
+        },
+        {
+          "path": "/docs/en/microsoft-foundry.md",
+          "title": "Claude Code on Microsoft Foundry",
+          "type": "guide",
+          "description": "Learn about configuring Claude Code through Microsoft Foundry, including setup, configuration, and troubleshooting."
+        },
+        {
+          "path": "/docs/en/model-config.md",
+          "title": "Model configuration",
+          "type": "reference",
+          "description": "Learn about the Claude Code model configuration, including model aliases like `opusplan`"
+        },
+        {
+          "path": "/docs/en/monitoring-usage.md",
+          "title": "Monitoring",
+          "type": "guide",
+          "description": "Learn how to enable and configure OpenTelemetry for Claude Code."
+        },
+        {
+          "path": "/docs/en/network-config.md",
+          "title": "Enterprise network configuration",
+          "type": "reference",
+          "description": "Configure Claude Code for enterprise environments with proxy servers, custom Certificate Authorities (CA), and mutual Transport Layer Security (mTLS) authentication."
+        },
+        {
+          "path": "/docs/en/output-styles.md",
+          "title": "Output styles",
+          "type": "guide",
+          "description": "Adapt Claude Code for uses beyond software engineering"
+        },
+        {
+          "path": "/docs/en/overview.md",
+          "title": "Claude Code overview",
+          "type": "overview",
+          "description": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser."
+        },
+        {
+          "path": "/docs/en/permission-modes.md",
+          "title": "Choose a permission mode",
+          "type": "guide",
+          "description": "Control whether Claude asks before editing files or running commands. Cycle modes with Shift+Tab in the CLI or use the mode selector in VS Code, Desktop, and claude.ai."
+        },
+        {
+          "path": "/docs/en/permissions.md",
+          "title": "Configure permissions",
+          "type": "guide",
+          "description": "Control what Claude Code can access and do with fine-grained permission rules, modes, and managed policies."
+        },
+        {
+          "path": "/docs/en/platforms.md",
+          "title": "Platforms and integrations",
+          "type": "guide",
+          "description": "Choose where to run Claude Code and what to connect it to. Compare the CLI, Desktop, VS Code, JetBrains, web, mobile, and integrations like Chrome, Slack, and CI/CD."
+        },
+        {
+          "path": "/docs/en/plugin-marketplaces.md",
+          "title": "Create and distribute a plugin marketplace",
+          "type": "guide",
+          "description": "Build and host plugin marketplaces to distribute Claude Code extensions across teams and communities."
+        },
+        {
+          "path": "/docs/en/plugins.md",
+          "title": "Create plugins",
+          "type": "guide",
+          "description": "Create custom plugins to extend Claude Code with skills, agents, hooks, and MCP servers."
+        },
+        {
+          "path": "/docs/en/plugins-reference.md",
+          "title": "Plugins reference",
+          "type": "guide",
+          "description": "Complete technical reference for Claude Code plugin system, including schemas, CLI commands, and component specifications."
+        },
+        {
+          "path": "/docs/en/quickstart.md",
+          "title": "Quickstart",
+          "type": "tutorial",
+          "description": "Welcome to Claude Code!"
+        },
+        {
+          "path": "/docs/en/remote-control.md",
+          "title": "Continue local sessions from any device with Remote Control",
+          "type": "guide",
+          "description": "Continue a local Claude Code session from your phone, tablet, or any browser using Remote Control. Works with claude.ai/code and the Claude mobile app."
+        },
+        {
+          "path": "/docs/en/routines.md",
+          "title": "Automate work with routines",
+          "type": "guide",
+          "description": "Put Claude Code on autopilot. Define routines that run on a schedule, trigger on API calls, or react to GitHub events from Anthropic-managed cloud infrastructure."
+        },
+        {
+          "path": "/docs/en/sandboxing.md",
+          "title": "Sandboxing",
+          "type": "guide",
+          "description": "Learn how Claude Code's sandboxed bash tool provides filesystem and network isolation for safer, more autonomous agent execution."
+        },
+        {
+          "path": "/docs/en/scheduled-tasks.md",
+          "title": "Run prompts on a schedule",
+          "type": "guide",
+          "description": "Use /loop and the cron scheduling tools to run prompts repeatedly, poll for status, or set one-time reminders within a Claude Code session."
+        },
+        {
+          "path": "/docs/en/security.md",
+          "title": "Security",
+          "type": "guide",
+          "description": "Learn about Claude Code's security safeguards and best practices for safe usage."
+        },
+        {
+          "path": "/docs/en/server-managed-settings.md",
+          "title": "Configure server-managed settings",
+          "type": "reference",
+          "description": "Centrally configure Claude Code for your organization through server-delivered settings, without requiring device management infrastructure."
+        },
+        {
+          "path": "/docs/en/settings.md",
+          "title": "Claude Code settings",
+          "type": "reference",
+          "description": "Configure Claude Code with global and project-level settings, and environment variables."
+        },
+        {
+          "path": "/docs/en/setup.md",
+          "title": "Advanced setup",
+          "type": "guide",
+          "description": "System requirements, platform-specific installation, version management, and uninstallation for Claude Code."
+        },
+        {
+          "path": "/docs/en/skills.md",
+          "title": "Extend Claude with skills",
+          "type": "guide",
+          "description": "Create, manage, and share skills to extend Claude's capabilities in Claude Code. Includes custom commands and bundled skills."
+        },
+        {
+          "path": "/docs/en/slack.md",
+          "title": "Claude Code in Slack",
+          "type": "guide",
+          "description": "Delegate coding tasks directly from your Slack workspace"
+        },
+        {
+          "path": "/docs/en/statusline.md",
+          "title": "Customize your status line",
+          "type": "guide",
+          "description": "Configure a custom status bar to monitor context window usage, costs, and git status in Claude Code"
+        },
+        {
+          "path": "/docs/en/sub-agents.md",
+          "title": "Create custom subagents",
+          "type": "guide",
+          "description": "Create and use specialized AI subagents in Claude Code for task-specific workflows and improved context management."
+        },
+        {
+          "path": "/docs/en/terminal-config.md",
+          "title": "Optimize your terminal setup",
+          "type": "reference",
+          "description": "Claude Code works best when your terminal is properly configured. Follow these guidelines to optimize your experience."
+        },
+        {
+          "path": "/docs/en/third-party-integrations.md",
+          "title": "Enterprise deployment overview",
+          "type": "overview",
+          "description": "Learn how Claude Code can integrate with various third-party services and infrastructure to meet enterprise deployment requirements."
+        },
+        {
+          "path": "/docs/en/tools-reference.md",
+          "title": "Tools reference",
+          "type": "guide",
+          "description": "Complete reference for the tools Claude Code can use, including permission requirements."
+        },
+        {
+          "path": "/docs/en/troubleshooting.md",
+          "title": "Troubleshooting",
+          "type": "guide",
+          "description": "Discover solutions to common issues with Claude Code installation and usage."
+        },
+        {
+          "path": "/docs/en/ultraplan.md",
+          "title": "Plan in the cloud with ultraplan",
+          "type": "guide",
+          "description": "Start a plan from your CLI, draft it on Claude Code on the web, then execute it remotely or back in your terminal"
+        },
+        {
+          "path": "/docs/en/voice-dictation.md",
+          "title": "Voice dictation",
+          "type": "guide",
+          "description": "Use push-to-talk voice dictation to speak your prompts instead of typing them in the Claude Code CLI."
+        },
+        {
+          "path": "/docs/en/vs-code.md",
+          "title": "Use Claude Code in VS Code",
+          "type": "guide",
+          "description": "Install and configure the Claude Code extension for VS Code. Get AI coding assistance with inline diffs, @-mentions, plan review, and keyboard shortcuts."
+        },
+        {
+          "path": "/docs/en/web-quickstart.md",
+          "title": "Get started with Claude Code on the web",
+          "type": "tutorial",
+          "description": "Run Claude Code in the cloud from your browser or phone. Connect a GitHub repository, submit a task, and review the PR without local setup."
+        },
+        {
+          "path": "/docs/en/whats-new/2026-w13.md",
+          "title": "Week 13 · March 23–27, 2026",
+          "type": "changelog",
+          "description": "Auto mode for hands-off permissions, computer use built in, PR auto-fix in the cloud, transcript search, and a PowerShell tool for Windows."
+        },
+        {
+          "path": "/docs/en/whats-new/2026-w14.md",
+          "title": "Week 14 · March 30 – April 3, 2026",
+          "type": "changelog",
+          "description": "Computer use in the CLI, interactive in-product lessons, flicker-free rendering, per-tool MCP result-size overrides, and plugin executables on PATH."
+        },
+        {
+          "path": "/docs/en/whats-new/2026-w15.md",
+          "title": "Week 15 · April 6–10, 2026",
+          "type": "changelog",
+          "description": "Ultraplan cloud planning, the Monitor tool with self-pacing /loop, /team-onboarding for packaging your setup, and /autofix-pr from your terminal."
+        },
+        {
+          "path": "/docs/en/whats-new/index.md",
+          "title": "What's new",
+          "type": "changelog",
+          "description": "A weekly digest of notable Claude Code features, with code snippets, demos, and context on why they matter."
+        },
+        {
+          "path": "/docs/en/zero-data-retention.md",
+          "title": "Zero data retention",
+          "type": "guide",
+          "description": "Learn about Zero Data Retention (ZDR) for Claude Code on Claude for Enterprise, including scope, disabled features, and how to request enablement."
         }
-      ]
+      ],
+      "path_prefix": "/docs/en/"
     }
   ]
 }

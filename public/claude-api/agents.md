@@ -5,712 +5,1059 @@ schema:
   sections: "## heading = section name"
   subsections: "### heading = subsection grouping"
   pages: "- [title](path) {type}"
-  page_types: [overview, tutorial, guide, reference, use-case, sdk-guide, api-endpoint, api-hub, best-practices, changelog]
+  page_types: [overview, guide, tool-reference, sdk-guide, api-endpoint, best-practices]
 ---
 
-# Anthropic Claude API Documentation
+# Claude API Documentation
 
 - **URL**: https://platform.claude.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 620
-- **Last Updated**: 2026-03-28
+- **Total Pages**: 1035
+- **Last Updated**: 2026-04-15
 
 ## Site Overview
 
 | # | Section | Pages | Base Path |
 |---|---------|-------|-----------|
-| 1 | Getting Started | 2 | /docs/en/ |
-| 2 | About Claude | 6 | /docs/en/about-claude/ |
-| 3 | Build with Claude | 35 | /docs/en/build-with-claude/ |
-| 4 | Agent SDK | 28 | /docs/en/agent-sdk/ |
-| 5 | Agents & Tools | 31 | /docs/en/agents-and-tools/ |
-| 6 | Test & Evaluate | 8 | /docs/en/test-and-evaluate/ |
-| 7 | API Overview & SDKs | 18 | /docs/en/api/ |
-| 8 | Messages API | 100 | /docs/en/api/ |
-| 9 | Messages API (Beta) | 100 | /docs/en/api/ |
-| 10 | Models API | 30 | /docs/en/api/ |
-| 11 | Models API (Beta) | 30 | /docs/en/api/ |
-| 12 | Completions API | 20 | /docs/en/api/ |
-| 13 | Admin API | 33 | /docs/en/api/admin/ |
-| 14 | Files API (Beta) | 60 | /docs/en/api/ |
-| 15 | Skills API (Beta) | 100 | /docs/en/api/ |
-| 16 | Beta API Overview | 10 | /docs/en/api/ |
-| 17 | Resources | 8 | /docs/en/ |
-| 18 | Release Notes | 1 | /docs/en/release-notes/ |
+| 1 | English | 1035 | /docs/en/ |
 
 ---
 
-## Getting Started (2 pages)
+## English (1035 pages)
 
-- [Quickstart](/docs/en/get-started) {tutorial}
-- [Intro to Claude](/docs/en/intro) {guide}
-
-## About Claude (6 pages)
-
-- [Models overview](/docs/en/about-claude/models/overview) {overview}
-- [Choosing a model](/docs/en/about-claude/models/choosing-a-model) {guide}
-- [Migration guide](/docs/en/about-claude/models/migration-guide) {guide}
-- [Model deprecations](/docs/en/about-claude/model-deprecations) {guide}
-- [Pricing](/docs/en/about-claude/pricing) {guide}
-- [What's new in Claude 4.6](/docs/en/about-claude/models/whats-new-claude-4-6) {guide}
-
-## Build with Claude (35 pages)
-
-- [Features overview](/docs/en/build-with-claude/overview) {overview}
-- [Overview](/docs/en/build-with-claude/prompt-engineering/overview) {overview}
-- [Adaptive thinking](/docs/en/build-with-claude/adaptive-thinking) {guide}
-- [Admin API overview](/docs/en/build-with-claude/administration-api) {overview}
-- [API and data retention](/docs/en/build-with-claude/api-and-data-retention) {guide}
-- [Batch processing](/docs/en/build-with-claude/batch-processing) {guide}
-- [Extended thinking](/docs/en/build-with-claude/extended-thinking) {guide}
-- [Citations](/docs/en/build-with-claude/citations) {guide}
-- [Claude Code Analytics API](/docs/en/build-with-claude/claude-code-analytics-api) {guide}
-- [Microsoft Foundry](/docs/en/build-with-claude/claude-in-microsoft-foundry) {guide}
-- [Amazon Bedrock](/docs/en/build-with-claude/claude-on-amazon-bedrock) {guide}
-- [Vertex AI](/docs/en/build-with-claude/claude-on-vertex-ai) {guide}
-- [Compaction](/docs/en/build-with-claude/compaction) {guide}
-- [Console prompting tools](/docs/en/build-with-claude/prompt-engineering/prompting-tools) {guide}
-- [Context editing](/docs/en/build-with-claude/context-editing) {guide}
-- [Context windows](/docs/en/build-with-claude/context-windows) {guide}
-- [Data residency](/docs/en/build-with-claude/data-residency) {guide}
-- [Effort](/docs/en/build-with-claude/effort) {guide}
-- [Embeddings](/docs/en/build-with-claude/embeddings) {guide}
-- [Fast mode (beta: research preview)](/docs/en/build-with-claude/fast-mode) {guide}
-- [Files API](/docs/en/build-with-claude/files) {guide}
-- [Handling stop reasons](/docs/en/build-with-claude/handling-stop-reasons) {guide}
-- [Multilingual support](/docs/en/build-with-claude/multilingual-support) {guide}
-- [PDF support](/docs/en/build-with-claude/pdf-support) {guide}
-- [Prompt caching](/docs/en/build-with-claude/prompt-caching) {guide}
-- [Prompting best practices](/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) {best-practices}
-- [Search results](/docs/en/build-with-claude/search-results) {guide}
-- [Streaming Messages](/docs/en/build-with-claude/streaming) {guide}
-- [Structured outputs](/docs/en/build-with-claude/structured-outputs) {guide}
-- [Token counting](/docs/en/build-with-claude/token-counting) {guide}
-- [Usage and Cost API](/docs/en/build-with-claude/usage-cost-api) {guide}
-- [Using Skills with the API](/docs/en/build-with-claude/skills-guide) {guide}
-- [Using the Messages API](/docs/en/build-with-claude/working-with-messages) {guide}
-- [Vision](/docs/en/build-with-claude/vision) {guide}
-- [Workspaces](/docs/en/build-with-claude/workspaces) {guide}
-
-## Agent SDK (28 pages)
-
-- [Overview](/docs/en/agent-sdk/overview) {overview}
-- [Quickstart](/docs/en/agent-sdk/quickstart) {tutorial}
-- [Python SDK](/docs/en/agent-sdk/python) {guide}
-- [TypeScript SDK](/docs/en/agent-sdk/typescript) {guide}
-- [Agent Skills in the SDK](/docs/en/agent-sdk/skills) {guide}
-- [Handling Permissions](/docs/en/agent-sdk/permissions) {guide}
-- [MCP Integration](/docs/en/agent-sdk/mcp) {guide}
-- [Structured outputs in the SDK](/docs/en/agent-sdk/structured-outputs) {guide}
-- [Define custom tools](/docs/en/agent-sdk/custom-tools) {guide}
-- [User approvals and input](/docs/en/agent-sdk/user-input) {guide}
-- [Hosting the Agent SDK](/docs/en/agent-sdk/hosting) {guide}
-- [How the agent loop works](/docs/en/agent-sdk/agent-loop) {guide}
-- [Control execution with hooks](/docs/en/agent-sdk/hooks) {guide}
-- [Migration Guide](/docs/en/agent-sdk/migration-guide) {guide}
-- [Modifying system prompts](/docs/en/agent-sdk/modifying-system-prompts) {guide}
-- [Plugins in the SDK](/docs/en/agent-sdk/plugins) {guide}
-- [File checkpointing](/docs/en/agent-sdk/file-checkpointing) {guide}
-- [Tool search](/docs/en/agent-sdk/tool-search) {guide}
-- [Securely deploying AI agents](/docs/en/agent-sdk/secure-deployment) {guide}
-- [Slash Commands in the SDK](/docs/en/agent-sdk/slash-commands) {guide}
-- [Stream responses in real-time](/docs/en/agent-sdk/streaming-output) {guide}
-- [Streaming Input](/docs/en/agent-sdk/streaming-vs-single-mode) {guide}
-- [Subagents in the SDK](/docs/en/agent-sdk/subagents) {guide}
-- [Todo Lists](/docs/en/agent-sdk/todo-tracking) {guide}
-- [Track cost and usage](/docs/en/agent-sdk/cost-tracking) {guide}
-- [TypeScript v2 Preview](/docs/en/agent-sdk/typescript-v2-preview) {guide}
-- [Use Claude Code features](/docs/en/agent-sdk/claude-code-features) {guide}
-- [Work with sessions](/docs/en/agent-sdk/sessions) {guide}
-
-## Agents & Tools (31 pages)
-
-- [Overview](/docs/en/agents-and-tools/agent-skills/overview) {overview}
-- [Quickstart](/docs/en/agents-and-tools/agent-skills/quickstart) {tutorial}
-- [Overview](/docs/en/agents-and-tools/tool-use/overview) {overview}
-- [Bash tool](/docs/en/agents-and-tools/tool-use/bash-tool) {guide}
-- [Claude API skill](/docs/en/agents-and-tools/agent-skills/claude-api-skill) {guide}
-- [Code execution tool](/docs/en/agents-and-tools/tool-use/code-execution-tool) {guide}
-- [Computer use tool](/docs/en/agents-and-tools/tool-use/computer-use-tool) {guide}
-- [Define tools](/docs/en/agents-and-tools/tool-use/define-tools) {guide}
-- [Fine-grained tool streaming](/docs/en/agents-and-tools/tool-use/fine-grained-tool-streaming) {guide}
-- [Handle tool calls](/docs/en/agents-and-tools/tool-use/handle-tool-calls) {guide}
-- [How tool use works](/docs/en/agents-and-tools/tool-use/how-tool-use-works) {guide}
-- [Manage tool context](/docs/en/agents-and-tools/tool-use/manage-tool-context) {guide}
-- [MCP connector](/docs/en/agents-and-tools/mcp-connector) {guide}
-- [Memory tool](/docs/en/agents-and-tools/tool-use/memory-tool) {guide}
-- [Parallel tool use](/docs/en/agents-and-tools/tool-use/parallel-tool-use) {guide}
-- [Programmatic tool calling](/docs/en/agents-and-tools/tool-use/programmatic-tool-calling) {guide}
-- [Remote MCP servers](/docs/en/agents-and-tools/remote-mcp-servers) {guide}
-- [Server tools](/docs/en/agents-and-tools/tool-use/server-tools) {guide}
-- [Best practices](/docs/en/agents-and-tools/agent-skills/best-practices) {best-practices}
-- [Skills for enterprise](/docs/en/agents-and-tools/agent-skills/enterprise) {guide}
-- [Strict tool use](/docs/en/agents-and-tools/tool-use/strict-tool-use) {guide}
-- [Text editor tool](/docs/en/agents-and-tools/tool-use/text-editor-tool) {guide}
-- [Tool combinations](/docs/en/agents-and-tools/tool-use/tool-combinations) {guide}
-- [Tool reference](/docs/en/agents-and-tools/tool-use/tool-reference) {reference}
-- [Tool Runner (SDK)](/docs/en/agents-and-tools/tool-use/tool-runner) {guide}
-- [Tool search](/docs/en/agents-and-tools/tool-use/tool-search-tool) {guide}
-- [Tool use with prompt caching](/docs/en/agents-and-tools/tool-use/tool-use-with-prompt-caching) {guide}
-- [Troubleshooting](/docs/en/agents-and-tools/tool-use/troubleshooting-tool-use) {guide}
-- [Tutorial: Build a tool-using agent](/docs/en/agents-and-tools/tool-use/build-a-tool-using-agent) {guide}
-- [Web fetch tool](/docs/en/agents-and-tools/tool-use/web-fetch-tool) {guide}
-- [Web search tool](/docs/en/agents-and-tools/tool-use/web-search-tool) {guide}
-
-## Test & Evaluate (8 pages)
-
-- [Define success and build evaluations](/docs/en/test-and-evaluate/develop-tests) {guide}
-- [Increase output consistency](/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency) {guide}
-- [Mitigate jailbreaks](/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks) {guide}
-- [Reduce hallucinations](/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations) {guide}
-- [Reduce prompt leak](/docs/en/test-and-evaluate/strengthen-guardrails/reduce-prompt-leak) {guide}
-- [Reducing latency](/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency) {guide}
-- [Streaming refusals](/docs/en/test-and-evaluate/strengthen-guardrails/handle-streaming-refusals) {guide}
-- [Using the Evaluation Tool](/docs/en/test-and-evaluate/eval-tool) {guide}
-
-## API Overview & SDKs (18 pages)
-
-- [API overview](/docs/en/api/overview) {overview}
-- [Admin](/docs/en/api/admin) — hub {guide}
-- [Beta headers](/docs/en/api/beta-headers) {guide}
-- [C# SDK](/docs/en/api/sdks/csharp) {sdk-guide}
-- [Overview](/docs/en/api/client-sdks) {sdk-guide}
-- [Errors](/docs/en/api/errors) {guide}
-- [Go SDK](/docs/en/api/sdks/go) {sdk-guide}
-- [IP addresses](/docs/en/api/ip-addresses) {guide}
-- [Java SDK](/docs/en/api/sdks/java) {sdk-guide}
-- [OpenAI SDK compatibility](/docs/en/api/openai-sdk) {guide}
-- [PHP SDK](/docs/en/api/sdks/php) {sdk-guide}
-- [Python SDK](/docs/en/api/sdks/python) {sdk-guide}
-- [Rate limits](/docs/en/api/rate-limits) {guide}
-- [Ruby SDK](/docs/en/api/sdks/ruby) {sdk-guide}
-- [Service tiers](/docs/en/api/service-tiers) {guide}
-- [Supported regions](/docs/en/api/supported-regions) {guide}
-- [TypeScript SDK](/docs/en/api/sdks/typescript) {sdk-guide}
-- [Versions](/docs/en/api/versioning) {guide}
-
-## Messages API (100 pages)
-
-- [Batches](/docs/en/api/messages/batches) — hub {api-hub}
-- [Batches (cli)](/docs/en/api/cli/messages/batches) {guide}
-- [Batches (csharp)](/docs/en/api/csharp/messages/batches) {guide}
-- [Batches (Go)](/docs/en/api/go/messages/batches) {guide}
-- [Batches (Java)](/docs/en/api/java/messages/batches) {guide}
-- [Batches (php)](/docs/en/api/php/messages/batches) {guide}
-- [Batches (Python)](/docs/en/api/python/messages/batches) {guide}
-- [Batches (Ruby)](/docs/en/api/ruby/messages/batches) {guide}
-- [Batches (terraform)](/docs/en/api/terraform/messages/batches) {guide}
-- [Batches (TypeScript)](/docs/en/api/typescript/messages/batches) {guide}
-- [Cancel a Message Batch](/docs/en/api/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (cli)](/docs/en/api/cli/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (csharp)](/docs/en/api/csharp/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Go)](/docs/en/api/go/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Java)](/docs/en/api/java/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (php)](/docs/en/api/php/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Python)](/docs/en/api/python/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Ruby)](/docs/en/api/ruby/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (terraform)](/docs/en/api/terraform/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (TypeScript)](/docs/en/api/typescript/messages/batches/cancel) {api-endpoint}
-- [Count tokens in a Message](/docs/en/api/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (cli)](/docs/en/api/cli/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (csharp)](/docs/en/api/csharp/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Go)](/docs/en/api/go/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Java)](/docs/en/api/java/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (php)](/docs/en/api/php/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Python)](/docs/en/api/python/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Ruby)](/docs/en/api/ruby/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (terraform)](/docs/en/api/terraform/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (TypeScript)](/docs/en/api/typescript/messages/count_tokens) {api-endpoint}
-- [Create a Message](/docs/en/api/messages/create) {api-endpoint}
-- [Create a Message (cli)](/docs/en/api/cli/messages/create) {api-endpoint}
-- [Create a Message (csharp)](/docs/en/api/csharp/messages/create) {api-endpoint}
-- [Create a Message (Go)](/docs/en/api/go/messages/create) {api-endpoint}
-- [Create a Message (Java)](/docs/en/api/java/messages/create) {api-endpoint}
-- [Create a Message (php)](/docs/en/api/php/messages/create) {api-endpoint}
-- [Create a Message (Python)](/docs/en/api/python/messages/create) {api-endpoint}
-- [Create a Message (Ruby)](/docs/en/api/ruby/messages/create) {api-endpoint}
-- [Create a Message (terraform)](/docs/en/api/terraform/messages/create) {api-endpoint}
-- [Create a Message (TypeScript)](/docs/en/api/typescript/messages/create) {api-endpoint}
-- [Create a Message Batch](/docs/en/api/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (cli)](/docs/en/api/cli/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (csharp)](/docs/en/api/csharp/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Go)](/docs/en/api/go/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Java)](/docs/en/api/java/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (php)](/docs/en/api/php/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Python)](/docs/en/api/python/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Ruby)](/docs/en/api/ruby/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (terraform)](/docs/en/api/terraform/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (TypeScript)](/docs/en/api/typescript/messages/batches/create) {api-endpoint}
-- [Delete a Message Batch](/docs/en/api/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (cli)](/docs/en/api/cli/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (csharp)](/docs/en/api/csharp/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Go)](/docs/en/api/go/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Java)](/docs/en/api/java/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (php)](/docs/en/api/php/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Python)](/docs/en/api/python/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Ruby)](/docs/en/api/ruby/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (terraform)](/docs/en/api/terraform/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (TypeScript)](/docs/en/api/typescript/messages/batches/delete) {api-endpoint}
-- [List Message Batches](/docs/en/api/messages/batches/list) {api-endpoint}
-- [List Message Batches (cli)](/docs/en/api/cli/messages/batches/list) {api-endpoint}
-- [List Message Batches (csharp)](/docs/en/api/csharp/messages/batches/list) {api-endpoint}
-- [List Message Batches (Go)](/docs/en/api/go/messages/batches/list) {api-endpoint}
-- [List Message Batches (Java)](/docs/en/api/java/messages/batches/list) {api-endpoint}
-- [List Message Batches (php)](/docs/en/api/php/messages/batches/list) {api-endpoint}
-- [List Message Batches (Python)](/docs/en/api/python/messages/batches/list) {api-endpoint}
-- [List Message Batches (Ruby)](/docs/en/api/ruby/messages/batches/list) {api-endpoint}
-- [List Message Batches (terraform)](/docs/en/api/terraform/messages/batches/list) {api-endpoint}
-- [List Message Batches (TypeScript)](/docs/en/api/typescript/messages/batches/list) {api-endpoint}
-- [Messages](/docs/en/api/messages) — hub {api-hub}
-- [Messages (cli)](/docs/en/api/cli/messages) {api-hub}
-- [Messages (csharp)](/docs/en/api/csharp/messages) {api-hub}
-- [Messages (Go)](/docs/en/api/go/messages) {api-hub}
-- [Messages (Java)](/docs/en/api/java/messages) {api-hub}
-- [Messages (php)](/docs/en/api/php/messages) {api-hub}
-- [Messages (Python)](/docs/en/api/python/messages) {api-hub}
-- [Messages (Ruby)](/docs/en/api/ruby/messages) {api-hub}
-- [Messages (terraform)](/docs/en/api/terraform/messages) {api-hub}
-- [Messages (TypeScript)](/docs/en/api/typescript/messages) {api-hub}
-- [Retrieve a Message Batch](/docs/en/api/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (cli)](/docs/en/api/cli/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (csharp)](/docs/en/api/csharp/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Go)](/docs/en/api/go/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Java)](/docs/en/api/java/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (php)](/docs/en/api/php/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Python)](/docs/en/api/python/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Ruby)](/docs/en/api/ruby/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (terraform)](/docs/en/api/terraform/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (TypeScript)](/docs/en/api/typescript/messages/batches/retrieve) {api-endpoint}
-- [Retrieve Message Batch results](/docs/en/api/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (cli)](/docs/en/api/cli/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (csharp)](/docs/en/api/csharp/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Go)](/docs/en/api/go/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Java)](/docs/en/api/java/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (php)](/docs/en/api/php/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Python)](/docs/en/api/python/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Ruby)](/docs/en/api/ruby/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (terraform)](/docs/en/api/terraform/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (TypeScript)](/docs/en/api/typescript/messages/batches/results) {api-endpoint}
-
-## Messages API (Beta) (100 pages)
-
-- [Batches (Beta)](/docs/en/api/beta/messages/batches) {guide}
-- [Batches (Beta) (cli)](/docs/en/api/cli/beta/messages/batches) {guide}
-- [Batches (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches) {guide}
-- [Batches (Beta) (Go)](/docs/en/api/go/beta/messages/batches) {guide}
-- [Batches (Beta) (Java)](/docs/en/api/java/beta/messages/batches) {guide}
-- [Batches (Beta) (php)](/docs/en/api/php/beta/messages/batches) {guide}
-- [Batches (Beta) (Python)](/docs/en/api/python/beta/messages/batches) {guide}
-- [Batches (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches) {guide}
-- [Batches (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches) {guide}
-- [Batches (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches) {guide}
-- [Cancel a Message Batch (Beta)](/docs/en/api/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (Go)](/docs/en/api/go/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (Java)](/docs/en/api/java/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (php)](/docs/en/api/php/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (Python)](/docs/en/api/python/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/cancel) {api-endpoint}
-- [Cancel a Message Batch (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/cancel) {api-endpoint}
-- [Count tokens in a Message (Beta)](/docs/en/api/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (cli)](/docs/en/api/cli/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (csharp)](/docs/en/api/csharp/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (Go)](/docs/en/api/go/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (Java)](/docs/en/api/java/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (php)](/docs/en/api/php/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (Python)](/docs/en/api/python/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (terraform)](/docs/en/api/terraform/beta/messages/count_tokens) {api-endpoint}
-- [Count tokens in a Message (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/count_tokens) {api-endpoint}
-- [Create a Message (Beta)](/docs/en/api/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (cli)](/docs/en/api/cli/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (csharp)](/docs/en/api/csharp/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (Go)](/docs/en/api/go/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (Java)](/docs/en/api/java/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (php)](/docs/en/api/php/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (Python)](/docs/en/api/python/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (terraform)](/docs/en/api/terraform/beta/messages/create) {api-endpoint}
-- [Create a Message (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/create) {api-endpoint}
-- [Create a Message Batch (Beta)](/docs/en/api/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (Go)](/docs/en/api/go/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (Java)](/docs/en/api/java/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (php)](/docs/en/api/php/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (Python)](/docs/en/api/python/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/create) {api-endpoint}
-- [Create a Message Batch (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/create) {api-endpoint}
-- [Delete a Message Batch (Beta)](/docs/en/api/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (Go)](/docs/en/api/go/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (Java)](/docs/en/api/java/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (php)](/docs/en/api/php/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (Python)](/docs/en/api/python/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/delete) {api-endpoint}
-- [Delete a Message Batch (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/delete) {api-endpoint}
-- [List Message Batches (Beta)](/docs/en/api/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (Go)](/docs/en/api/go/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (Java)](/docs/en/api/java/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (php)](/docs/en/api/php/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (Python)](/docs/en/api/python/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/list) {api-endpoint}
-- [List Message Batches (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/list) {api-endpoint}
-- [Messages (Beta)](/docs/en/api/beta/messages) {api-hub}
-- [Messages (Beta) (cli)](/docs/en/api/cli/beta/messages) {api-hub}
-- [Messages (Beta) (csharp)](/docs/en/api/csharp/beta/messages) {api-hub}
-- [Messages (Beta) (Go)](/docs/en/api/go/beta/messages) {api-hub}
-- [Messages (Beta) (Java)](/docs/en/api/java/beta/messages) {api-hub}
-- [Messages (Beta) (php)](/docs/en/api/php/beta/messages) {api-hub}
-- [Messages (Beta) (Python)](/docs/en/api/python/beta/messages) {api-hub}
-- [Messages (Beta) (Ruby)](/docs/en/api/ruby/beta/messages) {api-hub}
-- [Messages (Beta) (terraform)](/docs/en/api/terraform/beta/messages) {api-hub}
-- [Messages (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages) {api-hub}
-- [Retrieve a Message Batch (Beta)](/docs/en/api/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (Go)](/docs/en/api/go/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (Java)](/docs/en/api/java/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (php)](/docs/en/api/php/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (Python)](/docs/en/api/python/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve a Message Batch (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/retrieve) {api-endpoint}
-- [Retrieve Message Batch results (Beta)](/docs/en/api/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (Go)](/docs/en/api/go/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (Java)](/docs/en/api/java/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (php)](/docs/en/api/php/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (Python)](/docs/en/api/python/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/results) {api-endpoint}
-- [Retrieve Message Batch results (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/results) {api-endpoint}
-
-## Models API (30 pages)
-
-- [Get a Model](/docs/en/api/models/retrieve) {api-endpoint}
-- [Get a Model (cli)](/docs/en/api/cli/models/retrieve) {api-endpoint}
-- [Get a Model (csharp)](/docs/en/api/csharp/models/retrieve) {api-endpoint}
-- [Get a Model (Go)](/docs/en/api/go/models/retrieve) {api-endpoint}
-- [Get a Model (Java)](/docs/en/api/java/models/retrieve) {api-endpoint}
-- [Get a Model (php)](/docs/en/api/php/models/retrieve) {api-endpoint}
-- [Get a Model (Python)](/docs/en/api/python/models/retrieve) {api-endpoint}
-- [Get a Model (Ruby)](/docs/en/api/ruby/models/retrieve) {api-endpoint}
-- [Get a Model (terraform)](/docs/en/api/terraform/models/retrieve) {api-endpoint}
-- [Get a Model (TypeScript)](/docs/en/api/typescript/models/retrieve) {api-endpoint}
-- [List Models](/docs/en/api/models/list) {api-endpoint}
-- [List Models (cli)](/docs/en/api/cli/models/list) {api-endpoint}
-- [List Models (csharp)](/docs/en/api/csharp/models/list) {api-endpoint}
-- [List Models (Go)](/docs/en/api/go/models/list) {api-endpoint}
-- [List Models (Java)](/docs/en/api/java/models/list) {api-endpoint}
-- [List Models (php)](/docs/en/api/php/models/list) {api-endpoint}
-- [List Models (Python)](/docs/en/api/python/models/list) {api-endpoint}
-- [List Models (Ruby)](/docs/en/api/ruby/models/list) {api-endpoint}
-- [List Models (terraform)](/docs/en/api/terraform/models/list) {api-endpoint}
-- [List Models (TypeScript)](/docs/en/api/typescript/models/list) {api-endpoint}
-- [Models](/docs/en/api/models) — hub {api-hub}
-- [Models (cli)](/docs/en/api/cli/models) {api-hub}
-- [Models (csharp)](/docs/en/api/csharp/models) {api-hub}
-- [Models (Go)](/docs/en/api/go/models) {api-hub}
-- [Models (Java)](/docs/en/api/java/models) {api-hub}
-- [Models (php)](/docs/en/api/php/models) {api-hub}
-- [Models (Python)](/docs/en/api/python/models) {api-hub}
-- [Models (Ruby)](/docs/en/api/ruby/models) {api-hub}
-- [Models (terraform)](/docs/en/api/terraform/models) {api-hub}
-- [Models (TypeScript)](/docs/en/api/typescript/models) {api-hub}
-
-## Models API (Beta) (30 pages)
-
-- [Get a Model (Beta)](/docs/en/api/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (cli)](/docs/en/api/cli/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (csharp)](/docs/en/api/csharp/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (Go)](/docs/en/api/go/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (Java)](/docs/en/api/java/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (php)](/docs/en/api/php/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (Python)](/docs/en/api/python/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (Ruby)](/docs/en/api/ruby/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (terraform)](/docs/en/api/terraform/beta/models/retrieve) {api-endpoint}
-- [Get a Model (Beta) (TypeScript)](/docs/en/api/typescript/beta/models/retrieve) {api-endpoint}
-- [List Models (Beta)](/docs/en/api/beta/models/list) {api-endpoint}
-- [List Models (Beta) (cli)](/docs/en/api/cli/beta/models/list) {api-endpoint}
-- [List Models (Beta) (csharp)](/docs/en/api/csharp/beta/models/list) {api-endpoint}
-- [List Models (Beta) (Go)](/docs/en/api/go/beta/models/list) {api-endpoint}
-- [List Models (Beta) (Java)](/docs/en/api/java/beta/models/list) {api-endpoint}
-- [List Models (Beta) (php)](/docs/en/api/php/beta/models/list) {api-endpoint}
-- [List Models (Beta) (Python)](/docs/en/api/python/beta/models/list) {api-endpoint}
-- [List Models (Beta) (Ruby)](/docs/en/api/ruby/beta/models/list) {api-endpoint}
-- [List Models (Beta) (terraform)](/docs/en/api/terraform/beta/models/list) {api-endpoint}
-- [List Models (Beta) (TypeScript)](/docs/en/api/typescript/beta/models/list) {api-endpoint}
-- [Models (Beta)](/docs/en/api/beta/models) {api-hub}
-- [Models (Beta) (cli)](/docs/en/api/cli/beta/models) {api-hub}
-- [Models (Beta) (csharp)](/docs/en/api/csharp/beta/models) {api-hub}
-- [Models (Beta) (Go)](/docs/en/api/go/beta/models) {api-hub}
-- [Models (Beta) (Java)](/docs/en/api/java/beta/models) {api-hub}
-- [Models (Beta) (php)](/docs/en/api/php/beta/models) {api-hub}
-- [Models (Beta) (Python)](/docs/en/api/python/beta/models) {api-hub}
-- [Models (Beta) (Ruby)](/docs/en/api/ruby/beta/models) {api-hub}
-- [Models (Beta) (terraform)](/docs/en/api/terraform/beta/models) {api-hub}
-- [Models (Beta) (TypeScript)](/docs/en/api/typescript/beta/models) {api-hub}
-
-## Completions API (20 pages)
-
-- [Completions](/docs/en/api/completions) — hub (legacy) {api-hub}
-- [Completions (cli)](/docs/en/api/cli/completions) {api-hub}
-- [Completions (csharp)](/docs/en/api/csharp/completions) {api-hub}
-- [Completions (Go)](/docs/en/api/go/completions) {api-hub}
-- [Completions (Java)](/docs/en/api/java/completions) {api-hub}
-- [Completions (php)](/docs/en/api/php/completions) {api-hub}
-- [Completions (Python)](/docs/en/api/python/completions) {api-hub}
-- [Completions (Ruby)](/docs/en/api/ruby/completions) {api-hub}
-- [Completions (terraform)](/docs/en/api/terraform/completions) {api-hub}
-- [Completions (TypeScript)](/docs/en/api/typescript/completions) {api-hub}
-- [Create a Text Completion](/docs/en/api/completions/create) {api-endpoint}
-- [Create a Text Completion (cli)](/docs/en/api/cli/completions/create) {api-endpoint}
-- [Create a Text Completion (csharp)](/docs/en/api/csharp/completions/create) {api-endpoint}
-- [Create a Text Completion (Go)](/docs/en/api/go/completions/create) {api-endpoint}
-- [Create a Text Completion (Java)](/docs/en/api/java/completions/create) {api-endpoint}
-- [Create a Text Completion (php)](/docs/en/api/php/completions/create) {api-endpoint}
-- [Create a Text Completion (Python)](/docs/en/api/python/completions/create) {api-endpoint}
-- [Create a Text Completion (Ruby)](/docs/en/api/ruby/completions/create) {api-endpoint}
-- [Create a Text Completion (terraform)](/docs/en/api/terraform/completions/create) {api-endpoint}
-- [Create a Text Completion (TypeScript)](/docs/en/api/typescript/completions/create) {api-endpoint}
-
-## Admin API (33 pages)
-
-- [API Keys](/docs/en/api/admin/api_keys) {guide}
-- [Archive Workspace](/docs/en/api/admin/workspaces/archive) {api-endpoint}
-- [Cost Report](/docs/en/api/admin/cost_report) {guide}
-- [Create Invite](/docs/en/api/admin/invites/create) {api-endpoint}
-- [Create Workspace](/docs/en/api/admin/workspaces/create) {api-endpoint}
-- [Create Workspace Member](/docs/en/api/admin/workspaces/members/create) {api-endpoint}
-- [Delete Invite](/docs/en/api/admin/invites/delete) {api-endpoint}
-- [Delete Workspace Member](/docs/en/api/admin/workspaces/members/delete) {api-endpoint}
-- [Get API Key](/docs/en/api/admin/api_keys/retrieve) {api-endpoint}
-- [Get Claude Code Usage Report](/docs/en/api/admin/usage_report/retrieve_claude_code) {api-endpoint}
-- [Get Cost Report](/docs/en/api/admin/cost_report/retrieve) {api-endpoint}
-- [Get Current Organization](/docs/en/api/admin/organizations/me) {api-endpoint}
-- [Get Invite](/docs/en/api/admin/invites/retrieve) {api-endpoint}
-- [Get Messages Usage Report](/docs/en/api/admin/usage_report/retrieve_messages) {api-endpoint}
-- [Get User](/docs/en/api/admin/users/retrieve) {api-endpoint}
-- [Get Workspace](/docs/en/api/admin/workspaces/retrieve) {api-endpoint}
-- [Get Workspace Member](/docs/en/api/admin/workspaces/members/retrieve) {api-endpoint}
-- [Invites](/docs/en/api/admin/invites) {guide}
-- [List API Keys](/docs/en/api/admin/api_keys/list) {api-endpoint}
-- [List Invites](/docs/en/api/admin/invites/list) {api-endpoint}
-- [List Users](/docs/en/api/admin/users/list) {api-endpoint}
-- [List Workspace Members](/docs/en/api/admin/workspaces/members/list) {api-endpoint}
-- [List Workspaces](/docs/en/api/admin/workspaces/list) {api-endpoint}
-- [Members](/docs/en/api/admin/workspaces/members) {guide}
-- [Organizations](/docs/en/api/admin/organizations) {guide}
-- [Remove User](/docs/en/api/admin/users/delete) {api-endpoint}
-- [Update API Key](/docs/en/api/admin/api_keys/update) {api-endpoint}
-- [Update User](/docs/en/api/admin/users/update) {api-endpoint}
-- [Update Workspace](/docs/en/api/admin/workspaces/update) {api-endpoint}
-- [Update Workspace Member](/docs/en/api/admin/workspaces/members/update) {api-endpoint}
-- [Usage Report](/docs/en/api/admin/usage_report) {guide}
-- [Users](/docs/en/api/admin/users) {guide}
-- [Workspaces](/docs/en/api/admin/workspaces) {guide}
-
-## Files API (Beta) (60 pages)
-
-- [Delete File (Beta)](/docs/en/api/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (cli)](/docs/en/api/cli/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (csharp)](/docs/en/api/csharp/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (Go)](/docs/en/api/go/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (Java)](/docs/en/api/java/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (php)](/docs/en/api/php/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (Python)](/docs/en/api/python/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (Ruby)](/docs/en/api/ruby/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (terraform)](/docs/en/api/terraform/beta/files/delete) {api-endpoint}
-- [Delete File (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/delete) {api-endpoint}
-- [Download File (Beta)](/docs/en/api/beta/files/download) {api-endpoint}
-- [Download File (Beta) (cli)](/docs/en/api/cli/beta/files/download) {api-endpoint}
-- [Download File (Beta) (csharp)](/docs/en/api/csharp/beta/files/download) {api-endpoint}
-- [Download File (Beta) (Go)](/docs/en/api/go/beta/files/download) {api-endpoint}
-- [Download File (Beta) (Java)](/docs/en/api/java/beta/files/download) {api-endpoint}
-- [Download File (Beta) (php)](/docs/en/api/php/beta/files/download) {api-endpoint}
-- [Download File (Beta) (Python)](/docs/en/api/python/beta/files/download) {api-endpoint}
-- [Download File (Beta) (Ruby)](/docs/en/api/ruby/beta/files/download) {api-endpoint}
-- [Download File (Beta) (terraform)](/docs/en/api/terraform/beta/files/download) {api-endpoint}
-- [Download File (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/download) {api-endpoint}
-- [Files (Beta)](/docs/en/api/beta/files) {api-hub}
-- [Files (Beta) (cli)](/docs/en/api/cli/beta/files) {api-hub}
-- [Files (Beta) (csharp)](/docs/en/api/csharp/beta/files) {api-hub}
-- [Files (Beta) (Go)](/docs/en/api/go/beta/files) {api-hub}
-- [Files (Beta) (Java)](/docs/en/api/java/beta/files) {api-hub}
-- [Files (Beta) (php)](/docs/en/api/php/beta/files) {api-hub}
-- [Files (Beta) (Python)](/docs/en/api/python/beta/files) {api-hub}
-- [Files (Beta) (Ruby)](/docs/en/api/ruby/beta/files) {api-hub}
-- [Files (Beta) (terraform)](/docs/en/api/terraform/beta/files) {api-hub}
-- [Files (Beta) (TypeScript)](/docs/en/api/typescript/beta/files) {api-hub}
-- [Get File Metadata (Beta)](/docs/en/api/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (cli)](/docs/en/api/cli/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (csharp)](/docs/en/api/csharp/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (Go)](/docs/en/api/go/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (Java)](/docs/en/api/java/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (php)](/docs/en/api/php/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (Python)](/docs/en/api/python/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (Ruby)](/docs/en/api/ruby/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (terraform)](/docs/en/api/terraform/beta/files/retrieve_metadata) {api-endpoint}
-- [Get File Metadata (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/retrieve_metadata) {api-endpoint}
-- [List Files (Beta)](/docs/en/api/beta/files/list) {api-endpoint}
-- [List Files (Beta) (cli)](/docs/en/api/cli/beta/files/list) {api-endpoint}
-- [List Files (Beta) (csharp)](/docs/en/api/csharp/beta/files/list) {api-endpoint}
-- [List Files (Beta) (Go)](/docs/en/api/go/beta/files/list) {api-endpoint}
-- [List Files (Beta) (Java)](/docs/en/api/java/beta/files/list) {api-endpoint}
-- [List Files (Beta) (php)](/docs/en/api/php/beta/files/list) {api-endpoint}
-- [List Files (Beta) (Python)](/docs/en/api/python/beta/files/list) {api-endpoint}
-- [List Files (Beta) (Ruby)](/docs/en/api/ruby/beta/files/list) {api-endpoint}
-- [List Files (Beta) (terraform)](/docs/en/api/terraform/beta/files/list) {api-endpoint}
-- [List Files (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/list) {api-endpoint}
-- [Upload File (Beta)](/docs/en/api/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (cli)](/docs/en/api/cli/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (csharp)](/docs/en/api/csharp/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (Go)](/docs/en/api/go/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (Java)](/docs/en/api/java/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (php)](/docs/en/api/php/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (Python)](/docs/en/api/python/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (Ruby)](/docs/en/api/ruby/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (terraform)](/docs/en/api/terraform/beta/files/upload) {api-endpoint}
-- [Upload File (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/upload) {api-endpoint}
-
-## Skills API (Beta) (100 pages)
-
-- [Create Skill (Beta)](/docs/en/api/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (cli)](/docs/en/api/cli/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (csharp)](/docs/en/api/csharp/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (Go)](/docs/en/api/go/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (Java)](/docs/en/api/java/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (php)](/docs/en/api/php/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (Python)](/docs/en/api/python/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (terraform)](/docs/en/api/terraform/beta/skills/create) {api-endpoint}
-- [Create Skill (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/create) {api-endpoint}
-- [Create Skill Version (Beta)](/docs/en/api/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (cli)](/docs/en/api/cli/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (Go)](/docs/en/api/go/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (Java)](/docs/en/api/java/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (php)](/docs/en/api/php/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (Python)](/docs/en/api/python/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions/create) {api-endpoint}
-- [Create Skill Version (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions/create) {api-endpoint}
-- [Delete Skill (Beta)](/docs/en/api/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (cli)](/docs/en/api/cli/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (csharp)](/docs/en/api/csharp/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (Go)](/docs/en/api/go/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (Java)](/docs/en/api/java/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (php)](/docs/en/api/php/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (Python)](/docs/en/api/python/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (terraform)](/docs/en/api/terraform/beta/skills/delete) {api-endpoint}
-- [Delete Skill (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/delete) {api-endpoint}
-- [Delete Skill Version (Beta)](/docs/en/api/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (cli)](/docs/en/api/cli/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (Go)](/docs/en/api/go/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (Java)](/docs/en/api/java/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (php)](/docs/en/api/php/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (Python)](/docs/en/api/python/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions/delete) {api-endpoint}
-- [Delete Skill Version (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions/delete) {api-endpoint}
-- [Get Skill (Beta)](/docs/en/api/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (cli)](/docs/en/api/cli/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (csharp)](/docs/en/api/csharp/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (Go)](/docs/en/api/go/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (Java)](/docs/en/api/java/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (php)](/docs/en/api/php/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (Python)](/docs/en/api/python/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (terraform)](/docs/en/api/terraform/beta/skills/retrieve) {api-endpoint}
-- [Get Skill (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/retrieve) {api-endpoint}
-- [Get Skill Version (Beta)](/docs/en/api/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (cli)](/docs/en/api/cli/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (Go)](/docs/en/api/go/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (Java)](/docs/en/api/java/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (php)](/docs/en/api/php/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (Python)](/docs/en/api/python/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions/retrieve) {api-endpoint}
-- [Get Skill Version (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions/retrieve) {api-endpoint}
-- [List Skill Versions (Beta)](/docs/en/api/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (cli)](/docs/en/api/cli/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (Go)](/docs/en/api/go/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (Java)](/docs/en/api/java/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (php)](/docs/en/api/php/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (Python)](/docs/en/api/python/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions/list) {api-endpoint}
-- [List Skill Versions (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions/list) {api-endpoint}
-- [List Skills (Beta)](/docs/en/api/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (cli)](/docs/en/api/cli/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (csharp)](/docs/en/api/csharp/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (Go)](/docs/en/api/go/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (Java)](/docs/en/api/java/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (php)](/docs/en/api/php/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (Python)](/docs/en/api/python/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (terraform)](/docs/en/api/terraform/beta/skills/list) {api-endpoint}
-- [List Skills (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/list) {api-endpoint}
-- [Skills (Beta)](/docs/en/api/beta/skills) {api-hub}
-- [Skills (Beta) (cli)](/docs/en/api/cli/beta/skills) {api-hub}
-- [Skills (Beta) (csharp)](/docs/en/api/csharp/beta/skills) {api-hub}
-- [Skills (Beta) (Go)](/docs/en/api/go/beta/skills) {api-hub}
-- [Skills (Beta) (Java)](/docs/en/api/java/beta/skills) {api-hub}
-- [Skills (Beta) (php)](/docs/en/api/php/beta/skills) {api-hub}
-- [Skills (Beta) (Python)](/docs/en/api/python/beta/skills) {api-hub}
-- [Skills (Beta) (Ruby)](/docs/en/api/ruby/beta/skills) {api-hub}
-- [Skills (Beta) (terraform)](/docs/en/api/terraform/beta/skills) {api-hub}
-- [Skills (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills) {api-hub}
-- [Versions (Beta)](/docs/en/api/beta/skills/versions) {guide}
-- [Versions (Beta) (cli)](/docs/en/api/cli/beta/skills/versions) {guide}
-- [Versions (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions) {guide}
-- [Versions (Beta) (Go)](/docs/en/api/go/beta/skills/versions) {guide}
-- [Versions (Beta) (Java)](/docs/en/api/java/beta/skills/versions) {guide}
-- [Versions (Beta) (php)](/docs/en/api/php/beta/skills/versions) {guide}
-- [Versions (Beta) (Python)](/docs/en/api/python/beta/skills/versions) {guide}
-- [Versions (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions) {guide}
-- [Versions (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions) {guide}
-- [Versions (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions) {guide}
-
-## Beta API Overview (10 pages)
-
-- [Beta (Beta)](/docs/en/api/beta) — hub {guide}
-- [Beta (Beta) (cli)](/docs/en/api/cli/beta) {guide}
-- [Beta (Beta) (csharp)](/docs/en/api/csharp/beta) {guide}
-- [Beta (Beta) (Go)](/docs/en/api/go/beta) {guide}
-- [Beta (Beta) (Java)](/docs/en/api/java/beta) {guide}
-- [Beta (Beta) (php)](/docs/en/api/php/beta) {guide}
-- [Beta (Beta) (Python)](/docs/en/api/python/beta) {guide}
-- [Beta (Beta) (Ruby)](/docs/en/api/ruby/beta) {guide}
-- [Beta (Beta) (terraform)](/docs/en/api/terraform/beta) {guide}
-- [Beta (Beta) (TypeScript)](/docs/en/api/typescript/beta) {guide}
-
-## Resources (8 pages)
-
-- [Overview](/docs/en/about-claude/use-case-guides/overview) {overview}
-- [Overview](/docs/en/resources/overview) {overview}
-- [Content moderation](/docs/en/about-claude/use-case-guides/content-moderation) {use-case}
-- [Customer support agent](/docs/en/about-claude/use-case-guides/customer-support-chat) {use-case}
-- [Glossary](/docs/en/about-claude/glossary) {guide}
-- [Legal summarization](/docs/en/about-claude/use-case-guides/legal-summarization) {use-case}
-- [System Prompts](/docs/en/release-notes/system-prompts) {changelog}
-- [Ticket routing](/docs/en/about-claude/use-case-guides/ticket-routing) {use-case}
-
-## Release Notes (1 page)
-
-- [Claude Platform](/docs/en/release-notes/overview) {overview}
+- [Claude Platform](/docs/en/release-notes/overview.md) {overview}
+- [Features overview](/docs/en/build-with-claude/overview.md) {overview}
+- [Intro to Claude](/docs/en/intro.md) {guide}
+- [Accessing GitHub](/docs/en/managed-agents/github.md) {guide}
+- [Adaptive thinking](/docs/en/build-with-claude/adaptive-thinking.md) {guide}
+- [Adding files](/docs/en/managed-agents/files.md) {guide}
+- [Advisor tool](/docs/en/agents-and-tools/tool-use/advisor-tool.md) {guide}
+- [Authenticate with vaults](/docs/en/managed-agents/vaults.md) {guide}
+- [Bash tool](/docs/en/agents-and-tools/tool-use/bash-tool.md) {guide}
+- [Batch processing](/docs/en/build-with-claude/batch-processing.md) {guide}
+- [Citations](/docs/en/build-with-claude/citations.md) {guide}
+- [Cloud environment setup](/docs/en/managed-agents/environments.md) {guide}
+- [Code execution tool](/docs/en/agents-and-tools/tool-use/code-execution-tool.md) {guide}
+- [Compaction](/docs/en/build-with-claude/compaction.md) {guide}
+- [Computer use tool](/docs/en/agents-and-tools/tool-use/computer-use-tool.md) {guide}
+- [Console prompting tools](/docs/en/build-with-claude/prompt-engineering/prompting-tools.md) {guide}
+- [Container reference](/docs/en/managed-agents/cloud-containers.md) {guide}
+- [Content moderation](/docs/en/about-claude/use-case-guides/content-moderation.md) {overview}
+- [Context editing](/docs/en/build-with-claude/context-editing.md) {guide}
+- [Context windows](/docs/en/build-with-claude/context-windows.md) {guide}
+- [Customer support agent](/docs/en/about-claude/use-case-guides/customer-support-chat.md) {overview}
+- [Define outcomes](/docs/en/managed-agents/define-outcomes.md) {guide}
+- [Effort](/docs/en/build-with-claude/effort.md) {guide}
+- [Embeddings](/docs/en/build-with-claude/embeddings.md) {guide}
+- [Fast mode (beta: research preview)](/docs/en/build-with-claude/fast-mode.md) {guide}
+- [Files API](/docs/en/build-with-claude/files.md) {guide}
+- [Fine-grained tool streaming](/docs/en/agents-and-tools/tool-use/fine-grained-tool-streaming.md) {guide}
+- [Glossary](/docs/en/about-claude/glossary.md) {overview}
+- [Handling stop reasons](/docs/en/build-with-claude/handling-stop-reasons.md) {guide}
+- [How tool use works](/docs/en/agents-and-tools/tool-use/how-tool-use-works.md) {guide}
+- [Increase output consistency](/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency.md) {guide}
+- [Legal summarization](/docs/en/about-claude/use-case-guides/legal-summarization.md) {overview}
+- [MCP connector](/docs/en/agents-and-tools/mcp-connector.md) {guide}
+- [MCP connector](/docs/en/managed-agents/mcp-connector.md) {guide}
+- [Memory tool](/docs/en/agents-and-tools/tool-use/memory-tool.md) {guide}
+- [Multiagent sessions](/docs/en/managed-agents/multi-agent.md) {guide}
+- [Multilingual support](/docs/en/build-with-claude/multilingual-support.md) {guide}
+- [PDF support](/docs/en/build-with-claude/pdf-support.md) {guide}
+- [Permission policies](/docs/en/managed-agents/permission-policies.md) {guide}
+- [Programmatic tool calling](/docs/en/agents-and-tools/tool-use/programmatic-tool-calling.md) {guide}
+- [Prompt caching](/docs/en/build-with-claude/prompt-caching.md) {guide}
+- [Prompting best practices](/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices.md) {best-practices}
+- [Prototype in Console](/docs/en/managed-agents/onboarding.md) {guide}
+- [Reduce hallucinations](/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations.md) {guide}
+- [Reduce prompt leak](/docs/en/test-and-evaluate/strengthen-guardrails/reduce-prompt-leak.md) {guide}
+- [Reducing latency](/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency.md) {guide}
+- [Remote MCP servers](/docs/en/agents-and-tools/remote-mcp-servers.md) {guide}
+- [Search results](/docs/en/build-with-claude/search-results.md) {guide}
+- [Session event stream](/docs/en/managed-agents/events-and-streaming.md) {guide}
+- [Skills for enterprise](/docs/en/agents-and-tools/agent-skills/enterprise.md) {guide}
+- [Start a session](/docs/en/managed-agents/sessions.md) {guide}
+- [Streaming Messages](/docs/en/build-with-claude/streaming.md) {guide}
+- [Streaming refusals](/docs/en/test-and-evaluate/strengthen-guardrails/handle-streaming-refusals.md) {guide}
+- [Structured outputs](/docs/en/build-with-claude/structured-outputs.md) {guide}
+- [Text editor tool](/docs/en/agents-and-tools/tool-use/text-editor-tool.md) {guide}
+- [Ticket routing](/docs/en/about-claude/use-case-guides/ticket-routing.md) {overview}
+- [Token counting](/docs/en/build-with-claude/token-counting.md) {guide}
+- [Tool reference](/docs/en/agents-and-tools/tool-use/tool-reference.md) {guide}
+- [Tools](/docs/en/managed-agents/tools.md) {guide}
+- [Using the Messages API](/docs/en/build-with-claude/working-with-messages.md) {guide}
+- [Web fetch tool](/docs/en/agents-and-tools/tool-use/web-fetch-tool.md) {guide}
+- [Web search tool](/docs/en/agents-and-tools/tool-use/web-search-tool.md) {guide}
+- [Admin API overview](/docs/en/build-with-claude/administration-api.md) {overview}
+- [API and data retention](/docs/en/build-with-claude/api-and-data-retention.md) {guide}
+- [Claude Code Analytics API](/docs/en/build-with-claude/claude-code-analytics-api.md) {guide}
+- [Data residency](/docs/en/build-with-claude/data-residency.md) {guide}
+- [Migration](/docs/en/managed-agents/migration.md) {guide}
+- [Session tracing](/docs/en/managed-agents/observability.md) {guide}
+- [Usage and Cost API](/docs/en/build-with-claude/usage-cost-api.md) {guide}
+- [Workspaces](/docs/en/build-with-claude/workspaces.md) {guide}
+- [Models overview](/docs/en/about-claude/models/overview.md) {overview}
+- [Migration guide](/docs/en/about-claude/models/migration-guide.md) {overview}
+- [Model deprecations](/docs/en/about-claude/model-deprecations.md) {overview}
+- [Pricing](/docs/en/about-claude/pricing.md) {overview}
+- [What's new in Claude 4.6](/docs/en/about-claude/models/whats-new-claude-4-6.md) {overview}
+- [C# SDK](/docs/en/api/sdks/csharp.md) {sdk-guide}
+- [CLI](/docs/en/api/sdks/cli.md) {tool-reference}
+- [Go SDK](/docs/en/api/sdks/go.md) {sdk-guide}
+- [Java SDK](/docs/en/api/sdks/java.md) {sdk-guide}
+- [OpenAI SDK compatibility](/docs/en/api/openai-sdk.md) {sdk-guide}
+- [PHP SDK](/docs/en/api/sdks/php.md) {sdk-guide}
+- [Python SDK](/docs/en/api/sdks/python.md) {sdk-guide}
+- [Ruby SDK](/docs/en/api/sdks/ruby.md) {sdk-guide}
+- [TypeScript SDK](/docs/en/api/sdks/typescript.md) {sdk-guide}
+- [Add Session Resource (Beta)](/docs/en/api/beta/sessions/resources/add.md) {api-endpoint}
+- [Add Session Resource (Beta) (cli)](/docs/en/api/cli/beta/sessions/resources/add.md) {tool-reference}
+- [Add Session Resource (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/resources/add.md) {api-endpoint}
+- [Add Session Resource (Beta) (Go)](/docs/en/api/go/beta/sessions/resources/add.md) {api-endpoint}
+- [Add Session Resource (Beta) (Java)](/docs/en/api/java/beta/sessions/resources/add.md) {api-endpoint}
+- [Add Session Resource (Beta) (php)](/docs/en/api/php/beta/sessions/resources/add.md) {api-endpoint}
+- [Add Session Resource (Beta) (Python)](/docs/en/api/python/beta/sessions/resources/add.md) {api-endpoint}
+- [Add Session Resource (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/resources/add.md) {api-endpoint}
+- [Add Session Resource (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/resources/add.md) {api-endpoint}
+- [Add Session Resource (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/resources/add.md) {api-endpoint}
+- [Admin](/docs/en/api/admin.md) {api-endpoint}
+- [Agents (Beta)](/docs/en/api/beta/agents.md) {api-endpoint}
+- [Agents (Beta) (cli)](/docs/en/api/cli/beta/agents.md) {tool-reference}
+- [Agents (Beta) (csharp)](/docs/en/api/csharp/beta/agents.md) {api-endpoint}
+- [Agents (Beta) (Go)](/docs/en/api/go/beta/agents.md) {api-endpoint}
+- [Agents (Beta) (Java)](/docs/en/api/java/beta/agents.md) {api-endpoint}
+- [Agents (Beta) (php)](/docs/en/api/php/beta/agents.md) {api-endpoint}
+- [Agents (Beta) (Python)](/docs/en/api/python/beta/agents.md) {api-endpoint}
+- [Agents (Beta) (Ruby)](/docs/en/api/ruby/beta/agents.md) {api-endpoint}
+- [Agents (Beta) (terraform)](/docs/en/api/terraform/beta/agents.md) {api-endpoint}
+- [Agents (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents.md) {api-endpoint}
+- [API Keys](/docs/en/api/admin/api_keys.md) {api-endpoint}
+- [Archive Agent (Beta)](/docs/en/api/beta/agents/archive.md) {api-endpoint}
+- [Archive Agent (Beta) (cli)](/docs/en/api/cli/beta/agents/archive.md) {tool-reference}
+- [Archive Agent (Beta) (csharp)](/docs/en/api/csharp/beta/agents/archive.md) {api-endpoint}
+- [Archive Agent (Beta) (Go)](/docs/en/api/go/beta/agents/archive.md) {api-endpoint}
+- [Archive Agent (Beta) (Java)](/docs/en/api/java/beta/agents/archive.md) {api-endpoint}
+- [Archive Agent (Beta) (php)](/docs/en/api/php/beta/agents/archive.md) {api-endpoint}
+- [Archive Agent (Beta) (Python)](/docs/en/api/python/beta/agents/archive.md) {api-endpoint}
+- [Archive Agent (Beta) (Ruby)](/docs/en/api/ruby/beta/agents/archive.md) {api-endpoint}
+- [Archive Agent (Beta) (terraform)](/docs/en/api/terraform/beta/agents/archive.md) {api-endpoint}
+- [Archive Agent (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents/archive.md) {api-endpoint}
+- [Archive Credential (Beta)](/docs/en/api/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Credential (Beta) (cli)](/docs/en/api/cli/beta/vaults/credentials/archive.md) {tool-reference}
+- [Archive Credential (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Credential (Beta) (Go)](/docs/en/api/go/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Credential (Beta) (Java)](/docs/en/api/java/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Credential (Beta) (php)](/docs/en/api/php/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Credential (Beta) (Python)](/docs/en/api/python/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Credential (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Credential (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Credential (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/credentials/archive.md) {api-endpoint}
+- [Archive Environment (Beta)](/docs/en/api/beta/environments/archive.md) {api-endpoint}
+- [Archive Environment (Beta) (cli)](/docs/en/api/cli/beta/environments/archive.md) {tool-reference}
+- [Archive Environment (Beta) (csharp)](/docs/en/api/csharp/beta/environments/archive.md) {api-endpoint}
+- [Archive Environment (Beta) (Go)](/docs/en/api/go/beta/environments/archive.md) {api-endpoint}
+- [Archive Environment (Beta) (Java)](/docs/en/api/java/beta/environments/archive.md) {api-endpoint}
+- [Archive Environment (Beta) (php)](/docs/en/api/php/beta/environments/archive.md) {api-endpoint}
+- [Archive Environment (Beta) (Python)](/docs/en/api/python/beta/environments/archive.md) {api-endpoint}
+- [Archive Environment (Beta) (Ruby)](/docs/en/api/ruby/beta/environments/archive.md) {api-endpoint}
+- [Archive Environment (Beta) (terraform)](/docs/en/api/terraform/beta/environments/archive.md) {api-endpoint}
+- [Archive Environment (Beta) (TypeScript)](/docs/en/api/typescript/beta/environments/archive.md) {api-endpoint}
+- [Archive Session (Beta)](/docs/en/api/beta/sessions/archive.md) {api-endpoint}
+- [Archive Session (Beta) (cli)](/docs/en/api/cli/beta/sessions/archive.md) {tool-reference}
+- [Archive Session (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/archive.md) {api-endpoint}
+- [Archive Session (Beta) (Go)](/docs/en/api/go/beta/sessions/archive.md) {api-endpoint}
+- [Archive Session (Beta) (Java)](/docs/en/api/java/beta/sessions/archive.md) {api-endpoint}
+- [Archive Session (Beta) (php)](/docs/en/api/php/beta/sessions/archive.md) {api-endpoint}
+- [Archive Session (Beta) (Python)](/docs/en/api/python/beta/sessions/archive.md) {api-endpoint}
+- [Archive Session (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/archive.md) {api-endpoint}
+- [Archive Session (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/archive.md) {api-endpoint}
+- [Archive Session (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/archive.md) {api-endpoint}
+- [Archive Vault (Beta)](/docs/en/api/beta/vaults/archive.md) {api-endpoint}
+- [Archive Vault (Beta) (cli)](/docs/en/api/cli/beta/vaults/archive.md) {tool-reference}
+- [Archive Vault (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/archive.md) {api-endpoint}
+- [Archive Vault (Beta) (Go)](/docs/en/api/go/beta/vaults/archive.md) {api-endpoint}
+- [Archive Vault (Beta) (Java)](/docs/en/api/java/beta/vaults/archive.md) {api-endpoint}
+- [Archive Vault (Beta) (php)](/docs/en/api/php/beta/vaults/archive.md) {api-endpoint}
+- [Archive Vault (Beta) (Python)](/docs/en/api/python/beta/vaults/archive.md) {api-endpoint}
+- [Archive Vault (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/archive.md) {api-endpoint}
+- [Archive Vault (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/archive.md) {api-endpoint}
+- [Archive Vault (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/archive.md) {api-endpoint}
+- [Archive Workspace](/docs/en/api/admin/workspaces/archive.md) {api-endpoint}
+- [Batches](/docs/en/api/messages/batches.md) {api-endpoint}
+- [Batches (Beta)](/docs/en/api/beta/messages/batches.md) {api-endpoint}
+- [Batches (Beta) (cli)](/docs/en/api/cli/beta/messages/batches.md) {tool-reference}
+- [Batches (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches.md) {api-endpoint}
+- [Batches (Beta) (Go)](/docs/en/api/go/beta/messages/batches.md) {api-endpoint}
+- [Batches (Beta) (Java)](/docs/en/api/java/beta/messages/batches.md) {api-endpoint}
+- [Batches (Beta) (php)](/docs/en/api/php/beta/messages/batches.md) {api-endpoint}
+- [Batches (Beta) (Python)](/docs/en/api/python/beta/messages/batches.md) {api-endpoint}
+- [Batches (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches.md) {api-endpoint}
+- [Batches (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches.md) {api-endpoint}
+- [Batches (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches.md) {api-endpoint}
+- [Batches (cli)](/docs/en/api/cli/messages/batches.md) {tool-reference}
+- [Batches (csharp)](/docs/en/api/csharp/messages/batches.md) {api-endpoint}
+- [Batches (Go)](/docs/en/api/go/messages/batches.md) {api-endpoint}
+- [Batches (Java)](/docs/en/api/java/messages/batches.md) {api-endpoint}
+- [Batches (php)](/docs/en/api/php/messages/batches.md) {api-endpoint}
+- [Batches (Python)](/docs/en/api/python/messages/batches.md) {api-endpoint}
+- [Batches (Ruby)](/docs/en/api/ruby/messages/batches.md) {api-endpoint}
+- [Batches (terraform)](/docs/en/api/terraform/messages/batches.md) {api-endpoint}
+- [Batches (TypeScript)](/docs/en/api/typescript/messages/batches.md) {api-endpoint}
+- [Beta (Beta)](/docs/en/api/beta.md) {api-endpoint}
+- [Beta (Beta) (cli)](/docs/en/api/cli/beta.md) {tool-reference}
+- [Beta (Beta) (csharp)](/docs/en/api/csharp/beta.md) {api-endpoint}
+- [Beta (Beta) (Go)](/docs/en/api/go/beta.md) {api-endpoint}
+- [Beta (Beta) (Java)](/docs/en/api/java/beta.md) {api-endpoint}
+- [Beta (Beta) (php)](/docs/en/api/php/beta.md) {api-endpoint}
+- [Beta (Beta) (Python)](/docs/en/api/python/beta.md) {api-endpoint}
+- [Beta (Beta) (Ruby)](/docs/en/api/ruby/beta.md) {api-endpoint}
+- [Beta (Beta) (terraform)](/docs/en/api/terraform/beta.md) {api-endpoint}
+- [Beta (Beta) (TypeScript)](/docs/en/api/typescript/beta.md) {api-endpoint}
+- [Cancel a Message Batch](/docs/en/api/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta)](/docs/en/api/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/cancel.md) {tool-reference}
+- [Cancel a Message Batch (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta) (Go)](/docs/en/api/go/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta) (Java)](/docs/en/api/java/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta) (php)](/docs/en/api/php/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta) (Python)](/docs/en/api/python/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (cli)](/docs/en/api/cli/messages/batches/cancel.md) {tool-reference}
+- [Cancel a Message Batch (csharp)](/docs/en/api/csharp/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Go)](/docs/en/api/go/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Java)](/docs/en/api/java/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (php)](/docs/en/api/php/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Python)](/docs/en/api/python/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (Ruby)](/docs/en/api/ruby/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (terraform)](/docs/en/api/terraform/messages/batches/cancel.md) {api-endpoint}
+- [Cancel a Message Batch (TypeScript)](/docs/en/api/typescript/messages/batches/cancel.md) {api-endpoint}
+- [Completions](/docs/en/api/completions.md) {api-endpoint}
+- [Completions (cli)](/docs/en/api/cli/completions.md) {tool-reference}
+- [Completions (csharp)](/docs/en/api/csharp/completions.md) {api-endpoint}
+- [Completions (Go)](/docs/en/api/go/completions.md) {api-endpoint}
+- [Completions (Java)](/docs/en/api/java/completions.md) {api-endpoint}
+- [Completions (php)](/docs/en/api/php/completions.md) {api-endpoint}
+- [Completions (Python)](/docs/en/api/python/completions.md) {api-endpoint}
+- [Completions (Ruby)](/docs/en/api/ruby/completions.md) {api-endpoint}
+- [Completions (terraform)](/docs/en/api/terraform/completions.md) {api-endpoint}
+- [Completions (TypeScript)](/docs/en/api/typescript/completions.md) {api-endpoint}
+- [Cost Report](/docs/en/api/admin/cost_report.md) {api-endpoint}
+- [Count tokens in a Message](/docs/en/api/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta)](/docs/en/api/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta) (cli)](/docs/en/api/cli/beta/messages/count_tokens.md) {tool-reference}
+- [Count tokens in a Message (Beta) (csharp)](/docs/en/api/csharp/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta) (Go)](/docs/en/api/go/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta) (Java)](/docs/en/api/java/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta) (php)](/docs/en/api/php/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta) (Python)](/docs/en/api/python/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta) (terraform)](/docs/en/api/terraform/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (cli)](/docs/en/api/cli/messages/count_tokens.md) {tool-reference}
+- [Count tokens in a Message (csharp)](/docs/en/api/csharp/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Go)](/docs/en/api/go/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Java)](/docs/en/api/java/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (php)](/docs/en/api/php/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Python)](/docs/en/api/python/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (Ruby)](/docs/en/api/ruby/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (terraform)](/docs/en/api/terraform/messages/count_tokens.md) {api-endpoint}
+- [Count tokens in a Message (TypeScript)](/docs/en/api/typescript/messages/count_tokens.md) {api-endpoint}
+- [Create a Message](/docs/en/api/messages/create.md) {api-endpoint}
+- [Create a Message (Beta)](/docs/en/api/beta/messages/create.md) {api-endpoint}
+- [Create a Message (Beta) (cli)](/docs/en/api/cli/beta/messages/create.md) {tool-reference}
+- [Create a Message (Beta) (csharp)](/docs/en/api/csharp/beta/messages/create.md) {api-endpoint}
+- [Create a Message (Beta) (Go)](/docs/en/api/go/beta/messages/create.md) {api-endpoint}
+- [Create a Message (Beta) (Java)](/docs/en/api/java/beta/messages/create.md) {api-endpoint}
+- [Create a Message (Beta) (php)](/docs/en/api/php/beta/messages/create.md) {api-endpoint}
+- [Create a Message (Beta) (Python)](/docs/en/api/python/beta/messages/create.md) {api-endpoint}
+- [Create a Message (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/create.md) {api-endpoint}
+- [Create a Message (Beta) (terraform)](/docs/en/api/terraform/beta/messages/create.md) {api-endpoint}
+- [Create a Message (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/create.md) {api-endpoint}
+- [Create a Message (cli)](/docs/en/api/cli/messages/create.md) {tool-reference}
+- [Create a Message (csharp)](/docs/en/api/csharp/messages/create.md) {api-endpoint}
+- [Create a Message (Go)](/docs/en/api/go/messages/create.md) {api-endpoint}
+- [Create a Message (Java)](/docs/en/api/java/messages/create.md) {api-endpoint}
+- [Create a Message (php)](/docs/en/api/php/messages/create.md) {api-endpoint}
+- [Create a Message (Python)](/docs/en/api/python/messages/create.md) {api-endpoint}
+- [Create a Message (Ruby)](/docs/en/api/ruby/messages/create.md) {api-endpoint}
+- [Create a Message (terraform)](/docs/en/api/terraform/messages/create.md) {api-endpoint}
+- [Create a Message (TypeScript)](/docs/en/api/typescript/messages/create.md) {api-endpoint}
+- [Create a Message Batch](/docs/en/api/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta)](/docs/en/api/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/create.md) {tool-reference}
+- [Create a Message Batch (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta) (Go)](/docs/en/api/go/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta) (Java)](/docs/en/api/java/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta) (php)](/docs/en/api/php/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta) (Python)](/docs/en/api/python/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (cli)](/docs/en/api/cli/messages/batches/create.md) {tool-reference}
+- [Create a Message Batch (csharp)](/docs/en/api/csharp/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Go)](/docs/en/api/go/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Java)](/docs/en/api/java/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (php)](/docs/en/api/php/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Python)](/docs/en/api/python/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (Ruby)](/docs/en/api/ruby/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (terraform)](/docs/en/api/terraform/messages/batches/create.md) {api-endpoint}
+- [Create a Message Batch (TypeScript)](/docs/en/api/typescript/messages/batches/create.md) {api-endpoint}
+- [Create a Text Completion](/docs/en/api/completions/create.md) {api-endpoint}
+- [Create a Text Completion (cli)](/docs/en/api/cli/completions/create.md) {tool-reference}
+- [Create a Text Completion (csharp)](/docs/en/api/csharp/completions/create.md) {api-endpoint}
+- [Create a Text Completion (Go)](/docs/en/api/go/completions/create.md) {api-endpoint}
+- [Create a Text Completion (Java)](/docs/en/api/java/completions/create.md) {api-endpoint}
+- [Create a Text Completion (php)](/docs/en/api/php/completions/create.md) {api-endpoint}
+- [Create a Text Completion (Python)](/docs/en/api/python/completions/create.md) {api-endpoint}
+- [Create a Text Completion (Ruby)](/docs/en/api/ruby/completions/create.md) {api-endpoint}
+- [Create a Text Completion (terraform)](/docs/en/api/terraform/completions/create.md) {api-endpoint}
+- [Create a Text Completion (TypeScript)](/docs/en/api/typescript/completions/create.md) {api-endpoint}
+- [Create Agent (Beta)](/docs/en/api/beta/agents/create.md) {api-endpoint}
+- [Create Agent (Beta) (cli)](/docs/en/api/cli/beta/agents/create.md) {tool-reference}
+- [Create Agent (Beta) (csharp)](/docs/en/api/csharp/beta/agents/create.md) {api-endpoint}
+- [Create Agent (Beta) (Go)](/docs/en/api/go/beta/agents/create.md) {api-endpoint}
+- [Create Agent (Beta) (Java)](/docs/en/api/java/beta/agents/create.md) {api-endpoint}
+- [Create Agent (Beta) (php)](/docs/en/api/php/beta/agents/create.md) {api-endpoint}
+- [Create Agent (Beta) (Python)](/docs/en/api/python/beta/agents/create.md) {api-endpoint}
+- [Create Agent (Beta) (Ruby)](/docs/en/api/ruby/beta/agents/create.md) {api-endpoint}
+- [Create Agent (Beta) (terraform)](/docs/en/api/terraform/beta/agents/create.md) {api-endpoint}
+- [Create Agent (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents/create.md) {api-endpoint}
+- [Create Credential (Beta)](/docs/en/api/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Credential (Beta) (cli)](/docs/en/api/cli/beta/vaults/credentials/create.md) {tool-reference}
+- [Create Credential (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Credential (Beta) (Go)](/docs/en/api/go/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Credential (Beta) (Java)](/docs/en/api/java/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Credential (Beta) (php)](/docs/en/api/php/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Credential (Beta) (Python)](/docs/en/api/python/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Credential (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Credential (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Credential (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/credentials/create.md) {api-endpoint}
+- [Create Environment (Beta)](/docs/en/api/beta/environments/create.md) {api-endpoint}
+- [Create Environment (Beta) (cli)](/docs/en/api/cli/beta/environments/create.md) {tool-reference}
+- [Create Environment (Beta) (csharp)](/docs/en/api/csharp/beta/environments/create.md) {api-endpoint}
+- [Create Environment (Beta) (Go)](/docs/en/api/go/beta/environments/create.md) {api-endpoint}
+- [Create Environment (Beta) (Java)](/docs/en/api/java/beta/environments/create.md) {api-endpoint}
+- [Create Environment (Beta) (php)](/docs/en/api/php/beta/environments/create.md) {api-endpoint}
+- [Create Environment (Beta) (Python)](/docs/en/api/python/beta/environments/create.md) {api-endpoint}
+- [Create Environment (Beta) (Ruby)](/docs/en/api/ruby/beta/environments/create.md) {api-endpoint}
+- [Create Environment (Beta) (terraform)](/docs/en/api/terraform/beta/environments/create.md) {api-endpoint}
+- [Create Environment (Beta) (TypeScript)](/docs/en/api/typescript/beta/environments/create.md) {api-endpoint}
+- [Create Invite](/docs/en/api/admin/invites/create.md) {api-endpoint}
+- [Create Session (Beta)](/docs/en/api/beta/sessions/create.md) {api-endpoint}
+- [Create Session (Beta) (cli)](/docs/en/api/cli/beta/sessions/create.md) {tool-reference}
+- [Create Session (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/create.md) {api-endpoint}
+- [Create Session (Beta) (Go)](/docs/en/api/go/beta/sessions/create.md) {api-endpoint}
+- [Create Session (Beta) (Java)](/docs/en/api/java/beta/sessions/create.md) {api-endpoint}
+- [Create Session (Beta) (php)](/docs/en/api/php/beta/sessions/create.md) {api-endpoint}
+- [Create Session (Beta) (Python)](/docs/en/api/python/beta/sessions/create.md) {api-endpoint}
+- [Create Session (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/create.md) {api-endpoint}
+- [Create Session (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/create.md) {api-endpoint}
+- [Create Session (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/create.md) {api-endpoint}
+- [Create Skill (Beta)](/docs/en/api/beta/skills/create.md) {api-endpoint}
+- [Create Skill (Beta) (cli)](/docs/en/api/cli/beta/skills/create.md) {tool-reference}
+- [Create Skill (Beta) (csharp)](/docs/en/api/csharp/beta/skills/create.md) {api-endpoint}
+- [Create Skill (Beta) (Go)](/docs/en/api/go/beta/skills/create.md) {api-endpoint}
+- [Create Skill (Beta) (Java)](/docs/en/api/java/beta/skills/create.md) {api-endpoint}
+- [Create Skill (Beta) (php)](/docs/en/api/php/beta/skills/create.md) {api-endpoint}
+- [Create Skill (Beta) (Python)](/docs/en/api/python/beta/skills/create.md) {api-endpoint}
+- [Create Skill (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/create.md) {api-endpoint}
+- [Create Skill (Beta) (terraform)](/docs/en/api/terraform/beta/skills/create.md) {api-endpoint}
+- [Create Skill (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/create.md) {api-endpoint}
+- [Create Skill Version (Beta)](/docs/en/api/beta/skills/versions/create.md) {api-endpoint}
+- [Create Skill Version (Beta) (cli)](/docs/en/api/cli/beta/skills/versions/create.md) {tool-reference}
+- [Create Skill Version (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions/create.md) {api-endpoint}
+- [Create Skill Version (Beta) (Go)](/docs/en/api/go/beta/skills/versions/create.md) {api-endpoint}
+- [Create Skill Version (Beta) (Java)](/docs/en/api/java/beta/skills/versions/create.md) {api-endpoint}
+- [Create Skill Version (Beta) (php)](/docs/en/api/php/beta/skills/versions/create.md) {api-endpoint}
+- [Create Skill Version (Beta) (Python)](/docs/en/api/python/beta/skills/versions/create.md) {api-endpoint}
+- [Create Skill Version (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions/create.md) {api-endpoint}
+- [Create Skill Version (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions/create.md) {api-endpoint}
+- [Create Skill Version (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions/create.md) {api-endpoint}
+- [Create Vault (Beta)](/docs/en/api/beta/vaults/create.md) {api-endpoint}
+- [Create Vault (Beta) (cli)](/docs/en/api/cli/beta/vaults/create.md) {tool-reference}
+- [Create Vault (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/create.md) {api-endpoint}
+- [Create Vault (Beta) (Go)](/docs/en/api/go/beta/vaults/create.md) {api-endpoint}
+- [Create Vault (Beta) (Java)](/docs/en/api/java/beta/vaults/create.md) {api-endpoint}
+- [Create Vault (Beta) (php)](/docs/en/api/php/beta/vaults/create.md) {api-endpoint}
+- [Create Vault (Beta) (Python)](/docs/en/api/python/beta/vaults/create.md) {api-endpoint}
+- [Create Vault (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/create.md) {api-endpoint}
+- [Create Vault (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/create.md) {api-endpoint}
+- [Create Vault (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/create.md) {api-endpoint}
+- [Create Workspace](/docs/en/api/admin/workspaces/create.md) {api-endpoint}
+- [Create Workspace Member](/docs/en/api/admin/workspaces/members/create.md) {api-endpoint}
+- [Credentials (Beta)](/docs/en/api/beta/vaults/credentials.md) {api-endpoint}
+- [Credentials (Beta) (cli)](/docs/en/api/cli/beta/vaults/credentials.md) {tool-reference}
+- [Credentials (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/credentials.md) {api-endpoint}
+- [Credentials (Beta) (Go)](/docs/en/api/go/beta/vaults/credentials.md) {api-endpoint}
+- [Credentials (Beta) (Java)](/docs/en/api/java/beta/vaults/credentials.md) {api-endpoint}
+- [Credentials (Beta) (php)](/docs/en/api/php/beta/vaults/credentials.md) {api-endpoint}
+- [Credentials (Beta) (Python)](/docs/en/api/python/beta/vaults/credentials.md) {api-endpoint}
+- [Credentials (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/credentials.md) {api-endpoint}
+- [Credentials (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/credentials.md) {api-endpoint}
+- [Credentials (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/credentials.md) {api-endpoint}
+- [Delete a Message Batch](/docs/en/api/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta)](/docs/en/api/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/delete.md) {tool-reference}
+- [Delete a Message Batch (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta) (Go)](/docs/en/api/go/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta) (Java)](/docs/en/api/java/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta) (php)](/docs/en/api/php/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta) (Python)](/docs/en/api/python/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (cli)](/docs/en/api/cli/messages/batches/delete.md) {tool-reference}
+- [Delete a Message Batch (csharp)](/docs/en/api/csharp/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Go)](/docs/en/api/go/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Java)](/docs/en/api/java/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (php)](/docs/en/api/php/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Python)](/docs/en/api/python/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (Ruby)](/docs/en/api/ruby/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (terraform)](/docs/en/api/terraform/messages/batches/delete.md) {api-endpoint}
+- [Delete a Message Batch (TypeScript)](/docs/en/api/typescript/messages/batches/delete.md) {api-endpoint}
+- [Delete Credential (Beta)](/docs/en/api/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Credential (Beta) (cli)](/docs/en/api/cli/beta/vaults/credentials/delete.md) {tool-reference}
+- [Delete Credential (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Credential (Beta) (Go)](/docs/en/api/go/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Credential (Beta) (Java)](/docs/en/api/java/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Credential (Beta) (php)](/docs/en/api/php/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Credential (Beta) (Python)](/docs/en/api/python/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Credential (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Credential (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Credential (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/credentials/delete.md) {api-endpoint}
+- [Delete Environment (Beta)](/docs/en/api/beta/environments/delete.md) {api-endpoint}
+- [Delete Environment (Beta) (cli)](/docs/en/api/cli/beta/environments/delete.md) {tool-reference}
+- [Delete Environment (Beta) (csharp)](/docs/en/api/csharp/beta/environments/delete.md) {api-endpoint}
+- [Delete Environment (Beta) (Go)](/docs/en/api/go/beta/environments/delete.md) {api-endpoint}
+- [Delete Environment (Beta) (Java)](/docs/en/api/java/beta/environments/delete.md) {api-endpoint}
+- [Delete Environment (Beta) (php)](/docs/en/api/php/beta/environments/delete.md) {api-endpoint}
+- [Delete Environment (Beta) (Python)](/docs/en/api/python/beta/environments/delete.md) {api-endpoint}
+- [Delete Environment (Beta) (Ruby)](/docs/en/api/ruby/beta/environments/delete.md) {api-endpoint}
+- [Delete Environment (Beta) (terraform)](/docs/en/api/terraform/beta/environments/delete.md) {api-endpoint}
+- [Delete Environment (Beta) (TypeScript)](/docs/en/api/typescript/beta/environments/delete.md) {api-endpoint}
+- [Delete File (Beta)](/docs/en/api/beta/files/delete.md) {api-endpoint}
+- [Delete File (Beta) (cli)](/docs/en/api/cli/beta/files/delete.md) {tool-reference}
+- [Delete File (Beta) (csharp)](/docs/en/api/csharp/beta/files/delete.md) {api-endpoint}
+- [Delete File (Beta) (Go)](/docs/en/api/go/beta/files/delete.md) {api-endpoint}
+- [Delete File (Beta) (Java)](/docs/en/api/java/beta/files/delete.md) {api-endpoint}
+- [Delete File (Beta) (php)](/docs/en/api/php/beta/files/delete.md) {api-endpoint}
+- [Delete File (Beta) (Python)](/docs/en/api/python/beta/files/delete.md) {api-endpoint}
+- [Delete File (Beta) (Ruby)](/docs/en/api/ruby/beta/files/delete.md) {api-endpoint}
+- [Delete File (Beta) (terraform)](/docs/en/api/terraform/beta/files/delete.md) {api-endpoint}
+- [Delete File (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/delete.md) {api-endpoint}
+- [Delete Invite](/docs/en/api/admin/invites/delete.md) {api-endpoint}
+- [Delete Session (Beta)](/docs/en/api/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session (Beta) (cli)](/docs/en/api/cli/beta/sessions/delete.md) {tool-reference}
+- [Delete Session (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session (Beta) (Go)](/docs/en/api/go/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session (Beta) (Java)](/docs/en/api/java/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session (Beta) (php)](/docs/en/api/php/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session (Beta) (Python)](/docs/en/api/python/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta)](/docs/en/api/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta) (cli)](/docs/en/api/cli/beta/sessions/resources/delete.md) {tool-reference}
+- [Delete Session Resource (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta) (Go)](/docs/en/api/go/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta) (Java)](/docs/en/api/java/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta) (php)](/docs/en/api/php/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta) (Python)](/docs/en/api/python/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Session Resource (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/resources/delete.md) {api-endpoint}
+- [Delete Skill (Beta)](/docs/en/api/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill (Beta) (cli)](/docs/en/api/cli/beta/skills/delete.md) {tool-reference}
+- [Delete Skill (Beta) (csharp)](/docs/en/api/csharp/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill (Beta) (Go)](/docs/en/api/go/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill (Beta) (Java)](/docs/en/api/java/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill (Beta) (php)](/docs/en/api/php/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill (Beta) (Python)](/docs/en/api/python/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill (Beta) (terraform)](/docs/en/api/terraform/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta)](/docs/en/api/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta) (cli)](/docs/en/api/cli/beta/skills/versions/delete.md) {tool-reference}
+- [Delete Skill Version (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta) (Go)](/docs/en/api/go/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta) (Java)](/docs/en/api/java/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta) (php)](/docs/en/api/php/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta) (Python)](/docs/en/api/python/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Skill Version (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions/delete.md) {api-endpoint}
+- [Delete Vault (Beta)](/docs/en/api/beta/vaults/delete.md) {api-endpoint}
+- [Delete Vault (Beta) (cli)](/docs/en/api/cli/beta/vaults/delete.md) {tool-reference}
+- [Delete Vault (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/delete.md) {api-endpoint}
+- [Delete Vault (Beta) (Go)](/docs/en/api/go/beta/vaults/delete.md) {api-endpoint}
+- [Delete Vault (Beta) (Java)](/docs/en/api/java/beta/vaults/delete.md) {api-endpoint}
+- [Delete Vault (Beta) (php)](/docs/en/api/php/beta/vaults/delete.md) {api-endpoint}
+- [Delete Vault (Beta) (Python)](/docs/en/api/python/beta/vaults/delete.md) {api-endpoint}
+- [Delete Vault (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/delete.md) {api-endpoint}
+- [Delete Vault (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/delete.md) {api-endpoint}
+- [Delete Vault (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/delete.md) {api-endpoint}
+- [Delete Workspace Member](/docs/en/api/admin/workspaces/members/delete.md) {api-endpoint}
+- [Download File (Beta)](/docs/en/api/beta/files/download.md) {api-endpoint}
+- [Download File (Beta) (cli)](/docs/en/api/cli/beta/files/download.md) {tool-reference}
+- [Download File (Beta) (csharp)](/docs/en/api/csharp/beta/files/download.md) {api-endpoint}
+- [Download File (Beta) (Go)](/docs/en/api/go/beta/files/download.md) {api-endpoint}
+- [Download File (Beta) (Java)](/docs/en/api/java/beta/files/download.md) {api-endpoint}
+- [Download File (Beta) (php)](/docs/en/api/php/beta/files/download.md) {api-endpoint}
+- [Download File (Beta) (Python)](/docs/en/api/python/beta/files/download.md) {api-endpoint}
+- [Download File (Beta) (Ruby)](/docs/en/api/ruby/beta/files/download.md) {api-endpoint}
+- [Download File (Beta) (terraform)](/docs/en/api/terraform/beta/files/download.md) {api-endpoint}
+- [Download File (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/download.md) {api-endpoint}
+- [Environments (Beta)](/docs/en/api/beta/environments.md) {api-endpoint}
+- [Environments (Beta) (cli)](/docs/en/api/cli/beta/environments.md) {tool-reference}
+- [Environments (Beta) (csharp)](/docs/en/api/csharp/beta/environments.md) {api-endpoint}
+- [Environments (Beta) (Go)](/docs/en/api/go/beta/environments.md) {api-endpoint}
+- [Environments (Beta) (Java)](/docs/en/api/java/beta/environments.md) {api-endpoint}
+- [Environments (Beta) (php)](/docs/en/api/php/beta/environments.md) {api-endpoint}
+- [Environments (Beta) (Python)](/docs/en/api/python/beta/environments.md) {api-endpoint}
+- [Environments (Beta) (Ruby)](/docs/en/api/ruby/beta/environments.md) {api-endpoint}
+- [Environments (Beta) (terraform)](/docs/en/api/terraform/beta/environments.md) {api-endpoint}
+- [Environments (Beta) (TypeScript)](/docs/en/api/typescript/beta/environments.md) {api-endpoint}
+- [Events (Beta)](/docs/en/api/beta/sessions/events.md) {api-endpoint}
+- [Events (Beta) (cli)](/docs/en/api/cli/beta/sessions/events.md) {tool-reference}
+- [Events (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/events.md) {api-endpoint}
+- [Events (Beta) (Go)](/docs/en/api/go/beta/sessions/events.md) {api-endpoint}
+- [Events (Beta) (Java)](/docs/en/api/java/beta/sessions/events.md) {api-endpoint}
+- [Events (Beta) (php)](/docs/en/api/php/beta/sessions/events.md) {api-endpoint}
+- [Events (Beta) (Python)](/docs/en/api/python/beta/sessions/events.md) {api-endpoint}
+- [Events (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/events.md) {api-endpoint}
+- [Events (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/events.md) {api-endpoint}
+- [Events (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/events.md) {api-endpoint}
+- [Files (Beta)](/docs/en/api/beta/files.md) {api-endpoint}
+- [Files (Beta) (cli)](/docs/en/api/cli/beta/files.md) {tool-reference}
+- [Files (Beta) (csharp)](/docs/en/api/csharp/beta/files.md) {api-endpoint}
+- [Files (Beta) (Go)](/docs/en/api/go/beta/files.md) {api-endpoint}
+- [Files (Beta) (Java)](/docs/en/api/java/beta/files.md) {api-endpoint}
+- [Files (Beta) (php)](/docs/en/api/php/beta/files.md) {api-endpoint}
+- [Files (Beta) (Python)](/docs/en/api/python/beta/files.md) {api-endpoint}
+- [Files (Beta) (Ruby)](/docs/en/api/ruby/beta/files.md) {api-endpoint}
+- [Files (Beta) (terraform)](/docs/en/api/terraform/beta/files.md) {api-endpoint}
+- [Files (Beta) (TypeScript)](/docs/en/api/typescript/beta/files.md) {api-endpoint}
+- [Get a Model](/docs/en/api/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta)](/docs/en/api/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta) (cli)](/docs/en/api/cli/beta/models/retrieve.md) {tool-reference}
+- [Get a Model (Beta) (csharp)](/docs/en/api/csharp/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta) (Go)](/docs/en/api/go/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta) (Java)](/docs/en/api/java/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta) (php)](/docs/en/api/php/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta) (Python)](/docs/en/api/python/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta) (Ruby)](/docs/en/api/ruby/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta) (terraform)](/docs/en/api/terraform/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (Beta) (TypeScript)](/docs/en/api/typescript/beta/models/retrieve.md) {api-endpoint}
+- [Get a Model (cli)](/docs/en/api/cli/models/retrieve.md) {tool-reference}
+- [Get a Model (csharp)](/docs/en/api/csharp/models/retrieve.md) {api-endpoint}
+- [Get a Model (Go)](/docs/en/api/go/models/retrieve.md) {api-endpoint}
+- [Get a Model (Java)](/docs/en/api/java/models/retrieve.md) {api-endpoint}
+- [Get a Model (php)](/docs/en/api/php/models/retrieve.md) {api-endpoint}
+- [Get a Model (Python)](/docs/en/api/python/models/retrieve.md) {api-endpoint}
+- [Get a Model (Ruby)](/docs/en/api/ruby/models/retrieve.md) {api-endpoint}
+- [Get a Model (terraform)](/docs/en/api/terraform/models/retrieve.md) {api-endpoint}
+- [Get a Model (TypeScript)](/docs/en/api/typescript/models/retrieve.md) {api-endpoint}
+- [Get Agent (Beta)](/docs/en/api/beta/agents/retrieve.md) {api-endpoint}
+- [Get Agent (Beta) (cli)](/docs/en/api/cli/beta/agents/retrieve.md) {tool-reference}
+- [Get Agent (Beta) (csharp)](/docs/en/api/csharp/beta/agents/retrieve.md) {api-endpoint}
+- [Get Agent (Beta) (Go)](/docs/en/api/go/beta/agents/retrieve.md) {api-endpoint}
+- [Get Agent (Beta) (Java)](/docs/en/api/java/beta/agents/retrieve.md) {api-endpoint}
+- [Get Agent (Beta) (php)](/docs/en/api/php/beta/agents/retrieve.md) {api-endpoint}
+- [Get Agent (Beta) (Python)](/docs/en/api/python/beta/agents/retrieve.md) {api-endpoint}
+- [Get Agent (Beta) (Ruby)](/docs/en/api/ruby/beta/agents/retrieve.md) {api-endpoint}
+- [Get Agent (Beta) (terraform)](/docs/en/api/terraform/beta/agents/retrieve.md) {api-endpoint}
+- [Get Agent (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents/retrieve.md) {api-endpoint}
+- [Get API Key](/docs/en/api/admin/api_keys/retrieve.md) {api-endpoint}
+- [Get Claude Code Usage Report](/docs/en/api/admin/usage_report/retrieve_claude_code.md) {api-endpoint}
+- [Get Cost Report](/docs/en/api/admin/cost_report/retrieve.md) {api-endpoint}
+- [Get Credential (Beta)](/docs/en/api/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Credential (Beta) (cli)](/docs/en/api/cli/beta/vaults/credentials/retrieve.md) {tool-reference}
+- [Get Credential (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Credential (Beta) (Go)](/docs/en/api/go/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Credential (Beta) (Java)](/docs/en/api/java/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Credential (Beta) (php)](/docs/en/api/php/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Credential (Beta) (Python)](/docs/en/api/python/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Credential (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Credential (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Credential (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/credentials/retrieve.md) {api-endpoint}
+- [Get Current Organization](/docs/en/api/admin/organizations/me.md) {api-endpoint}
+- [Get Environment (Beta)](/docs/en/api/beta/environments/retrieve.md) {api-endpoint}
+- [Get Environment (Beta) (cli)](/docs/en/api/cli/beta/environments/retrieve.md) {tool-reference}
+- [Get Environment (Beta) (csharp)](/docs/en/api/csharp/beta/environments/retrieve.md) {api-endpoint}
+- [Get Environment (Beta) (Go)](/docs/en/api/go/beta/environments/retrieve.md) {api-endpoint}
+- [Get Environment (Beta) (Java)](/docs/en/api/java/beta/environments/retrieve.md) {api-endpoint}
+- [Get Environment (Beta) (php)](/docs/en/api/php/beta/environments/retrieve.md) {api-endpoint}
+- [Get Environment (Beta) (Python)](/docs/en/api/python/beta/environments/retrieve.md) {api-endpoint}
+- [Get Environment (Beta) (Ruby)](/docs/en/api/ruby/beta/environments/retrieve.md) {api-endpoint}
+- [Get Environment (Beta) (terraform)](/docs/en/api/terraform/beta/environments/retrieve.md) {api-endpoint}
+- [Get Environment (Beta) (TypeScript)](/docs/en/api/typescript/beta/environments/retrieve.md) {api-endpoint}
+- [Get File Metadata (Beta)](/docs/en/api/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get File Metadata (Beta) (cli)](/docs/en/api/cli/beta/files/retrieve_metadata.md) {tool-reference}
+- [Get File Metadata (Beta) (csharp)](/docs/en/api/csharp/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get File Metadata (Beta) (Go)](/docs/en/api/go/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get File Metadata (Beta) (Java)](/docs/en/api/java/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get File Metadata (Beta) (php)](/docs/en/api/php/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get File Metadata (Beta) (Python)](/docs/en/api/python/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get File Metadata (Beta) (Ruby)](/docs/en/api/ruby/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get File Metadata (Beta) (terraform)](/docs/en/api/terraform/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get File Metadata (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/retrieve_metadata.md) {api-endpoint}
+- [Get Invite](/docs/en/api/admin/invites/retrieve.md) {api-endpoint}
+- [Get Messages Usage Report](/docs/en/api/admin/usage_report/retrieve_messages.md) {api-endpoint}
+- [Get Session (Beta)](/docs/en/api/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session (Beta) (cli)](/docs/en/api/cli/beta/sessions/retrieve.md) {tool-reference}
+- [Get Session (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session (Beta) (Go)](/docs/en/api/go/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session (Beta) (Java)](/docs/en/api/java/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session (Beta) (php)](/docs/en/api/php/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session (Beta) (Python)](/docs/en/api/python/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta)](/docs/en/api/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta) (cli)](/docs/en/api/cli/beta/sessions/resources/retrieve.md) {tool-reference}
+- [Get Session Resource (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta) (Go)](/docs/en/api/go/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta) (Java)](/docs/en/api/java/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta) (php)](/docs/en/api/php/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta) (Python)](/docs/en/api/python/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Session Resource (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/resources/retrieve.md) {api-endpoint}
+- [Get Skill (Beta)](/docs/en/api/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill (Beta) (cli)](/docs/en/api/cli/beta/skills/retrieve.md) {tool-reference}
+- [Get Skill (Beta) (csharp)](/docs/en/api/csharp/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill (Beta) (Go)](/docs/en/api/go/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill (Beta) (Java)](/docs/en/api/java/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill (Beta) (php)](/docs/en/api/php/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill (Beta) (Python)](/docs/en/api/python/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill (Beta) (terraform)](/docs/en/api/terraform/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta)](/docs/en/api/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta) (cli)](/docs/en/api/cli/beta/skills/versions/retrieve.md) {tool-reference}
+- [Get Skill Version (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta) (Go)](/docs/en/api/go/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta) (Java)](/docs/en/api/java/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta) (php)](/docs/en/api/php/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta) (Python)](/docs/en/api/python/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get Skill Version (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions/retrieve.md) {api-endpoint}
+- [Get User](/docs/en/api/admin/users/retrieve.md) {api-endpoint}
+- [Get Vault (Beta)](/docs/en/api/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Vault (Beta) (cli)](/docs/en/api/cli/beta/vaults/retrieve.md) {tool-reference}
+- [Get Vault (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Vault (Beta) (Go)](/docs/en/api/go/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Vault (Beta) (Java)](/docs/en/api/java/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Vault (Beta) (php)](/docs/en/api/php/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Vault (Beta) (Python)](/docs/en/api/python/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Vault (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Vault (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Vault (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/retrieve.md) {api-endpoint}
+- [Get Workspace](/docs/en/api/admin/workspaces/retrieve.md) {api-endpoint}
+- [Get Workspace Member](/docs/en/api/admin/workspaces/members/retrieve.md) {api-endpoint}
+- [Invites](/docs/en/api/admin/invites.md) {api-endpoint}
+- [List Agent Versions (Beta)](/docs/en/api/beta/agents/versions/list.md) {api-endpoint}
+- [List Agent Versions (Beta) (cli)](/docs/en/api/cli/beta/agents/versions/list.md) {tool-reference}
+- [List Agent Versions (Beta) (csharp)](/docs/en/api/csharp/beta/agents/versions/list.md) {api-endpoint}
+- [List Agent Versions (Beta) (Go)](/docs/en/api/go/beta/agents/versions/list.md) {api-endpoint}
+- [List Agent Versions (Beta) (Java)](/docs/en/api/java/beta/agents/versions/list.md) {api-endpoint}
+- [List Agent Versions (Beta) (php)](/docs/en/api/php/beta/agents/versions/list.md) {api-endpoint}
+- [List Agent Versions (Beta) (Python)](/docs/en/api/python/beta/agents/versions/list.md) {api-endpoint}
+- [List Agent Versions (Beta) (Ruby)](/docs/en/api/ruby/beta/agents/versions/list.md) {api-endpoint}
+- [List Agent Versions (Beta) (terraform)](/docs/en/api/terraform/beta/agents/versions/list.md) {api-endpoint}
+- [List Agent Versions (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents/versions/list.md) {api-endpoint}
+- [List Agents (Beta)](/docs/en/api/beta/agents/list.md) {api-endpoint}
+- [List Agents (Beta) (cli)](/docs/en/api/cli/beta/agents/list.md) {tool-reference}
+- [List Agents (Beta) (csharp)](/docs/en/api/csharp/beta/agents/list.md) {api-endpoint}
+- [List Agents (Beta) (Go)](/docs/en/api/go/beta/agents/list.md) {api-endpoint}
+- [List Agents (Beta) (Java)](/docs/en/api/java/beta/agents/list.md) {api-endpoint}
+- [List Agents (Beta) (php)](/docs/en/api/php/beta/agents/list.md) {api-endpoint}
+- [List Agents (Beta) (Python)](/docs/en/api/python/beta/agents/list.md) {api-endpoint}
+- [List Agents (Beta) (Ruby)](/docs/en/api/ruby/beta/agents/list.md) {api-endpoint}
+- [List Agents (Beta) (terraform)](/docs/en/api/terraform/beta/agents/list.md) {api-endpoint}
+- [List Agents (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents/list.md) {api-endpoint}
+- [List API Keys](/docs/en/api/admin/api_keys/list.md) {api-endpoint}
+- [List Credentials (Beta)](/docs/en/api/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Credentials (Beta) (cli)](/docs/en/api/cli/beta/vaults/credentials/list.md) {tool-reference}
+- [List Credentials (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Credentials (Beta) (Go)](/docs/en/api/go/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Credentials (Beta) (Java)](/docs/en/api/java/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Credentials (Beta) (php)](/docs/en/api/php/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Credentials (Beta) (Python)](/docs/en/api/python/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Credentials (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Credentials (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Credentials (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/credentials/list.md) {api-endpoint}
+- [List Environments (Beta)](/docs/en/api/beta/environments/list.md) {api-endpoint}
+- [List Environments (Beta) (cli)](/docs/en/api/cli/beta/environments/list.md) {tool-reference}
+- [List Environments (Beta) (csharp)](/docs/en/api/csharp/beta/environments/list.md) {api-endpoint}
+- [List Environments (Beta) (Go)](/docs/en/api/go/beta/environments/list.md) {api-endpoint}
+- [List Environments (Beta) (Java)](/docs/en/api/java/beta/environments/list.md) {api-endpoint}
+- [List Environments (Beta) (php)](/docs/en/api/php/beta/environments/list.md) {api-endpoint}
+- [List Environments (Beta) (Python)](/docs/en/api/python/beta/environments/list.md) {api-endpoint}
+- [List Environments (Beta) (Ruby)](/docs/en/api/ruby/beta/environments/list.md) {api-endpoint}
+- [List Environments (Beta) (terraform)](/docs/en/api/terraform/beta/environments/list.md) {api-endpoint}
+- [List Environments (Beta) (TypeScript)](/docs/en/api/typescript/beta/environments/list.md) {api-endpoint}
+- [List Events (Beta)](/docs/en/api/beta/sessions/events/list.md) {api-endpoint}
+- [List Events (Beta) (cli)](/docs/en/api/cli/beta/sessions/events/list.md) {tool-reference}
+- [List Events (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/events/list.md) {api-endpoint}
+- [List Events (Beta) (Go)](/docs/en/api/go/beta/sessions/events/list.md) {api-endpoint}
+- [List Events (Beta) (Java)](/docs/en/api/java/beta/sessions/events/list.md) {api-endpoint}
+- [List Events (Beta) (php)](/docs/en/api/php/beta/sessions/events/list.md) {api-endpoint}
+- [List Events (Beta) (Python)](/docs/en/api/python/beta/sessions/events/list.md) {api-endpoint}
+- [List Events (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/events/list.md) {api-endpoint}
+- [List Events (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/events/list.md) {api-endpoint}
+- [List Events (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/events/list.md) {api-endpoint}
+- [List Files (Beta)](/docs/en/api/beta/files/list.md) {api-endpoint}
+- [List Files (Beta) (cli)](/docs/en/api/cli/beta/files/list.md) {tool-reference}
+- [List Files (Beta) (csharp)](/docs/en/api/csharp/beta/files/list.md) {api-endpoint}
+- [List Files (Beta) (Go)](/docs/en/api/go/beta/files/list.md) {api-endpoint}
+- [List Files (Beta) (Java)](/docs/en/api/java/beta/files/list.md) {api-endpoint}
+- [List Files (Beta) (php)](/docs/en/api/php/beta/files/list.md) {api-endpoint}
+- [List Files (Beta) (Python)](/docs/en/api/python/beta/files/list.md) {api-endpoint}
+- [List Files (Beta) (Ruby)](/docs/en/api/ruby/beta/files/list.md) {api-endpoint}
+- [List Files (Beta) (terraform)](/docs/en/api/terraform/beta/files/list.md) {api-endpoint}
+- [List Files (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/list.md) {api-endpoint}
+- [List Invites](/docs/en/api/admin/invites/list.md) {api-endpoint}
+- [List Message Batches](/docs/en/api/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta)](/docs/en/api/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/list.md) {tool-reference}
+- [List Message Batches (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta) (Go)](/docs/en/api/go/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta) (Java)](/docs/en/api/java/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta) (php)](/docs/en/api/php/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta) (Python)](/docs/en/api/python/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (cli)](/docs/en/api/cli/messages/batches/list.md) {tool-reference}
+- [List Message Batches (csharp)](/docs/en/api/csharp/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Go)](/docs/en/api/go/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Java)](/docs/en/api/java/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (php)](/docs/en/api/php/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Python)](/docs/en/api/python/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (Ruby)](/docs/en/api/ruby/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (terraform)](/docs/en/api/terraform/messages/batches/list.md) {api-endpoint}
+- [List Message Batches (TypeScript)](/docs/en/api/typescript/messages/batches/list.md) {api-endpoint}
+- [List Models](/docs/en/api/models/list.md) {api-endpoint}
+- [List Models (Beta)](/docs/en/api/beta/models/list.md) {api-endpoint}
+- [List Models (Beta) (cli)](/docs/en/api/cli/beta/models/list.md) {tool-reference}
+- [List Models (Beta) (csharp)](/docs/en/api/csharp/beta/models/list.md) {api-endpoint}
+- [List Models (Beta) (Go)](/docs/en/api/go/beta/models/list.md) {api-endpoint}
+- [List Models (Beta) (Java)](/docs/en/api/java/beta/models/list.md) {api-endpoint}
+- [List Models (Beta) (php)](/docs/en/api/php/beta/models/list.md) {api-endpoint}
+- [List Models (Beta) (Python)](/docs/en/api/python/beta/models/list.md) {api-endpoint}
+- [List Models (Beta) (Ruby)](/docs/en/api/ruby/beta/models/list.md) {api-endpoint}
+- [List Models (Beta) (terraform)](/docs/en/api/terraform/beta/models/list.md) {api-endpoint}
+- [List Models (Beta) (TypeScript)](/docs/en/api/typescript/beta/models/list.md) {api-endpoint}
+- [List Models (cli)](/docs/en/api/cli/models/list.md) {tool-reference}
+- [List Models (csharp)](/docs/en/api/csharp/models/list.md) {api-endpoint}
+- [List Models (Go)](/docs/en/api/go/models/list.md) {api-endpoint}
+- [List Models (Java)](/docs/en/api/java/models/list.md) {api-endpoint}
+- [List Models (php)](/docs/en/api/php/models/list.md) {api-endpoint}
+- [List Models (Python)](/docs/en/api/python/models/list.md) {api-endpoint}
+- [List Models (Ruby)](/docs/en/api/ruby/models/list.md) {api-endpoint}
+- [List Models (terraform)](/docs/en/api/terraform/models/list.md) {api-endpoint}
+- [List Models (TypeScript)](/docs/en/api/typescript/models/list.md) {api-endpoint}
+- [List Session Resources (Beta)](/docs/en/api/beta/sessions/resources/list.md) {api-endpoint}
+- [List Session Resources (Beta) (cli)](/docs/en/api/cli/beta/sessions/resources/list.md) {tool-reference}
+- [List Session Resources (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/resources/list.md) {api-endpoint}
+- [List Session Resources (Beta) (Go)](/docs/en/api/go/beta/sessions/resources/list.md) {api-endpoint}
+- [List Session Resources (Beta) (Java)](/docs/en/api/java/beta/sessions/resources/list.md) {api-endpoint}
+- [List Session Resources (Beta) (php)](/docs/en/api/php/beta/sessions/resources/list.md) {api-endpoint}
+- [List Session Resources (Beta) (Python)](/docs/en/api/python/beta/sessions/resources/list.md) {api-endpoint}
+- [List Session Resources (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/resources/list.md) {api-endpoint}
+- [List Session Resources (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/resources/list.md) {api-endpoint}
+- [List Session Resources (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/resources/list.md) {api-endpoint}
+- [List Sessions (Beta)](/docs/en/api/beta/sessions/list.md) {api-endpoint}
+- [List Sessions (Beta) (cli)](/docs/en/api/cli/beta/sessions/list.md) {tool-reference}
+- [List Sessions (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/list.md) {api-endpoint}
+- [List Sessions (Beta) (Go)](/docs/en/api/go/beta/sessions/list.md) {api-endpoint}
+- [List Sessions (Beta) (Java)](/docs/en/api/java/beta/sessions/list.md) {api-endpoint}
+- [List Sessions (Beta) (php)](/docs/en/api/php/beta/sessions/list.md) {api-endpoint}
+- [List Sessions (Beta) (Python)](/docs/en/api/python/beta/sessions/list.md) {api-endpoint}
+- [List Sessions (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/list.md) {api-endpoint}
+- [List Sessions (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/list.md) {api-endpoint}
+- [List Sessions (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/list.md) {api-endpoint}
+- [List Skill Versions (Beta)](/docs/en/api/beta/skills/versions/list.md) {api-endpoint}
+- [List Skill Versions (Beta) (cli)](/docs/en/api/cli/beta/skills/versions/list.md) {tool-reference}
+- [List Skill Versions (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions/list.md) {api-endpoint}
+- [List Skill Versions (Beta) (Go)](/docs/en/api/go/beta/skills/versions/list.md) {api-endpoint}
+- [List Skill Versions (Beta) (Java)](/docs/en/api/java/beta/skills/versions/list.md) {api-endpoint}
+- [List Skill Versions (Beta) (php)](/docs/en/api/php/beta/skills/versions/list.md) {api-endpoint}
+- [List Skill Versions (Beta) (Python)](/docs/en/api/python/beta/skills/versions/list.md) {api-endpoint}
+- [List Skill Versions (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions/list.md) {api-endpoint}
+- [List Skill Versions (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions/list.md) {api-endpoint}
+- [List Skill Versions (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions/list.md) {api-endpoint}
+- [List Skills (Beta)](/docs/en/api/beta/skills/list.md) {api-endpoint}
+- [List Skills (Beta) (cli)](/docs/en/api/cli/beta/skills/list.md) {tool-reference}
+- [List Skills (Beta) (csharp)](/docs/en/api/csharp/beta/skills/list.md) {api-endpoint}
+- [List Skills (Beta) (Go)](/docs/en/api/go/beta/skills/list.md) {api-endpoint}
+- [List Skills (Beta) (Java)](/docs/en/api/java/beta/skills/list.md) {api-endpoint}
+- [List Skills (Beta) (php)](/docs/en/api/php/beta/skills/list.md) {api-endpoint}
+- [List Skills (Beta) (Python)](/docs/en/api/python/beta/skills/list.md) {api-endpoint}
+- [List Skills (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/list.md) {api-endpoint}
+- [List Skills (Beta) (terraform)](/docs/en/api/terraform/beta/skills/list.md) {api-endpoint}
+- [List Skills (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/list.md) {api-endpoint}
+- [List Users](/docs/en/api/admin/users/list.md) {api-endpoint}
+- [List Vaults (Beta)](/docs/en/api/beta/vaults/list.md) {api-endpoint}
+- [List Vaults (Beta) (cli)](/docs/en/api/cli/beta/vaults/list.md) {tool-reference}
+- [List Vaults (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/list.md) {api-endpoint}
+- [List Vaults (Beta) (Go)](/docs/en/api/go/beta/vaults/list.md) {api-endpoint}
+- [List Vaults (Beta) (Java)](/docs/en/api/java/beta/vaults/list.md) {api-endpoint}
+- [List Vaults (Beta) (php)](/docs/en/api/php/beta/vaults/list.md) {api-endpoint}
+- [List Vaults (Beta) (Python)](/docs/en/api/python/beta/vaults/list.md) {api-endpoint}
+- [List Vaults (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/list.md) {api-endpoint}
+- [List Vaults (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/list.md) {api-endpoint}
+- [List Vaults (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/list.md) {api-endpoint}
+- [List Workspace Members](/docs/en/api/admin/workspaces/members/list.md) {api-endpoint}
+- [List Workspaces](/docs/en/api/admin/workspaces/list.md) {api-endpoint}
+- [Members](/docs/en/api/admin/workspaces/members.md) {api-endpoint}
+- [Messages](/docs/en/api/messages.md) {api-endpoint}
+- [Messages (Beta)](/docs/en/api/beta/messages.md) {api-endpoint}
+- [Messages (Beta) (cli)](/docs/en/api/cli/beta/messages.md) {tool-reference}
+- [Messages (Beta) (csharp)](/docs/en/api/csharp/beta/messages.md) {api-endpoint}
+- [Messages (Beta) (Go)](/docs/en/api/go/beta/messages.md) {api-endpoint}
+- [Messages (Beta) (Java)](/docs/en/api/java/beta/messages.md) {api-endpoint}
+- [Messages (Beta) (php)](/docs/en/api/php/beta/messages.md) {api-endpoint}
+- [Messages (Beta) (Python)](/docs/en/api/python/beta/messages.md) {api-endpoint}
+- [Messages (Beta) (Ruby)](/docs/en/api/ruby/beta/messages.md) {api-endpoint}
+- [Messages (Beta) (terraform)](/docs/en/api/terraform/beta/messages.md) {api-endpoint}
+- [Messages (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages.md) {api-endpoint}
+- [Messages (cli)](/docs/en/api/cli/messages.md) {tool-reference}
+- [Messages (csharp)](/docs/en/api/csharp/messages.md) {api-endpoint}
+- [Messages (Go)](/docs/en/api/go/messages.md) {api-endpoint}
+- [Messages (Java)](/docs/en/api/java/messages.md) {api-endpoint}
+- [Messages (php)](/docs/en/api/php/messages.md) {api-endpoint}
+- [Messages (Python)](/docs/en/api/python/messages.md) {api-endpoint}
+- [Messages (Ruby)](/docs/en/api/ruby/messages.md) {api-endpoint}
+- [Messages (terraform)](/docs/en/api/terraform/messages.md) {api-endpoint}
+- [Messages (TypeScript)](/docs/en/api/typescript/messages.md) {api-endpoint}
+- [Models](/docs/en/api/models.md) {api-endpoint}
+- [Models (Beta)](/docs/en/api/beta/models.md) {api-endpoint}
+- [Models (Beta) (cli)](/docs/en/api/cli/beta/models.md) {tool-reference}
+- [Models (Beta) (csharp)](/docs/en/api/csharp/beta/models.md) {api-endpoint}
+- [Models (Beta) (Go)](/docs/en/api/go/beta/models.md) {api-endpoint}
+- [Models (Beta) (Java)](/docs/en/api/java/beta/models.md) {api-endpoint}
+- [Models (Beta) (php)](/docs/en/api/php/beta/models.md) {api-endpoint}
+- [Models (Beta) (Python)](/docs/en/api/python/beta/models.md) {api-endpoint}
+- [Models (Beta) (Ruby)](/docs/en/api/ruby/beta/models.md) {api-endpoint}
+- [Models (Beta) (terraform)](/docs/en/api/terraform/beta/models.md) {api-endpoint}
+- [Models (Beta) (TypeScript)](/docs/en/api/typescript/beta/models.md) {api-endpoint}
+- [Models (cli)](/docs/en/api/cli/models.md) {tool-reference}
+- [Models (csharp)](/docs/en/api/csharp/models.md) {api-endpoint}
+- [Models (Go)](/docs/en/api/go/models.md) {api-endpoint}
+- [Models (Java)](/docs/en/api/java/models.md) {api-endpoint}
+- [Models (php)](/docs/en/api/php/models.md) {api-endpoint}
+- [Models (Python)](/docs/en/api/python/models.md) {api-endpoint}
+- [Models (Ruby)](/docs/en/api/ruby/models.md) {api-endpoint}
+- [Models (terraform)](/docs/en/api/terraform/models.md) {api-endpoint}
+- [Models (TypeScript)](/docs/en/api/typescript/models.md) {api-endpoint}
+- [Organizations](/docs/en/api/admin/organizations.md) {api-endpoint}
+- [Remove User](/docs/en/api/admin/users/delete.md) {api-endpoint}
+- [Resources (Beta)](/docs/en/api/beta/sessions/resources.md) {api-endpoint}
+- [Resources (Beta) (cli)](/docs/en/api/cli/beta/sessions/resources.md) {tool-reference}
+- [Resources (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/resources.md) {api-endpoint}
+- [Resources (Beta) (Go)](/docs/en/api/go/beta/sessions/resources.md) {api-endpoint}
+- [Resources (Beta) (Java)](/docs/en/api/java/beta/sessions/resources.md) {api-endpoint}
+- [Resources (Beta) (php)](/docs/en/api/php/beta/sessions/resources.md) {api-endpoint}
+- [Resources (Beta) (Python)](/docs/en/api/python/beta/sessions/resources.md) {api-endpoint}
+- [Resources (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/resources.md) {api-endpoint}
+- [Resources (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/resources.md) {api-endpoint}
+- [Resources (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/resources.md) {api-endpoint}
+- [Retrieve a Message Batch](/docs/en/api/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta)](/docs/en/api/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/retrieve.md) {tool-reference}
+- [Retrieve a Message Batch (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta) (Go)](/docs/en/api/go/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta) (Java)](/docs/en/api/java/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta) (php)](/docs/en/api/php/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta) (Python)](/docs/en/api/python/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (cli)](/docs/en/api/cli/messages/batches/retrieve.md) {tool-reference}
+- [Retrieve a Message Batch (csharp)](/docs/en/api/csharp/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Go)](/docs/en/api/go/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Java)](/docs/en/api/java/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (php)](/docs/en/api/php/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Python)](/docs/en/api/python/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (Ruby)](/docs/en/api/ruby/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (terraform)](/docs/en/api/terraform/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve a Message Batch (TypeScript)](/docs/en/api/typescript/messages/batches/retrieve.md) {api-endpoint}
+- [Retrieve Message Batch results](/docs/en/api/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta)](/docs/en/api/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta) (cli)](/docs/en/api/cli/beta/messages/batches/results.md) {tool-reference}
+- [Retrieve Message Batch results (Beta) (csharp)](/docs/en/api/csharp/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta) (Go)](/docs/en/api/go/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta) (Java)](/docs/en/api/java/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta) (php)](/docs/en/api/php/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta) (Python)](/docs/en/api/python/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta) (Ruby)](/docs/en/api/ruby/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta) (terraform)](/docs/en/api/terraform/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Beta) (TypeScript)](/docs/en/api/typescript/beta/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (cli)](/docs/en/api/cli/messages/batches/results.md) {tool-reference}
+- [Retrieve Message Batch results (csharp)](/docs/en/api/csharp/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Go)](/docs/en/api/go/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Java)](/docs/en/api/java/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (php)](/docs/en/api/php/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Python)](/docs/en/api/python/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (Ruby)](/docs/en/api/ruby/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (terraform)](/docs/en/api/terraform/messages/batches/results.md) {api-endpoint}
+- [Retrieve Message Batch results (TypeScript)](/docs/en/api/typescript/messages/batches/results.md) {api-endpoint}
+- [Send Events (Beta)](/docs/en/api/beta/sessions/events/send.md) {api-endpoint}
+- [Send Events (Beta) (cli)](/docs/en/api/cli/beta/sessions/events/send.md) {tool-reference}
+- [Send Events (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/events/send.md) {api-endpoint}
+- [Send Events (Beta) (Go)](/docs/en/api/go/beta/sessions/events/send.md) {api-endpoint}
+- [Send Events (Beta) (Java)](/docs/en/api/java/beta/sessions/events/send.md) {api-endpoint}
+- [Send Events (Beta) (php)](/docs/en/api/php/beta/sessions/events/send.md) {api-endpoint}
+- [Send Events (Beta) (Python)](/docs/en/api/python/beta/sessions/events/send.md) {api-endpoint}
+- [Send Events (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/events/send.md) {api-endpoint}
+- [Send Events (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/events/send.md) {api-endpoint}
+- [Send Events (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/events/send.md) {api-endpoint}
+- [Sessions (Beta)](/docs/en/api/beta/sessions.md) {api-endpoint}
+- [Sessions (Beta) (cli)](/docs/en/api/cli/beta/sessions.md) {tool-reference}
+- [Sessions (Beta) (csharp)](/docs/en/api/csharp/beta/sessions.md) {api-endpoint}
+- [Sessions (Beta) (Go)](/docs/en/api/go/beta/sessions.md) {api-endpoint}
+- [Sessions (Beta) (Java)](/docs/en/api/java/beta/sessions.md) {api-endpoint}
+- [Sessions (Beta) (php)](/docs/en/api/php/beta/sessions.md) {api-endpoint}
+- [Sessions (Beta) (Python)](/docs/en/api/python/beta/sessions.md) {api-endpoint}
+- [Sessions (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions.md) {api-endpoint}
+- [Sessions (Beta) (terraform)](/docs/en/api/terraform/beta/sessions.md) {api-endpoint}
+- [Sessions (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions.md) {api-endpoint}
+- [Skills (Beta)](/docs/en/api/beta/skills.md) {api-endpoint}
+- [Skills (Beta) (cli)](/docs/en/api/cli/beta/skills.md) {tool-reference}
+- [Skills (Beta) (csharp)](/docs/en/api/csharp/beta/skills.md) {api-endpoint}
+- [Skills (Beta) (Go)](/docs/en/api/go/beta/skills.md) {api-endpoint}
+- [Skills (Beta) (Java)](/docs/en/api/java/beta/skills.md) {api-endpoint}
+- [Skills (Beta) (php)](/docs/en/api/php/beta/skills.md) {api-endpoint}
+- [Skills (Beta) (Python)](/docs/en/api/python/beta/skills.md) {api-endpoint}
+- [Skills (Beta) (Ruby)](/docs/en/api/ruby/beta/skills.md) {api-endpoint}
+- [Skills (Beta) (terraform)](/docs/en/api/terraform/beta/skills.md) {api-endpoint}
+- [Skills (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills.md) {api-endpoint}
+- [Stream Events (Beta)](/docs/en/api/beta/sessions/events/stream.md) {api-endpoint}
+- [Stream Events (Beta) (cli)](/docs/en/api/cli/beta/sessions/events/stream.md) {tool-reference}
+- [Stream Events (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/events/stream.md) {api-endpoint}
+- [Stream Events (Beta) (Go)](/docs/en/api/go/beta/sessions/events/stream.md) {api-endpoint}
+- [Stream Events (Beta) (Java)](/docs/en/api/java/beta/sessions/events/stream.md) {api-endpoint}
+- [Stream Events (Beta) (php)](/docs/en/api/php/beta/sessions/events/stream.md) {api-endpoint}
+- [Stream Events (Beta) (Python)](/docs/en/api/python/beta/sessions/events/stream.md) {api-endpoint}
+- [Stream Events (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/events/stream.md) {api-endpoint}
+- [Stream Events (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/events/stream.md) {api-endpoint}
+- [Stream Events (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/events/stream.md) {api-endpoint}
+- [Update Agent (Beta)](/docs/en/api/beta/agents/update.md) {api-endpoint}
+- [Update Agent (Beta) (cli)](/docs/en/api/cli/beta/agents/update.md) {tool-reference}
+- [Update Agent (Beta) (csharp)](/docs/en/api/csharp/beta/agents/update.md) {api-endpoint}
+- [Update Agent (Beta) (Go)](/docs/en/api/go/beta/agents/update.md) {api-endpoint}
+- [Update Agent (Beta) (Java)](/docs/en/api/java/beta/agents/update.md) {api-endpoint}
+- [Update Agent (Beta) (php)](/docs/en/api/php/beta/agents/update.md) {api-endpoint}
+- [Update Agent (Beta) (Python)](/docs/en/api/python/beta/agents/update.md) {api-endpoint}
+- [Update Agent (Beta) (Ruby)](/docs/en/api/ruby/beta/agents/update.md) {api-endpoint}
+- [Update Agent (Beta) (terraform)](/docs/en/api/terraform/beta/agents/update.md) {api-endpoint}
+- [Update Agent (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents/update.md) {api-endpoint}
+- [Update API Key](/docs/en/api/admin/api_keys/update.md) {api-endpoint}
+- [Update Credential (Beta)](/docs/en/api/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Credential (Beta) (cli)](/docs/en/api/cli/beta/vaults/credentials/update.md) {tool-reference}
+- [Update Credential (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Credential (Beta) (Go)](/docs/en/api/go/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Credential (Beta) (Java)](/docs/en/api/java/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Credential (Beta) (php)](/docs/en/api/php/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Credential (Beta) (Python)](/docs/en/api/python/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Credential (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Credential (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Credential (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/credentials/update.md) {api-endpoint}
+- [Update Environment (Beta)](/docs/en/api/beta/environments/update.md) {api-endpoint}
+- [Update Environment (Beta) (cli)](/docs/en/api/cli/beta/environments/update.md) {tool-reference}
+- [Update Environment (Beta) (csharp)](/docs/en/api/csharp/beta/environments/update.md) {api-endpoint}
+- [Update Environment (Beta) (Go)](/docs/en/api/go/beta/environments/update.md) {api-endpoint}
+- [Update Environment (Beta) (Java)](/docs/en/api/java/beta/environments/update.md) {api-endpoint}
+- [Update Environment (Beta) (php)](/docs/en/api/php/beta/environments/update.md) {api-endpoint}
+- [Update Environment (Beta) (Python)](/docs/en/api/python/beta/environments/update.md) {api-endpoint}
+- [Update Environment (Beta) (Ruby)](/docs/en/api/ruby/beta/environments/update.md) {api-endpoint}
+- [Update Environment (Beta) (terraform)](/docs/en/api/terraform/beta/environments/update.md) {api-endpoint}
+- [Update Environment (Beta) (TypeScript)](/docs/en/api/typescript/beta/environments/update.md) {api-endpoint}
+- [Update Session (Beta)](/docs/en/api/beta/sessions/update.md) {api-endpoint}
+- [Update Session (Beta) (cli)](/docs/en/api/cli/beta/sessions/update.md) {tool-reference}
+- [Update Session (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/update.md) {api-endpoint}
+- [Update Session (Beta) (Go)](/docs/en/api/go/beta/sessions/update.md) {api-endpoint}
+- [Update Session (Beta) (Java)](/docs/en/api/java/beta/sessions/update.md) {api-endpoint}
+- [Update Session (Beta) (php)](/docs/en/api/php/beta/sessions/update.md) {api-endpoint}
+- [Update Session (Beta) (Python)](/docs/en/api/python/beta/sessions/update.md) {api-endpoint}
+- [Update Session (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/update.md) {api-endpoint}
+- [Update Session (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/update.md) {api-endpoint}
+- [Update Session (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/update.md) {api-endpoint}
+- [Update Session Resource (Beta)](/docs/en/api/beta/sessions/resources/update.md) {api-endpoint}
+- [Update Session Resource (Beta) (cli)](/docs/en/api/cli/beta/sessions/resources/update.md) {tool-reference}
+- [Update Session Resource (Beta) (csharp)](/docs/en/api/csharp/beta/sessions/resources/update.md) {api-endpoint}
+- [Update Session Resource (Beta) (Go)](/docs/en/api/go/beta/sessions/resources/update.md) {api-endpoint}
+- [Update Session Resource (Beta) (Java)](/docs/en/api/java/beta/sessions/resources/update.md) {api-endpoint}
+- [Update Session Resource (Beta) (php)](/docs/en/api/php/beta/sessions/resources/update.md) {api-endpoint}
+- [Update Session Resource (Beta) (Python)](/docs/en/api/python/beta/sessions/resources/update.md) {api-endpoint}
+- [Update Session Resource (Beta) (Ruby)](/docs/en/api/ruby/beta/sessions/resources/update.md) {api-endpoint}
+- [Update Session Resource (Beta) (terraform)](/docs/en/api/terraform/beta/sessions/resources/update.md) {api-endpoint}
+- [Update Session Resource (Beta) (TypeScript)](/docs/en/api/typescript/beta/sessions/resources/update.md) {api-endpoint}
+- [Update User](/docs/en/api/admin/users/update.md) {api-endpoint}
+- [Update Vault (Beta)](/docs/en/api/beta/vaults/update.md) {api-endpoint}
+- [Update Vault (Beta) (cli)](/docs/en/api/cli/beta/vaults/update.md) {tool-reference}
+- [Update Vault (Beta) (csharp)](/docs/en/api/csharp/beta/vaults/update.md) {api-endpoint}
+- [Update Vault (Beta) (Go)](/docs/en/api/go/beta/vaults/update.md) {api-endpoint}
+- [Update Vault (Beta) (Java)](/docs/en/api/java/beta/vaults/update.md) {api-endpoint}
+- [Update Vault (Beta) (php)](/docs/en/api/php/beta/vaults/update.md) {api-endpoint}
+- [Update Vault (Beta) (Python)](/docs/en/api/python/beta/vaults/update.md) {api-endpoint}
+- [Update Vault (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults/update.md) {api-endpoint}
+- [Update Vault (Beta) (terraform)](/docs/en/api/terraform/beta/vaults/update.md) {api-endpoint}
+- [Update Vault (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults/update.md) {api-endpoint}
+- [Update Workspace](/docs/en/api/admin/workspaces/update.md) {api-endpoint}
+- [Update Workspace Member](/docs/en/api/admin/workspaces/members/update.md) {api-endpoint}
+- [Upload File (Beta)](/docs/en/api/beta/files/upload.md) {api-endpoint}
+- [Upload File (Beta) (cli)](/docs/en/api/cli/beta/files/upload.md) {tool-reference}
+- [Upload File (Beta) (csharp)](/docs/en/api/csharp/beta/files/upload.md) {api-endpoint}
+- [Upload File (Beta) (Go)](/docs/en/api/go/beta/files/upload.md) {api-endpoint}
+- [Upload File (Beta) (Java)](/docs/en/api/java/beta/files/upload.md) {api-endpoint}
+- [Upload File (Beta) (php)](/docs/en/api/php/beta/files/upload.md) {api-endpoint}
+- [Upload File (Beta) (Python)](/docs/en/api/python/beta/files/upload.md) {api-endpoint}
+- [Upload File (Beta) (Ruby)](/docs/en/api/ruby/beta/files/upload.md) {api-endpoint}
+- [Upload File (Beta) (terraform)](/docs/en/api/terraform/beta/files/upload.md) {api-endpoint}
+- [Upload File (Beta) (TypeScript)](/docs/en/api/typescript/beta/files/upload.md) {api-endpoint}
+- [Usage Report](/docs/en/api/admin/usage_report.md) {api-endpoint}
+- [Users](/docs/en/api/admin/users.md) {api-endpoint}
+- [Vaults (Beta)](/docs/en/api/beta/vaults.md) {api-endpoint}
+- [Vaults (Beta) (cli)](/docs/en/api/cli/beta/vaults.md) {tool-reference}
+- [Vaults (Beta) (csharp)](/docs/en/api/csharp/beta/vaults.md) {api-endpoint}
+- [Vaults (Beta) (Go)](/docs/en/api/go/beta/vaults.md) {api-endpoint}
+- [Vaults (Beta) (Java)](/docs/en/api/java/beta/vaults.md) {api-endpoint}
+- [Vaults (Beta) (php)](/docs/en/api/php/beta/vaults.md) {api-endpoint}
+- [Vaults (Beta) (Python)](/docs/en/api/python/beta/vaults.md) {api-endpoint}
+- [Vaults (Beta) (Ruby)](/docs/en/api/ruby/beta/vaults.md) {api-endpoint}
+- [Vaults (Beta) (terraform)](/docs/en/api/terraform/beta/vaults.md) {api-endpoint}
+- [Vaults (Beta) (TypeScript)](/docs/en/api/typescript/beta/vaults.md) {api-endpoint}
+- [Versions (Beta)](/docs/en/api/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta)](/docs/en/api/beta/skills/versions.md) {api-endpoint}
+- [Versions (Beta) (cli)](/docs/en/api/cli/beta/agents/versions.md) {tool-reference}
+- [Versions (Beta) (cli)](/docs/en/api/cli/beta/skills/versions.md) {tool-reference}
+- [Versions (Beta) (csharp)](/docs/en/api/csharp/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta) (csharp)](/docs/en/api/csharp/beta/skills/versions.md) {api-endpoint}
+- [Versions (Beta) (Go)](/docs/en/api/go/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta) (Go)](/docs/en/api/go/beta/skills/versions.md) {api-endpoint}
+- [Versions (Beta) (Java)](/docs/en/api/java/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta) (Java)](/docs/en/api/java/beta/skills/versions.md) {api-endpoint}
+- [Versions (Beta) (php)](/docs/en/api/php/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta) (php)](/docs/en/api/php/beta/skills/versions.md) {api-endpoint}
+- [Versions (Beta) (Python)](/docs/en/api/python/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta) (Python)](/docs/en/api/python/beta/skills/versions.md) {api-endpoint}
+- [Versions (Beta) (Ruby)](/docs/en/api/ruby/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta) (Ruby)](/docs/en/api/ruby/beta/skills/versions.md) {api-endpoint}
+- [Versions (Beta) (terraform)](/docs/en/api/terraform/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta) (terraform)](/docs/en/api/terraform/beta/skills/versions.md) {api-endpoint}
+- [Versions (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents/versions.md) {api-endpoint}
+- [Versions (Beta) (TypeScript)](/docs/en/api/typescript/beta/skills/versions.md) {api-endpoint}
+- [Workspaces](/docs/en/api/admin/workspaces.md) {api-endpoint}
+- [Beta headers](/docs/en/api/beta-headers.md) {api-endpoint}
+- [Errors](/docs/en/api/errors.md) {api-endpoint}
+- [IP addresses](/docs/en/api/ip-addresses.md) {api-endpoint}
+- [Rate limits](/docs/en/api/rate-limits.md) {api-endpoint}
+- [Service tiers](/docs/en/api/service-tiers.md) {api-endpoint}
+- [Supported regions](/docs/en/api/supported-regions.md) {api-endpoint}
+- [Versions](/docs/en/api/versioning.md) {api-endpoint}
 

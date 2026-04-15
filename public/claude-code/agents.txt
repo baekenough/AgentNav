@@ -1,11 +1,11 @@
 # agents.txt v0.2
 # Claude Code Documentation — https://code.claude.com
-# Total: 77 pages | Last updated: 2026-03-31
+# Total: 111 pages | Last updated: 2026-04-15
 
 SITE: Claude Code Documentation
 URL: https://code.claude.com
-PAGES: 77
-SECTIONS: 12
+PAGES: 111
+SECTIONS: 1
 
 == SCHEMA ==
 # Formal grammar for parsing this file
@@ -20,106 +20,118 @@ SECTIONS: 12
 
 == SECTIONS ==
 
-[Getting Started] 5 pages | prefix=/docs/en/
-  overview | type=overview
-  quickstart | type=tutorial
-  setup | type=guide
-  how-claude-code-works | type=overview
-  common-workflows | type=guide
-
-[Interfaces] 10 pages | prefix=/docs/en/
-  interactive-mode | type=guide
-  cli-reference | type=reference
-  commands | type=reference
-  desktop | type=guide
-  desktop-quickstart | type=tutorial
-  vs-code | type=guide
-  jetbrains | type=guide
-  chrome | type=guide
-  claude-code-on-the-web | type=guide
-  computer-use | type=guide
-
-[Core Features] 12 pages | prefix=/docs/en/
-  memory | type=guide
-  context-window | type=guide
-  checkpointing | type=guide
-  features-overview | type=overview
-  skills | type=guide
-  sub-agents | type=guide
-  agent-teams | type=guide
-  hooks-guide | type=guide
-  hooks | type=reference
-  mcp | type=guide
-  fast-mode | type=guide
-  ultraplan | type=guide
-
-[Plugins] 4 pages | prefix=/docs/en/
-  plugins | type=guide
-  plugins-reference | type=reference
-  discover-plugins | type=guide
-  plugin-marketplaces | type=guide
-
-[Configuration] 10 pages | prefix=/docs/en/
-  settings | type=reference
-  permissions | type=guide
-  permission-modes | type=guide
-  keybindings | type=guide
-  env-vars | type=reference
-  model-config | type=guide
-  statusline | type=guide
-  terminal-config | type=guide
-  fullscreen | type=guide
-  claude-directory | type=reference
-
-[Automation] 7 pages | prefix=/docs/en/
-  headless | type=guide
-  scheduled-tasks | type=guide
-  web-scheduled-tasks | type=guide
-  desktop-scheduled-tasks | type=guide
-  code-review | type=guide
-  output-styles | type=guide
-  voice-dictation | type=guide
-
-[Cloud Providers] 4 pages | prefix=/docs/en/
-  amazon-bedrock | type=guide
-  google-vertex-ai | type=guide
-  microsoft-foundry | type=guide
-  llm-gateway | type=guide
-
-[CI/CD & Integrations] 6 pages | prefix=/docs/en/
-  github-actions | type=guide
-  github-enterprise-server | type=guide
-  gitlab-ci-cd | type=guide
-  slack | type=guide
-  remote-control | type=guide
-  platforms | type=overview
-
-[Channels] 2 pages | prefix=/docs/en/
-  channels | type=guide
-  channels-reference | type=reference
-
-[Enterprise] 6 pages | prefix=/docs/en/
-  authentication | type=guide
-  sandboxing | type=guide
-  server-managed-settings | type=guide
-  network-config | type=guide
-  devcontainer | type=guide
-  third-party-integrations | type=overview
-
-[Monitoring & Costs] 3 pages | prefix=/docs/en/
-  monitoring-usage | type=guide
-  costs | type=guide
-  analytics | type=guide
-
-[Reference] 8 pages | prefix=/docs/en/
-  best-practices | type=best-practices
-  security | type=guide
-  data-usage | type=guide
-  legal-and-compliance | type=reference
-  troubleshooting | type=guide
-  tools-reference | type=tool-reference
-  zero-data-retention | type=guide
-  changelog | type=changelog
+[Docs] 111 pages | prefix=/docs/en/
+  agent-sdk/agent-loop.md | type=sdk-guide
+  agent-sdk/claude-code-features.md | type=sdk-guide
+  agent-sdk/cost-tracking.md | type=sdk-guide
+  agent-sdk/custom-tools.md | type=sdk-guide
+  agent-sdk/file-checkpointing.md | type=sdk-guide
+  agent-sdk/hooks.md | type=sdk-guide
+  agent-sdk/hosting.md | type=sdk-guide
+  agent-sdk/mcp.md | type=sdk-guide
+  agent-sdk/migration-guide.md | type=sdk-guide
+  agent-sdk/modifying-system-prompts.md | type=sdk-guide
+  agent-sdk/observability.md | type=sdk-guide
+  agent-sdk/overview.md | type=overview
+  agent-sdk/permissions.md | type=sdk-guide
+  agent-sdk/plugins.md | type=sdk-guide
+  agent-sdk/python.md | type=sdk-guide
+  agent-sdk/quickstart.md | type=tutorial
+  agent-sdk/secure-deployment.md | type=sdk-guide
+  agent-sdk/sessions.md | type=sdk-guide
+  agent-sdk/skills.md | type=sdk-guide
+  agent-sdk/slash-commands.md | type=tool-reference
+  agent-sdk/streaming-output.md | type=sdk-guide
+  agent-sdk/streaming-vs-single-mode.md | type=sdk-guide
+  agent-sdk/structured-outputs.md | type=sdk-guide
+  agent-sdk/subagents.md | type=sdk-guide
+  agent-sdk/todo-tracking.md | type=sdk-guide
+  agent-sdk/tool-search.md | type=sdk-guide
+  agent-sdk/typescript.md | type=sdk-guide
+  agent-sdk/typescript-v2-preview.md | type=sdk-guide
+  agent-sdk/user-input.md | type=sdk-guide
+  agent-teams.md | type=guide
+  amazon-bedrock.md | type=guide
+  analytics.md | type=guide
+  authentication.md | type=guide
+  best-practices.md | type=best-practices
+  changelog.md | type=changelog
+  channels.md | type=guide
+  channels-reference.md | type=guide
+  checkpointing.md | type=guide
+  chrome.md | type=guide
+  claude-code-on-the-web.md | type=guide
+  claude-directory.md | type=guide
+  cli-reference.md | type=tool-reference
+  code-review.md | type=guide
+  commands.md | type=tool-reference
+  common-workflows.md | type=guide
+  computer-use.md | type=guide
+  context-window.md | type=guide
+  costs.md | type=guide
+  data-usage.md | type=guide
+  desktop.md | type=guide
+  desktop-quickstart.md | type=tutorial
+  desktop-scheduled-tasks.md | type=guide
+  devcontainer.md | type=guide
+  discover-plugins.md | type=guide
+  env-vars.md | type=guide
+  fast-mode.md | type=guide
+  features-overview.md | type=overview
+  fullscreen.md | type=guide
+  github-actions.md | type=guide
+  github-enterprise-server.md | type=guide
+  gitlab-ci-cd.md | type=guide
+  google-vertex-ai.md | type=guide
+  headless.md | type=guide
+  hooks.md | type=guide
+  hooks-guide.md | type=guide
+  how-claude-code-works.md | type=guide
+  interactive-mode.md | type=guide
+  jetbrains.md | type=guide
+  keybindings.md | type=guide
+  legal-and-compliance.md | type=guide
+  llm-gateway.md | type=reference
+  mcp.md | type=guide
+  memory.md | type=guide
+  microsoft-foundry.md | type=guide
+  model-config.md | type=reference
+  monitoring-usage.md | type=guide
+  network-config.md | type=reference
+  output-styles.md | type=guide
+  overview.md | type=overview
+  permission-modes.md | type=guide
+  permissions.md | type=guide
+  platforms.md | type=guide
+  plugin-marketplaces.md | type=guide
+  plugins.md | type=guide
+  plugins-reference.md | type=guide
+  quickstart.md | type=tutorial
+  remote-control.md | type=guide
+  routines.md | type=guide
+  sandboxing.md | type=guide
+  scheduled-tasks.md | type=guide
+  security.md | type=guide
+  server-managed-settings.md | type=reference
+  settings.md | type=reference
+  setup.md | type=guide
+  skills.md | type=guide
+  slack.md | type=guide
+  statusline.md | type=guide
+  sub-agents.md | type=guide
+  terminal-config.md | type=reference
+  third-party-integrations.md | type=overview
+  tools-reference.md | type=guide
+  troubleshooting.md | type=guide
+  ultraplan.md | type=guide
+  voice-dictation.md | type=guide
+  vs-code.md | type=guide
+  web-quickstart.md | type=tutorial
+  whats-new/2026-w13.md | type=changelog
+  whats-new/2026-w14.md | type=changelog
+  whats-new/2026-w15.md | type=changelog
+  whats-new/index.md | type=changelog
+  zero-data-retention.md | type=guide
 
 == NAVIGATION ==
 

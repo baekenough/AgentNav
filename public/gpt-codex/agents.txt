@@ -1,11 +1,11 @@
 # agents.txt v0.2
-# Codex Documentation — https://developers.openai.com
-# Total: 71 pages | Last updated: 2026-03-31
+# GPT Codex Documentation — https://developers.openai.com/codex
+# Total: 71 pages | Last updated: 2026-04-15
 
-SITE: Codex Documentation
-URL: https://developers.openai.com
+SITE: GPT Codex Documentation
+URL: https://developers.openai.com/codex
 PAGES: 71
-SECTIONS: 14
+SECTIONS: 40
 
 == SCHEMA ==
 # Formal grammar for parsing this file
@@ -20,104 +20,156 @@ SECTIONS: 14
 
 == SECTIONS ==
 
-[Getting Started] 4 pages
-  /codex/overview | type=overview
-  /codex/quickstart | type=tutorial
-  /codex/explore | type=use-case
-  /codex/pricing | type=reference
+[Documentation sets] 1 page
+  /codex/llms-full.txt | type=guide
 
-[Concepts] 7 pages
-  /codex/prompting | type=guide
-  /codex/concepts/customization | type=guide
-  /codex/concepts/sandboxing | type=guide
-  /codex/concepts/subagents | type=guide
-  /codex/workflows | type=guide
-  /codex/models | type=reference
-  /codex/concepts/cyber-safety | type=guide
+[Agent Approvals Security] 1 page
+  /codex/agent-approvals-security.md | type=guide
 
-[Using Codex — App] 10 pages | prefix=/codex/app/
-  /codex/app | type=overview
-  features | type=tool-reference
-  settings | type=reference
-  review | type=guide
-  automations | type=guide
-  worktrees | type=guide
-  local-environments | type=guide
-  commands | type=reference
-  windows | type=guide
-  troubleshooting | type=guide
+[App] 10 pages
+  /codex/app.md | type=guide
+  /codex/app/automations.md | type=guide
+  /codex/app/commands.md | type=tool-reference
+  /codex/app/features.md | type=guide
+  /codex/app/settings.md | type=reference
+  /codex/app/local-environments.md | type=guide
+  /codex/app/review.md | type=guide
+  /codex/app/troubleshooting.md | type=guide
+  /codex/app/windows.md | type=guide
+  /codex/app/worktrees.md | type=guide
 
-[Using Codex — IDE Extension] 5 pages | prefix=/codex/ide/
-  /codex/ide | type=overview
-  features | type=tool-reference
-  settings | type=reference
-  commands | type=reference
-  slash-commands | type=reference
+[App Server] 1 page
+  /codex/app-server.md | type=guide
 
-[Using Codex — CLI] 4 pages | prefix=/codex/cli/
-  /codex/cli | type=overview
-  features | type=tool-reference
-  reference | type=reference
-  slash-commands | type=reference
+[Auth] 1 page
+  /codex/auth.md | type=guide
 
-[Using Codex — Web] 3 pages | prefix=/codex/cloud/
-  /codex/cloud | type=overview
-  environments | type=guide
-  internet-access | type=guide
+[Cli] 4 pages
+  /codex/cli.md | type=tool-reference
+  /codex/cli/features.md | type=tool-reference
+  /codex/cli/reference.md | type=tool-reference
+  /codex/cli/slash-commands.md | type=tool-reference
+
+[Cloud] 3 pages
+  /codex/cloud.md | type=guide
+  /codex/cloud/internet-access.md | type=guide
+  /codex/cloud/environments.md | type=guide
+
+[Community] 1 page | prefix=/codex/community/
+  codex-for-oss.md | type=guide
+
+[Concepts] 4 pages | prefix=/codex/concepts/
+  customization.md | type=guide
+  cyber-safety.md | type=guide
+  sandboxing.md | type=guide
+  subagents.md | type=guide
+
+[Config Advanced] 1 page
+  /codex/config-advanced.md | type=reference
+
+[Config Basic] 1 page
+  /codex/config-basic.md | type=reference
+
+[Config Reference] 1 page
+  /codex/config-reference.md | type=reference
+
+[Config Sample] 1 page
+  /codex/config-sample.md | type=reference
+
+[Custom Prompts] 1 page
+  /codex/custom-prompts.md | type=guide
+
+[Enterprise] 3 pages | prefix=/codex/enterprise/
+  admin-setup.md | type=guide
+  governance.md | type=guide
+  managed-configuration.md | type=reference
+
+[Feature Maturity] 1 page
+  /codex/feature-maturity.md | type=guide
+
+[Github Action] 1 page
+  /codex/github-action.md | type=guide
+
+[Guides] 3 pages | prefix=/codex/guides/
+  build-ai-native-engineering-team.md | type=guide
+  agents-md.md | type=guide
+  agents-sdk.md | type=sdk-guide
+
+[Hooks] 1 page
+  /codex/hooks.md | type=guide
+
+[Ide] 5 pages
+  /codex/ide.md | type=guide
+  /codex/ide/commands.md | type=tool-reference
+  /codex/ide/features.md | type=guide
+  /codex/ide/settings.md | type=reference
+  /codex/ide/slash-commands.md | type=tool-reference
 
 [Integrations] 3 pages | prefix=/codex/integrations/
-  github | type=guide
-  slack | type=guide
-  linear | type=guide
+  github.md | type=guide
+  linear.md | type=guide
+  slack.md | type=guide
 
-[Codex Security] 4 pages | prefix=/codex/security/
-  /codex/security | type=overview
-  setup | type=tutorial
-  threat-model | type=guide
-  faq | type=reference
+[Learn] 1 page | prefix=/codex/learn/
+  best-practices.md | type=best-practices
 
-[Configuration] 14 pages
-  /codex/config-basic | type=guide
-  /codex/config-advanced | type=guide
-  /codex/config-reference | type=reference
-  /codex/config-sample | type=reference
-  /codex/speed | type=guide
-  /codex/rules | type=guide
-  /codex/guides/agents-md | type=guide
-  /codex/mcp | type=guide
-  /codex/skills | type=guide
-  /codex/subagents | type=guide
-  /codex/hooks | type=guide
-  /codex/plugins | type=guide
-  /codex/plugins/build | type=guide
-  /codex/custom-prompts | type=best-practices
+[Mcp] 1 page
+  /codex/mcp.md | type=guide
 
-[Administration] 6 pages
-  /codex/auth | type=guide
-  /codex/agent-approvals-security | type=guide
-  /codex/enterprise/admin-setup | type=tutorial
-  /codex/enterprise/governance | type=guide
-  /codex/enterprise/managed-configuration | type=guide
-  /codex/windows | type=guide
+[Models] 1 page
+  /codex/models.md | type=guide
 
-[Automation] 5 pages
-  /codex/noninteractive | type=guide
-  /codex/sdk | type=sdk-guide
-  /codex/app-server | type=guide
-  /codex/guides/agents-sdk | type=sdk-guide
-  /codex/github-action | type=guide
+[Noninteractive] 1 page
+  /codex/noninteractive.md | type=guide
 
-[Learn] 3 pages
-  /codex/videos | type=reference
-  /codex/guides/build-ai-native-engineering-team | type=guide
-  /codex/learn/best-practices | type=reference
+[Open Source] 1 page
+  /codex/open-source.md | type=guide
 
-[Community] 1 page
-  /codex/community/codex-for-oss | type=overview
+[Overview] 1 page
+  /codex/overview.md | type=overview
 
-[Releases] 2 pages
-  /codex/feature-maturity | type=reference
-  /codex/open-source | type=reference
+[Plugins] 2 pages
+  /codex/plugins.md | type=guide
+  /codex/plugins/build.md | type=guide
+
+[Pricing] 1 page
+  /codex/pricing.md | type=reference
+
+[Prompting] 1 page
+  /codex/prompting.md | type=guide
+
+[Quickstart] 1 page
+  /codex/quickstart.md | type=tutorial
+
+[Rules] 1 page
+  /codex/rules.md | type=guide
+
+[Sdk] 1 page
+  /codex/sdk.md | type=sdk-guide
+
+[Security] 4 pages
+  /codex/security.md | type=guide
+  /codex/security/setup.md | type=guide
+  /codex/security/faq.md | type=guide
+  /codex/security/threat-model.md | type=guide
+
+[Skills] 1 page
+  /codex/skills.md | type=guide
+
+[Speed] 1 page
+  /codex/speed.md | type=guide
+
+[Subagents] 1 page
+  /codex/subagents.md | type=guide
+
+[Videos] 1 page
+  /codex/videos.md | type=guide
+
+[Windows] 1 page
+  /codex/windows.md | type=guide
+
+[Workflows] 1 page
+  /codex/workflows.md | type=guide
 
 == NAVIGATION ==
 

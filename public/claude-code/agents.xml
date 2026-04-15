@@ -1,131 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Claude Code Documentation" url="https://code.claude.com" total-pages="77" last-updated="2026-03-31" />
+  <site name="Claude Code Documentation" url="https://code.claude.com" total-pages="111" last-updated="2026-04-15" />
 
   <sections>
-    <!-- 1. Getting Started -->
-    <section name="Getting Started" path-prefix="/docs/en" page-count="5">
-      <page path="/docs/en/overview" title="Claude Code overview" type="overview" />
-      <page path="/docs/en/quickstart" title="Quickstart" type="tutorial" />
-      <page path="/docs/en/setup" title="Advanced setup" type="guide" />
-      <page path="/docs/en/how-claude-code-works" title="How Claude Code works" type="overview" />
-      <page path="/docs/en/common-workflows" title="Common workflows" type="guide" />
-    </section>
-
-    <!-- 2. Interfaces -->
-    <section name="Interfaces" path-prefix="/docs/en" page-count="10">
-      <page path="/docs/en/interactive-mode" title="Interactive mode" type="guide" />
-      <page path="/docs/en/cli-reference" title="CLI reference" type="reference" />
-      <page path="/docs/en/commands" title="Built-in commands" type="reference" />
-      <page path="/docs/en/desktop" title="Use Claude Code Desktop" type="guide" />
-      <page path="/docs/en/desktop-quickstart" title="Get started with the desktop app" type="tutorial" />
-      <page path="/docs/en/vs-code" title="Use Claude Code in VS Code" type="guide" />
-      <page path="/docs/en/jetbrains" title="JetBrains IDEs" type="guide" />
-      <page path="/docs/en/chrome" title="Use Claude Code with Chrome (beta)" type="guide" />
-      <page path="/docs/en/claude-code-on-the-web" title="Claude Code on the web" type="guide" />
-      <page path="/docs/en/computer-use" title="Let Claude use your computer from the CLI" type="guide" />
-    </section>
-
-    <!-- 3. Core Features -->
-    <section name="Core Features" path-prefix="/docs/en" page-count="12">
-      <page path="/docs/en/memory" title="How Claude remembers your project" type="guide" />
-      <page path="/docs/en/context-window" title="Explore the context window" type="guide" />
-      <page path="/docs/en/checkpointing" title="Checkpointing" type="guide" />
-      <page path="/docs/en/features-overview" title="Extend Claude Code" type="overview" />
-      <page path="/docs/en/skills" title="Extend Claude with skills" type="guide" />
-      <page path="/docs/en/sub-agents" title="Create custom subagents" type="guide" />
-      <page path="/docs/en/agent-teams" title="Orchestrate teams of Claude Code sessions" type="guide" />
-      <page path="/docs/en/hooks-guide" title="Automate workflows with hooks" type="guide" />
-      <page path="/docs/en/hooks" title="Hooks reference" type="reference" />
-      <page path="/docs/en/mcp" title="Connect Claude Code to tools via MCP" type="guide" />
-      <page path="/docs/en/fast-mode" title="Speed up responses with fast mode" type="guide" />
-      <page path="/docs/en/ultraplan" title="Plan in the cloud with ultraplan" type="guide" />
-    </section>
-
-    <!-- 4. Plugins -->
-    <section name="Plugins" path-prefix="/docs/en" page-count="4">
-      <page path="/docs/en/plugins" title="Create plugins" type="guide" />
-      <page path="/docs/en/plugins-reference" title="Plugins reference" type="reference" />
-      <page path="/docs/en/discover-plugins" title="Discover and install prebuilt plugins through marketplaces" type="guide" />
-      <page path="/docs/en/plugin-marketplaces" title="Create and distribute a plugin marketplace" type="guide" />
-    </section>
-
-    <!-- 5. Configuration -->
-    <section name="Configuration" path-prefix="/docs/en" page-count="10">
-      <page path="/docs/en/settings" title="Claude Code settings" type="reference" />
-      <page path="/docs/en/permissions" title="Configure permissions" type="guide" />
-      <page path="/docs/en/permission-modes" title="Choose a permission mode" type="guide" />
-      <page path="/docs/en/keybindings" title="Customize keyboard shortcuts" type="guide" />
-      <page path="/docs/en/env-vars" title="Environment variables" type="reference" />
-      <page path="/docs/en/model-config" title="Model configuration" type="guide" />
-      <page path="/docs/en/statusline" title="Customize your status line" type="guide" />
-      <page path="/docs/en/terminal-config" title="Optimize your terminal setup" type="guide" />
-      <page path="/docs/en/fullscreen" title="Fullscreen rendering" type="guide" />
-      <page path="/docs/en/claude-directory" title="Explore the .claude directory" type="reference" />
-    </section>
-
-    <!-- 6. Automation -->
-    <section name="Automation" path-prefix="/docs/en" page-count="7">
-      <page path="/docs/en/headless" title="Run Claude Code programmatically" type="guide" />
-      <page path="/docs/en/scheduled-tasks" title="Run prompts on a schedule" type="guide" />
-      <page path="/docs/en/web-scheduled-tasks" title="Schedule tasks on the web" type="guide" />
-      <page path="/docs/en/desktop-scheduled-tasks" title="Schedule recurring tasks in Claude Code Desktop" type="guide" />
-      <page path="/docs/en/code-review" title="Code Review" type="guide" />
-      <page path="/docs/en/output-styles" title="Output styles" type="guide" />
-      <page path="/docs/en/voice-dictation" title="Voice dictation" type="guide" />
-    </section>
-
-    <!-- 7. Cloud Providers -->
-    <section name="Cloud Providers" path-prefix="/docs/en" page-count="4">
-      <page path="/docs/en/amazon-bedrock" title="Claude Code on Amazon Bedrock" type="guide" />
-      <page path="/docs/en/google-vertex-ai" title="Claude Code on Google Vertex AI" type="guide" />
-      <page path="/docs/en/microsoft-foundry" title="Claude Code on Microsoft Foundry" type="guide" />
-      <page path="/docs/en/llm-gateway" title="LLM gateway configuration" type="guide" />
-    </section>
-
-    <!-- 8. CI/CD & Integrations -->
-    <section name="CI/CD &amp; Integrations" path-prefix="/docs/en" page-count="6">
-      <page path="/docs/en/github-actions" title="Claude Code GitHub Actions" type="guide" />
-      <page path="/docs/en/github-enterprise-server" title="Claude Code with GitHub Enterprise Server" type="guide" />
-      <page path="/docs/en/gitlab-ci-cd" title="Claude Code GitLab CI/CD" type="guide" />
-      <page path="/docs/en/slack" title="Claude Code in Slack" type="guide" />
-      <page path="/docs/en/remote-control" title="Continue local sessions from any device with Remote Control" type="guide" />
-      <page path="/docs/en/platforms" title="Platforms and integrations" type="overview" />
-    </section>
-
-    <!-- 9. Channels -->
-    <section name="Channels" path-prefix="/docs/en" page-count="2">
-      <page path="/docs/en/channels" title="Push events into a running session with channels" type="guide" />
-      <page path="/docs/en/channels-reference" title="Channels reference" type="reference" />
-    </section>
-
-    <!-- 10. Enterprise -->
-    <section name="Enterprise" path-prefix="/docs/en" page-count="6">
-      <page path="/docs/en/authentication" title="Authentication" type="guide" />
-      <page path="/docs/en/sandboxing" title="Sandboxing" type="guide" />
-      <page path="/docs/en/server-managed-settings" title="Configure server-managed settings (public beta)" type="guide" />
-      <page path="/docs/en/network-config" title="Enterprise network configuration" type="guide" />
-      <page path="/docs/en/devcontainer" title="Development containers" type="guide" />
-      <page path="/docs/en/third-party-integrations" title="Enterprise deployment overview" type="overview" />
-    </section>
-
-    <!-- 11. Monitoring & Costs -->
-    <section name="Monitoring &amp; Costs" path-prefix="/docs/en" page-count="3">
-      <page path="/docs/en/monitoring-usage" title="Monitoring" type="guide" />
-      <page path="/docs/en/costs" title="Manage costs effectively" type="guide" />
-      <page path="/docs/en/analytics" title="Track team usage with analytics" type="guide" />
-    </section>
-
-    <!-- 12. Reference -->
-    <section name="Reference" path-prefix="/docs/en" page-count="8">
-      <page path="/docs/en/best-practices" title="Best Practices for Claude Code" type="best-practices" />
-      <page path="/docs/en/security" title="Security" type="guide" />
-      <page path="/docs/en/data-usage" title="Data usage" type="guide" />
-      <page path="/docs/en/legal-and-compliance" title="Legal and compliance" type="reference" />
-      <page path="/docs/en/troubleshooting" title="Troubleshooting" type="guide" />
-      <page path="/docs/en/tools-reference" title="Tools reference" type="tool-reference" />
-      <page path="/docs/en/zero-data-retention" title="Zero data retention" type="guide" />
-      <page path="/docs/en/changelog" title="Changelog" type="changelog" />
+    <!-- 1. Docs -->
+    <section name="Docs" path-prefix="/docs/en/" page-count="111">
+      <page path="/docs/en/agent-sdk/agent-loop.md" title="How the agent loop works" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/claude-code-features.md" title="Use Claude Code features in the SDK" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/cost-tracking.md" title="Track cost and usage" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/custom-tools.md" title="Give Claude custom tools" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/file-checkpointing.md" title="Rewind file changes with checkpointing" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/hooks.md" title="Intercept and control agent behavior with hooks" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/hosting.md" title="Hosting the Agent SDK" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/mcp.md" title="Connect to external tools with MCP" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/migration-guide.md" title="Migrate to Claude Agent SDK" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/modifying-system-prompts.md" title="Modifying system prompts" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/observability.md" title="Observability with OpenTelemetry" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/overview.md" title="Agent SDK overview" type="overview" />
+      <page path="/docs/en/agent-sdk/permissions.md" title="Configure permissions" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/plugins.md" title="Plugins in the SDK" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/python.md" title="Agent SDK reference - Python" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/quickstart.md" title="Quickstart" type="tutorial" />
+      <page path="/docs/en/agent-sdk/secure-deployment.md" title="Securely deploying AI agents" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/sessions.md" title="Work with sessions" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/skills.md" title="Agent Skills in the SDK" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/slash-commands.md" title="Slash Commands in the SDK" type="tool-reference" />
+      <page path="/docs/en/agent-sdk/streaming-output.md" title="Stream responses in real-time" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/streaming-vs-single-mode.md" title="Streaming Input" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/structured-outputs.md" title="Get structured output from agents" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/subagents.md" title="Subagents in the SDK" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/todo-tracking.md" title="Todo Lists" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/tool-search.md" title="Scale to many tools with tool search" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/typescript.md" title="Agent SDK reference - TypeScript" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/typescript-v2-preview.md" title="TypeScript SDK V2 interface (preview)" type="sdk-guide" />
+      <page path="/docs/en/agent-sdk/user-input.md" title="Handle approvals and user input" type="sdk-guide" />
+      <page path="/docs/en/agent-teams.md" title="Orchestrate teams of Claude Code sessions" type="guide" />
+      <page path="/docs/en/amazon-bedrock.md" title="Claude Code on Amazon Bedrock" type="guide" />
+      <page path="/docs/en/analytics.md" title="Track team usage with analytics" type="guide" />
+      <page path="/docs/en/authentication.md" title="Authentication" type="guide" />
+      <page path="/docs/en/best-practices.md" title="Best Practices for Claude Code" type="best-practices" />
+      <page path="/docs/en/changelog.md" title="Changelog" type="changelog" />
+      <page path="/docs/en/channels.md" title="Push events into a running session with channels" type="guide" />
+      <page path="/docs/en/channels-reference.md" title="Channels reference" type="guide" />
+      <page path="/docs/en/checkpointing.md" title="Checkpointing" type="guide" />
+      <page path="/docs/en/chrome.md" title="Use Claude Code with Chrome (beta)" type="guide" />
+      <page path="/docs/en/claude-code-on-the-web.md" title="Use Claude Code on the web" type="guide" />
+      <page path="/docs/en/claude-directory.md" title="Explore the .claude directory" type="guide" />
+      <page path="/docs/en/cli-reference.md" title="CLI reference" type="tool-reference" />
+      <page path="/docs/en/code-review.md" title="Code Review" type="guide" />
+      <page path="/docs/en/commands.md" title="Commands" type="tool-reference" />
+      <page path="/docs/en/common-workflows.md" title="Common workflows" type="guide" />
+      <page path="/docs/en/computer-use.md" title="Let Claude use your computer from the CLI" type="guide" />
+      <page path="/docs/en/context-window.md" title="Explore the context window" type="guide" />
+      <page path="/docs/en/costs.md" title="Manage costs effectively" type="guide" />
+      <page path="/docs/en/data-usage.md" title="Data usage" type="guide" />
+      <page path="/docs/en/desktop.md" title="Use Claude Code Desktop" type="guide" />
+      <page path="/docs/en/desktop-quickstart.md" title="Get started with the desktop app" type="tutorial" />
+      <page path="/docs/en/desktop-scheduled-tasks.md" title="Schedule recurring tasks in Claude Code Desktop" type="guide" />
+      <page path="/docs/en/devcontainer.md" title="Development containers" type="guide" />
+      <page path="/docs/en/discover-plugins.md" title="Discover and install prebuilt plugins through marketplaces" type="guide" />
+      <page path="/docs/en/env-vars.md" title="Environment variables" type="guide" />
+      <page path="/docs/en/fast-mode.md" title="Speed up responses with fast mode" type="guide" />
+      <page path="/docs/en/features-overview.md" title="Extend Claude Code" type="overview" />
+      <page path="/docs/en/fullscreen.md" title="Fullscreen rendering" type="guide" />
+      <page path="/docs/en/github-actions.md" title="Claude Code GitHub Actions" type="guide" />
+      <page path="/docs/en/github-enterprise-server.md" title="Claude Code with GitHub Enterprise Server" type="guide" />
+      <page path="/docs/en/gitlab-ci-cd.md" title="Claude Code GitLab CI/CD" type="guide" />
+      <page path="/docs/en/google-vertex-ai.md" title="Claude Code on Google Vertex AI" type="guide" />
+      <page path="/docs/en/headless.md" title="Run Claude Code programmatically" type="guide" />
+      <page path="/docs/en/hooks.md" title="Hooks reference" type="guide" />
+      <page path="/docs/en/hooks-guide.md" title="Automate workflows with hooks" type="guide" />
+      <page path="/docs/en/how-claude-code-works.md" title="How Claude Code works" type="guide" />
+      <page path="/docs/en/interactive-mode.md" title="Interactive mode" type="guide" />
+      <page path="/docs/en/jetbrains.md" title="JetBrains IDEs" type="guide" />
+      <page path="/docs/en/keybindings.md" title="Customize keyboard shortcuts" type="guide" />
+      <page path="/docs/en/legal-and-compliance.md" title="Legal and compliance" type="guide" />
+      <page path="/docs/en/llm-gateway.md" title="LLM gateway configuration" type="reference" />
+      <page path="/docs/en/mcp.md" title="Connect Claude Code to tools via MCP" type="guide" />
+      <page path="/docs/en/memory.md" title="How Claude remembers your project" type="guide" />
+      <page path="/docs/en/microsoft-foundry.md" title="Claude Code on Microsoft Foundry" type="guide" />
+      <page path="/docs/en/model-config.md" title="Model configuration" type="reference" />
+      <page path="/docs/en/monitoring-usage.md" title="Monitoring" type="guide" />
+      <page path="/docs/en/network-config.md" title="Enterprise network configuration" type="reference" />
+      <page path="/docs/en/output-styles.md" title="Output styles" type="guide" />
+      <page path="/docs/en/overview.md" title="Claude Code overview" type="overview" />
+      <page path="/docs/en/permission-modes.md" title="Choose a permission mode" type="guide" />
+      <page path="/docs/en/permissions.md" title="Configure permissions" type="guide" />
+      <page path="/docs/en/platforms.md" title="Platforms and integrations" type="guide" />
+      <page path="/docs/en/plugin-marketplaces.md" title="Create and distribute a plugin marketplace" type="guide" />
+      <page path="/docs/en/plugins.md" title="Create plugins" type="guide" />
+      <page path="/docs/en/plugins-reference.md" title="Plugins reference" type="guide" />
+      <page path="/docs/en/quickstart.md" title="Quickstart" type="tutorial" />
+      <page path="/docs/en/remote-control.md" title="Continue local sessions from any device with Remote Control" type="guide" />
+      <page path="/docs/en/routines.md" title="Automate work with routines" type="guide" />
+      <page path="/docs/en/sandboxing.md" title="Sandboxing" type="guide" />
+      <page path="/docs/en/scheduled-tasks.md" title="Run prompts on a schedule" type="guide" />
+      <page path="/docs/en/security.md" title="Security" type="guide" />
+      <page path="/docs/en/server-managed-settings.md" title="Configure server-managed settings" type="reference" />
+      <page path="/docs/en/settings.md" title="Claude Code settings" type="reference" />
+      <page path="/docs/en/setup.md" title="Advanced setup" type="guide" />
+      <page path="/docs/en/skills.md" title="Extend Claude with skills" type="guide" />
+      <page path="/docs/en/slack.md" title="Claude Code in Slack" type="guide" />
+      <page path="/docs/en/statusline.md" title="Customize your status line" type="guide" />
+      <page path="/docs/en/sub-agents.md" title="Create custom subagents" type="guide" />
+      <page path="/docs/en/terminal-config.md" title="Optimize your terminal setup" type="reference" />
+      <page path="/docs/en/third-party-integrations.md" title="Enterprise deployment overview" type="overview" />
+      <page path="/docs/en/tools-reference.md" title="Tools reference" type="guide" />
+      <page path="/docs/en/troubleshooting.md" title="Troubleshooting" type="guide" />
+      <page path="/docs/en/ultraplan.md" title="Plan in the cloud with ultraplan" type="guide" />
+      <page path="/docs/en/voice-dictation.md" title="Voice dictation" type="guide" />
+      <page path="/docs/en/vs-code.md" title="Use Claude Code in VS Code" type="guide" />
+      <page path="/docs/en/web-quickstart.md" title="Get started with Claude Code on the web" type="tutorial" />
+      <page path="/docs/en/whats-new/2026-w13.md" title="Week 13 · March 23–27, 2026" type="changelog" />
+      <page path="/docs/en/whats-new/2026-w14.md" title="Week 14 · March 30 – April 3, 2026" type="changelog" />
+      <page path="/docs/en/whats-new/2026-w15.md" title="Week 15 · April 6–10, 2026" type="changelog" />
+      <page path="/docs/en/whats-new/index.md" title="What's new" type="changelog" />
+      <page path="/docs/en/zero-data-retention.md" title="Zero data retention" type="guide" />
     </section>
   </sections>
 

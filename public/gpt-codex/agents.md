@@ -5,195 +5,253 @@ schema:
   sections: "## heading = section name"
   subsections: "### heading = subsection grouping"
   pages: "- [title](path) {type}"
-  page_types: [overview, tutorial, guide, reference, use-case, tool-reference, sdk-guide, best-practices]
-  navigation: "See ## Navigation Guide section"
+  page_types: [overview, tutorial, guide, reference, tool-reference, sdk-guide, best-practices]
 ---
 
-# Codex Documentation
+# GPT Codex Documentation
 
-- **URL**: https://developers.openai.com
+- **URL**: https://developers.openai.com/codex
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
 - **Total Pages**: 71
-- **Last Updated**: 2026-03-31
+- **Last Updated**: 2026-04-15
 
 ## Site Overview
 
 | # | Section | Pages | Base Path |
 |---|---------|-------|-----------|
-| 1 | Getting Started | 4 | /codex/ |
-| 2 | Concepts | 7 | /codex/ |
-| 3 | Using Codex — App | 10 | /codex/app/ |
-| 4 | Using Codex — IDE Extension | 5 | /codex/ide/ |
-| 5 | Using Codex — CLI | 4 | /codex/cli/ |
-| 6 | Using Codex — Web | 3 | /codex/cloud/ |
-| 7 | Integrations | 3 | /codex/integrations/ |
-| 8 | Codex Security | 4 | /codex/security/ |
-| 9 | Configuration | 14 | /codex/ |
-| 10 | Administration | 6 | /codex/ |
-| 11 | Automation | 5 | /codex/ |
-| 12 | Learn | 3 | /codex/ |
-| 13 | Community | 1 | /codex/ |
-| 14 | Releases | 2 | /codex/ |
+| 1 | Documentation sets | 1 | /codex/ |
+| 2 | Agent Approvals Security | 1 | /codex/ |
+| 3 | App | 10 | /codex/ |
+| 4 | App Server | 1 | /codex/ |
+| 5 | Auth | 1 | /codex/ |
+| 6 | Cli | 4 | /codex/ |
+| 7 | Cloud | 3 | /codex/ |
+| 8 | Community | 1 | /codex/community/ |
+| 9 | Concepts | 4 | /codex/concepts/ |
+| 10 | Config Advanced | 1 | /codex/ |
+| 11 | Config Basic | 1 | /codex/ |
+| 12 | Config Reference | 1 | /codex/ |
+| 13 | Config Sample | 1 | /codex/ |
+| 14 | Custom Prompts | 1 | /codex/ |
+| 15 | Enterprise | 3 | /codex/enterprise/ |
+| 16 | Feature Maturity | 1 | /codex/ |
+| 17 | Github Action | 1 | /codex/ |
+| 18 | Guides | 3 | /codex/guides/ |
+| 19 | Hooks | 1 | /codex/ |
+| 20 | Ide | 5 | /codex/ |
+| 21 | Integrations | 3 | /codex/integrations/ |
+| 22 | Learn | 1 | /codex/learn/ |
+| 23 | Mcp | 1 | /codex/ |
+| 24 | Models | 1 | /codex/ |
+| 25 | Noninteractive | 1 | /codex/ |
+| 26 | Open Source | 1 | /codex/ |
+| 27 | Overview | 1 | /codex/ |
+| 28 | Plugins | 2 | /codex/ |
+| 29 | Pricing | 1 | /codex/ |
+| 30 | Prompting | 1 | /codex/ |
+| 31 | Quickstart | 1 | /codex/ |
+| 32 | Rules | 1 | /codex/ |
+| 33 | Sdk | 1 | /codex/ |
+| 34 | Security | 4 | /codex/ |
+| 35 | Skills | 1 | /codex/ |
+| 36 | Speed | 1 | /codex/ |
+| 37 | Subagents | 1 | /codex/ |
+| 38 | Videos | 1 | /codex/ |
+| 39 | Windows | 1 | /codex/ |
+| 40 | Workflows | 1 | /codex/ |
 
 ---
 
-## Getting Started (4 pages)
+## Documentation sets (1 page)
 
-- [Quickstart](/codex/quickstart) {tutorial}
-- [Explore](/codex/explore) {use-case}
-- [Codex Pricing](/codex/pricing) {reference}
-- [Codex](/codex/overview) {overview}
+- [Combined Codex docs](/codex/llms-full.txt) {guide}
 
-## Concepts (7 pages)
+## Agent Approvals Security (1 page)
 
-- [Prompting](/codex/prompting) {guide}
-- [Customization](/codex/concepts/customization) {guide}
-- [Sandboxing](/codex/concepts/sandboxing) {guide}
-- [Subagents](/codex/concepts/subagents) {guide}
-- [Workflows](/codex/workflows) {guide}
-- [Codex Models](/codex/models) {reference}
-- [Cyber Safety](/codex/concepts/cyber-safety) {guide}
+- [Agent approvals & security](/codex/agent-approvals-security.md) {guide}
 
-## Using Codex — App (10 pages)
+## App (10 pages)
 
-- [Codex app](/codex/app) {overview}
-- [Codex app features](/codex/app/features) {tool-reference}
-- [Codex app settings](/codex/app/settings) {reference}
-- [Review](/codex/app/review) {guide}
-- [Automations](/codex/app/automations) {guide}
-- [Worktrees](/codex/app/worktrees) {guide}
-- [Local environments](/codex/app/local-environments) {guide}
-- [Codex app commands](/codex/app/commands) {reference}
-- [Windows](/codex/app/windows) {guide}
-- [Troubleshooting](/codex/app/troubleshooting) {guide}
+- [Codex app](/codex/app.md) {guide}
+- [Automations](/codex/app/automations.md) {guide}
+- [Codex app commands](/codex/app/commands.md) {tool-reference}
+- [Codex app features](/codex/app/features.md) {guide}
+- [Codex app settings](/codex/app/settings.md) {reference}
+- [Local environments](/codex/app/local-environments.md) {guide}
+- [Review](/codex/app/review.md) {guide}
+- [Troubleshooting](/codex/app/troubleshooting.md) {guide}
+- [Windows](/codex/app/windows.md) {guide}
+- [Worktrees](/codex/app/worktrees.md) {guide}
 
-## Using Codex — IDE Extension (5 pages)
+## App Server (1 page)
 
-- [Codex IDE extension](/codex/ide) {overview}
-- [Codex IDE extension features](/codex/ide/features) {tool-reference}
-- [Codex IDE extension settings](/codex/ide/settings) {reference}
-- [Codex IDE extension commands](/codex/ide/commands) {reference}
-- [Codex IDE extension slash commands](/codex/ide/slash-commands) {reference}
+- [Codex App Server](/codex/app-server.md) {guide}
 
-## Using Codex — CLI (4 pages)
+## Auth (1 page)
 
-- [Codex CLI](/codex/cli) {overview}
-- [Codex CLI features](/codex/cli/features) {tool-reference}
-- [Command line options](/codex/cli/reference) {reference}
-- [Slash commands in Codex CLI](/codex/cli/slash-commands) {reference}
+- [Authentication](/codex/auth.md) {guide}
 
-## Using Codex — Web (3 pages)
+## Cli (4 pages)
 
-- [Codex web](/codex/cloud) {overview}
-- [Cloud environments](/codex/cloud/environments) {guide}
-- [Agent internet access](/codex/cloud/internet-access) {guide}
+- [Codex CLI](/codex/cli.md) {tool-reference}
+- [Codex CLI features](/codex/cli/features.md) {tool-reference}
+- [Command line options](/codex/cli/reference.md) {tool-reference}
+- [Slash commands in Codex CLI](/codex/cli/slash-commands.md) {tool-reference}
 
-## Integrations (3 pages)
+## Cloud (3 pages)
 
-- [Use Codex in GitHub](/codex/integrations/github) {guide}
-- [Use Codex in Slack](/codex/integrations/slack) {guide}
-- [Use Codex in Linear](/codex/integrations/linear) {guide}
-
-## Codex Security (4 pages)
-
-- [Codex Security](/codex/security) {overview}
-- [Codex Security setup](/codex/security/setup) {tutorial}
-- [Improving the threat model](/codex/security/threat-model) {guide}
-- [FAQ](/codex/security/faq) {reference}
-
-## Configuration (14 pages)
-
-### Config File
-
-- [Config basics](/codex/config-basic) {guide}
-- [Advanced Configuration](/codex/config-advanced) {guide}
-- [Configuration Reference](/codex/config-reference) {reference}
-- [Sample Configuration](/codex/config-sample) {reference}
-
-### Settings
-
-- [Speed](/codex/speed) {guide}
-- [Rules](/codex/rules) {guide}
-- [Custom instructions with AGENTS.md](/codex/guides/agents-md) {guide}
-- [Model Context Protocol](/codex/mcp) {guide}
-- [Agent Skills](/codex/skills) {guide}
-- [Subagents](/codex/subagents) {guide}
-- [Custom Prompts](/codex/custom-prompts) {best-practices}
-- [Hooks](/codex/hooks) {guide}
-- [Plugins](/codex/plugins) {guide}
-- [Build plugins](/codex/plugins/build) {guide}
-
-## Administration (6 pages)
-
-- [Authentication](/codex/auth) {guide}
-- [Agent approvals & security](/codex/agent-approvals-security) {guide}
-
-### Enterprise
-
-- [Admin Setup](/codex/enterprise/admin-setup) {tutorial}
-- [Governance](/codex/enterprise/governance) {guide}
-- [Managed configuration](/codex/enterprise/managed-configuration) {guide}
-
-### Platform
-
-- [Windows](/codex/windows) {guide}
-
-## Automation (5 pages)
-
-- [Non-interactive mode](/codex/noninteractive) {guide}
-- [Codex SDK](/codex/sdk) {sdk-guide}
-- [Codex App Server](/codex/app-server) {guide}
-- [Use Codex with the Agents SDK](/codex/guides/agents-sdk) {sdk-guide}
-- [Codex GitHub Action](/codex/github-action) {guide}
-
-## Learn (3 pages)
-
-- [Videos](/codex/videos) {reference}
-- [Building an AI-Native Engineering Team](/codex/guides/build-ai-native-engineering-team) {guide}
-- [Best Practices](/codex/learn/best-practices) {reference}
-
-### External Resources
-
-- [Building Frontend UIs with Codex and Figma](/blog/building-frontend-uis-with-codex-and-figma) — Blog
-- [Run Long Horizon Tasks with Codex](/blog/run-long-horizon-tasks-with-codex) — Blog
-- [Codex Prompting Guide](/cookbook/examples/gpt-5/codex_prompting_guide) — Cookbook
-- [Modernizing Your Codebase with Codex](/cookbook/examples/codex/code_modernization) — Cookbook
+- [Codex web](/codex/cloud.md) {guide}
+- [Agent internet access](/codex/cloud/internet-access.md) {guide}
+- [Cloud environments](/codex/cloud/environments.md) {guide}
 
 ## Community (1 page)
 
-- [Codex for Open Source](/codex/community/codex-for-oss) {overview}
+- [Codex for Open Source](/codex/community/codex-for-oss.md) {guide}
 
-## Releases (2 pages)
+## Concepts (4 pages)
 
-- [Feature Maturity](/codex/feature-maturity) {reference}
-- [Open Source](/codex/open-source) {reference}
+- [Customization](/codex/concepts/customization.md) {guide}
+- [Cyber Safety](/codex/concepts/cyber-safety.md) {guide}
+- [Sandbox](/codex/concepts/sandboxing.md) {guide}
+- [Subagents](/codex/concepts/subagents.md) {guide}
 
----
+## Config Advanced (1 page)
 
-## Navigation Guide
+- [Advanced Configuration](/codex/config-advanced.md) {reference}
 
-### Quick Navigation
+## Config Basic (1 page)
 
-| Intent | Best Section | Key Pages |
-|--------|-------------|-----------|
-| Getting started | Getting Started | Quickstart, Explore |
-| How to prompt | Concepts | Prompting |
-| Desktop app usage | App | Codex app, Codex app features, Codex app commands |
-| VS Code integration | IDE Extension | Codex IDE extension, Codex IDE extension features |
-| Terminal usage | CLI | Codex CLI, Codex CLI features, Command line options |
-| Cloud/web usage | Web | Codex web, Cloud environments |
-| Connect to GitHub/Slack | Integrations | Use Codex in GitHub, Use Codex in Slack, Use Codex in Linear |
-| Security setup | Codex Security | Codex Security, Codex Security setup |
-| Configure Codex | Configuration | Config basics, Configuration Reference |
-| Enterprise setup | Administration | Admin Setup, Governance |
-| CI/CD automation | Automation | Non-interactive mode, Codex GitHub Action |
-| SDK integration | Automation | Codex SDK, Use Codex with the Agents SDK |
-| Release notes | Releases | Codex changelog |
+- [Config basics](/codex/config-basic.md) {reference}
 
-### Search Priority
+## Config Reference (1 page)
 
-1. Getting Started — overview, quickstart
-2. Concepts — prompting, workflows, models
-3. Configuration — config, rules, agents-md, mcp, skills
-4. App / CLI — platform-specific features
-5. Automation — SDK, non-interactive, github-action
+- [Configuration Reference](/codex/config-reference.md) {reference}
+
+## Config Sample (1 page)
+
+- [Sample Configuration](/codex/config-sample.md) {reference}
+
+## Custom Prompts (1 page)
+
+- [Custom Prompts](/codex/custom-prompts.md) {guide}
+
+## Enterprise (3 pages)
+
+- [Admin Setup](/codex/enterprise/admin-setup.md) {guide}
+- [Governance](/codex/enterprise/governance.md) {guide}
+- [Managed configuration](/codex/enterprise/managed-configuration.md) {reference}
+
+## Feature Maturity (1 page)
+
+- [Feature Maturity](/codex/feature-maturity.md) {guide}
+
+## Github Action (1 page)
+
+- [Codex GitHub Action](/codex/github-action.md) {guide}
+
+## Guides (3 pages)
+
+- [Building an AI-Native Engineering Team](/codex/guides/build-ai-native-engineering-team.md) {guide}
+- [Custom instructions with AGENTS.md](/codex/guides/agents-md.md) {guide}
+- [Use Codex with the Agents SDK](/codex/guides/agents-sdk.md) {sdk-guide}
+
+## Hooks (1 page)
+
+- [Hooks](/codex/hooks.md) {guide}
+
+## Ide (5 pages)
+
+- [Codex IDE extension](/codex/ide.md) {guide}
+- [Codex IDE extension commands](/codex/ide/commands.md) {tool-reference}
+- [Codex IDE extension features](/codex/ide/features.md) {guide}
+- [Codex IDE extension settings](/codex/ide/settings.md) {reference}
+- [Codex IDE extension slash commands](/codex/ide/slash-commands.md) {tool-reference}
+
+## Integrations (3 pages)
+
+- [Use Codex in GitHub](/codex/integrations/github.md) {guide}
+- [Use Codex in Linear](/codex/integrations/linear.md) {guide}
+- [Use Codex in Slack](/codex/integrations/slack.md) {guide}
+
+## Learn (1 page)
+
+### External Resources
+
+- [Best practices](/codex/learn/best-practices.md) {best-practices}
+
+## Mcp (1 page)
+
+- [Model Context Protocol](/codex/mcp.md) {guide}
+
+## Models (1 page)
+
+- [Codex Models](/codex/models.md) {guide}
+
+## Noninteractive (1 page)
+
+- [Non-interactive mode](/codex/noninteractive.md) {guide}
+
+## Open Source (1 page)
+
+- [Open Source](/codex/open-source.md) {guide}
+
+## Overview (1 page)
+
+- [Codex](/codex/overview.md) {overview}
+
+## Plugins (2 pages)
+
+- [Plugins](/codex/plugins.md) {guide}
+- [Build plugins](/codex/plugins/build.md) {guide}
+
+## Pricing (1 page)
+
+- [Codex Pricing](/codex/pricing.md) {reference}
+
+## Prompting (1 page)
+
+- [Prompting](/codex/prompting.md) {guide}
+
+## Quickstart (1 page)
+
+- [Quickstart](/codex/quickstart.md) {tutorial}
+
+## Rules (1 page)
+
+- [Rules](/codex/rules.md) {guide}
+
+## Sdk (1 page)
+
+- [Codex SDK](/codex/sdk.md) {sdk-guide}
+
+## Security (4 pages)
+
+- [Codex Security](/codex/security.md) {guide}
+- [Codex Security setup](/codex/security/setup.md) {guide}
+- [FAQ](/codex/security/faq.md) {guide}
+- [Improving the threat model](/codex/security/threat-model.md) {guide}
+
+## Skills (1 page)
+
+- [Agent Skills](/codex/skills.md) {guide}
+
+## Speed (1 page)
+
+- [Speed](/codex/speed.md) {guide}
+
+## Subagents (1 page)
+
+- [Subagents](/codex/subagents.md) {guide}
+
+## Videos (1 page)
+
+- [Videos](/codex/videos.md) {guide}
+
+## Windows (1 page)
+
+- [Windows](/codex/windows.md) {guide}
+
+## Workflows (1 page)
+
+- [Workflows](/codex/workflows.md) {guide}
+
