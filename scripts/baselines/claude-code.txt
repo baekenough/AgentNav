@@ -80,6 +80,7 @@ https://code.claude.com/docs/en/overview.md
 https://code.claude.com/docs/en/permission-modes.md
 https://code.claude.com/docs/en/permissions.md
 https://code.claude.com/docs/en/platforms.md
+https://code.claude.com/docs/en/plugin-dependencies.md
 https://code.claude.com/docs/en/plugin-marketplaces.md
 https://code.claude.com/docs/en/plugins-reference.md
 https://code.claude.com/docs/en/plugins.md
@@ -101,6 +102,7 @@ https://code.claude.com/docs/en/third-party-integrations.md
 https://code.claude.com/docs/en/tools-reference.md
 https://code.claude.com/docs/en/troubleshooting.md
 https://code.claude.com/docs/en/ultraplan.md
+https://code.claude.com/docs/en/ultrareview.md
 https://code.claude.com/docs/en/voice-dictation.md
 https://code.claude.com/docs/en/vs-code.md
 https://code.claude.com/docs/en/web-quickstart.md

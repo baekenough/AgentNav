@@ -3,7 +3,7 @@ https://platform.claude.com/docs/en/about-claude/model-deprecations.md
 https://platform.claude.com/docs/en/about-claude/models/choosing-a-model.md
 https://platform.claude.com/docs/en/about-claude/models/migration-guide.md
 https://platform.claude.com/docs/en/about-claude/models/overview.md
-https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-6.md
+https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7.md
 https://platform.claude.com/docs/en/about-claude/pricing.md
 https://platform.claude.com/docs/en/about-claude/use-case-guides/content-moderation.md
 https://platform.claude.com/docs/en/about-claude/use-case-guides/customer-support-chat.md
@@ -11,6 +11,7 @@ https://platform.claude.com/docs/en/about-claude/use-case-guides/legal-summariza
 https://platform.claude.com/docs/en/about-claude/use-case-guides/overview.md
 https://platform.claude.com/docs/en/about-claude/use-case-guides/ticket-routing.md
 https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices.md
+https://platform.claude.com/docs/en/agents-and-tools/agent-skills/claude-api-skill.md
 https://platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise.md
 https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview.md
 https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart.md
@@ -69,6 +70,7 @@ https://platform.claude.com/docs/en/api/beta.md
 https://platform.claude.com/docs/en/api/beta/agents.md
 https://platform.claude.com/docs/en/api/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/beta/agents/create.md
+https://platform.claude.com/docs/en/api/beta/agents/delete
 https://platform.claude.com/docs/en/api/beta/agents/list.md
 https://platform.claude.com/docs/en/api/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/beta/agents/update.md
@@ -127,6 +129,12 @@ https://platform.claude.com/docs/en/api/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/beta/vaults.md
 https://platform.claude.com/docs/en/api/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/beta/vaults/create.md
@@ -146,6 +154,7 @@ https://platform.claude.com/docs/en/api/cli/beta.md
 https://platform.claude.com/docs/en/api/cli/beta/agents.md
 https://platform.claude.com/docs/en/api/cli/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/cli/beta/agents/create.md
+https://platform.claude.com/docs/en/api/cli/beta/agents/delete
 https://platform.claude.com/docs/en/api/cli/beta/agents/list.md
 https://platform.claude.com/docs/en/api/cli/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/cli/beta/agents/update.md
@@ -204,6 +213,12 @@ https://platform.claude.com/docs/en/api/cli/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/cli/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/cli/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/cli/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/cli/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/cli/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/cli/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/cli/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/cli/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/cli/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/cli/beta/vaults.md
 https://platform.claude.com/docs/en/api/cli/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/cli/beta/vaults/create.md
@@ -240,6 +255,7 @@ https://platform.claude.com/docs/en/api/csharp/beta.md
 https://platform.claude.com/docs/en/api/csharp/beta/agents.md
 https://platform.claude.com/docs/en/api/csharp/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/csharp/beta/agents/create.md
+https://platform.claude.com/docs/en/api/csharp/beta/agents/delete
 https://platform.claude.com/docs/en/api/csharp/beta/agents/list.md
 https://platform.claude.com/docs/en/api/csharp/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/csharp/beta/agents/update.md
@@ -298,6 +314,12 @@ https://platform.claude.com/docs/en/api/csharp/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/csharp/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/csharp/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/csharp/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/csharp/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/csharp/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/csharp/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/csharp/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/csharp/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/csharp/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/csharp/beta/vaults.md
 https://platform.claude.com/docs/en/api/csharp/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/csharp/beta/vaults/create.md
@@ -332,6 +354,7 @@ https://platform.claude.com/docs/en/api/go/beta.md
 https://platform.claude.com/docs/en/api/go/beta/agents.md
 https://platform.claude.com/docs/en/api/go/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/go/beta/agents/create.md
+https://platform.claude.com/docs/en/api/go/beta/agents/delete
 https://platform.claude.com/docs/en/api/go/beta/agents/list.md
 https://platform.claude.com/docs/en/api/go/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/go/beta/agents/update.md
@@ -390,6 +413,12 @@ https://platform.claude.com/docs/en/api/go/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/go/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/go/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/go/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/go/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/go/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/go/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/go/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/go/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/go/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/go/beta/vaults.md
 https://platform.claude.com/docs/en/api/go/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/go/beta/vaults/create.md
@@ -424,6 +453,7 @@ https://platform.claude.com/docs/en/api/java/beta.md
 https://platform.claude.com/docs/en/api/java/beta/agents.md
 https://platform.claude.com/docs/en/api/java/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/java/beta/agents/create.md
+https://platform.claude.com/docs/en/api/java/beta/agents/delete
 https://platform.claude.com/docs/en/api/java/beta/agents/list.md
 https://platform.claude.com/docs/en/api/java/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/java/beta/agents/update.md
@@ -482,6 +512,12 @@ https://platform.claude.com/docs/en/api/java/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/java/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/java/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/java/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/java/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/java/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/java/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/java/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/java/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/java/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/java/beta/vaults.md
 https://platform.claude.com/docs/en/api/java/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/java/beta/vaults/create.md
@@ -530,6 +566,7 @@ https://platform.claude.com/docs/en/api/php/beta.md
 https://platform.claude.com/docs/en/api/php/beta/agents.md
 https://platform.claude.com/docs/en/api/php/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/php/beta/agents/create.md
+https://platform.claude.com/docs/en/api/php/beta/agents/delete
 https://platform.claude.com/docs/en/api/php/beta/agents/list.md
 https://platform.claude.com/docs/en/api/php/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/php/beta/agents/update.md
@@ -588,6 +625,12 @@ https://platform.claude.com/docs/en/api/php/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/php/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/php/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/php/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/php/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/php/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/php/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/php/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/php/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/php/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/php/beta/vaults.md
 https://platform.claude.com/docs/en/api/php/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/php/beta/vaults/create.md
@@ -621,6 +664,7 @@ https://platform.claude.com/docs/en/api/python/beta.md
 https://platform.claude.com/docs/en/api/python/beta/agents.md
 https://platform.claude.com/docs/en/api/python/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/python/beta/agents/create.md
+https://platform.claude.com/docs/en/api/python/beta/agents/delete
 https://platform.claude.com/docs/en/api/python/beta/agents/list.md
 https://platform.claude.com/docs/en/api/python/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/python/beta/agents/update.md
@@ -679,6 +723,12 @@ https://platform.claude.com/docs/en/api/python/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/python/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/python/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/python/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/python/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/python/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/python/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/python/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/python/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/python/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/python/beta/vaults.md
 https://platform.claude.com/docs/en/api/python/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/python/beta/vaults/create.md
@@ -713,6 +763,7 @@ https://platform.claude.com/docs/en/api/ruby/beta.md
 https://platform.claude.com/docs/en/api/ruby/beta/agents.md
 https://platform.claude.com/docs/en/api/ruby/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/ruby/beta/agents/create.md
+https://platform.claude.com/docs/en/api/ruby/beta/agents/delete
 https://platform.claude.com/docs/en/api/ruby/beta/agents/list.md
 https://platform.claude.com/docs/en/api/ruby/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/ruby/beta/agents/update.md
@@ -771,6 +822,12 @@ https://platform.claude.com/docs/en/api/ruby/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/ruby/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/ruby/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/ruby/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/ruby/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/ruby/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/ruby/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/ruby/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/ruby/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/ruby/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/ruby/beta/vaults.md
 https://platform.claude.com/docs/en/api/ruby/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/ruby/beta/vaults/create.md
@@ -814,6 +871,7 @@ https://platform.claude.com/docs/en/api/terraform/beta.md
 https://platform.claude.com/docs/en/api/terraform/beta/agents.md
 https://platform.claude.com/docs/en/api/terraform/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/terraform/beta/agents/create.md
+https://platform.claude.com/docs/en/api/terraform/beta/agents/delete
 https://platform.claude.com/docs/en/api/terraform/beta/agents/list.md
 https://platform.claude.com/docs/en/api/terraform/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/terraform/beta/agents/update.md
@@ -872,6 +930,12 @@ https://platform.claude.com/docs/en/api/terraform/beta/skills/versions/create.md
 https://platform.claude.com/docs/en/api/terraform/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/terraform/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/terraform/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/terraform/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/terraform/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/terraform/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/terraform/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/terraform/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/terraform/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/terraform/beta/vaults.md
 https://platform.claude.com/docs/en/api/terraform/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/terraform/beta/vaults/create.md
@@ -905,6 +969,7 @@ https://platform.claude.com/docs/en/api/typescript/beta.md
 https://platform.claude.com/docs/en/api/typescript/beta/agents.md
 https://platform.claude.com/docs/en/api/typescript/beta/agents/archive.md
 https://platform.claude.com/docs/en/api/typescript/beta/agents/create.md
+https://platform.claude.com/docs/en/api/typescript/beta/agents/delete
 https://platform.claude.com/docs/en/api/typescript/beta/agents/list.md
 https://platform.claude.com/docs/en/api/typescript/beta/agents/retrieve.md
 https://platform.claude.com/docs/en/api/typescript/beta/agents/update.md
@@ -963,6 +1028,12 @@ https://platform.claude.com/docs/en/api/typescript/beta/skills/versions/create.m
 https://platform.claude.com/docs/en/api/typescript/beta/skills/versions/delete.md
 https://platform.claude.com/docs/en/api/typescript/beta/skills/versions/list.md
 https://platform.claude.com/docs/en/api/typescript/beta/skills/versions/retrieve.md
+https://platform.claude.com/docs/en/api/typescript/beta/user_profiles.md
+https://platform.claude.com/docs/en/api/typescript/beta/user_profiles/create.md
+https://platform.claude.com/docs/en/api/typescript/beta/user_profiles/create_enrollment_url.md
+https://platform.claude.com/docs/en/api/typescript/beta/user_profiles/list.md
+https://platform.claude.com/docs/en/api/typescript/beta/user_profiles/retrieve.md
+https://platform.claude.com/docs/en/api/typescript/beta/user_profiles/update.md
 https://platform.claude.com/docs/en/api/typescript/beta/vaults.md
 https://platform.claude.com/docs/en/api/typescript/beta/vaults/archive.md
 https://platform.claude.com/docs/en/api/typescript/beta/vaults/create.md
@@ -1024,6 +1095,7 @@ https://platform.claude.com/docs/en/build-with-claude/search-results.md
 https://platform.claude.com/docs/en/build-with-claude/skills-guide.md
 https://platform.claude.com/docs/en/build-with-claude/streaming.md
 https://platform.claude.com/docs/en/build-with-claude/structured-outputs.md
+https://platform.claude.com/docs/en/build-with-claude/task-budgets.md
 https://platform.claude.com/docs/en/build-with-claude/token-counting.md
 https://platform.claude.com/docs/en/build-with-claude/usage-cost-api.md
 https://platform.claude.com/docs/en/build-with-claude/vision.md
