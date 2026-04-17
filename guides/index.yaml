@@ -183,6 +183,12 @@ guides:
       url: https://iceberg.apache.org/docs/latest/
 
   # Database
+  - name: drizzle-orm
+    description: Drizzle ORM sql template literal pitfalls — silent alias expansion bug in subqueries and fixes
+    path: ./drizzle-orm/
+    source:
+      type: internal
+
   - name: alembic
     description: Alembic database migration framework for SQLAlchemy
     path: ./alembic/
@@ -215,14 +221,6 @@ guides:
       origin: redis.io
       url: https://redis.io/docs/
 
-  - name: drizzle-orm
-    description: Drizzle ORM TypeScript-first SQL toolkit for type-safe database access
-    path: ./drizzle-orm/
-    source:
-      type: external
-      origin: orm.drizzle.team
-      url: https://orm.drizzle.team/docs/overview
-
   # Git
   - name: git-worktree-workflow
     description: Git worktree workflow for parallel branch development
@@ -231,6 +229,12 @@ guides:
       type: internal
 
   # Architecture
+  - name: hook-data-flow
+    description: v0.78.0 3-script stall detection pipeline — SubagentStart/Stop 이벤트 기반 parallel stall 탐지 및 R009 Adaptive Parallel Splitting 권고 데이터 플로우
+    path: ./hook-data-flow/
+    source:
+      type: internal
+
   - name: skill-bundle-design
     description: Domain skill bundle design patterns for Author/Test/Troubleshoot tri-pattern
     path: ./skill-bundle-design/
@@ -250,5 +254,33 @@ guides:
   - name: web-scraping
     description: BeautifulSoup and Playwright patterns for reliable web scraping and government site parsing
     path: ./web-scraping/
+    source:
+      type: internal
+
+  # Tools
+  - name: slack-cli
+    description: Slack CLI v3.15.0 command reference for workspace automation and app lifecycle management
+    path: ./slack-cli/
+    source:
+      type: external
+      origin: slack.dev
+      url: https://docs.slack.dev/tools/slack-cli/
+
+  # Agent Operations
+  - name: worktree-lifecycle
+    description: Worktree lifecycle automation aliases (agent-spin/merge/clean) for AI agent workflows
+    path: ./worktree-lifecycle/
+    source:
+      type: internal
+
+  - name: multi-model-routing
+    description: Role-based model selection strategy for AI agent workflows
+    path: ./multi-model-routing/
+    source:
+      type: internal
+
+  - name: agents-md-quality
+    description: Agent definition quality standards adapted from ETH Zurich research
+    path: ./agents-md-quality/
     source:
       type: internal
