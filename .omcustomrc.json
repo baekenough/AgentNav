@@ -1,9 +1,9 @@
 {
   "configVersion": 1,
-  "version": "0.68.2",
+  "version": "0.89.0",
   "language": "ko",
   "installedAt": "2026-03-07T08:43:14.855Z",
-  "lastUpdated": "2026-03-31T08:17:34.404Z",
+  "lastUpdated": "2026-04-15T11:12:13.285Z",
   "installedComponents": [
     "rules",
     "agents",
