@@ -53,6 +53,7 @@ https://code.claude.com/docs/en/desktop.md
 https://code.claude.com/docs/en/devcontainer.md
 https://code.claude.com/docs/en/discover-plugins.md
 https://code.claude.com/docs/en/env-vars.md
+https://code.claude.com/docs/en/errors.md
 https://code.claude.com/docs/en/fast-mode.md
 https://code.claude.com/docs/en/features-overview.md
 https://code.claude.com/docs/en/fullscreen.md

@@ -2,7 +2,9 @@ https://developers.openai.com/codex/agent-approvals-security.md
 https://developers.openai.com/codex/app-server.md
 https://developers.openai.com/codex/app.md
 https://developers.openai.com/codex/app/automations.md
+https://developers.openai.com/codex/app/browser.md
 https://developers.openai.com/codex/app/commands.md
+https://developers.openai.com/codex/app/computer-use.md
 https://developers.openai.com/codex/app/features.md
 https://developers.openai.com/codex/app/local-environments.md
 https://developers.openai.com/codex/app/review.md
@@ -48,6 +50,7 @@ https://developers.openai.com/codex/integrations/slack.md
 https://developers.openai.com/codex/learn/best-practices.md
 https://developers.openai.com/codex/llms-full.txt
 https://developers.openai.com/codex/mcp.md
+https://developers.openai.com/codex/memories.md
 https://developers.openai.com/codex/models.md
 https://developers.openai.com/codex/noninteractive.md
 https://developers.openai.com/codex/open-source.md
@@ -57,6 +60,7 @@ https://developers.openai.com/codex/plugins/build.md
 https://developers.openai.com/codex/pricing.md
 https://developers.openai.com/codex/prompting.md
 https://developers.openai.com/codex/quickstart.md
+https://developers.openai.com/codex/remote-connections.md
 https://developers.openai.com/codex/rules.md
 https://developers.openai.com/codex/sdk.md
 https://developers.openai.com/codex/security.md

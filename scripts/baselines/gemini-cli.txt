@@ -81,6 +81,7 @@ http://geminicli.com/docs/tools/activate-skill.md
 http://geminicli.com/docs/tools/ask-user.md
 http://geminicli.com/docs/tools/file-system.md
 http://geminicli.com/docs/tools/internal-docs.md
+http://geminicli.com/docs/tools/mcp-resources.md
 http://geminicli.com/docs/tools/mcp-server.md
 http://geminicli.com/docs/tools/memory.md
 http://geminicli.com/docs/tools/planning.md
