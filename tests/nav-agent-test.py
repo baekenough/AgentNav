@@ -147,6 +147,88 @@ class ReportData:
 # Ground truth extraction
 # ---------------------------------------------------------------------------
 
+# Threshold: if a single section holds more pages than this, attempt expansion.
+_FLAT_SECTION_EXPAND_THRESHOLD = 20
+
+
+def _derive_section_name(segment: str, parent_prefix: str) -> str:
+    """Convert a path segment into a human-readable section name."""
+    # Strip .md extension for leaf-file segments
+    name = segment[:-3] if segment.endswith(".md") else segment
+    return name.replace("-", " ").replace("_", " ").title()
+
+
+def _expand_single_section(section: SectionInfo) -> list[SectionInfo]:
+    """
+    Expand a single flat section into logical sub-sections based on page paths.
+
+    When agents.json stores all pages under one section (e.g. claude-code,
+    claude-api), query generation degrades because every category budget is
+    exhausted against a single bucket.  This function re-groups pages by the
+    first path segment after the section's path_prefix, producing a richer
+    section list that mirrors the actual documentation structure.
+
+    If 1-level grouping yields a dominant bucket (> 80% of pages), a 2-level
+    grouping is attempted so that query diversity is preserved.
+
+    Backward-compatible: sections already containing few pages are returned
+    unchanged.
+    """
+    pages = section.pages
+    if len(pages) <= _FLAT_SECTION_EXPAND_THRESHOLD:
+        return [section]
+
+    prefix = section.path_prefix.rstrip("/") + "/"
+
+    def _segment(page: dict, depth: int = 1) -> str:
+        path = page.get("path", "")
+        rel = path[len(prefix):] if path.startswith(prefix) else path.lstrip("/")
+        parts = rel.split("/")
+        if depth == 2 and len(parts) >= 2:
+            return "/".join(parts[:2])
+        return parts[0] if parts else "_root"
+
+    # 1-level grouping
+    groups: dict[str, list[dict]] = {}
+    for page in pages:
+        key = _segment(page, depth=1)
+        groups.setdefault(key, []).append(page)
+
+    # If one bucket dominates (> 80%), try 2-level grouping for that bucket
+    dominant = max(groups, key=lambda k: len(groups[k]))
+    if len(groups[dominant]) / len(pages) > 0.80 and len(pages) > 50:
+        expanded: dict[str, list[dict]] = {}
+        for page in pages:
+            key = _segment(page, depth=2)
+            expanded.setdefault(key, []).append(page)
+        groups = expanded
+
+    result: list[SectionInfo] = []
+    for seg, seg_pages in sorted(groups.items(), key=lambda kv: -len(kv[1])):
+        name = _derive_section_name(seg.split("/")[-1], prefix)
+        result.append(SectionInfo(
+            name=name,
+            page_count=len(seg_pages),
+            path_prefix=prefix + seg,
+            pages=seg_pages,
+        ))
+    return result
+
+
+def _expand_flat_sections(sections: list[SectionInfo]) -> list[SectionInfo]:
+    """
+    Expand any flat mega-sections into logical sub-sections.
+
+    Sections with a small page count are passed through unchanged, preserving
+    backward compatibility with sources like gpt-codex and gemini-cli that
+    already use properly granular sections.
+    """
+    result: list[SectionInfo] = []
+    for section in sections:
+        result.extend(_expand_single_section(section))
+    return result
+
+
 def load_agents_doc(source: str, fmt: str) -> AgentsDoc:
     """Load and parse agents.json and agents.<fmt> for the given source."""
     source_dir = PROJECT_ROOT / "public" / source
@@ -172,7 +254,7 @@ def load_agents_doc(source: str, fmt: str) -> AgentsDoc:
         description=raw_site.get("description", ""),
     )
 
-    sections = [
+    raw_sections = [
         SectionInfo(
             name=s.get("name", ""),
             page_count=s.get("page_count", 0),
@@ -182,6 +264,11 @@ def load_agents_doc(source: str, fmt: str) -> AgentsDoc:
         for s in data.get("sections", [])
         if s.get("pages")  # only sections with pages
     ]
+
+    # Expand flat mega-sections (e.g. claude-code, claude-api) into logical
+    # sub-sections derived from page paths.  Sources that already have proper
+    # per-section granularity (gpt-codex, gemini-cli) are unaffected.
+    sections = _expand_flat_sections(raw_sections)
 
     with open(format_path, encoding="utf-8") as f:
         raw_content = f.read()
