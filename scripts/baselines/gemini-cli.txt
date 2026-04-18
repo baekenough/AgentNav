@@ -4,6 +4,7 @@ http://geminicli.com/docs/changelogs.md
 http://geminicli.com/docs/changelogs/latest.md
 http://geminicli.com/docs/changelogs/preview.md
 http://geminicli.com/docs/cli/acp-mode.md
+http://geminicli.com/docs/cli/auto-memory.md
 http://geminicli.com/docs/cli/checkpointing.md
 http://geminicli.com/docs/cli/cli-reference.md
 http://geminicli.com/docs/cli/creating-skills.md
