@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Gemini CLI Documentation" url="https://geminicli.com" total-pages="90" last-updated="2026-03-31" />
+  <site name="Gemini CLI Documentation" url="https://geminicli.com" total-pages="92" last-updated="2026-04-18" />
 
   <sections>
     <!-- 1. Get Started -->
@@ -27,10 +27,11 @@
     </section>
 
     <!-- 3. CLI Features -->
-    <section name="CLI Features" path-prefix="/docs/cli" page-count="16">
+    <section name="CLI Features" path-prefix="/docs/cli" page-count="17">
       <page path="/docs/cli/skills/" title="Agent Skills" type="guide" />
       <page path="/docs/cli/creating-skills/" title="Creating Agent Skills" type="guide" />
       <page path="/docs/cli/acp-mode/" title="ACP Mode" type="guide" />
+      <page path="/docs/cli/auto-memory/" title="Auto Memory" type="guide" />
       <page path="/docs/cli/checkpointing/" title="Checkpointing" type="guide" />
       <page path="/docs/cli/git-worktrees/" title="Git Worktrees" type="guide" />
       <page path="/docs/cli/headless/" title="Headless Mode" type="guide" />
@@ -92,12 +93,13 @@
     </section>
 
     <!-- 9. Tools -->
-    <section name="Tools" path-prefix="/docs/tools" page-count="12">
+    <section name="Tools" path-prefix="/docs/tools" page-count="13">
       <page path="/docs/reference/tools/" title="Tools Reference" type="tool-reference" />
       <page path="/docs/tools/activate-skill/" title="Activate Skill Tool" type="tool-reference" />
       <page path="/docs/tools/ask-user/" title="Ask User Tool" type="tool-reference" />
       <page path="/docs/tools/file-system/" title="File System Tools" type="tool-reference" />
       <page path="/docs/tools/internal-docs/" title="Internal Docs Tool" type="tool-reference" />
+      <page path="/docs/tools/mcp-resources/" title="MCP Resource Tools" type="tool-reference" />
       <page path="/docs/tools/mcp-server/" title="MCP Servers" type="tool-reference" />
       <page path="/docs/tools/memory/" title="Memory Tool" type="tool-reference" />
       <page path="/docs/tools/planning/" title="Planning Tools" type="tool-reference" />
@@ -144,8 +146,8 @@
     <!-- 14. Releases -->
     <section name="Releases" path-prefix="/docs/changelogs" page-count="4">
       <page path="/docs/changelogs/" title="Release Notes" type="changelog" />
-      <page path="/docs/changelogs/latest/" title="Stable Release (v0.35.3)" type="changelog" />
-      <page path="/docs/changelogs/preview/" title="Preview Release (v0.36.0-preview.6)" type="changelog" />
+      <page path="/docs/changelogs/latest/" title="Stable Release (v0.38.1)" type="changelog" />
+      <page path="/docs/changelogs/preview/" title="Preview Release (v0.39.0-preview.0)" type="changelog" />
       <page path="/docs/releases/" title="Gemini CLI Releases" type="changelog" />
     </section>
   </sections>

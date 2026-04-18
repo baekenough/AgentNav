@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Claude Code Documentation — https://code.claude.com
-# Total: 111 pages | Last updated: 2026-04-15
+# Total: 114 pages | Last updated: 2026-04-18
 
 SITE: Claude Code Documentation
 URL: https://code.claude.com
-PAGES: 111
+PAGES: 114
 SECTIONS: 1
 
 == SCHEMA ==
@@ -20,7 +20,7 @@ SECTIONS: 1
 
 == SECTIONS ==
 
-[Docs] 111 pages | prefix=/docs/en/
+[Docs] 114 pages | prefix=/docs/en/
   agent-sdk/agent-loop.md | type=sdk-guide
   agent-sdk/claude-code-features.md | type=sdk-guide
   agent-sdk/cost-tracking.md | type=sdk-guide
@@ -76,6 +76,7 @@ SECTIONS: 1
   devcontainer.md | type=guide
   discover-plugins.md | type=guide
   env-vars.md | type=guide
+  errors.md | type=guide
   fast-mode.md | type=guide
   features-overview.md | type=overview
   fullscreen.md | type=guide
@@ -103,6 +104,7 @@ SECTIONS: 1
   permission-modes.md | type=guide
   permissions.md | type=guide
   platforms.md | type=guide
+  plugin-dependencies.md | type=guide
   plugin-marketplaces.md | type=guide
   plugins.md | type=guide
   plugins-reference.md | type=guide
@@ -124,6 +126,7 @@ SECTIONS: 1
   tools-reference.md | type=guide
   troubleshooting.md | type=guide
   ultraplan.md | type=guide
+  ultrareview.md | type=guide
   voice-dictation.md | type=guide
   vs-code.md | type=guide
   web-quickstart.md | type=tutorial

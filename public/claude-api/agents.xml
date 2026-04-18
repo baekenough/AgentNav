@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Claude API Documentation" url="https://platform.claude.com" total-pages="1035" last-updated="2026-04-15" />
+  <site name="Claude API Documentation" url="https://platform.claude.com" total-pages="1136" last-updated="2026-04-18" />
 
   <sections>
     <!-- 1. English -->
-    <section name="English" path-prefix="/docs/en/" page-count="1035">
+    <section name="English" path-prefix="/docs/en/" page-count="1136">
+      <page path="/docs/en/agents-and-tools/agent-skills/overview.md" title="Overview" type="overview" />
+      <page path="/docs/en/managed-agents/overview.md" title="Overview" type="overview" />
       <page path="/docs/en/release-notes/overview.md" title="Claude Platform" type="overview" />
       <page path="/docs/en/build-with-claude/overview.md" title="Features overview" type="overview" />
+      <page path="/docs/en/agents-and-tools/agent-skills/quickstart.md" title="Quickstart" type="tutorial" />
+      <page path="/docs/en/get-started.md" title="Quickstart" type="tutorial" />
+      <page path="/docs/en/managed-agents/quickstart.md" title="Quickstart" type="tutorial" />
+      <page path="/docs/en/about-claude/use-case-guides/overview.md" title="Overview" type="overview" />
       <page path="/docs/en/intro.md" title="Intro to Claude" type="guide" />
+      <page path="/docs/en/build-with-claude/prompt-engineering/overview.md" title="Overview" type="overview" />
+      <page path="/docs/en/agents-and-tools/tool-use/overview.md" title="Overview" type="overview" />
       <page path="/docs/en/managed-agents/github.md" title="Accessing GitHub" type="guide" />
       <page path="/docs/en/build-with-claude/adaptive-thinking.md" title="Adaptive thinking" type="guide" />
       <page path="/docs/en/managed-agents/files.md" title="Adding files" type="guide" />
@@ -15,7 +23,9 @@
       <page path="/docs/en/managed-agents/vaults.md" title="Authenticate with vaults" type="guide" />
       <page path="/docs/en/agents-and-tools/tool-use/bash-tool.md" title="Bash tool" type="guide" />
       <page path="/docs/en/build-with-claude/batch-processing.md" title="Batch processing" type="guide" />
+      <page path="/docs/en/build-with-claude/extended-thinking.md" title="Extended thinking" type="guide" />
       <page path="/docs/en/build-with-claude/citations.md" title="Citations" type="guide" />
+      <page path="/docs/en/agents-and-tools/agent-skills/claude-api-skill.md" title="Claude API skill" type="guide" />
       <page path="/docs/en/managed-agents/environments.md" title="Cloud environment setup" type="guide" />
       <page path="/docs/en/agents-and-tools/tool-use/code-execution-tool.md" title="Code execution tool" type="guide" />
       <page path="/docs/en/build-with-claude/compaction.md" title="Compaction" type="guide" />
@@ -27,6 +37,8 @@
       <page path="/docs/en/build-with-claude/context-windows.md" title="Context windows" type="guide" />
       <page path="/docs/en/about-claude/use-case-guides/customer-support-chat.md" title="Customer support agent" type="overview" />
       <page path="/docs/en/managed-agents/define-outcomes.md" title="Define outcomes" type="guide" />
+      <page path="/docs/en/test-and-evaluate/develop-tests.md" title="Define success and build evaluations" type="guide" />
+      <page path="/docs/en/managed-agents/agent-setup.md" title="Agent setup" type="guide" />
       <page path="/docs/en/build-with-claude/effort.md" title="Effort" type="guide" />
       <page path="/docs/en/build-with-claude/embeddings.md" title="Embeddings" type="guide" />
       <page path="/docs/en/build-with-claude/fast-mode.md" title="Fast mode (beta: research preview)" type="guide" />
@@ -40,6 +52,7 @@
       <page path="/docs/en/agents-and-tools/mcp-connector.md" title="MCP connector" type="guide" />
       <page path="/docs/en/managed-agents/mcp-connector.md" title="MCP connector" type="guide" />
       <page path="/docs/en/agents-and-tools/tool-use/memory-tool.md" title="Memory tool" type="guide" />
+      <page path="/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks.md" title="Mitigate jailbreaks" type="guide" />
       <page path="/docs/en/managed-agents/multi-agent.md" title="Multiagent sessions" type="guide" />
       <page path="/docs/en/build-with-claude/multilingual-support.md" title="Multilingual support" type="guide" />
       <page path="/docs/en/build-with-claude/pdf-support.md" title="PDF support" type="guide" />
@@ -54,34 +67,50 @@
       <page path="/docs/en/agents-and-tools/remote-mcp-servers.md" title="Remote MCP servers" type="guide" />
       <page path="/docs/en/build-with-claude/search-results.md" title="Search results" type="guide" />
       <page path="/docs/en/managed-agents/events-and-streaming.md" title="Session event stream" type="guide" />
+      <page path="/docs/en/agents-and-tools/agent-skills/best-practices.md" title="Best practices" type="best-practices" />
+      <page path="/docs/en/managed-agents/skills.md" title="Agent Skills" type="guide" />
       <page path="/docs/en/agents-and-tools/agent-skills/enterprise.md" title="Skills for enterprise" type="guide" />
       <page path="/docs/en/managed-agents/sessions.md" title="Start a session" type="guide" />
       <page path="/docs/en/build-with-claude/streaming.md" title="Streaming Messages" type="guide" />
       <page path="/docs/en/test-and-evaluate/strengthen-guardrails/handle-streaming-refusals.md" title="Streaming refusals" type="guide" />
       <page path="/docs/en/build-with-claude/structured-outputs.md" title="Structured outputs" type="guide" />
+      <page path="/docs/en/build-with-claude/task-budgets.md" title="Task budgets (beta)" type="guide" />
       <page path="/docs/en/agents-and-tools/tool-use/text-editor-tool.md" title="Text editor tool" type="guide" />
       <page path="/docs/en/about-claude/use-case-guides/ticket-routing.md" title="Ticket routing" type="overview" />
       <page path="/docs/en/build-with-claude/token-counting.md" title="Token counting" type="guide" />
       <page path="/docs/en/agents-and-tools/tool-use/tool-reference.md" title="Tool reference" type="guide" />
+      <page path="/docs/en/agents-and-tools/tool-use/tool-search-tool.md" title="Tool search" type="guide" />
       <page path="/docs/en/managed-agents/tools.md" title="Tools" type="guide" />
+      <page path="/docs/en/managed-agents/memory.md" title="Using memory" type="guide" />
+      <page path="/docs/en/build-with-claude/skills-guide.md" title="Skills in the API" type="guide" />
+      <page path="/docs/en/test-and-evaluate/eval-tool.md" title="Using the Evaluation Tool in Console" type="guide" />
       <page path="/docs/en/build-with-claude/working-with-messages.md" title="Using the Messages API" type="guide" />
+      <page path="/docs/en/build-with-claude/vision.md" title="Images and vision" type="guide" />
       <page path="/docs/en/agents-and-tools/tool-use/web-fetch-tool.md" title="Web fetch tool" type="guide" />
       <page path="/docs/en/agents-and-tools/tool-use/web-search-tool.md" title="Web search tool" type="guide" />
       <page path="/docs/en/build-with-claude/administration-api.md" title="Admin API overview" type="overview" />
       <page path="/docs/en/build-with-claude/api-and-data-retention.md" title="API and data retention" type="guide" />
       <page path="/docs/en/build-with-claude/claude-code-analytics-api.md" title="Claude Code Analytics API" type="guide" />
+      <page path="/docs/en/build-with-claude/claude-in-amazon-bedrock.md" title="Amazon Bedrock" type="guide" />
+      <page path="/docs/en/build-with-claude/claude-in-microsoft-foundry.md" title="Microsoft Foundry" type="guide" />
+      <page path="/docs/en/build-with-claude/claude-on-amazon-bedrock.md" title="Amazon Bedrock (legacy)" type="guide" />
+      <page path="/docs/en/build-with-claude/claude-on-vertex-ai.md" title="Vertex AI" type="guide" />
       <page path="/docs/en/build-with-claude/data-residency.md" title="Data residency" type="guide" />
       <page path="/docs/en/managed-agents/migration.md" title="Migration" type="guide" />
       <page path="/docs/en/managed-agents/observability.md" title="Session tracing" type="guide" />
       <page path="/docs/en/build-with-claude/usage-cost-api.md" title="Usage and Cost API" type="guide" />
       <page path="/docs/en/build-with-claude/workspaces.md" title="Workspaces" type="guide" />
       <page path="/docs/en/about-claude/models/overview.md" title="Models overview" type="overview" />
+      <page path="/docs/en/resources/overview.md" title="Model cards" type="overview" />
+      <page path="/docs/en/about-claude/models/choosing-a-model.md" title="Choosing a model" type="overview" />
       <page path="/docs/en/about-claude/models/migration-guide.md" title="Migration guide" type="overview" />
       <page path="/docs/en/about-claude/model-deprecations.md" title="Model deprecations" type="overview" />
       <page path="/docs/en/about-claude/pricing.md" title="Pricing" type="overview" />
-      <page path="/docs/en/about-claude/models/whats-new-claude-4-6.md" title="What's new in Claude 4.6" type="overview" />
+      <page path="/docs/en/release-notes/system-prompts.md" title="System prompts" type="changelog" />
+      <page path="/docs/en/about-claude/models/whats-new-claude-4-7.md" title="What's new in Claude Opus 4.7" type="overview" />
       <page path="/docs/en/api/sdks/csharp.md" title="C# SDK" type="sdk-guide" />
       <page path="/docs/en/api/sdks/cli.md" title="CLI" type="tool-reference" />
+      <page path="/docs/en/api/client-sdks.md" title="Overview" type="tool-reference" />
       <page path="/docs/en/api/sdks/go.md" title="Go SDK" type="sdk-guide" />
       <page path="/docs/en/api/sdks/java.md" title="Java SDK" type="sdk-guide" />
       <page path="/docs/en/api/openai-sdk.md" title="OpenAI SDK compatibility" type="sdk-guide" />
@@ -89,6 +118,7 @@
       <page path="/docs/en/api/sdks/python.md" title="Python SDK" type="sdk-guide" />
       <page path="/docs/en/api/sdks/ruby.md" title="Ruby SDK" type="sdk-guide" />
       <page path="/docs/en/api/sdks/typescript.md" title="TypeScript SDK" type="sdk-guide" />
+      <page path="/docs/en/api/overview.md" title="Features overview" type="overview" />
       <page path="/docs/en/api/beta/sessions/resources/add.md" title="Add Session Resource (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/sessions/resources/add.md" title="Add Session Resource (Beta) (cli)" type="tool-reference" />
       <page path="/docs/en/api/csharp/beta/sessions/resources/add.md" title="Add Session Resource (Beta) (csharp)" type="api-endpoint" />
@@ -112,15 +142,25 @@
       <page path="/docs/en/api/typescript/beta/agents.md" title="Agents (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/admin/api_keys.md" title="API Keys" type="api-endpoint" />
       <page path="/docs/en/api/beta/agents/archive.md" title="Archive Agent (Beta)" type="api-endpoint" />
+      <page path="/docs/en/api/beta/agents/delete" title="Archive Agent (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/agents/archive.md" title="Archive Agent (Beta) (cli)" type="tool-reference" />
+      <page path="/docs/en/api/cli/beta/agents/delete" title="Archive Agent (Beta) (cli)" type="tool-reference" />
       <page path="/docs/en/api/csharp/beta/agents/archive.md" title="Archive Agent (Beta) (csharp)" type="api-endpoint" />
+      <page path="/docs/en/api/csharp/beta/agents/delete" title="Archive Agent (Beta) (csharp)" type="api-endpoint" />
       <page path="/docs/en/api/go/beta/agents/archive.md" title="Archive Agent (Beta) (Go)" type="api-endpoint" />
+      <page path="/docs/en/api/go/beta/agents/delete" title="Archive Agent (Beta) (Go)" type="api-endpoint" />
       <page path="/docs/en/api/java/beta/agents/archive.md" title="Archive Agent (Beta) (Java)" type="api-endpoint" />
+      <page path="/docs/en/api/java/beta/agents/delete" title="Archive Agent (Beta) (Java)" type="api-endpoint" />
       <page path="/docs/en/api/php/beta/agents/archive.md" title="Archive Agent (Beta) (php)" type="api-endpoint" />
+      <page path="/docs/en/api/php/beta/agents/delete" title="Archive Agent (Beta) (php)" type="api-endpoint" />
       <page path="/docs/en/api/python/beta/agents/archive.md" title="Archive Agent (Beta) (Python)" type="api-endpoint" />
+      <page path="/docs/en/api/python/beta/agents/delete" title="Archive Agent (Beta) (Python)" type="api-endpoint" />
       <page path="/docs/en/api/ruby/beta/agents/archive.md" title="Archive Agent (Beta) (Ruby)" type="api-endpoint" />
+      <page path="/docs/en/api/ruby/beta/agents/delete" title="Archive Agent (Beta) (Ruby)" type="api-endpoint" />
       <page path="/docs/en/api/terraform/beta/agents/archive.md" title="Archive Agent (Beta) (terraform)" type="api-endpoint" />
+      <page path="/docs/en/api/terraform/beta/agents/delete" title="Archive Agent (Beta) (terraform)" type="api-endpoint" />
       <page path="/docs/en/api/typescript/beta/agents/archive.md" title="Archive Agent (Beta) (TypeScript)" type="api-endpoint" />
+      <page path="/docs/en/api/typescript/beta/agents/delete" title="Archive Agent (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/beta/vaults/credentials/archive.md" title="Archive Credential (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/vaults/credentials/archive.md" title="Archive Credential (Beta) (cli)" type="tool-reference" />
       <page path="/docs/en/api/csharp/beta/vaults/credentials/archive.md" title="Archive Credential (Beta) (csharp)" type="api-endpoint" />
@@ -313,6 +353,16 @@
       <page path="/docs/en/api/ruby/beta/vaults/credentials/create.md" title="Create Credential (Beta) (Ruby)" type="api-endpoint" />
       <page path="/docs/en/api/terraform/beta/vaults/credentials/create.md" title="Create Credential (Beta) (terraform)" type="api-endpoint" />
       <page path="/docs/en/api/typescript/beta/vaults/credentials/create.md" title="Create Credential (Beta) (TypeScript)" type="api-endpoint" />
+      <page path="/docs/en/api/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta)" type="api-endpoint" />
+      <page path="/docs/en/api/cli/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (cli)" type="tool-reference" />
+      <page path="/docs/en/api/csharp/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (csharp)" type="api-endpoint" />
+      <page path="/docs/en/api/go/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (Go)" type="api-endpoint" />
+      <page path="/docs/en/api/java/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (Java)" type="api-endpoint" />
+      <page path="/docs/en/api/php/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (php)" type="api-endpoint" />
+      <page path="/docs/en/api/python/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (Python)" type="api-endpoint" />
+      <page path="/docs/en/api/ruby/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (Ruby)" type="api-endpoint" />
+      <page path="/docs/en/api/terraform/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (terraform)" type="api-endpoint" />
+      <page path="/docs/en/api/typescript/beta/user_profiles/create_enrollment_url.md" title="Create Enrollment URL (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/beta/environments/create.md" title="Create Environment (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/environments/create.md" title="Create Environment (Beta) (cli)" type="tool-reference" />
       <page path="/docs/en/api/csharp/beta/environments/create.md" title="Create Environment (Beta) (csharp)" type="api-endpoint" />
@@ -354,6 +404,16 @@
       <page path="/docs/en/api/ruby/beta/skills/versions/create.md" title="Create Skill Version (Beta) (Ruby)" type="api-endpoint" />
       <page path="/docs/en/api/terraform/beta/skills/versions/create.md" title="Create Skill Version (Beta) (terraform)" type="api-endpoint" />
       <page path="/docs/en/api/typescript/beta/skills/versions/create.md" title="Create Skill Version (Beta) (TypeScript)" type="api-endpoint" />
+      <page path="/docs/en/api/beta/user_profiles/create.md" title="Create User Profile (Beta)" type="api-endpoint" />
+      <page path="/docs/en/api/cli/beta/user_profiles/create.md" title="Create User Profile (Beta) (cli)" type="tool-reference" />
+      <page path="/docs/en/api/csharp/beta/user_profiles/create.md" title="Create User Profile (Beta) (csharp)" type="api-endpoint" />
+      <page path="/docs/en/api/go/beta/user_profiles/create.md" title="Create User Profile (Beta) (Go)" type="api-endpoint" />
+      <page path="/docs/en/api/java/beta/user_profiles/create.md" title="Create User Profile (Beta) (Java)" type="api-endpoint" />
+      <page path="/docs/en/api/php/beta/user_profiles/create.md" title="Create User Profile (Beta) (php)" type="api-endpoint" />
+      <page path="/docs/en/api/python/beta/user_profiles/create.md" title="Create User Profile (Beta) (Python)" type="api-endpoint" />
+      <page path="/docs/en/api/ruby/beta/user_profiles/create.md" title="Create User Profile (Beta) (Ruby)" type="api-endpoint" />
+      <page path="/docs/en/api/terraform/beta/user_profiles/create.md" title="Create User Profile (Beta) (terraform)" type="api-endpoint" />
+      <page path="/docs/en/api/typescript/beta/user_profiles/create.md" title="Create User Profile (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/beta/vaults/create.md" title="Create Vault (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/vaults/create.md" title="Create Vault (Beta) (cli)" type="tool-reference" />
       <page path="/docs/en/api/csharp/beta/vaults/create.md" title="Create Vault (Beta) (csharp)" type="api-endpoint" />
@@ -625,6 +685,16 @@
       <page path="/docs/en/api/terraform/beta/skills/versions/retrieve.md" title="Get Skill Version (Beta) (terraform)" type="api-endpoint" />
       <page path="/docs/en/api/typescript/beta/skills/versions/retrieve.md" title="Get Skill Version (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/admin/users/retrieve.md" title="Get User" type="api-endpoint" />
+      <page path="/docs/en/api/beta/user_profiles/retrieve.md" title="Get User Profile (Beta)" type="api-endpoint" />
+      <page path="/docs/en/api/cli/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (cli)" type="tool-reference" />
+      <page path="/docs/en/api/csharp/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (csharp)" type="api-endpoint" />
+      <page path="/docs/en/api/go/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (Go)" type="api-endpoint" />
+      <page path="/docs/en/api/java/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (Java)" type="api-endpoint" />
+      <page path="/docs/en/api/php/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (php)" type="api-endpoint" />
+      <page path="/docs/en/api/python/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (Python)" type="api-endpoint" />
+      <page path="/docs/en/api/ruby/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (Ruby)" type="api-endpoint" />
+      <page path="/docs/en/api/terraform/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (terraform)" type="api-endpoint" />
+      <page path="/docs/en/api/typescript/beta/user_profiles/retrieve.md" title="Get User Profile (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/beta/vaults/retrieve.md" title="Get Vault (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/vaults/retrieve.md" title="Get Vault (Beta) (cli)" type="tool-reference" />
       <page path="/docs/en/api/csharp/beta/vaults/retrieve.md" title="Get Vault (Beta) (csharp)" type="api-endpoint" />
@@ -780,6 +850,16 @@
       <page path="/docs/en/api/ruby/beta/skills/list.md" title="List Skills (Beta) (Ruby)" type="api-endpoint" />
       <page path="/docs/en/api/terraform/beta/skills/list.md" title="List Skills (Beta) (terraform)" type="api-endpoint" />
       <page path="/docs/en/api/typescript/beta/skills/list.md" title="List Skills (Beta) (TypeScript)" type="api-endpoint" />
+      <page path="/docs/en/api/beta/user_profiles/list.md" title="List User Profiles (Beta)" type="api-endpoint" />
+      <page path="/docs/en/api/cli/beta/user_profiles/list.md" title="List User Profiles (Beta) (cli)" type="tool-reference" />
+      <page path="/docs/en/api/csharp/beta/user_profiles/list.md" title="List User Profiles (Beta) (csharp)" type="api-endpoint" />
+      <page path="/docs/en/api/go/beta/user_profiles/list.md" title="List User Profiles (Beta) (Go)" type="api-endpoint" />
+      <page path="/docs/en/api/java/beta/user_profiles/list.md" title="List User Profiles (Beta) (Java)" type="api-endpoint" />
+      <page path="/docs/en/api/php/beta/user_profiles/list.md" title="List User Profiles (Beta) (php)" type="api-endpoint" />
+      <page path="/docs/en/api/python/beta/user_profiles/list.md" title="List User Profiles (Beta) (Python)" type="api-endpoint" />
+      <page path="/docs/en/api/ruby/beta/user_profiles/list.md" title="List User Profiles (Beta) (Ruby)" type="api-endpoint" />
+      <page path="/docs/en/api/terraform/beta/user_profiles/list.md" title="List User Profiles (Beta) (terraform)" type="api-endpoint" />
+      <page path="/docs/en/api/typescript/beta/user_profiles/list.md" title="List User Profiles (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/admin/users/list.md" title="List Users" type="api-endpoint" />
       <page path="/docs/en/api/beta/vaults/list.md" title="List Vaults (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/vaults/list.md" title="List Vaults (Beta) (cli)" type="tool-reference" />
@@ -978,6 +1058,16 @@
       <page path="/docs/en/api/terraform/beta/sessions/resources/update.md" title="Update Session Resource (Beta) (terraform)" type="api-endpoint" />
       <page path="/docs/en/api/typescript/beta/sessions/resources/update.md" title="Update Session Resource (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/admin/users/update.md" title="Update User" type="api-endpoint" />
+      <page path="/docs/en/api/beta/user_profiles/update.md" title="Update User Profile (Beta)" type="api-endpoint" />
+      <page path="/docs/en/api/cli/beta/user_profiles/update.md" title="Update User Profile (Beta) (cli)" type="tool-reference" />
+      <page path="/docs/en/api/csharp/beta/user_profiles/update.md" title="Update User Profile (Beta) (csharp)" type="api-endpoint" />
+      <page path="/docs/en/api/go/beta/user_profiles/update.md" title="Update User Profile (Beta) (Go)" type="api-endpoint" />
+      <page path="/docs/en/api/java/beta/user_profiles/update.md" title="Update User Profile (Beta) (Java)" type="api-endpoint" />
+      <page path="/docs/en/api/php/beta/user_profiles/update.md" title="Update User Profile (Beta) (php)" type="api-endpoint" />
+      <page path="/docs/en/api/python/beta/user_profiles/update.md" title="Update User Profile (Beta) (Python)" type="api-endpoint" />
+      <page path="/docs/en/api/ruby/beta/user_profiles/update.md" title="Update User Profile (Beta) (Ruby)" type="api-endpoint" />
+      <page path="/docs/en/api/terraform/beta/user_profiles/update.md" title="Update User Profile (Beta) (terraform)" type="api-endpoint" />
+      <page path="/docs/en/api/typescript/beta/user_profiles/update.md" title="Update User Profile (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/beta/vaults/update.md" title="Update Vault (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/vaults/update.md" title="Update Vault (Beta) (cli)" type="tool-reference" />
       <page path="/docs/en/api/csharp/beta/vaults/update.md" title="Update Vault (Beta) (csharp)" type="api-endpoint" />
@@ -1001,6 +1091,16 @@
       <page path="/docs/en/api/terraform/beta/files/upload.md" title="Upload File (Beta) (terraform)" type="api-endpoint" />
       <page path="/docs/en/api/typescript/beta/files/upload.md" title="Upload File (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/admin/usage_report.md" title="Usage Report" type="api-endpoint" />
+      <page path="/docs/en/api/beta/user_profiles.md" title="User Profiles (Beta)" type="api-endpoint" />
+      <page path="/docs/en/api/cli/beta/user_profiles.md" title="User Profiles (Beta) (cli)" type="tool-reference" />
+      <page path="/docs/en/api/csharp/beta/user_profiles.md" title="User Profiles (Beta) (csharp)" type="api-endpoint" />
+      <page path="/docs/en/api/go/beta/user_profiles.md" title="User Profiles (Beta) (Go)" type="api-endpoint" />
+      <page path="/docs/en/api/java/beta/user_profiles.md" title="User Profiles (Beta) (Java)" type="api-endpoint" />
+      <page path="/docs/en/api/php/beta/user_profiles.md" title="User Profiles (Beta) (php)" type="api-endpoint" />
+      <page path="/docs/en/api/python/beta/user_profiles.md" title="User Profiles (Beta) (Python)" type="api-endpoint" />
+      <page path="/docs/en/api/ruby/beta/user_profiles.md" title="User Profiles (Beta) (Ruby)" type="api-endpoint" />
+      <page path="/docs/en/api/terraform/beta/user_profiles.md" title="User Profiles (Beta) (terraform)" type="api-endpoint" />
+      <page path="/docs/en/api/typescript/beta/user_profiles.md" title="User Profiles (Beta) (TypeScript)" type="api-endpoint" />
       <page path="/docs/en/api/admin/users.md" title="Users" type="api-endpoint" />
       <page path="/docs/en/api/beta/vaults.md" title="Vaults (Beta)" type="api-endpoint" />
       <page path="/docs/en/api/cli/beta/vaults.md" title="Vaults (Beta) (cli)" type="tool-reference" />
@@ -1039,6 +1139,7 @@
       <page path="/docs/en/api/rate-limits.md" title="Rate limits" type="api-endpoint" />
       <page path="/docs/en/api/service-tiers.md" title="Service tiers" type="api-endpoint" />
       <page path="/docs/en/api/supported-regions.md" title="Supported regions" type="api-endpoint" />
+      <page path="/docs/en/api/claude-code/routines-fire.md" title="Trigger a routine" type="api-endpoint" />
       <page path="/docs/en/api/versioning.md" title="Versions" type="api-endpoint" />
     </section>
   </sections>

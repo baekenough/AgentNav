@@ -3,14 +3,26 @@
   "site": {
     "name": "Claude API Documentation",
     "url": "https://platform.claude.com",
-    "total_pages": 1035,
-    "last_updated": "2026-04-15"
+    "total_pages": 1136,
+    "last_updated": "2026-04-18"
   },
   "sections": [
     {
       "name": "English",
-      "page_count": 1035,
+      "page_count": 1136,
       "pages": [
+        {
+          "path": "/docs/en/agents-and-tools/agent-skills/overview.md",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Agent Skills"
+        },
+        {
+          "path": "/docs/en/managed-agents/overview.md",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Claude Managed Agents overview"
+        },
         {
           "path": "/docs/en/release-notes/overview.md",
           "title": "Claude Platform",
@@ -22,9 +34,45 @@
           "type": "overview"
         },
         {
+          "path": "/docs/en/agents-and-tools/agent-skills/quickstart.md",
+          "title": "Quickstart",
+          "type": "tutorial",
+          "description": "Get started with Agent Skills in the API"
+        },
+        {
+          "path": "/docs/en/get-started.md",
+          "title": "Quickstart",
+          "type": "tutorial",
+          "description": "Get started with Claude"
+        },
+        {
+          "path": "/docs/en/managed-agents/quickstart.md",
+          "title": "Quickstart",
+          "type": "tutorial",
+          "description": "Get started with Claude Managed Agents"
+        },
+        {
+          "path": "/docs/en/about-claude/use-case-guides/overview.md",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Guides to common use cases"
+        },
+        {
           "path": "/docs/en/intro.md",
           "title": "Intro to Claude",
           "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/prompt-engineering/overview.md",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Prompt engineering overview"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/tool-use/overview.md",
+          "title": "Overview",
+          "type": "overview",
+          "description": "Tool use with Claude"
         },
         {
           "path": "/docs/en/managed-agents/github.md",
@@ -62,8 +110,19 @@
           "type": "guide"
         },
         {
+          "path": "/docs/en/build-with-claude/extended-thinking.md",
+          "title": "Extended thinking",
+          "type": "guide",
+          "description": "Building with extended thinking"
+        },
+        {
           "path": "/docs/en/build-with-claude/citations.md",
           "title": "Citations",
+          "type": "guide"
+        },
+        {
+          "path": "/docs/en/agents-and-tools/agent-skills/claude-api-skill.md",
+          "title": "Claude API skill",
           "type": "guide"
         },
         {
@@ -120,6 +179,18 @@
           "path": "/docs/en/managed-agents/define-outcomes.md",
           "title": "Define outcomes",
           "type": "guide"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/develop-tests.md",
+          "title": "Define success and build evaluations",
+          "type": "guide",
+          "description": "Define success criteria and build evaluations"
+        },
+        {
+          "path": "/docs/en/managed-agents/agent-setup.md",
+          "title": "Agent setup",
+          "type": "guide",
+          "description": "Define your agent"
         },
         {
           "path": "/docs/en/build-with-claude/effort.md",
@@ -185,6 +256,12 @@
           "path": "/docs/en/agents-and-tools/tool-use/memory-tool.md",
           "title": "Memory tool",
           "type": "guide"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks.md",
+          "title": "Mitigate jailbreaks",
+          "type": "guide",
+          "description": "Mitigate jailbreaks and prompt injections"
         },
         {
           "path": "/docs/en/managed-agents/multi-agent.md",
@@ -257,6 +334,18 @@
           "type": "guide"
         },
         {
+          "path": "/docs/en/agents-and-tools/agent-skills/best-practices.md",
+          "title": "Best practices",
+          "type": "best-practices",
+          "description": "Skill authoring best practices"
+        },
+        {
+          "path": "/docs/en/managed-agents/skills.md",
+          "title": "Agent Skills",
+          "type": "guide",
+          "description": "Skills"
+        },
+        {
           "path": "/docs/en/agents-and-tools/agent-skills/enterprise.md",
           "title": "Skills for enterprise",
           "type": "guide"
@@ -282,6 +371,12 @@
           "type": "guide"
         },
         {
+          "path": "/docs/en/build-with-claude/task-budgets.md",
+          "title": "Task budgets (beta)",
+          "type": "guide",
+          "description": "Task budgets"
+        },
+        {
           "path": "/docs/en/agents-and-tools/tool-use/text-editor-tool.md",
           "title": "Text editor tool",
           "type": "guide"
@@ -302,14 +397,44 @@
           "type": "guide"
         },
         {
+          "path": "/docs/en/agents-and-tools/tool-use/tool-search-tool.md",
+          "title": "Tool search",
+          "type": "guide",
+          "description": "Tool search tool"
+        },
+        {
           "path": "/docs/en/managed-agents/tools.md",
           "title": "Tools",
           "type": "guide"
         },
         {
+          "path": "/docs/en/managed-agents/memory.md",
+          "title": "Using memory",
+          "type": "guide",
+          "description": "Using agent memory"
+        },
+        {
+          "path": "/docs/en/build-with-claude/skills-guide.md",
+          "title": "Skills in the API",
+          "type": "guide",
+          "description": "Using Agent Skills with the API"
+        },
+        {
+          "path": "/docs/en/test-and-evaluate/eval-tool.md",
+          "title": "Using the Evaluation Tool in Console",
+          "type": "guide",
+          "description": "Using the Evaluation Tool"
+        },
+        {
           "path": "/docs/en/build-with-claude/working-with-messages.md",
           "title": "Using the Messages API",
           "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/vision.md",
+          "title": "Images and vision",
+          "type": "guide",
+          "description": "Vision"
         },
         {
           "path": "/docs/en/agents-and-tools/tool-use/web-fetch-tool.md",
@@ -335,6 +460,30 @@
           "path": "/docs/en/build-with-claude/claude-code-analytics-api.md",
           "title": "Claude Code Analytics API",
           "type": "guide"
+        },
+        {
+          "path": "/docs/en/build-with-claude/claude-in-amazon-bedrock.md",
+          "title": "Amazon Bedrock",
+          "type": "guide",
+          "description": "Claude in Amazon Bedrock"
+        },
+        {
+          "path": "/docs/en/build-with-claude/claude-in-microsoft-foundry.md",
+          "title": "Microsoft Foundry",
+          "type": "guide",
+          "description": "Claude in Microsoft Foundry"
+        },
+        {
+          "path": "/docs/en/build-with-claude/claude-on-amazon-bedrock.md",
+          "title": "Amazon Bedrock (legacy)",
+          "type": "guide",
+          "description": "Claude on Amazon Bedrock (legacy)"
+        },
+        {
+          "path": "/docs/en/build-with-claude/claude-on-vertex-ai.md",
+          "title": "Vertex AI",
+          "type": "guide",
+          "description": "Claude on Vertex AI"
         },
         {
           "path": "/docs/en/build-with-claude/data-residency.md",
@@ -367,6 +516,18 @@
           "type": "overview"
         },
         {
+          "path": "/docs/en/resources/overview.md",
+          "title": "Model cards",
+          "type": "overview",
+          "description": "Overview"
+        },
+        {
+          "path": "/docs/en/about-claude/models/choosing-a-model.md",
+          "title": "Choosing a model",
+          "type": "overview",
+          "description": "Choosing the right model"
+        },
+        {
           "path": "/docs/en/about-claude/models/migration-guide.md",
           "title": "Migration guide",
           "type": "overview"
@@ -382,8 +543,14 @@
           "type": "overview"
         },
         {
-          "path": "/docs/en/about-claude/models/whats-new-claude-4-6.md",
-          "title": "What's new in Claude 4.6",
+          "path": "/docs/en/release-notes/system-prompts.md",
+          "title": "System prompts",
+          "type": "changelog",
+          "description": "System Prompts"
+        },
+        {
+          "path": "/docs/en/about-claude/models/whats-new-claude-4-7.md",
+          "title": "What's new in Claude Opus 4.7",
           "type": "overview"
         },
         {
@@ -395,6 +562,12 @@
           "path": "/docs/en/api/sdks/cli.md",
           "title": "CLI",
           "type": "tool-reference"
+        },
+        {
+          "path": "/docs/en/api/client-sdks.md",
+          "title": "Overview",
+          "type": "tool-reference",
+          "description": "Client SDKs"
         },
         {
           "path": "/docs/en/api/sdks/go.md",
@@ -430,6 +603,12 @@
           "path": "/docs/en/api/sdks/typescript.md",
           "title": "TypeScript SDK",
           "type": "sdk-guide"
+        },
+        {
+          "path": "/docs/en/api/overview.md",
+          "title": "Features overview",
+          "type": "overview",
+          "description": "API Overview"
         },
         {
           "path": "/docs/en/api/beta/sessions/resources/add.md",
@@ -547,7 +726,17 @@
           "type": "api-endpoint"
         },
         {
+          "path": "/docs/en/api/beta/agents/delete",
+          "title": "Archive Agent (Beta)",
+          "type": "api-endpoint"
+        },
+        {
           "path": "/docs/en/api/cli/beta/agents/archive.md",
+          "title": "Archive Agent (Beta) (cli)",
+          "type": "tool-reference"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/agents/delete",
           "title": "Archive Agent (Beta) (cli)",
           "type": "tool-reference"
         },
@@ -557,7 +746,17 @@
           "type": "api-endpoint"
         },
         {
+          "path": "/docs/en/api/csharp/beta/agents/delete",
+          "title": "Archive Agent (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
           "path": "/docs/en/api/go/beta/agents/archive.md",
+          "title": "Archive Agent (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/agents/delete",
           "title": "Archive Agent (Beta) (Go)",
           "type": "api-endpoint"
         },
@@ -567,7 +766,17 @@
           "type": "api-endpoint"
         },
         {
+          "path": "/docs/en/api/java/beta/agents/delete",
+          "title": "Archive Agent (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
           "path": "/docs/en/api/php/beta/agents/archive.md",
+          "title": "Archive Agent (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/agents/delete",
           "title": "Archive Agent (Beta) (php)",
           "type": "api-endpoint"
         },
@@ -577,7 +786,17 @@
           "type": "api-endpoint"
         },
         {
+          "path": "/docs/en/api/python/beta/agents/delete",
+          "title": "Archive Agent (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
           "path": "/docs/en/api/ruby/beta/agents/archive.md",
+          "title": "Archive Agent (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/agents/delete",
           "title": "Archive Agent (Beta) (Ruby)",
           "type": "api-endpoint"
         },
@@ -587,7 +806,17 @@
           "type": "api-endpoint"
         },
         {
+          "path": "/docs/en/api/terraform/beta/agents/delete",
+          "title": "Archive Agent (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
           "path": "/docs/en/api/typescript/beta/agents/archive.md",
+          "title": "Archive Agent (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/agents/delete",
           "title": "Archive Agent (Beta) (TypeScript)",
           "type": "api-endpoint"
         },
@@ -1552,6 +1781,56 @@
           "type": "api-endpoint"
         },
         {
+          "path": "/docs/en/api/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (cli)",
+          "type": "tool-reference"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/user_profiles/create_enrollment_url.md",
+          "title": "Create Enrollment URL (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
           "path": "/docs/en/api/beta/environments/create.md",
           "title": "Create Environment (Beta)",
           "type": "api-endpoint"
@@ -1754,6 +2033,56 @@
         {
           "path": "/docs/en/api/typescript/beta/skills/versions/create.md",
           "title": "Create Skill Version (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (cli)",
+          "type": "tool-reference"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/user_profiles/create.md",
+          "title": "Create User Profile (Beta) (TypeScript)",
           "type": "api-endpoint"
         },
         {
@@ -3112,6 +3441,56 @@
           "type": "api-endpoint"
         },
         {
+          "path": "/docs/en/api/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (cli)",
+          "type": "tool-reference"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/user_profiles/retrieve.md",
+          "title": "Get User Profile (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
           "path": "/docs/en/api/beta/vaults/retrieve.md",
           "title": "Get Vault (Beta)",
           "type": "api-endpoint"
@@ -3884,6 +4263,56 @@
         {
           "path": "/docs/en/api/typescript/beta/skills/list.md",
           "title": "List Skills (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (cli)",
+          "type": "tool-reference"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/user_profiles/list.md",
+          "title": "List User Profiles (Beta) (TypeScript)",
           "type": "api-endpoint"
         },
         {
@@ -4877,6 +5306,56 @@
           "type": "api-endpoint"
         },
         {
+          "path": "/docs/en/api/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (cli)",
+          "type": "tool-reference"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/user_profiles/update.md",
+          "title": "Update User Profile (Beta) (TypeScript)",
+          "type": "api-endpoint"
+        },
+        {
           "path": "/docs/en/api/beta/vaults/update.md",
           "title": "Update Vault (Beta)",
           "type": "api-endpoint"
@@ -4989,6 +5468,56 @@
         {
           "path": "/docs/en/api/admin/usage_report.md",
           "title": "Usage Report",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/beta/user_profiles.md",
+          "title": "User Profiles (Beta)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/cli/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (cli)",
+          "type": "tool-reference"
+        },
+        {
+          "path": "/docs/en/api/csharp/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (csharp)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/go/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (Go)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/java/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (Java)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/php/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (php)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/python/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (Python)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/ruby/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (Ruby)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/terraform/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (terraform)",
+          "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/typescript/beta/user_profiles.md",
+          "title": "User Profiles (Beta) (TypeScript)",
           "type": "api-endpoint"
         },
         {
@@ -5180,6 +5709,12 @@
           "path": "/docs/en/api/supported-regions.md",
           "title": "Supported regions",
           "type": "api-endpoint"
+        },
+        {
+          "path": "/docs/en/api/claude-code/routines-fire.md",
+          "title": "Trigger a routine",
+          "type": "api-endpoint",
+          "description": "Trigger a routine via API"
         },
         {
           "path": "/docs/en/api/versioning.md",

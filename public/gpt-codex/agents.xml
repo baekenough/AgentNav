@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="GPT Codex Documentation" url="https://developers.openai.com/codex" total-pages="71" last-updated="2026-04-15" />
+  <site name="GPT Codex Documentation" url="https://developers.openai.com" total-pages="75" last-updated="2026-04-18" />
 
   <sections>
     <!-- 1. Documentation sets -->
@@ -14,12 +14,14 @@
     </section>
 
     <!-- 3. App -->
-    <section name="App" path-prefix="/codex/" page-count="10">
+    <section name="App" path-prefix="/codex/" page-count="12">
       <page path="/codex/app.md" title="Codex app" type="guide" />
       <page path="/codex/app/automations.md" title="Automations" type="guide" />
       <page path="/codex/app/commands.md" title="Codex app commands" type="tool-reference" />
       <page path="/codex/app/features.md" title="Codex app features" type="guide" />
       <page path="/codex/app/settings.md" title="Codex app settings" type="reference" />
+      <page path="/codex/app/computer-use.md" title="Computer Use" type="guide" />
+      <page path="/codex/app/browser.md" title="In-app browser" type="guide" />
       <page path="/codex/app/local-environments.md" title="Local environments" type="guide" />
       <page path="/codex/app/review.md" title="Review" type="guide" />
       <page path="/codex/app/troubleshooting.md" title="Troubleshooting" type="guide" />
@@ -145,58 +147,68 @@
       <page path="/codex/mcp.md" title="Model Context Protocol" type="guide" />
     </section>
 
-    <!-- 24. Models -->
+    <!-- 24. Memories -->
+    <section name="Memories" path-prefix="/codex/" page-count="1">
+      <page path="/codex/memories.md" title="Memories" type="guide" />
+    </section>
+
+    <!-- 25. Models -->
     <section name="Models" path-prefix="/codex/" page-count="1">
       <page path="/codex/models.md" title="Codex Models" type="guide" />
     </section>
 
-    <!-- 25. Noninteractive -->
+    <!-- 26. Noninteractive -->
     <section name="Noninteractive" path-prefix="/codex/" page-count="1">
       <page path="/codex/noninteractive.md" title="Non-interactive mode" type="guide" />
     </section>
 
-    <!-- 26. Open Source -->
+    <!-- 27. Open Source -->
     <section name="Open Source" path-prefix="/codex/" page-count="1">
       <page path="/codex/open-source.md" title="Open Source" type="guide" />
     </section>
 
-    <!-- 27. Overview -->
+    <!-- 28. Overview -->
     <section name="Overview" path-prefix="/codex/" page-count="1">
       <page path="/codex/overview.md" title="Codex" type="overview" />
     </section>
 
-    <!-- 28. Plugins -->
+    <!-- 29. Plugins -->
     <section name="Plugins" path-prefix="/codex/" page-count="2">
       <page path="/codex/plugins.md" title="Plugins" type="guide" />
       <page path="/codex/plugins/build.md" title="Build plugins" type="guide" />
     </section>
 
-    <!-- 29. Pricing -->
+    <!-- 30. Pricing -->
     <section name="Pricing" path-prefix="/codex/" page-count="1">
       <page path="/codex/pricing.md" title="Codex Pricing" type="reference" />
     </section>
 
-    <!-- 30. Prompting -->
+    <!-- 31. Prompting -->
     <section name="Prompting" path-prefix="/codex/" page-count="1">
       <page path="/codex/prompting.md" title="Prompting" type="guide" />
     </section>
 
-    <!-- 31. Quickstart -->
+    <!-- 32. Quickstart -->
     <section name="Quickstart" path-prefix="/codex/" page-count="1">
       <page path="/codex/quickstart.md" title="Quickstart" type="tutorial" />
     </section>
 
-    <!-- 32. Rules -->
+    <!-- 33. Remote Connections -->
+    <section name="Remote Connections" path-prefix="/codex/" page-count="1">
+      <page path="/codex/remote-connections.md" title="Remote connections" type="guide" />
+    </section>
+
+    <!-- 34. Rules -->
     <section name="Rules" path-prefix="/codex/" page-count="1">
       <page path="/codex/rules.md" title="Rules" type="guide" />
     </section>
 
-    <!-- 33. Sdk -->
+    <!-- 35. Sdk -->
     <section name="Sdk" path-prefix="/codex/" page-count="1">
       <page path="/codex/sdk.md" title="Codex SDK" type="sdk-guide" />
     </section>
 
-    <!-- 34. Security -->
+    <!-- 36. Security -->
     <section name="Security" path-prefix="/codex/" page-count="4">
       <page path="/codex/security.md" title="Codex Security" type="guide" />
       <page path="/codex/security/setup.md" title="Codex Security setup" type="guide" />
@@ -204,32 +216,32 @@
       <page path="/codex/security/threat-model.md" title="Improving the threat model" type="guide" />
     </section>
 
-    <!-- 35. Skills -->
+    <!-- 37. Skills -->
     <section name="Skills" path-prefix="/codex/" page-count="1">
       <page path="/codex/skills.md" title="Agent Skills" type="guide" />
     </section>
 
-    <!-- 36. Speed -->
+    <!-- 38. Speed -->
     <section name="Speed" path-prefix="/codex/" page-count="1">
       <page path="/codex/speed.md" title="Speed" type="guide" />
     </section>
 
-    <!-- 37. Subagents -->
+    <!-- 39. Subagents -->
     <section name="Subagents" path-prefix="/codex/" page-count="1">
       <page path="/codex/subagents.md" title="Subagents" type="guide" />
     </section>
 
-    <!-- 38. Videos -->
+    <!-- 40. Videos -->
     <section name="Videos" path-prefix="/codex/" page-count="1">
       <page path="/codex/videos.md" title="Videos" type="guide" />
     </section>
 
-    <!-- 39. Windows -->
+    <!-- 41. Windows -->
     <section name="Windows" path-prefix="/codex/" page-count="1">
       <page path="/codex/windows.md" title="Windows" type="guide" />
     </section>
 
-    <!-- 40. Workflows -->
+    <!-- 42. Workflows -->
     <section name="Workflows" path-prefix="/codex/" page-count="1">
       <page path="/codex/workflows.md" title="Workflows" type="guide" />
     </section>

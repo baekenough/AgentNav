@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Claude API Documentation — https://platform.claude.com
-# Total: 1035 pages | Last updated: 2026-04-15
+# Total: 1136 pages | Last updated: 2026-04-18
 
 SITE: Claude API Documentation
 URL: https://platform.claude.com
-PAGES: 1035
+PAGES: 1136
 SECTIONS: 1
 
 == SCHEMA ==
@@ -20,10 +20,18 @@ SECTIONS: 1
 
 == SECTIONS ==
 
-[English] 1035 pages | prefix=/docs/en/
+[English] 1136 pages | prefix=/docs/en/
+  agents-and-tools/agent-skills/overview.md | type=overview
+  managed-agents/overview.md | type=overview
   release-notes/overview.md | type=overview
   build-with-claude/overview.md | type=overview
+  agents-and-tools/agent-skills/quickstart.md | type=tutorial
+  get-started.md | type=tutorial
+  managed-agents/quickstart.md | type=tutorial
+  about-claude/use-case-guides/overview.md | type=overview
   intro.md | type=guide
+  build-with-claude/prompt-engineering/overview.md | type=overview
+  agents-and-tools/tool-use/overview.md | type=overview
   managed-agents/github.md | type=guide
   build-with-claude/adaptive-thinking.md | type=guide
   managed-agents/files.md | type=guide
@@ -31,7 +39,9 @@ SECTIONS: 1
   managed-agents/vaults.md | type=guide
   agents-and-tools/tool-use/bash-tool.md | type=guide
   build-with-claude/batch-processing.md | type=guide
+  build-with-claude/extended-thinking.md | type=guide
   build-with-claude/citations.md | type=guide
+  agents-and-tools/agent-skills/claude-api-skill.md | type=guide
   managed-agents/environments.md | type=guide
   agents-and-tools/tool-use/code-execution-tool.md | type=guide
   build-with-claude/compaction.md | type=guide
@@ -43,6 +53,8 @@ SECTIONS: 1
   build-with-claude/context-windows.md | type=guide
   about-claude/use-case-guides/customer-support-chat.md | type=overview
   managed-agents/define-outcomes.md | type=guide
+  test-and-evaluate/develop-tests.md | type=guide
+  managed-agents/agent-setup.md | type=guide
   build-with-claude/effort.md | type=guide
   build-with-claude/embeddings.md | type=guide
   build-with-claude/fast-mode.md | type=guide
@@ -56,6 +68,7 @@ SECTIONS: 1
   agents-and-tools/mcp-connector.md | type=guide
   managed-agents/mcp-connector.md | type=guide
   agents-and-tools/tool-use/memory-tool.md | type=guide
+  test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks.md | type=guide
   managed-agents/multi-agent.md | type=guide
   build-with-claude/multilingual-support.md | type=guide
   build-with-claude/pdf-support.md | type=guide
@@ -70,34 +83,50 @@ SECTIONS: 1
   agents-and-tools/remote-mcp-servers.md | type=guide
   build-with-claude/search-results.md | type=guide
   managed-agents/events-and-streaming.md | type=guide
+  agents-and-tools/agent-skills/best-practices.md | type=best-practices
+  managed-agents/skills.md | type=guide
   agents-and-tools/agent-skills/enterprise.md | type=guide
   managed-agents/sessions.md | type=guide
   build-with-claude/streaming.md | type=guide
   test-and-evaluate/strengthen-guardrails/handle-streaming-refusals.md | type=guide
   build-with-claude/structured-outputs.md | type=guide
+  build-with-claude/task-budgets.md | type=guide
   agents-and-tools/tool-use/text-editor-tool.md | type=guide
   about-claude/use-case-guides/ticket-routing.md | type=overview
   build-with-claude/token-counting.md | type=guide
   agents-and-tools/tool-use/tool-reference.md | type=guide
+  agents-and-tools/tool-use/tool-search-tool.md | type=guide
   managed-agents/tools.md | type=guide
+  managed-agents/memory.md | type=guide
+  build-with-claude/skills-guide.md | type=guide
+  test-and-evaluate/eval-tool.md | type=guide
   build-with-claude/working-with-messages.md | type=guide
+  build-with-claude/vision.md | type=guide
   agents-and-tools/tool-use/web-fetch-tool.md | type=guide
   agents-and-tools/tool-use/web-search-tool.md | type=guide
   build-with-claude/administration-api.md | type=overview
   build-with-claude/api-and-data-retention.md | type=guide
   build-with-claude/claude-code-analytics-api.md | type=guide
+  build-with-claude/claude-in-amazon-bedrock.md | type=guide
+  build-with-claude/claude-in-microsoft-foundry.md | type=guide
+  build-with-claude/claude-on-amazon-bedrock.md | type=guide
+  build-with-claude/claude-on-vertex-ai.md | type=guide
   build-with-claude/data-residency.md | type=guide
   managed-agents/migration.md | type=guide
   managed-agents/observability.md | type=guide
   build-with-claude/usage-cost-api.md | type=guide
   build-with-claude/workspaces.md | type=guide
   about-claude/models/overview.md | type=overview
+  resources/overview.md | type=overview
+  about-claude/models/choosing-a-model.md | type=overview
   about-claude/models/migration-guide.md | type=overview
   about-claude/model-deprecations.md | type=overview
   about-claude/pricing.md | type=overview
-  about-claude/models/whats-new-claude-4-6.md | type=overview
+  release-notes/system-prompts.md | type=changelog
+  about-claude/models/whats-new-claude-4-7.md | type=overview
   api/sdks/csharp.md | type=sdk-guide
   api/sdks/cli.md | type=tool-reference
+  api/client-sdks.md | type=tool-reference
   api/sdks/go.md | type=sdk-guide
   api/sdks/java.md | type=sdk-guide
   api/openai-sdk.md | type=sdk-guide
@@ -105,6 +134,7 @@ SECTIONS: 1
   api/sdks/python.md | type=sdk-guide
   api/sdks/ruby.md | type=sdk-guide
   api/sdks/typescript.md | type=sdk-guide
+  api/overview.md | type=overview
   api/beta/sessions/resources/add.md | type=api-endpoint
   api/cli/beta/sessions/resources/add.md | type=tool-reference
   api/csharp/beta/sessions/resources/add.md | type=api-endpoint
@@ -128,15 +158,25 @@ SECTIONS: 1
   api/typescript/beta/agents.md | type=api-endpoint
   api/admin/api_keys.md | type=api-endpoint
   api/beta/agents/archive.md | type=api-endpoint
+  api/beta/agents/delete | type=api-endpoint
   api/cli/beta/agents/archive.md | type=tool-reference
+  api/cli/beta/agents/delete | type=tool-reference
   api/csharp/beta/agents/archive.md | type=api-endpoint
+  api/csharp/beta/agents/delete | type=api-endpoint
   api/go/beta/agents/archive.md | type=api-endpoint
+  api/go/beta/agents/delete | type=api-endpoint
   api/java/beta/agents/archive.md | type=api-endpoint
+  api/java/beta/agents/delete | type=api-endpoint
   api/php/beta/agents/archive.md | type=api-endpoint
+  api/php/beta/agents/delete | type=api-endpoint
   api/python/beta/agents/archive.md | type=api-endpoint
+  api/python/beta/agents/delete | type=api-endpoint
   api/ruby/beta/agents/archive.md | type=api-endpoint
+  api/ruby/beta/agents/delete | type=api-endpoint
   api/terraform/beta/agents/archive.md | type=api-endpoint
+  api/terraform/beta/agents/delete | type=api-endpoint
   api/typescript/beta/agents/archive.md | type=api-endpoint
+  api/typescript/beta/agents/delete | type=api-endpoint
   api/beta/vaults/credentials/archive.md | type=api-endpoint
   api/cli/beta/vaults/credentials/archive.md | type=tool-reference
   api/csharp/beta/vaults/credentials/archive.md | type=api-endpoint
@@ -329,6 +369,16 @@ SECTIONS: 1
   api/ruby/beta/vaults/credentials/create.md | type=api-endpoint
   api/terraform/beta/vaults/credentials/create.md | type=api-endpoint
   api/typescript/beta/vaults/credentials/create.md | type=api-endpoint
+  api/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
+  api/cli/beta/user_profiles/create_enrollment_url.md | type=tool-reference
+  api/csharp/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
+  api/go/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
+  api/java/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
+  api/php/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
+  api/python/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
+  api/ruby/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
+  api/terraform/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
+  api/typescript/beta/user_profiles/create_enrollment_url.md | type=api-endpoint
   api/beta/environments/create.md | type=api-endpoint
   api/cli/beta/environments/create.md | type=tool-reference
   api/csharp/beta/environments/create.md | type=api-endpoint
@@ -370,6 +420,16 @@ SECTIONS: 1
   api/ruby/beta/skills/versions/create.md | type=api-endpoint
   api/terraform/beta/skills/versions/create.md | type=api-endpoint
   api/typescript/beta/skills/versions/create.md | type=api-endpoint
+  api/beta/user_profiles/create.md | type=api-endpoint
+  api/cli/beta/user_profiles/create.md | type=tool-reference
+  api/csharp/beta/user_profiles/create.md | type=api-endpoint
+  api/go/beta/user_profiles/create.md | type=api-endpoint
+  api/java/beta/user_profiles/create.md | type=api-endpoint
+  api/php/beta/user_profiles/create.md | type=api-endpoint
+  api/python/beta/user_profiles/create.md | type=api-endpoint
+  api/ruby/beta/user_profiles/create.md | type=api-endpoint
+  api/terraform/beta/user_profiles/create.md | type=api-endpoint
+  api/typescript/beta/user_profiles/create.md | type=api-endpoint
   api/beta/vaults/create.md | type=api-endpoint
   api/cli/beta/vaults/create.md | type=tool-reference
   api/csharp/beta/vaults/create.md | type=api-endpoint
@@ -641,6 +701,16 @@ SECTIONS: 1
   api/terraform/beta/skills/versions/retrieve.md | type=api-endpoint
   api/typescript/beta/skills/versions/retrieve.md | type=api-endpoint
   api/admin/users/retrieve.md | type=api-endpoint
+  api/beta/user_profiles/retrieve.md | type=api-endpoint
+  api/cli/beta/user_profiles/retrieve.md | type=tool-reference
+  api/csharp/beta/user_profiles/retrieve.md | type=api-endpoint
+  api/go/beta/user_profiles/retrieve.md | type=api-endpoint
+  api/java/beta/user_profiles/retrieve.md | type=api-endpoint
+  api/php/beta/user_profiles/retrieve.md | type=api-endpoint
+  api/python/beta/user_profiles/retrieve.md | type=api-endpoint
+  api/ruby/beta/user_profiles/retrieve.md | type=api-endpoint
+  api/terraform/beta/user_profiles/retrieve.md | type=api-endpoint
+  api/typescript/beta/user_profiles/retrieve.md | type=api-endpoint
   api/beta/vaults/retrieve.md | type=api-endpoint
   api/cli/beta/vaults/retrieve.md | type=tool-reference
   api/csharp/beta/vaults/retrieve.md | type=api-endpoint
@@ -796,6 +866,16 @@ SECTIONS: 1
   api/ruby/beta/skills/list.md | type=api-endpoint
   api/terraform/beta/skills/list.md | type=api-endpoint
   api/typescript/beta/skills/list.md | type=api-endpoint
+  api/beta/user_profiles/list.md | type=api-endpoint
+  api/cli/beta/user_profiles/list.md | type=tool-reference
+  api/csharp/beta/user_profiles/list.md | type=api-endpoint
+  api/go/beta/user_profiles/list.md | type=api-endpoint
+  api/java/beta/user_profiles/list.md | type=api-endpoint
+  api/php/beta/user_profiles/list.md | type=api-endpoint
+  api/python/beta/user_profiles/list.md | type=api-endpoint
+  api/ruby/beta/user_profiles/list.md | type=api-endpoint
+  api/terraform/beta/user_profiles/list.md | type=api-endpoint
+  api/typescript/beta/user_profiles/list.md | type=api-endpoint
   api/admin/users/list.md | type=api-endpoint
   api/beta/vaults/list.md | type=api-endpoint
   api/cli/beta/vaults/list.md | type=tool-reference
@@ -994,6 +1074,16 @@ SECTIONS: 1
   api/terraform/beta/sessions/resources/update.md | type=api-endpoint
   api/typescript/beta/sessions/resources/update.md | type=api-endpoint
   api/admin/users/update.md | type=api-endpoint
+  api/beta/user_profiles/update.md | type=api-endpoint
+  api/cli/beta/user_profiles/update.md | type=tool-reference
+  api/csharp/beta/user_profiles/update.md | type=api-endpoint
+  api/go/beta/user_profiles/update.md | type=api-endpoint
+  api/java/beta/user_profiles/update.md | type=api-endpoint
+  api/php/beta/user_profiles/update.md | type=api-endpoint
+  api/python/beta/user_profiles/update.md | type=api-endpoint
+  api/ruby/beta/user_profiles/update.md | type=api-endpoint
+  api/terraform/beta/user_profiles/update.md | type=api-endpoint
+  api/typescript/beta/user_profiles/update.md | type=api-endpoint
   api/beta/vaults/update.md | type=api-endpoint
   api/cli/beta/vaults/update.md | type=tool-reference
   api/csharp/beta/vaults/update.md | type=api-endpoint
@@ -1017,6 +1107,16 @@ SECTIONS: 1
   api/terraform/beta/files/upload.md | type=api-endpoint
   api/typescript/beta/files/upload.md | type=api-endpoint
   api/admin/usage_report.md | type=api-endpoint
+  api/beta/user_profiles.md | type=api-endpoint
+  api/cli/beta/user_profiles.md | type=tool-reference
+  api/csharp/beta/user_profiles.md | type=api-endpoint
+  api/go/beta/user_profiles.md | type=api-endpoint
+  api/java/beta/user_profiles.md | type=api-endpoint
+  api/php/beta/user_profiles.md | type=api-endpoint
+  api/python/beta/user_profiles.md | type=api-endpoint
+  api/ruby/beta/user_profiles.md | type=api-endpoint
+  api/terraform/beta/user_profiles.md | type=api-endpoint
+  api/typescript/beta/user_profiles.md | type=api-endpoint
   api/admin/users.md | type=api-endpoint
   api/beta/vaults.md | type=api-endpoint
   api/cli/beta/vaults.md | type=tool-reference
@@ -1055,6 +1155,7 @@ SECTIONS: 1
   api/rate-limits.md | type=api-endpoint
   api/service-tiers.md | type=api-endpoint
   api/supported-regions.md | type=api-endpoint
+  api/claude-code/routines-fire.md | type=api-endpoint
   api/versioning.md | type=api-endpoint
 
 == NAVIGATION ==

@@ -2,9 +2,9 @@
   "agents_txt_version": "0.2",
   "site": {
     "name": "GPT Codex Documentation",
-    "url": "https://developers.openai.com/codex",
-    "total_pages": 71,
-    "last_updated": "2026-04-15",
+    "url": "https://developers.openai.com",
+    "total_pages": 75,
+    "last_updated": "2026-04-18",
     "description": "Build with the Codex CLI, IDE extension, and cloud automation to speed up development."
   },
   "sections": [
@@ -36,7 +36,7 @@
     },
     {
       "name": "App",
-      "page_count": 10,
+      "page_count": 12,
       "pages": [
         {
           "path": "/codex/app.md",
@@ -67,6 +67,18 @@
           "title": "Codex app settings",
           "type": "reference",
           "description": "Configure Codex app behavior and preferences"
+        },
+        {
+          "path": "/codex/app/computer-use.md",
+          "title": "Computer Use",
+          "type": "guide",
+          "description": "Let Codex use desktop apps while it works"
+        },
+        {
+          "path": "/codex/app/browser.md",
+          "title": "In-app browser",
+          "type": "guide",
+          "description": "Preview and comment on web apps from Codex"
         },
         {
           "path": "/codex/app/local-environments.md",
@@ -470,6 +482,19 @@
       "path_prefix": "/codex/"
     },
     {
+      "name": "Memories",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/memories.md",
+          "title": "Memories",
+          "type": "guide",
+          "description": "How Codex carries useful context forward across threads"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
       "name": "Models",
       "page_count": 1,
       "pages": [
@@ -575,6 +600,19 @@
           "title": "Quickstart",
           "type": "tutorial",
           "description": "Start using Codex in your IDE, CLI, or the cloud"
+        }
+      ],
+      "path_prefix": "/codex/"
+    },
+    {
+      "name": "Remote Connections",
+      "page_count": 1,
+      "pages": [
+        {
+          "path": "/codex/remote-connections.md",
+          "title": "Remote connections",
+          "type": "guide",
+          "description": "Use Codex with projects on remote machines over SSH"
         }
       ],
       "path_prefix": "/codex/"

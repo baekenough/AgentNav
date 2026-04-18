@@ -190,10 +190,10 @@ def fetch_text(url: str) -> str:
 # llms.txt link-list parser
 # ---------------------------------------------------------------------------
 
-# Matches: "  - [Title](URL): Description" at any indent level
+# Matches: "  - [Title](URL): Description" or "  - [Title](URL) - Description" at any indent level
 _LINK_RE = re.compile(
     r"^(?P<indent>\s*)-\s+\[(?P<title>[^\]]+)\]\((?P<url>https?://[^)]+)\)"
-    r"(?::\s*(?P<desc>.+))?$"
+    r"(?:(?::\s*|\s+-\s+)(?P<desc>.+))?$"
 )
 
 # Matches: "## Section Name" (H2 becomes a new section)

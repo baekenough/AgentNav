@@ -1,10 +1,10 @@
 # agents.txt v0.2
 # Gemini CLI Documentation — https://geminicli.com
-# Total: 90 pages | Last updated: 2026-03-31
+# Total: 92 pages | Last updated: 2026-04-18
 
 SITE: Gemini CLI Documentation
 URL: https://geminicli.com
-PAGES: 90
+PAGES: 92
 SECTIONS: 14
 
 == SCHEMA ==
@@ -39,10 +39,11 @@ SECTIONS: 14
   automation/ | type=tutorial
   plan-mode-steering/ | type=tutorial
 
-[CLI Features] 16 pages | prefix=/docs/cli/
+[CLI Features] 17 pages | prefix=/docs/cli/
   skills/ | type=guide
   creating-skills/ | type=guide
   acp-mode/ | type=guide
+  auto-memory/ | type=guide
   checkpointing/ | type=guide
   git-worktrees/ | type=guide
   headless/ | type=guide
@@ -92,12 +93,13 @@ SECTIONS: 14
    | type=guide
   ide-companion-spec/ | type=reference
 
-[Tools] 12 pages | prefix=/docs/tools/
+[Tools] 13 pages | prefix=/docs/tools/
   /docs/reference/tools/ | type=tool-reference
   activate-skill/ | type=tool-reference
   ask-user/ | type=tool-reference
   file-system/ | type=tool-reference
   internal-docs/ | type=tool-reference
+  mcp-resources/ | type=tool-reference
   mcp-server/ | type=tool-reference
   memory/ | type=tool-reference
   planning/ | type=tool-reference

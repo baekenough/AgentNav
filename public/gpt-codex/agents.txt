@@ -1,11 +1,11 @@
 # agents.txt v0.2
-# GPT Codex Documentation — https://developers.openai.com/codex
-# Total: 71 pages | Last updated: 2026-04-15
+# GPT Codex Documentation — https://developers.openai.com
+# Total: 75 pages | Last updated: 2026-04-18
 
 SITE: GPT Codex Documentation
-URL: https://developers.openai.com/codex
-PAGES: 71
-SECTIONS: 40
+URL: https://developers.openai.com
+PAGES: 75
+SECTIONS: 42
 
 == SCHEMA ==
 # Formal grammar for parsing this file
@@ -26,12 +26,14 @@ SECTIONS: 40
 [Agent Approvals Security] 1 page
   /codex/agent-approvals-security.md | type=guide
 
-[App] 10 pages
+[App] 12 pages
   /codex/app.md | type=guide
   /codex/app/automations.md | type=guide
   /codex/app/commands.md | type=tool-reference
   /codex/app/features.md | type=guide
   /codex/app/settings.md | type=reference
+  /codex/app/computer-use.md | type=guide
+  /codex/app/browser.md | type=guide
   /codex/app/local-environments.md | type=guide
   /codex/app/review.md | type=guide
   /codex/app/troubleshooting.md | type=guide
@@ -116,6 +118,9 @@ SECTIONS: 40
 [Mcp] 1 page
   /codex/mcp.md | type=guide
 
+[Memories] 1 page
+  /codex/memories.md | type=guide
+
 [Models] 1 page
   /codex/models.md | type=guide
 
@@ -140,6 +145,9 @@ SECTIONS: 40
 
 [Quickstart] 1 page
   /codex/quickstart.md | type=tutorial
+
+[Remote Connections] 1 page
+  /codex/remote-connections.md | type=guide
 
 [Rules] 1 page
   /codex/rules.md | type=guide

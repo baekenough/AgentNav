@@ -12,18 +12,18 @@ schema:
 
 - **URL**: https://code.claude.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 111
-- **Last Updated**: 2026-04-15
+- **Total Pages**: 114
+- **Last Updated**: 2026-04-18
 
 ## Site Overview
 
 | # | Section | Pages | Base Path |
 |---|---------|-------|-----------|
-| 1 | Docs | 111 | /docs/en/ |
+| 1 | Docs | 114 | /docs/en/ |
 
 ---
 
-## Docs (111 pages)
+## Docs (114 pages)
 
 - [How the agent loop works](/docs/en/agent-sdk/agent-loop.md) {sdk-guide}
 - [Use Claude Code features in the SDK](/docs/en/agent-sdk/claude-code-features.md) {sdk-guide}
@@ -136,4 +136,8 @@ schema:
 - [What's new](/docs/en/whats-new/index.md) {changelog}
 - [Zero data retention](/docs/en/zero-data-retention.md) {guide}
 - [Automate work with routines](/docs/en/routines.md) {guide}
+
+- [Error reference](/docs/en/errors.md) {guide}
+- [Constrain plugin dependency versions](/docs/en/plugin-dependencies.md) {guide}
+- [Find bugs with ultrareview](/docs/en/ultrareview.md) {guide}
 

@@ -9,14 +9,14 @@ type: site-index
 - **URL**: https://agentnav.baekenough.com
 - **Standard**: agents.txt v0.2
 - **Documentation Sets**: 4
-- **Total Pages**: 1307
-- **Last Updated**: 2026-04-15
+- **Total Pages**: 1417
+- **Last Updated**: 2026-04-18
 
 ## Available Documentation Sets
 
 ### Claude Code
 - **Source**: [code.claude.com](https://code.claude.com)
-- **Pages**: 111 | **Sections**: 10
+- **Pages**: 114 | **Sections**: 10
 - **Formats**:
   - [agents.json](/claude-code/agents.json)
   - [agents.md](/claude-code/agents.md)
@@ -25,7 +25,7 @@ type: site-index
 
 ### GPT Codex
 - **Source**: [developers.openai.com](https://developers.openai.com)
-- **Pages**: 71 | **Sections**: 14
+- **Pages**: 75 | **Sections**: 14
 - **Formats**:
   - [agents.json](/gpt-codex/agents.json)
   - [agents.md](/gpt-codex/agents.md)
@@ -34,7 +34,7 @@ type: site-index
 
 ### Gemini CLI
 - **Source**: [geminicli.com](https://geminicli.com)
-- **Pages**: 90 | **Sections**: 14
+- **Pages**: 92 | **Sections**: 14
 - **Formats**:
   - [agents.json](/gemini-cli/agents.json)
   - [agents.md](/gemini-cli/agents.md)
@@ -43,7 +43,7 @@ type: site-index
 
 ### Claude API
 - **Source**: [platform.claude.com](https://platform.claude.com)
-- **Pages**: 1035 | **Sections**: 20
+- **Pages**: 1136 | **Sections**: 20
 - **Formats**:
   - [agents.json](/claude-api/agents.json)
   - [agents.md](/claude-api/agents.md)

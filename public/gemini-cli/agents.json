@@ -3,8 +3,8 @@
   "site": {
     "name": "Gemini CLI Documentation",
     "url": "https://geminicli.com",
-    "total_pages": 90,
-    "last_updated": "2026-03-31"
+    "total_pages": 92,
+    "last_updated": "2026-04-18"
   },
   "sections": [
     {
@@ -39,11 +39,12 @@
     {
       "name": "CLI Features",
       "path_prefix": "/docs/cli",
-      "page_count": 16,
+      "page_count": 17,
       "pages": [
         { "path": "/docs/cli/skills/", "title": "Agent Skills", "type": "guide" },
         { "path": "/docs/cli/creating-skills/", "title": "Creating Agent Skills", "type": "guide" },
         { "path": "/docs/cli/acp-mode/", "title": "ACP Mode", "type": "guide" },
+        { "path": "/docs/cli/auto-memory/", "title": "Auto Memory", "type": "guide" },
         { "path": "/docs/cli/checkpointing/", "title": "Checkpointing", "type": "guide" },
         { "path": "/docs/cli/git-worktrees/", "title": "Git Worktrees", "type": "guide" },
         { "path": "/docs/cli/headless/", "title": "Headless Mode", "type": "guide" },
@@ -122,13 +123,14 @@
     {
       "name": "Tools",
       "path_prefix": "/docs/tools",
-      "page_count": 12,
+      "page_count": 13,
       "pages": [
         { "path": "/docs/reference/tools/", "title": "Tools Reference", "type": "tool-reference" },
         { "path": "/docs/tools/activate-skill/", "title": "Activate Skill Tool", "type": "tool-reference" },
         { "path": "/docs/tools/ask-user/", "title": "Ask User Tool", "type": "tool-reference" },
         { "path": "/docs/tools/file-system/", "title": "File System Tools", "type": "tool-reference" },
         { "path": "/docs/tools/internal-docs/", "title": "Internal Docs Tool", "type": "tool-reference" },
+        { "path": "/docs/tools/mcp-resources/", "title": "MCP Resource Tools", "type": "tool-reference" },
         { "path": "/docs/tools/mcp-server/", "title": "MCP Servers", "type": "tool-reference" },
         { "path": "/docs/tools/memory/", "title": "Memory Tool", "type": "tool-reference" },
         { "path": "/docs/tools/planning/", "title": "Planning Tools", "type": "tool-reference" },
@@ -190,8 +192,8 @@
       "page_count": 4,
       "pages": [
         { "path": "/docs/changelogs/", "title": "Release Notes", "type": "changelog" },
-        { "path": "/docs/changelogs/latest/", "title": "Stable Release (v0.35.3)", "type": "changelog" },
-        { "path": "/docs/changelogs/preview/", "title": "Preview Release (v0.36.0-preview.6)", "type": "changelog" },
+        { "path": "/docs/changelogs/latest/", "title": "Stable Release (v0.38.1)", "type": "changelog" },
+        { "path": "/docs/changelogs/preview/", "title": "Preview Release (v0.39.0-preview.0)", "type": "changelog" },
         { "path": "/docs/releases/", "title": "Gemini CLI Releases", "type": "changelog" }
       ]
     }
@@ -202,11 +204,11 @@
     "tips": [
       "Start with /docs/get-started/ for initial setup",
       "Use /docs/cli/tutorials/ for step-by-step guides on common tasks",
-      "CLI Features covers skills, checkpointing, model routing, plan mode, and sandboxing",
+      "CLI Features covers skills, auto memory, checkpointing, model routing, plan mode, and sandboxing",
       "Configuration covers CLI reference, GEMINI.md, model settings, themes, and enterprise setup",
       "Core section covers subagents, remote agents, and local model routing",
       "Extensions and Hooks each have dedicated best-practices and reference pages",
-      "Tools section provides detailed reference for each built-in tool",
+      "Tools section provides detailed reference for each built-in tool including MCP resource tools",
       "For complete command and configuration reference, see the Reference section"
     ]
   }

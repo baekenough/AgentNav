@@ -10,10 +10,10 @@ schema:
 
 # GPT Codex Documentation
 
-- **URL**: https://developers.openai.com/codex
+- **URL**: https://developers.openai.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 71
-- **Last Updated**: 2026-04-15
+- **Total Pages**: 75
+- **Last Updated**: 2026-04-18
 
 ## Site Overview
 
@@ -21,7 +21,7 @@ schema:
 |---|---------|-------|-----------|
 | 1 | Documentation sets | 1 | /codex/ |
 | 2 | Agent Approvals Security | 1 | /codex/ |
-| 3 | App | 10 | /codex/ |
+| 3 | App | 12 | /codex/ |
 | 4 | App Server | 1 | /codex/ |
 | 5 | Auth | 1 | /codex/ |
 | 6 | Cli | 4 | /codex/ |
@@ -42,23 +42,25 @@ schema:
 | 21 | Integrations | 3 | /codex/integrations/ |
 | 22 | Learn | 1 | /codex/learn/ |
 | 23 | Mcp | 1 | /codex/ |
-| 24 | Models | 1 | /codex/ |
-| 25 | Noninteractive | 1 | /codex/ |
-| 26 | Open Source | 1 | /codex/ |
-| 27 | Overview | 1 | /codex/ |
-| 28 | Plugins | 2 | /codex/ |
-| 29 | Pricing | 1 | /codex/ |
-| 30 | Prompting | 1 | /codex/ |
-| 31 | Quickstart | 1 | /codex/ |
-| 32 | Rules | 1 | /codex/ |
-| 33 | Sdk | 1 | /codex/ |
-| 34 | Security | 4 | /codex/ |
-| 35 | Skills | 1 | /codex/ |
-| 36 | Speed | 1 | /codex/ |
-| 37 | Subagents | 1 | /codex/ |
-| 38 | Videos | 1 | /codex/ |
-| 39 | Windows | 1 | /codex/ |
-| 40 | Workflows | 1 | /codex/ |
+| 24 | Memories | 1 | /codex/ |
+| 25 | Models | 1 | /codex/ |
+| 26 | Noninteractive | 1 | /codex/ |
+| 27 | Open Source | 1 | /codex/ |
+| 28 | Overview | 1 | /codex/ |
+| 29 | Plugins | 2 | /codex/ |
+| 30 | Pricing | 1 | /codex/ |
+| 31 | Prompting | 1 | /codex/ |
+| 32 | Quickstart | 1 | /codex/ |
+| 33 | Remote Connections | 1 | /codex/ |
+| 34 | Rules | 1 | /codex/ |
+| 35 | Sdk | 1 | /codex/ |
+| 36 | Security | 4 | /codex/ |
+| 37 | Skills | 1 | /codex/ |
+| 38 | Speed | 1 | /codex/ |
+| 39 | Subagents | 1 | /codex/ |
+| 40 | Videos | 1 | /codex/ |
+| 41 | Windows | 1 | /codex/ |
+| 42 | Workflows | 1 | /codex/ |
 
 ---
 
@@ -70,7 +72,7 @@ schema:
 
 - [Agent approvals & security](/codex/agent-approvals-security.md) {guide}
 
-## App (10 pages)
+## App (12 pages)
 
 - [Codex app](/codex/app.md) {guide}
 - [Automations](/codex/app/automations.md) {guide}
@@ -82,6 +84,9 @@ schema:
 - [Troubleshooting](/codex/app/troubleshooting.md) {guide}
 - [Windows](/codex/app/windows.md) {guide}
 - [Worktrees](/codex/app/worktrees.md) {guide}
+
+- [Computer Use](/codex/app/computer-use.md) {guide}
+- [In-app browser](/codex/app/browser.md) {guide}
 
 ## App Server (1 page)
 
@@ -183,6 +188,10 @@ schema:
 
 - [Model Context Protocol](/codex/mcp.md) {guide}
 
+## Memories (1 page)
+
+- [Memories](/codex/memories.md) {guide}
+
 ## Models (1 page)
 
 - [Codex Models](/codex/models.md) {guide}
@@ -215,6 +224,10 @@ schema:
 ## Quickstart (1 page)
 
 - [Quickstart](/codex/quickstart.md) {tutorial}
+
+## Remote Connections (1 page)
+
+- [Remote connections](/codex/remote-connections.md) {guide}
 
 ## Rules (1 page)
 

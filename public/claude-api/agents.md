@@ -5,25 +5,25 @@ schema:
   sections: "## heading = section name"
   subsections: "### heading = subsection grouping"
   pages: "- [title](path) {type}"
-  page_types: [overview, guide, tool-reference, sdk-guide, api-endpoint, best-practices]
+  page_types: [overview, tutorial, guide, tool-reference, sdk-guide, api-endpoint, best-practices, changelog]
 ---
 
 # Claude API Documentation
 
 - **URL**: https://platform.claude.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 1035
-- **Last Updated**: 2026-04-15
+- **Total Pages**: 1136
+- **Last Updated**: 2026-04-18
 
 ## Site Overview
 
 | # | Section | Pages | Base Path |
 |---|---------|-------|-----------|
-| 1 | English | 1035 | /docs/en/ |
+| 1 | English | 1136 | /docs/en/ |
 
 ---
 
-## English (1035 pages)
+## English (1136 pages)
 
 - [Claude Platform](/docs/en/release-notes/overview.md) {overview}
 - [Features overview](/docs/en/build-with-claude/overview.md) {overview}
@@ -99,7 +99,6 @@ schema:
 - [Migration guide](/docs/en/about-claude/models/migration-guide.md) {overview}
 - [Model deprecations](/docs/en/about-claude/model-deprecations.md) {overview}
 - [Pricing](/docs/en/about-claude/pricing.md) {overview}
-- [What's new in Claude 4.6](/docs/en/about-claude/models/whats-new-claude-4-6.md) {overview}
 - [C# SDK](/docs/en/api/sdks/csharp.md) {sdk-guide}
 - [CLI](/docs/en/api/sdks/cli.md) {tool-reference}
 - [Go SDK](/docs/en/api/sdks/go.md) {sdk-guide}
@@ -1060,4 +1059,107 @@ schema:
 - [Service tiers](/docs/en/api/service-tiers.md) {api-endpoint}
 - [Supported regions](/docs/en/api/supported-regions.md) {api-endpoint}
 - [Versions](/docs/en/api/versioning.md) {api-endpoint}
+- [Claude API skill](/docs/en/agents-and-tools/agent-skills/claude-api-skill.md) {guide}
+- [What's new in Claude Opus 4.7](/docs/en/about-claude/models/whats-new-claude-4-7.md) {overview}
+- [Archive Agent (Beta)](/docs/en/api/beta/agents/delete) {api-endpoint}
+- [Archive Agent (Beta) (cli)](/docs/en/api/cli/beta/agents/delete) {tool-reference}
+- [Archive Agent (Beta) (csharp)](/docs/en/api/csharp/beta/agents/delete) {api-endpoint}
+- [Archive Agent (Beta) (Go)](/docs/en/api/go/beta/agents/delete) {api-endpoint}
+- [Archive Agent (Beta) (Java)](/docs/en/api/java/beta/agents/delete) {api-endpoint}
+- [Archive Agent (Beta) (php)](/docs/en/api/php/beta/agents/delete) {api-endpoint}
+- [Archive Agent (Beta) (Python)](/docs/en/api/python/beta/agents/delete) {api-endpoint}
+- [Archive Agent (Beta) (Ruby)](/docs/en/api/ruby/beta/agents/delete) {api-endpoint}
+- [Archive Agent (Beta) (terraform)](/docs/en/api/terraform/beta/agents/delete) {api-endpoint}
+- [Archive Agent (Beta) (TypeScript)](/docs/en/api/typescript/beta/agents/delete) {api-endpoint}
+- [Create Enrollment URL (Beta)](/docs/en/api/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create Enrollment URL (Beta) (cli)](/docs/en/api/cli/beta/user_profiles/create_enrollment_url.md) {tool-reference}
+- [Create Enrollment URL (Beta) (csharp)](/docs/en/api/csharp/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create Enrollment URL (Beta) (Go)](/docs/en/api/go/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create Enrollment URL (Beta) (Java)](/docs/en/api/java/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create Enrollment URL (Beta) (php)](/docs/en/api/php/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create Enrollment URL (Beta) (Python)](/docs/en/api/python/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create Enrollment URL (Beta) (Ruby)](/docs/en/api/ruby/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create Enrollment URL (Beta) (terraform)](/docs/en/api/terraform/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create Enrollment URL (Beta) (TypeScript)](/docs/en/api/typescript/beta/user_profiles/create_enrollment_url.md) {api-endpoint}
+- [Create User Profile (Beta)](/docs/en/api/beta/user_profiles/create.md) {api-endpoint}
+- [Create User Profile (Beta) (cli)](/docs/en/api/cli/beta/user_profiles/create.md) {tool-reference}
+- [Create User Profile (Beta) (csharp)](/docs/en/api/csharp/beta/user_profiles/create.md) {api-endpoint}
+- [Create User Profile (Beta) (Go)](/docs/en/api/go/beta/user_profiles/create.md) {api-endpoint}
+- [Create User Profile (Beta) (Java)](/docs/en/api/java/beta/user_profiles/create.md) {api-endpoint}
+- [Create User Profile (Beta) (php)](/docs/en/api/php/beta/user_profiles/create.md) {api-endpoint}
+- [Create User Profile (Beta) (Python)](/docs/en/api/python/beta/user_profiles/create.md) {api-endpoint}
+- [Create User Profile (Beta) (Ruby)](/docs/en/api/ruby/beta/user_profiles/create.md) {api-endpoint}
+- [Create User Profile (Beta) (terraform)](/docs/en/api/terraform/beta/user_profiles/create.md) {api-endpoint}
+- [Create User Profile (Beta) (TypeScript)](/docs/en/api/typescript/beta/user_profiles/create.md) {api-endpoint}
+- [Get User Profile (Beta)](/docs/en/api/beta/user_profiles/retrieve.md) {api-endpoint}
+- [Get User Profile (Beta) (cli)](/docs/en/api/cli/beta/user_profiles/retrieve.md) {tool-reference}
+- [Get User Profile (Beta) (csharp)](/docs/en/api/csharp/beta/user_profiles/retrieve.md) {api-endpoint}
+- [Get User Profile (Beta) (Go)](/docs/en/api/go/beta/user_profiles/retrieve.md) {api-endpoint}
+- [Get User Profile (Beta) (Java)](/docs/en/api/java/beta/user_profiles/retrieve.md) {api-endpoint}
+- [Get User Profile (Beta) (php)](/docs/en/api/php/beta/user_profiles/retrieve.md) {api-endpoint}
+- [Get User Profile (Beta) (Python)](/docs/en/api/python/beta/user_profiles/retrieve.md) {api-endpoint}
+- [Get User Profile (Beta) (Ruby)](/docs/en/api/ruby/beta/user_profiles/retrieve.md) {api-endpoint}
+- [Get User Profile (Beta) (terraform)](/docs/en/api/terraform/beta/user_profiles/retrieve.md) {api-endpoint}
+- [Get User Profile (Beta) (TypeScript)](/docs/en/api/typescript/beta/user_profiles/retrieve.md) {api-endpoint}
+- [List User Profiles (Beta)](/docs/en/api/beta/user_profiles/list.md) {api-endpoint}
+- [List User Profiles (Beta) (cli)](/docs/en/api/cli/beta/user_profiles/list.md) {tool-reference}
+- [List User Profiles (Beta) (csharp)](/docs/en/api/csharp/beta/user_profiles/list.md) {api-endpoint}
+- [List User Profiles (Beta) (Go)](/docs/en/api/go/beta/user_profiles/list.md) {api-endpoint}
+- [List User Profiles (Beta) (Java)](/docs/en/api/java/beta/user_profiles/list.md) {api-endpoint}
+- [List User Profiles (Beta) (php)](/docs/en/api/php/beta/user_profiles/list.md) {api-endpoint}
+- [List User Profiles (Beta) (Python)](/docs/en/api/python/beta/user_profiles/list.md) {api-endpoint}
+- [List User Profiles (Beta) (Ruby)](/docs/en/api/ruby/beta/user_profiles/list.md) {api-endpoint}
+- [List User Profiles (Beta) (terraform)](/docs/en/api/terraform/beta/user_profiles/list.md) {api-endpoint}
+- [List User Profiles (Beta) (TypeScript)](/docs/en/api/typescript/beta/user_profiles/list.md) {api-endpoint}
+- [Update User Profile (Beta)](/docs/en/api/beta/user_profiles/update.md) {api-endpoint}
+- [Update User Profile (Beta) (cli)](/docs/en/api/cli/beta/user_profiles/update.md) {tool-reference}
+- [Update User Profile (Beta) (csharp)](/docs/en/api/csharp/beta/user_profiles/update.md) {api-endpoint}
+- [Update User Profile (Beta) (Go)](/docs/en/api/go/beta/user_profiles/update.md) {api-endpoint}
+- [Update User Profile (Beta) (Java)](/docs/en/api/java/beta/user_profiles/update.md) {api-endpoint}
+- [Update User Profile (Beta) (php)](/docs/en/api/php/beta/user_profiles/update.md) {api-endpoint}
+- [Update User Profile (Beta) (Python)](/docs/en/api/python/beta/user_profiles/update.md) {api-endpoint}
+- [Update User Profile (Beta) (Ruby)](/docs/en/api/ruby/beta/user_profiles/update.md) {api-endpoint}
+- [Update User Profile (Beta) (terraform)](/docs/en/api/terraform/beta/user_profiles/update.md) {api-endpoint}
+- [Update User Profile (Beta) (TypeScript)](/docs/en/api/typescript/beta/user_profiles/update.md) {api-endpoint}
+- [User Profiles (Beta)](/docs/en/api/beta/user_profiles.md) {api-endpoint}
+- [User Profiles (Beta) (cli)](/docs/en/api/cli/beta/user_profiles.md) {tool-reference}
+- [User Profiles (Beta) (csharp)](/docs/en/api/csharp/beta/user_profiles.md) {api-endpoint}
+- [User Profiles (Beta) (Go)](/docs/en/api/go/beta/user_profiles.md) {api-endpoint}
+- [User Profiles (Beta) (Java)](/docs/en/api/java/beta/user_profiles.md) {api-endpoint}
+- [User Profiles (Beta) (php)](/docs/en/api/php/beta/user_profiles.md) {api-endpoint}
+- [User Profiles (Beta) (Python)](/docs/en/api/python/beta/user_profiles.md) {api-endpoint}
+- [User Profiles (Beta) (Ruby)](/docs/en/api/ruby/beta/user_profiles.md) {api-endpoint}
+- [User Profiles (Beta) (terraform)](/docs/en/api/terraform/beta/user_profiles.md) {api-endpoint}
+- [User Profiles (Beta) (TypeScript)](/docs/en/api/typescript/beta/user_profiles.md) {api-endpoint}
+
+- [Overview](/docs/en/agents-and-tools/agent-skills/overview.md) {overview}
+- [Overview](/docs/en/managed-agents/overview.md) {overview}
+- [Quickstart](/docs/en/agents-and-tools/agent-skills/quickstart.md) {tutorial}
+- [Quickstart](/docs/en/get-started.md) {tutorial}
+- [Quickstart](/docs/en/managed-agents/quickstart.md) {tutorial}
+- [Overview](/docs/en/about-claude/use-case-guides/overview.md) {overview}
+- [Overview](/docs/en/build-with-claude/prompt-engineering/overview.md) {overview}
+- [Overview](/docs/en/agents-and-tools/tool-use/overview.md) {overview}
+- [Extended thinking](/docs/en/build-with-claude/extended-thinking.md) {guide}
+- [Define success and build evaluations](/docs/en/test-and-evaluate/develop-tests.md) {guide}
+- [Agent setup](/docs/en/managed-agents/agent-setup.md) {guide}
+- [Mitigate jailbreaks](/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks.md) {guide}
+- [Best practices](/docs/en/agents-and-tools/agent-skills/best-practices.md) {best-practices}
+- [Agent Skills](/docs/en/managed-agents/skills.md) {guide}
+- [Task budgets (beta)](/docs/en/build-with-claude/task-budgets.md) {guide}
+- [Tool search](/docs/en/agents-and-tools/tool-use/tool-search-tool.md) {guide}
+- [Using memory](/docs/en/managed-agents/memory.md) {guide}
+- [Skills in the API](/docs/en/build-with-claude/skills-guide.md) {guide}
+- [Using the Evaluation Tool in Console](/docs/en/test-and-evaluate/eval-tool.md) {guide}
+- [Images and vision](/docs/en/build-with-claude/vision.md) {guide}
+- [Amazon Bedrock](/docs/en/build-with-claude/claude-in-amazon-bedrock.md) {guide}
+- [Microsoft Foundry](/docs/en/build-with-claude/claude-in-microsoft-foundry.md) {guide}
+- [Amazon Bedrock (legacy)](/docs/en/build-with-claude/claude-on-amazon-bedrock.md) {guide}
+- [Vertex AI](/docs/en/build-with-claude/claude-on-vertex-ai.md) {guide}
+- [Model cards](/docs/en/resources/overview.md) {overview}
+- [Choosing a model](/docs/en/about-claude/models/choosing-a-model.md) {overview}
+- [System prompts](/docs/en/release-notes/system-prompts.md) {changelog}
+- [Overview](/docs/en/api/client-sdks.md) {tool-reference}
+- [Features overview](/docs/en/api/overview.md) {overview}
+- [Trigger a routine](/docs/en/api/claude-code/routines-fire.md) {api-endpoint}
 

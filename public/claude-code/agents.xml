@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents version="0.2">
-  <site name="Claude Code Documentation" url="https://code.claude.com" total-pages="111" last-updated="2026-04-15" />
+  <site name="Claude Code Documentation" url="https://code.claude.com" total-pages="114" last-updated="2026-04-18" />
 
   <sections>
     <!-- 1. Docs -->
-    <section name="Docs" path-prefix="/docs/en/" page-count="111">
+    <section name="Docs" path-prefix="/docs/en/" page-count="114">
       <page path="/docs/en/agent-sdk/agent-loop.md" title="How the agent loop works" type="sdk-guide" />
       <page path="/docs/en/agent-sdk/claude-code-features.md" title="Use Claude Code features in the SDK" type="sdk-guide" />
       <page path="/docs/en/agent-sdk/cost-tracking.md" title="Track cost and usage" type="sdk-guide" />
@@ -60,6 +60,7 @@
       <page path="/docs/en/devcontainer.md" title="Development containers" type="guide" />
       <page path="/docs/en/discover-plugins.md" title="Discover and install prebuilt plugins through marketplaces" type="guide" />
       <page path="/docs/en/env-vars.md" title="Environment variables" type="guide" />
+      <page path="/docs/en/errors.md" title="Error reference" type="guide" />
       <page path="/docs/en/fast-mode.md" title="Speed up responses with fast mode" type="guide" />
       <page path="/docs/en/features-overview.md" title="Extend Claude Code" type="overview" />
       <page path="/docs/en/fullscreen.md" title="Fullscreen rendering" type="guide" />
@@ -87,6 +88,7 @@
       <page path="/docs/en/permission-modes.md" title="Choose a permission mode" type="guide" />
       <page path="/docs/en/permissions.md" title="Configure permissions" type="guide" />
       <page path="/docs/en/platforms.md" title="Platforms and integrations" type="guide" />
+      <page path="/docs/en/plugin-dependencies.md" title="Constrain plugin dependency versions" type="guide" />
       <page path="/docs/en/plugin-marketplaces.md" title="Create and distribute a plugin marketplace" type="guide" />
       <page path="/docs/en/plugins.md" title="Create plugins" type="guide" />
       <page path="/docs/en/plugins-reference.md" title="Plugins reference" type="guide" />
@@ -108,6 +110,7 @@
       <page path="/docs/en/tools-reference.md" title="Tools reference" type="guide" />
       <page path="/docs/en/troubleshooting.md" title="Troubleshooting" type="guide" />
       <page path="/docs/en/ultraplan.md" title="Plan in the cloud with ultraplan" type="guide" />
+      <page path="/docs/en/ultrareview.md" title="Find bugs with ultrareview" type="guide" />
       <page path="/docs/en/voice-dictation.md" title="Voice dictation" type="guide" />
       <page path="/docs/en/vs-code.md" title="Use Claude Code in VS Code" type="guide" />
       <page path="/docs/en/web-quickstart.md" title="Get started with Claude Code on the web" type="tutorial" />

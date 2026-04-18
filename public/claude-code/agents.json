@@ -3,14 +3,14 @@
   "site": {
     "name": "Claude Code Documentation",
     "url": "https://code.claude.com",
-    "total_pages": 111,
-    "last_updated": "2026-04-15",
+    "total_pages": 114,
+    "last_updated": "2026-04-18",
     "description": "Official documentation for Claude Code, Anthropic's agentic coding tool available in the terminal, IDE, desktop app, and browser. Covers installation, configuration, skills, subagents, hooks, MCP, the Agent SDK, and reference material."
   },
   "sections": [
     {
       "name": "Docs",
-      "page_count": 111,
+      "page_count": 114,
       "pages": [
         {
           "path": "/docs/en/agent-sdk/agent-loop.md",
@@ -28,7 +28,7 @@
           "path": "/docs/en/agent-sdk/cost-tracking.md",
           "title": "Track cost and usage",
           "type": "sdk-guide",
-          "description": "Learn how to track token usage, deduplicate parallel tool calls, and calculate costs with the Claude Agent SDK."
+          "description": "Learn how to track token usage, deduplicate parallel tool calls, and estimate costs with the Claude Agent SDK."
         },
         {
           "path": "/docs/en/agent-sdk/custom-tools.md",
@@ -343,6 +343,12 @@
           "description": "Complete reference for environment variables that control Claude Code behavior."
         },
         {
+          "path": "/docs/en/errors.md",
+          "title": "Error reference",
+          "type": "guide",
+          "description": "Look up Claude Code runtime error messages with what each one means and how to fix it."
+        },
+        {
           "path": "/docs/en/fast-mode.md",
           "title": "Speed up responses with fast mode",
           "type": "guide",
@@ -505,6 +511,12 @@
           "description": "Choose where to run Claude Code and what to connect it to. Compare the CLI, Desktop, VS Code, JetBrains, web, mobile, and integrations like Chrome, Slack, and CI/CD."
         },
         {
+          "path": "/docs/en/plugin-dependencies.md",
+          "title": "Constrain plugin dependency versions",
+          "type": "guide",
+          "description": "Declare version constraints on plugin dependencies so your plugin keeps working when an upstream plugin ships a breaking change."
+        },
+        {
           "path": "/docs/en/plugin-marketplaces.md",
           "title": "Create and distribute a plugin marketplace",
           "type": "guide",
@@ -629,6 +641,12 @@
           "title": "Plan in the cloud with ultraplan",
           "type": "guide",
           "description": "Start a plan from your CLI, draft it on Claude Code on the web, then execute it remotely or back in your terminal"
+        },
+        {
+          "path": "/docs/en/ultrareview.md",
+          "title": "Find bugs with ultrareview",
+          "type": "guide",
+          "description": "Run a deep, multi-agent code review in the cloud with /ultrareview to find and verify bugs before you merge."
         },
         {
           "path": "/docs/en/voice-dictation.md",

@@ -13,8 +13,8 @@ schema:
 
 - **URL**: https://geminicli.com
 - **Standard**: agents.txt v0.2 (AgentNav PoC)
-- **Total Pages**: 90
-- **Last Updated**: 2026-03-31
+- **Total Pages**: 92
+- **Last Updated**: 2026-04-18
 
 ## Site Overview
 
@@ -22,13 +22,13 @@ schema:
 |---|---------|-------|-----------|
 | 1 | Get Started | 5 | /docs/ |
 | 2 | Tutorials | 10 | /docs/cli/tutorials/ |
-| 3 | CLI Features | 16 | /docs/cli/ |
+| 3 | CLI Features | 17 | /docs/cli/ |
 | 4 | Configuration | 10 | /docs/cli/ |
 | 5 | Core | 4 | /docs/core/ |
 | 6 | Extensions | 5 | /docs/extensions/ |
 | 7 | Hooks | 4 | /docs/hooks/ |
 | 8 | IDE Integration | 2 | /docs/ide-integration/ |
-| 9 | Tools | 12 | /docs/tools/ |
+| 9 | Tools | 13 | /docs/tools/ |
 | 10 | Reference | 5 | /docs/reference/ |
 | 11 | Resources | 5 | /docs/resources/ |
 | 12 | Admin | 1 | /docs/admin/ |
@@ -58,7 +58,7 @@ schema:
 - [Automate Tasks](/docs/cli/tutorials/automation/) {tutorial}
 - [Plan Mode with Model Steering](/docs/cli/tutorials/plan-mode-steering/) {tutorial}
 
-## CLI Features (16 pages)
+## CLI Features (17 pages)
 
 - [Agent Skills](/docs/cli/skills/) {guide}
 - [Creating Agent Skills](/docs/cli/creating-skills/) {guide}
@@ -76,6 +76,8 @@ schema:
 - [Session Management](/docs/cli/session-management/) {guide}
 - [Observability with OpenTelemetry](/docs/cli/telemetry/) {reference}
 - [Token Caching](/docs/cli/token-caching/) {guide}
+
+- [Auto Memory](/docs/cli/auto-memory/) {guide}
 
 ## Configuration (10 pages)
 
@@ -117,7 +119,7 @@ schema:
 - [IDE Integration](/docs/ide-integration/) {guide}
 - [IDE Companion Plugin Spec](/docs/ide-integration/ide-companion-spec/) {reference}
 
-## Tools (12 pages)
+## Tools (13 pages)
 
 - [Tools Reference](/docs/reference/tools/) {tool-reference}
 - [Activate Skill Tool](/docs/tools/activate-skill/) {tool-reference}
@@ -131,6 +133,8 @@ schema:
 - [Todo Tool](/docs/tools/todos/) {tool-reference}
 - [Web Fetch Tool](/docs/tools/web-fetch/) {tool-reference}
 - [Web Search Tool](/docs/tools/web-search/) {tool-reference}
+
+- [MCP Resource Tools](/docs/tools/mcp-resources/) {tool-reference}
 
 ## Reference (5 pages)
 
@@ -165,8 +169,8 @@ schema:
 ## Releases (4 pages)
 
 - [Release Notes](/docs/changelogs/) {changelog}
-- [Stable Release (v0.35.3)](/docs/changelogs/latest/) {changelog}
-- [Preview Release (v0.36.0-preview.6)](/docs/changelogs/preview/) {changelog}
+- [Stable Release (v0.38.1)](/docs/changelogs/latest/) {changelog}
+- [Preview Release (v0.39.0-preview.0)](/docs/changelogs/preview/) {changelog}
 - [Gemini CLI Releases](/docs/releases/) {changelog}
 
 ---
